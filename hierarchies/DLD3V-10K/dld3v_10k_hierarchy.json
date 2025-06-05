@@ -1,0 +1,653 @@
+{
+    "directed": true,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "id": 0,
+            "label": "Nature & Outdoor"
+        },
+        {
+            "id": 1,
+            "label": "Beaches"
+        },
+        {
+            "id": 2,
+            "label": "Hiking-Trails"
+        },
+        {
+            "id": 3,
+            "label": "Campground"
+        },
+        {
+            "id": 4,
+            "label": "Lakes"
+        },
+        {
+            "id": 5,
+            "label": "Mountains"
+        },
+        {
+            "id": 6,
+            "label": "Forest-Mountains"
+        },
+        {
+            "id": 7,
+            "label": "Farms"
+        },
+        {
+            "id": 8,
+            "label": "Street-View"
+        },
+        {
+            "id": 9,
+            "label": "Square"
+        },
+        {
+            "id": 10,
+            "label": "Tech & Business"
+        },
+        {
+            "id": 11,
+            "label": "Tech-Companies"
+        },
+        {
+            "id": 12,
+            "label": "Business-Centers"
+        },
+        {
+            "id": 13,
+            "label": "Co-working spaces"
+        },
+        {
+            "id": 14,
+            "label": "Sports & Fitness"
+        },
+        {
+            "id": 15,
+            "label": "Tennis-Courts"
+        },
+        {
+            "id": 16,
+            "label": "Swimming-Pools"
+        },
+        {
+            "id": 17,
+            "label": "Sports-Clubs"
+        },
+        {
+            "id": 18,
+            "label": "Gyms-and-Fitness"
+        },
+        {
+            "id": 19,
+            "label": "Automotive Services"
+        },
+        {
+            "id": 20,
+            "label": "Parking-Lots"
+        },
+        {
+            "id": 21,
+            "label": "Car-Washes"
+        },
+        {
+            "id": 22,
+            "label": "Auto-Repair-Shops"
+        },
+        {
+            "id": 23,
+            "label": "Religious Institutions"
+        },
+        {
+            "id": 24,
+            "label": "Churches"
+        },
+        {
+            "id": 25,
+            "label": "Temples"
+        },
+        {
+            "id": 26,
+            "label": "Graveyards"
+        },
+        {
+            "id": 27,
+            "label": "Mosques"
+        },
+        {
+            "id": 28,
+            "label": "Restaurant and Cafes"
+        },
+        {
+            "id": 29,
+            "label": "Bars-and-Pubs"
+        },
+        {
+            "id": 30,
+            "label": "Coffee-Shop"
+        },
+        {
+            "id": 31,
+            "label": "Restaurant"
+        },
+        {
+            "id": 32,
+            "label": "Hotels and Accommodations"
+        },
+        {
+            "id": 33,
+            "label": "Residential-area"
+        },
+        {
+            "id": 34,
+            "label": "Hotels-Motels"
+        },
+        {
+            "id": 35,
+            "label": "Vaccation-Rentals"
+        },
+        {
+            "id": 36,
+            "label": "Medical Facilities"
+        },
+        {
+            "id": 37,
+            "label": "Dentists"
+        },
+        {
+            "id": 38,
+            "label": "Pharmacies"
+        },
+        {
+            "id": 39,
+            "label": "Hospitals-Clinics"
+        },
+        {
+            "id": 40,
+            "label": "Education Institutions"
+        },
+        {
+            "id": 41,
+            "label": "Library"
+        },
+        {
+            "id": 42,
+            "label": "School-Universities"
+        },
+        {
+            "id": 43,
+            "label": "Shopping Centers"
+        },
+        {
+            "id": 44,
+            "label": "Supermarkets"
+        },
+        {
+            "id": 45,
+            "label": "Furniture-Stores"
+        },
+        {
+            "id": 46,
+            "label": "Clothing-Stores"
+        },
+        {
+            "id": 47,
+            "label": "Flowerstore"
+        },
+        {
+            "id": 48,
+            "label": "Toy-Shop"
+        },
+        {
+            "id": 49,
+            "label": "Pet-Store"
+        },
+        {
+            "id": 50,
+            "label": "Electorical-Store"
+        },
+        {
+            "id": 51,
+            "label": "Bookstores"
+        },
+        {
+            "id": 52,
+            "label": "Shoe-Stores"
+        },
+        {
+            "id": 53,
+            "label": "Shopping-Malls"
+        },
+        {
+            "id": 54,
+            "label": "Transportation Hubs"
+        },
+        {
+            "id": 55,
+            "label": "Train-Stations"
+        },
+        {
+            "id": 56,
+            "label": "Airports"
+        },
+        {
+            "id": 57,
+            "label": "Bus-Stops"
+        },
+        {
+            "id": 58,
+            "label": "Gas-Station"
+        },
+        {
+            "id": 59,
+            "label": "Parks and Recreation"
+        },
+        {
+            "id": 60,
+            "label": "Theaters"
+        },
+        {
+            "id": 61,
+            "label": "Concert-Halls"
+        },
+        {
+            "id": 62,
+            "label": "Sports-Stadiums"
+        },
+        {
+            "id": 63,
+            "label": "Parks-and-Recreation-areas"
+        },
+        {
+            "id": 64,
+            "label": "Tourist Attractions"
+        },
+        {
+            "id": 65,
+            "label": "Landmarks"
+        },
+        {
+            "id": 66,
+            "label": "Botanical-Gardens"
+        },
+        {
+            "id": 67,
+            "label": "Zoos-Aquariums"
+        },
+        {
+            "id": 68,
+            "label": "Museums"
+        },
+        {
+            "id": 69,
+            "label": "Art-Galleries"
+        },
+        {
+            "id": 70,
+            "label": "Cultural-Centers"
+        },
+        {
+            "id": 71,
+            "label": "Government and Civic Services"
+        },
+        {
+            "id": 72,
+            "label": "City-Halls"
+        },
+        {
+            "id": 73,
+            "label": "Post-Offices"
+        },
+        {
+            "id": 74,
+            "label": "Police-Stations"
+        },
+        {
+            "id": 75,
+            "label": "Court-Houses"
+        },
+        {
+            "id": 76,
+            "label": "Financial Services"
+        },
+        {
+            "id": 77,
+            "label": "Banks-ATMs"
+        },
+        {
+            "id": 78,
+            "label": "Events & Conferences"
+        },
+        {
+            "id": 79,
+            "label": "Events-Conferences-halls"
+        },
+        {
+            "id": 80,
+            "label": "Root Node"
+        }
+    ],
+    "links": [
+        {
+            "source": 0,
+            "target": 1
+        },
+        {
+            "source": 0,
+            "target": 2
+        },
+        {
+            "source": 0,
+            "target": 3
+        },
+        {
+            "source": 0,
+            "target": 4
+        },
+        {
+            "source": 0,
+            "target": 5
+        },
+        {
+            "source": 0,
+            "target": 6
+        },
+        {
+            "source": 0,
+            "target": 7
+        },
+        {
+            "source": 0,
+            "target": 8
+        },
+        {
+            "source": 0,
+            "target": 9
+        },
+        {
+            "source": 10,
+            "target": 11
+        },
+        {
+            "source": 10,
+            "target": 12
+        },
+        {
+            "source": 10,
+            "target": 13
+        },
+        {
+            "source": 14,
+            "target": 15
+        },
+        {
+            "source": 14,
+            "target": 16
+        },
+        {
+            "source": 14,
+            "target": 17
+        },
+        {
+            "source": 14,
+            "target": 18
+        },
+        {
+            "source": 19,
+            "target": 20
+        },
+        {
+            "source": 19,
+            "target": 21
+        },
+        {
+            "source": 19,
+            "target": 22
+        },
+        {
+            "source": 23,
+            "target": 24
+        },
+        {
+            "source": 23,
+            "target": 25
+        },
+        {
+            "source": 23,
+            "target": 26
+        },
+        {
+            "source": 23,
+            "target": 27
+        },
+        {
+            "source": 28,
+            "target": 29
+        },
+        {
+            "source": 28,
+            "target": 30
+        },
+        {
+            "source": 28,
+            "target": 31
+        },
+        {
+            "source": 32,
+            "target": 33
+        },
+        {
+            "source": 32,
+            "target": 34
+        },
+        {
+            "source": 32,
+            "target": 35
+        },
+        {
+            "source": 36,
+            "target": 37
+        },
+        {
+            "source": 36,
+            "target": 38
+        },
+        {
+            "source": 36,
+            "target": 39
+        },
+        {
+            "source": 40,
+            "target": 41
+        },
+        {
+            "source": 40,
+            "target": 42
+        },
+        {
+            "source": 43,
+            "target": 44
+        },
+        {
+            "source": 43,
+            "target": 45
+        },
+        {
+            "source": 43,
+            "target": 46
+        },
+        {
+            "source": 43,
+            "target": 47
+        },
+        {
+            "source": 43,
+            "target": 48
+        },
+        {
+            "source": 43,
+            "target": 49
+        },
+        {
+            "source": 43,
+            "target": 50
+        },
+        {
+            "source": 43,
+            "target": 51
+        },
+        {
+            "source": 43,
+            "target": 52
+        },
+        {
+            "source": 43,
+            "target": 53
+        },
+        {
+            "source": 54,
+            "target": 55
+        },
+        {
+            "source": 54,
+            "target": 56
+        },
+        {
+            "source": 54,
+            "target": 57
+        },
+        {
+            "source": 54,
+            "target": 58
+        },
+        {
+            "source": 59,
+            "target": 60
+        },
+        {
+            "source": 59,
+            "target": 61
+        },
+        {
+            "source": 59,
+            "target": 62
+        },
+        {
+            "source": 59,
+            "target": 63
+        },
+        {
+            "source": 64,
+            "target": 65
+        },
+        {
+            "source": 64,
+            "target": 66
+        },
+        {
+            "source": 64,
+            "target": 67
+        },
+        {
+            "source": 64,
+            "target": 68
+        },
+        {
+            "source": 64,
+            "target": 69
+        },
+        {
+            "source": 64,
+            "target": 70
+        },
+        {
+            "source": 71,
+            "target": 72
+        },
+        {
+            "source": 71,
+            "target": 73
+        },
+        {
+            "source": 71,
+            "target": 74
+        },
+        {
+            "source": 71,
+            "target": 75
+        },
+        {
+            "source": 76,
+            "target": 77
+        },
+        {
+            "source": 78,
+            "target": 79
+        },
+        {
+            "source": 80,
+            "target": 0
+        },
+        {
+            "source": 80,
+            "target": 10
+        },
+        {
+            "source": 80,
+            "target": 14
+        },
+        {
+            "source": 80,
+            "target": 19
+        },
+        {
+            "source": 80,
+            "target": 23
+        },
+        {
+            "source": 80,
+            "target": 28
+        },
+        {
+            "source": 80,
+            "target": 32
+        },
+        {
+            "source": 80,
+            "target": 36
+        },
+        {
+            "source": 80,
+            "target": 40
+        },
+        {
+            "source": 80,
+            "target": 43
+        },
+        {
+            "source": 80,
+            "target": 54
+        },
+        {
+            "source": 80,
+            "target": 59
+        },
+        {
+            "source": 80,
+            "target": 64
+        },
+        {
+            "source": 80,
+            "target": 71
+        },
+        {
+            "source": 80,
+            "target": 76
+        },
+        {
+            "source": 80,
+            "target": 78
+        }
+    ]
+}

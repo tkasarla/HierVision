@@ -1,0 +1,597 @@
+{
+    "directed": true,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "id": 0,
+            "label": "Agriculture land"
+        },
+        {
+            "id": 1,
+            "label": "Arable land"
+        },
+        {
+            "id": 2,
+            "label": "Dry land"
+        },
+        {
+            "id": 3,
+            "label": "Greenhouse"
+        },
+        {
+            "id": 4,
+            "label": "Paddy field"
+        },
+        {
+            "id": 5,
+            "label": "Terraced field"
+        },
+        {
+            "id": 6,
+            "label": "Grassland"
+        },
+        {
+            "id": 7,
+            "label": "Meadow"
+        },
+        {
+            "id": 8,
+            "label": "Woodland"
+        },
+        {
+            "id": 9,
+            "label": "Forest"
+        },
+        {
+            "id": 10,
+            "label": "Orchard"
+        },
+        {
+            "id": 11,
+            "label": "Commercial land"
+        },
+        {
+            "id": 12,
+            "label": "Commercial area"
+        },
+        {
+            "id": 13,
+            "label": "Industrial land"
+        },
+        {
+            "id": 14,
+            "label": "Factory area"
+        },
+        {
+            "id": 15,
+            "label": "Storage tank"
+        },
+        {
+            "id": 16,
+            "label": "Wastewater tank"
+        },
+        {
+            "id": 17,
+            "label": "Oil field"
+        },
+        {
+            "id": 18,
+            "label": "Works"
+        },
+        {
+            "id": 19,
+            "label": "Mining area"
+        },
+        {
+            "id": 20,
+            "label": "Mine"
+        },
+        {
+            "id": 21,
+            "label": "Quarry"
+        },
+        {
+            "id": 22,
+            "label": "Power station"
+        },
+        {
+            "id": 23,
+            "label": "Solar"
+        },
+        {
+            "id": 24,
+            "label": "Wind"
+        },
+        {
+            "id": 25,
+            "label": "Substation"
+        },
+        {
+            "id": 26,
+            "label": "Public service land"
+        },
+        {
+            "id": 27,
+            "label": "Leisure land"
+        },
+        {
+            "id": 28,
+            "label": "Swimming pool"
+        },
+        {
+            "id": 29,
+            "label": "Religious land"
+        },
+        {
+            "id": 30,
+            "label": "Church"
+        },
+        {
+            "id": 31,
+            "label": "Special land"
+        },
+        {
+            "id": 32,
+            "label": "Cemetery"
+        },
+        {
+            "id": 33,
+            "label": "Sports land"
+        },
+        {
+            "id": 34,
+            "label": "Basketball court"
+        },
+        {
+            "id": 35,
+            "label": "Tennis court"
+        },
+        {
+            "id": 36,
+            "label": "Baseball field"
+        },
+        {
+            "id": 37,
+            "label": "Ground track field"
+        },
+        {
+            "id": 38,
+            "label": "Golf course"
+        },
+        {
+            "id": 39,
+            "label": "Stadium"
+        },
+        {
+            "id": 40,
+            "label": "Residential land"
+        },
+        {
+            "id": 41,
+            "label": "Detached house"
+        },
+        {
+            "id": 42,
+            "label": "Apartment"
+        },
+        {
+            "id": 43,
+            "label": "Mobile home park"
+        },
+        {
+            "id": 44,
+            "label": "Transportation land"
+        },
+        {
+            "id": 45,
+            "label": "Airport area"
+        },
+        {
+            "id": 46,
+            "label": "Apron"
+        },
+        {
+            "id": 47,
+            "label": "Helipad"
+        },
+        {
+            "id": 48,
+            "label": "Runway"
+        },
+        {
+            "id": 49,
+            "label": "Highway area"
+        },
+        {
+            "id": 50,
+            "label": "Road"
+        },
+        {
+            "id": 51,
+            "label": "Viaduct"
+        },
+        {
+            "id": 52,
+            "label": "Bridge"
+        },
+        {
+            "id": 53,
+            "label": "Intersection"
+        },
+        {
+            "id": 54,
+            "label": "Parking lot"
+        },
+        {
+            "id": 55,
+            "label": "Roundabout"
+        },
+        {
+            "id": 56,
+            "label": "Port area"
+        },
+        {
+            "id": 57,
+            "label": "Pier"
+        },
+        {
+            "id": 58,
+            "label": "Railway area"
+        },
+        {
+            "id": 59,
+            "label": "Railway"
+        },
+        {
+            "id": 60,
+            "label": "Train station"
+        },
+        {
+            "id": 61,
+            "label": "Unutilized land"
+        },
+        {
+            "id": 62,
+            "label": "Rock land"
+        },
+        {
+            "id": 63,
+            "label": "Bare land"
+        },
+        {
+            "id": 64,
+            "label": "Ice land"
+        },
+        {
+            "id": 65,
+            "label": "Island"
+        },
+        {
+            "id": 66,
+            "label": "Desert"
+        },
+        {
+            "id": 67,
+            "label": "Sparse shrub land"
+        },
+        {
+            "id": 68,
+            "label": "Water area"
+        },
+        {
+            "id": 69,
+            "label": "Lake"
+        },
+        {
+            "id": 70,
+            "label": "River"
+        },
+        {
+            "id": 71,
+            "label": "Beach"
+        },
+        {
+            "id": 72,
+            "label": "Dam"
+        },
+        {
+            "id": 73,
+            "label": "Root Node"
+        }
+    ],
+    "links": [
+        {
+            "source": 0,
+            "target": 1
+        },
+        {
+            "source": 1,
+            "target": 2
+        },
+        {
+            "source": 1,
+            "target": 3
+        },
+        {
+            "source": 1,
+            "target": 4
+        },
+        {
+            "source": 1,
+            "target": 5
+        },
+        {
+            "source": 0,
+            "target": 6
+        },
+        {
+            "source": 6,
+            "target": 7
+        },
+        {
+            "source": 0,
+            "target": 8
+        },
+        {
+            "source": 8,
+            "target": 9
+        },
+        {
+            "source": 8,
+            "target": 10
+        },
+        {
+            "source": 11,
+            "target": 12
+        },
+        {
+            "source": 13,
+            "target": 14
+        },
+        {
+            "source": 14,
+            "target": 15
+        },
+        {
+            "source": 14,
+            "target": 16
+        },
+        {
+            "source": 14,
+            "target": 17
+        },
+        {
+            "source": 14,
+            "target": 18
+        },
+        {
+            "source": 13,
+            "target": 19
+        },
+        {
+            "source": 19,
+            "target": 20
+        },
+        {
+            "source": 19,
+            "target": 21
+        },
+        {
+            "source": 13,
+            "target": 22
+        },
+        {
+            "source": 22,
+            "target": 23
+        },
+        {
+            "source": 22,
+            "target": 24
+        },
+        {
+            "source": 22,
+            "target": 25
+        },
+        {
+            "source": 26,
+            "target": 27
+        },
+        {
+            "source": 27,
+            "target": 28
+        },
+        {
+            "source": 26,
+            "target": 29
+        },
+        {
+            "source": 29,
+            "target": 30
+        },
+        {
+            "source": 26,
+            "target": 31
+        },
+        {
+            "source": 31,
+            "target": 32
+        },
+        {
+            "source": 26,
+            "target": 33
+        },
+        {
+            "source": 33,
+            "target": 34
+        },
+        {
+            "source": 33,
+            "target": 35
+        },
+        {
+            "source": 33,
+            "target": 36
+        },
+        {
+            "source": 33,
+            "target": 37
+        },
+        {
+            "source": 33,
+            "target": 38
+        },
+        {
+            "source": 33,
+            "target": 39
+        },
+        {
+            "source": 40,
+            "target": 41
+        },
+        {
+            "source": 40,
+            "target": 42
+        },
+        {
+            "source": 40,
+            "target": 43
+        },
+        {
+            "source": 44,
+            "target": 45
+        },
+        {
+            "source": 45,
+            "target": 46
+        },
+        {
+            "source": 45,
+            "target": 47
+        },
+        {
+            "source": 45,
+            "target": 48
+        },
+        {
+            "source": 44,
+            "target": 49
+        },
+        {
+            "source": 49,
+            "target": 50
+        },
+        {
+            "source": 49,
+            "target": 51
+        },
+        {
+            "source": 49,
+            "target": 52
+        },
+        {
+            "source": 49,
+            "target": 53
+        },
+        {
+            "source": 49,
+            "target": 54
+        },
+        {
+            "source": 49,
+            "target": 55
+        },
+        {
+            "source": 44,
+            "target": 56
+        },
+        {
+            "source": 56,
+            "target": 57
+        },
+        {
+            "source": 44,
+            "target": 58
+        },
+        {
+            "source": 58,
+            "target": 59
+        },
+        {
+            "source": 58,
+            "target": 60
+        },
+        {
+            "source": 61,
+            "target": 62
+        },
+        {
+            "source": 61,
+            "target": 63
+        },
+        {
+            "source": 61,
+            "target": 64
+        },
+        {
+            "source": 61,
+            "target": 65
+        },
+        {
+            "source": 61,
+            "target": 66
+        },
+        {
+            "source": 61,
+            "target": 67
+        },
+        {
+            "source": 68,
+            "target": 69
+        },
+        {
+            "source": 68,
+            "target": 70
+        },
+        {
+            "source": 68,
+            "target": 71
+        },
+        {
+            "source": 68,
+            "target": 72
+        },
+        {
+            "source": 73,
+            "target": 0
+        },
+        {
+            "source": 73,
+            "target": 11
+        },
+        {
+            "source": 73,
+            "target": 13
+        },
+        {
+            "source": 73,
+            "target": 26
+        },
+        {
+            "source": 73,
+            "target": 40
+        },
+        {
+            "source": 73,
+            "target": 44
+        },
+        {
+            "source": 73,
+            "target": 61
+        },
+        {
+            "source": 73,
+            "target": 68
+        }
+    ]
+}
