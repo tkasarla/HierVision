@@ -29,6 +29,15 @@ def plot_hierarchy(json_file, datasetname="dataset"):
     labels = nx.get_node_attributes(G, 'label')
     print(f" got {len(labels)} labels for the nodes")
 
+    # Detect circular references
+    cycles = list(nx.simple_cycles(G))
+    if cycles:
+        print("Circular references detected!")
+        for cycle in cycles:
+            print(f"Cycle: {cycle}")
+    else:
+        print("No circular references detected.")
+
     # Generate a radial tree using Plotly's Sunburst chart
     ids = []
     labels_list = []
