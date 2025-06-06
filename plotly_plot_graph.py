@@ -1,3 +1,6 @@
+# Code to plot a sunburst graph from hierarchy.json files.
+# Requires pip or conda install libraries networkx, plotly and kaleido
+
 import json
 import networkx as nx
 import plotly.graph_objects as go
