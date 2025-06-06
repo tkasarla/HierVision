@@ -12,6 +12,8 @@ import warnings
 from loguru import logger
 from glob import glob
 
+from utils.graph_utils import load_graph_from_file
+
 warnings.filterwarnings("ignore")
 
 
@@ -62,6 +64,12 @@ class HierarchyFileCreator:
         "ade20k_coarse_to_fine",
         "ade20k_scene_cls_train",
         "ade20k_scene_cls_val",
+        "paco-ego4d-train",
+        "paco-ego4d-val",
+        "paco-ego4d-test",
+        "paco-lvis-train",
+        "paco-lvis-val",
+        "paco-lvis-test",
         "biotrove-balanced",
         "biotrove-lifestages",
         "biotrove-unseen",
@@ -181,6 +189,44 @@ class HierarchyFileCreator:
                         G.add_edge(parent, child)
         logger.info(f"Created graph for {self.dataset_name} with {G.number_of_nodes()} nodes.")
         return G
+    
+    def _paco(self, subdataset: str, split: str):
+        # the following function is taken from the PACO repository
+        def get_obj_and_part_anns(annotations):
+            """
+            Returns a map between an object annotation ID and 
+            (object annotation, list of part annotations) pair.
+            """
+            obj_ann_id_to_anns = {ann["id"]: (ann, []) for ann in annotations if ann["id"] == ann["obj_ann_id"]}
+            for ann in annotations:
+                if ann["id"] != ann["obj_ann_id"]:
+                    obj_ann_id_to_anns[ann["obj_ann_id"]][1].append(ann)
+            return obj_ann_id_to_anns
+        
+        assert subdataset in ["ego4d", "lvis"], f"Subdataset {subdataset} is not supported."
+        
+        with open(os.path.join(self.dataset_path, "annotations", f"paco_{subdataset}_v1_{split}.json"), 'r') as f:
+            ds_annotations = json.load(f)
+
+        # create mappings for whole-part relationships
+        cat_id_to_name = {d["id"]: d["name"] for d in ds_annotations["categories"]}
+        obj_ann_id_to_anns = get_obj_and_part_anns(ds_annotations["annotations"])
+
+        # create a directed graph
+        G = nx.DiGraph()
+        for ann in ds_annotations["annotations"]:
+            anns = obj_ann_id_to_anns[ann["obj_ann_id"]] # (object annotation, list of part annotations)
+            parent_id = anns[0]["category_id"]
+            parent = cat_id_to_name[parent_id]
+            G.add_node(parent_id, label=parent)
+            for part_ann in anns[1]:
+                child_id = part_ann["category_id"]
+                child = cat_id_to_name[child_id]
+                G.add_node(child_id, label=child)
+                if not G.has_edge(parent_id, child_id):
+                    G.add_edge(parent_id, child_id)
+        logger.info(f"Created graph for {self.dataset_name}/{subdataset}/{split} with {G.number_of_nodes()} nodes.")
+        return G
 
     def _biotrove(self, split: str):
         cols = ["kingdom","phylum","class","order","family","genus","species"]
@@ -235,8 +281,27 @@ class HierarchyFileCreator:
 
         logger.info(f"Created graph for {self.dataset_name} with {G.number_of_nodes()} nodes.")
         return G
-    
+
+    def _map_train_eval_ids(self, G):
+        logger.info("Using train ids to assign level ids for evaluation datasets.")
+        dataset_folder = os.path.basename(self.dataset_path)
+        train_split = "-".join(self.dataset_name.split("-")[:-1]) + "-train"
+        train_graph, _ = load_graph_from_file(os.path.join("metadata", dataset_folder, train_split, "hierarchy.json"))
+        train_labels_to_ids = {data['label']:node for node, data in train_graph.nodes(data=True)}
+        train_labels_to_ids.pop(self._root_label, None)  # Remove root label if exists
+        current_labels_to_ids = {data['label']:node for node, data in G.nodes(data=True)}
+        ids_mapping = {current_labels_to_ids[label]: train_labels_to_ids[label] for label in current_labels_to_ids if label in train_labels_to_ids}
+        ids_mapping[current_labels_to_ids[self._root_label]] = current_labels_to_ids[self._root_label]  # Ensure root node maps to itself
+        G = nx.relabel_nodes(G, ids_mapping, copy=True)
+        logger.info(f"Assigned {len(ids_mapping)} level ids based on training dataset.")
+
+        leaves = [n for n in G.nodes if G.out_degree(n) == 0]
+        return G, len(leaves)
+
     def _assign_level_ids(self, G):
+        if "val" in self.dataset_name or "test" in self.dataset_name:
+            return self._map_train_eval_ids(G)
+        
         logger.info("Assigning level ids to nodes based on their hierarchy levels.")
 
         # Map to store assigned integer ids
@@ -289,11 +354,12 @@ class HierarchyFileCreator:
             return G
 
         # Add a virtual root node
-        G.add_node("root", label=self._root_label)
+        root_id = G.number_of_nodes()
+        G.add_node(root_id, label=self._root_label)
 
         # Connect root to all current root candidates
         for node in roots:
-            G.add_edge("root", node)
+            G.add_edge(root_id, node)
         logger.info(f"Virtual root added with {G.number_of_nodes()} total nodes.")
         return G
     
@@ -447,8 +513,9 @@ class HierarchyFileCreator:
             G = self._rare_species()
         elif self.dataset_name == "imagenet-ood":
             raise NotImplementedError("Hierarchy creation for imagenet-ood is not implemented.")
-        elif self.dataset_name == "paco":
-            raise NotImplementedError("Hierarchy creation for PACO is not implemented.")
+        elif "paco" in self.dataset_name:
+            subdataset, split = self.dataset_name.split("-")[1:]
+            G = self._paco(subdataset, split)
         else:
             raise NotImplementedError(f"Hierarchy creation for {self.dataset_name} is not implemented.")
 
