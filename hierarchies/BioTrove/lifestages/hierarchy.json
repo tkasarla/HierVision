@@ -1,0 +1,157 @@
+{
+    "directed": true,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "label": "luna",
+            "id": 0
+        },
+        {
+            "label": "axyridis",
+            "id": 1
+        },
+        {
+            "label": "plexippus",
+            "id": 2
+        },
+        {
+            "label": "convergens",
+            "id": 3
+        },
+        {
+            "label": "machaon",
+            "id": 4
+        },
+        {
+            "label": "Hippodamia",
+            "id": 5
+        },
+        {
+            "label": "Harmonia",
+            "id": 6
+        },
+        {
+            "label": "Papilio",
+            "id": 7
+        },
+        {
+            "label": "Danaus",
+            "id": 8
+        },
+        {
+            "label": "Actias",
+            "id": 9
+        },
+        {
+            "label": "Coccinellidae",
+            "id": 10
+        },
+        {
+            "label": "Papilionidae",
+            "id": 11
+        },
+        {
+            "label": "Nymphalidae",
+            "id": 12
+        },
+        {
+            "label": "Saturniidae",
+            "id": 13
+        },
+        {
+            "label": "Coleoptera",
+            "id": 14
+        },
+        {
+            "label": "Lepidoptera",
+            "id": 15
+        },
+        {
+            "label": "Insecta",
+            "id": 16
+        },
+        {
+            "label": "Arthropoda",
+            "id": 17
+        },
+        {
+            "label": "Animalia",
+            "id": 18
+        }
+    ],
+    "links": [
+        {
+            "source": 18,
+            "target": 17
+        },
+        {
+            "source": 17,
+            "target": 16
+        },
+        {
+            "source": 16,
+            "target": 15
+        },
+        {
+            "source": 16,
+            "target": 14
+        },
+        {
+            "source": 15,
+            "target": 13
+        },
+        {
+            "source": 15,
+            "target": 12
+        },
+        {
+            "source": 15,
+            "target": 11
+        },
+        {
+            "source": 13,
+            "target": 9
+        },
+        {
+            "source": 9,
+            "target": 0
+        },
+        {
+            "source": 14,
+            "target": 10
+        },
+        {
+            "source": 10,
+            "target": 6
+        },
+        {
+            "source": 10,
+            "target": 5
+        },
+        {
+            "source": 6,
+            "target": 1
+        },
+        {
+            "source": 12,
+            "target": 8
+        },
+        {
+            "source": 8,
+            "target": 2
+        },
+        {
+            "source": 5,
+            "target": 3
+        },
+        {
+            "source": 11,
+            "target": 7
+        },
+        {
+            "source": 7,
+            "target": 4
+        }
+    ]
+}
