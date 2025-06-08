@@ -1,0 +1,909 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "id": 0,
+      "label": "Root Node"
+    },
+    {
+      "id": 1,
+      "label": "FC"
+    },
+    {
+      "id": 2,
+      "label": "Rice"
+    },
+    {
+      "id": 3,
+      "label": "rice leaf roller"
+    },
+    {
+      "id": 4,
+      "label": "rice leaf caterpillar"
+    },
+    {
+      "id": 5,
+      "label": "paddy stem maggot"
+    },
+    {
+      "id": 6,
+      "label": "asiatic rice borer"
+    },
+    {
+      "id": 7,
+      "label": "yellow rice borer"
+    },
+    {
+      "id": 8,
+      "label": "rice gall midge"
+    },
+    {
+      "id": 9,
+      "label": "Rice Stemfly"
+    },
+    {
+      "id": 10,
+      "label": "brown plant hopper"
+    },
+    {
+      "id": 11,
+      "label": "white backed plant hopper"
+    },
+    {
+      "id": 12,
+      "label": "small brown plant hopper"
+    },
+    {
+      "id": 13,
+      "label": "rice water weevil"
+    },
+    {
+      "id": 14,
+      "label": "rice leafhopper"
+    },
+    {
+      "id": 15,
+      "label": "grain spreader thrips"
+    },
+    {
+      "id": 16,
+      "label": "rice shell pest"
+    },
+    {
+      "id": 17,
+      "label": "Corn"
+    },
+    {
+      "id": 18,
+      "label": "grub"
+    },
+    {
+      "id": 19,
+      "label": "mole cricket"
+    },
+    {
+      "id": 20,
+      "label": "wireworm"
+    },
+    {
+      "id": 21,
+      "label": "white margined moth"
+    },
+    {
+      "id": 22,
+      "label": "black cutworm"
+    },
+    {
+      "id": 23,
+      "label": "large cutworm"
+    },
+    {
+      "id": 24,
+      "label": "yellow cutworm"
+    },
+    {
+      "id": 25,
+      "label": "red spider"
+    },
+    {
+      "id": 26,
+      "label": "corn borer"
+    },
+    {
+      "id": 27,
+      "label": "army worm"
+    },
+    {
+      "id": 28,
+      "label": "aphids"
+    },
+    {
+      "id": 29,
+      "label": "Potosiabre vitarsis"
+    },
+    {
+      "id": 30,
+      "label": "peach borer"
+    },
+    {
+      "id": 31,
+      "label": "Wheat"
+    },
+    {
+      "id": 32,
+      "label": "english grain aphid"
+    },
+    {
+      "id": 33,
+      "label": "green bug"
+    },
+    {
+      "id": 34,
+      "label": "bird cherry-oataphid"
+    },
+    {
+      "id": 35,
+      "label": "wheat blossom midge"
+    },
+    {
+      "id": 36,
+      "label": "penthaleus major"
+    },
+    {
+      "id": 37,
+      "label": "longlegged spider mite"
+    },
+    {
+      "id": 38,
+      "label": "wheat phloeothrips"
+    },
+    {
+      "id": 39,
+      "label": "wheat sawfly"
+    },
+    {
+      "id": 40,
+      "label": "cerodonta denticornis"
+    },
+    {
+      "id": 41,
+      "label": "Beet"
+    },
+    {
+      "id": 42,
+      "label": "beet fly"
+    },
+    {
+      "id": 43,
+      "label": "flea beetle"
+    },
+    {
+      "id": 44,
+      "label": "cabbage army worm"
+    },
+    {
+      "id": 45,
+      "label": "beet army worm"
+    },
+    {
+      "id": 46,
+      "label": "Beet spot flies"
+    },
+    {
+      "id": 47,
+      "label": "meadow moth"
+    },
+    {
+      "id": 48,
+      "label": "beet weevil"
+    },
+    {
+      "id": 49,
+      "label": "sericaorient alismots chulsky"
+    },
+    {
+      "id": 50,
+      "label": "Alfalfa"
+    },
+    {
+      "id": 51,
+      "label": "alfalfa weevil"
+    },
+    {
+      "id": 52,
+      "label": "flax budworm"
+    },
+    {
+      "id": 53,
+      "label": "alfalfa plant bug"
+    },
+    {
+      "id": 54,
+      "label": "tarnished plant bug"
+    },
+    {
+      "id": 55,
+      "label": "Locustoidea"
+    },
+    {
+      "id": 56,
+      "label": "lytta polita"
+    },
+    {
+      "id": 57,
+      "label": "legume blister beetle"
+    },
+    {
+      "id": 58,
+      "label": "blister beetle"
+    },
+    {
+      "id": 59,
+      "label": "therioaphis maculata Buckton"
+    },
+    {
+      "id": 60,
+      "label": "odontothrips loti"
+    },
+    {
+      "id": 61,
+      "label": "Thrips"
+    },
+    {
+      "id": 62,
+      "label": "alfalfa seed chalcid"
+    },
+    {
+      "id": 63,
+      "label": "Pieris canidia"
+    },
+    {
+      "id": 64,
+      "label": "EC"
+    },
+    {
+      "id": 65,
+      "label": "Vitis"
+    },
+    {
+      "id": 66,
+      "label": "Apolygus lucorum"
+    },
+    {
+      "id": 67,
+      "label": "Limacodidae"
+    },
+    {
+      "id": 68,
+      "label": "Viteus vitifoliae"
+    },
+    {
+      "id": 69,
+      "label": "Colomerus vitis"
+    },
+    {
+      "id": 70,
+      "label": "Brevipoalpus lewisi McGregor"
+    },
+    {
+      "id": 71,
+      "label": "oides decempunctata"
+    },
+    {
+      "id": 72,
+      "label": "Polyphagotars onemus latus"
+    },
+    {
+      "id": 73,
+      "label": "Pseudococcus comstocki Kuwana"
+    },
+    {
+      "id": 74,
+      "label": "parathrene regalis"
+    },
+    {
+      "id": 75,
+      "label": "Ampelophaga"
+    },
+    {
+      "id": 76,
+      "label": "Lycorma delicatula"
+    },
+    {
+      "id": 77,
+      "label": "Xylotrechus"
+    },
+    {
+      "id": 78,
+      "label": "Cicadella viridis"
+    },
+    {
+      "id": 79,
+      "label": "Miridae"
+    },
+    {
+      "id": 80,
+      "label": "Trialeurodes vaporariorum"
+    },
+    {
+      "id": 81,
+      "label": "Erythroneura apicalis"
+    },
+    {
+      "id": 82,
+      "label": "Citrus"
+    },
+    {
+      "id": 83,
+      "label": "Papilio xuthus"
+    },
+    {
+      "id": 84,
+      "label": "Panonchus citri McGregor"
+    },
+    {
+      "id": 85,
+      "label": "Phyllocoptes oleiverus ashmead"
+    },
+    {
+      "id": 86,
+      "label": "Icerya purchasi Maskell"
+    },
+    {
+      "id": 87,
+      "label": "Unaspis yanonensis"
+    },
+    {
+      "id": 88,
+      "label": "Ceroplastes rubens"
+    },
+    {
+      "id": 89,
+      "label": "Chrysomphalus aonidum"
+    },
+    {
+      "id": 90,
+      "label": "Parlatoria zizyphus Lucus"
+    },
+    {
+      "id": 91,
+      "label": "Nipaecoccus vastalor"
+    },
+    {
+      "id": 92,
+      "label": "Aleurocanthus spiniferus"
+    },
+    {
+      "id": 93,
+      "label": "Tetradacus c Bactrocera minax"
+    },
+    {
+      "id": 94,
+      "label": "Dacus dorsalis(Hendel)"
+    },
+    {
+      "id": 95,
+      "label": "Bactrocera tsuneonis"
+    },
+    {
+      "id": 96,
+      "label": "Prodenia litura"
+    },
+    {
+      "id": 97,
+      "label": "Adristyrannus"
+    },
+    {
+      "id": 98,
+      "label": "Phyllocnistis citrella Stainton"
+    },
+    {
+      "id": 99,
+      "label": "Toxoptera citricidus"
+    },
+    {
+      "id": 100,
+      "label": "Toxoptera aurantii"
+    },
+    {
+      "id": 101,
+      "label": "Aphis citricola Vander Goot"
+    },
+    {
+      "id": 102,
+      "label": "Mango"
+    },
+    {
+      "id": 103,
+      "label": "Scirtothrips dorsalis Hood"
+    },
+    {
+      "id": 104,
+      "label": "Dasineura sp"
+    },
+    {
+      "id": 105,
+      "label": "Lawana imitata Melichar"
+    },
+    {
+      "id": 106,
+      "label": "Salurnis marginella Guerr"
+    },
+    {
+      "id": 107,
+      "label": "Deporaus marginatus Pascoe"
+    },
+    {
+      "id": 108,
+      "label": "Chlumetia transversa"
+    },
+    {
+      "id": 109,
+      "label": "Mango flat beak leafhopper"
+    },
+    {
+      "id": 110,
+      "label": "Rhytidodera bowrinii white"
+    },
+    {
+      "id": 111,
+      "label": "Sternochetus frigidus"
+    },
+    {
+      "id": 112,
+      "label": "Cicadellidae"
+    }
+  ],
+  "links": [
+    {
+      "source": 0,
+      "target": 1
+    },
+    {
+      "source": 1,
+      "target": 2
+    },
+    {
+      "source": 2,
+      "target": 3
+    },
+    {
+      "source": 2,
+      "target": 4
+    },
+    {
+      "source": 2,
+      "target": 5
+    },
+    {
+      "source": 2,
+      "target": 6
+    },
+    {
+      "source": 2,
+      "target": 7
+    },
+    {
+      "source": 2,
+      "target": 8
+    },
+    {
+      "source": 2,
+      "target": 9
+    },
+    {
+      "source": 2,
+      "target": 10
+    },
+    {
+      "source": 2,
+      "target": 11
+    },
+    {
+      "source": 2,
+      "target": 12
+    },
+    {
+      "source": 2,
+      "target": 13
+    },
+    {
+      "source": 2,
+      "target": 14
+    },
+    {
+      "source": 2,
+      "target": 15
+    },
+    {
+      "source": 2,
+      "target": 16
+    },
+    {
+      "source": 1,
+      "target": 17
+    },
+    {
+      "source": 17,
+      "target": 18
+    },
+    {
+      "source": 17,
+      "target": 19
+    },
+    {
+      "source": 17,
+      "target": 20
+    },
+    {
+      "source": 17,
+      "target": 21
+    },
+    {
+      "source": 17,
+      "target": 22
+    },
+    {
+      "source": 17,
+      "target": 23
+    },
+    {
+      "source": 17,
+      "target": 24
+    },
+    {
+      "source": 17,
+      "target": 25
+    },
+    {
+      "source": 17,
+      "target": 26
+    },
+    {
+      "source": 17,
+      "target": 27
+    },
+    {
+      "source": 17,
+      "target": 28
+    },
+    {
+      "source": 17,
+      "target": 29
+    },
+    {
+      "source": 17,
+      "target": 30
+    },
+    {
+      "source": 1,
+      "target": 31
+    },
+    {
+      "source": 31,
+      "target": 32
+    },
+    {
+      "source": 31,
+      "target": 33
+    },
+    {
+      "source": 31,
+      "target": 34
+    },
+    {
+      "source": 31,
+      "target": 35
+    },
+    {
+      "source": 31,
+      "target": 36
+    },
+    {
+      "source": 31,
+      "target": 37
+    },
+    {
+      "source": 31,
+      "target": 38
+    },
+    {
+      "source": 31,
+      "target": 39
+    },
+    {
+      "source": 31,
+      "target": 40
+    },
+    {
+      "source": 1,
+      "target": 41
+    },
+    {
+      "source": 41,
+      "target": 42
+    },
+    {
+      "source": 41,
+      "target": 43
+    },
+    {
+      "source": 41,
+      "target": 44
+    },
+    {
+      "source": 41,
+      "target": 45
+    },
+    {
+      "source": 41,
+      "target": 46
+    },
+    {
+      "source": 41,
+      "target": 47
+    },
+    {
+      "source": 41,
+      "target": 48
+    },
+    {
+      "source": 41,
+      "target": 49
+    },
+    {
+      "source": 1,
+      "target": 50
+    },
+    {
+      "source": 50,
+      "target": 51
+    },
+    {
+      "source": 50,
+      "target": 52
+    },
+    {
+      "source": 50,
+      "target": 53
+    },
+    {
+      "source": 50,
+      "target": 54
+    },
+    {
+      "source": 50,
+      "target": 55
+    },
+    {
+      "source": 50,
+      "target": 56
+    },
+    {
+      "source": 50,
+      "target": 57
+    },
+    {
+      "source": 50,
+      "target": 58
+    },
+    {
+      "source": 50,
+      "target": 59
+    },
+    {
+      "source": 50,
+      "target": 60
+    },
+    {
+      "source": 50,
+      "target": 61
+    },
+    {
+      "source": 50,
+      "target": 62
+    },
+    {
+      "source": 50,
+      "target": 63
+    },
+    {
+      "source": 0,
+      "target": 64
+    },
+    {
+      "source": 64,
+      "target": 65
+    },
+    {
+      "source": 65,
+      "target": 66
+    },
+    {
+      "source": 65,
+      "target": 67
+    },
+    {
+      "source": 65,
+      "target": 68
+    },
+    {
+      "source": 65,
+      "target": 69
+    },
+    {
+      "source": 65,
+      "target": 70
+    },
+    {
+      "source": 65,
+      "target": 71
+    },
+    {
+      "source": 65,
+      "target": 72
+    },
+    {
+      "source": 65,
+      "target": 73
+    },
+    {
+      "source": 65,
+      "target": 74
+    },
+    {
+      "source": 65,
+      "target": 75
+    },
+    {
+      "source": 65,
+      "target": 76
+    },
+    {
+      "source": 65,
+      "target": 77
+    },
+    {
+      "source": 65,
+      "target": 78
+    },
+    {
+      "source": 65,
+      "target": 79
+    },
+    {
+      "source": 65,
+      "target": 80
+    },
+    {
+      "source": 65,
+      "target": 81
+    },
+    {
+      "source": 64,
+      "target": 82
+    },
+    {
+      "source": 82,
+      "target": 83
+    },
+    {
+      "source": 82,
+      "target": 84
+    },
+    {
+      "source": 82,
+      "target": 85
+    },
+    {
+      "source": 82,
+      "target": 86
+    },
+    {
+      "source": 82,
+      "target": 87
+    },
+    {
+      "source": 82,
+      "target": 88
+    },
+    {
+      "source": 82,
+      "target": 89
+    },
+    {
+      "source": 82,
+      "target": 90
+    },
+    {
+      "source": 82,
+      "target": 91
+    },
+    {
+      "source": 82,
+      "target": 92
+    },
+    {
+      "source": 82,
+      "target": 93
+    },
+    {
+      "source": 82,
+      "target": 94
+    },
+    {
+      "source": 82,
+      "target": 95
+    },
+    {
+      "source": 82,
+      "target": 96
+    },
+    {
+      "source": 82,
+      "target": 97
+    },
+    {
+      "source": 82,
+      "target": 98
+    },
+    {
+      "source": 82,
+      "target": 99
+    },
+    {
+      "source": 82,
+      "target": 100
+    },
+    {
+      "source": 82,
+      "target": 101
+    },
+    {
+      "source": 64,
+      "target": 102
+    },
+    {
+      "source": 102,
+      "target": 103
+    },
+    {
+      "source": 102,
+      "target": 104
+    },
+    {
+      "source": 102,
+      "target": 105
+    },
+    {
+      "source": 102,
+      "target": 106
+    },
+    {
+      "source": 102,
+      "target": 107
+    },
+    {
+      "source": 102,
+      "target": 108
+    },
+    {
+      "source": 102,
+      "target": 109
+    },
+    {
+      "source": 102,
+      "target": 110
+    },
+    {
+      "source": 102,
+      "target": 111
+    },
+    {
+      "source": 102,
+      "target": 112
+    }
+  ]
+}
