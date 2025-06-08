@@ -1,0 +1,131 @@
+{
+    "directed": true,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "id": 0,
+            "label": "No Finding"
+        },
+        {
+            "id": 1,
+            "label": "Enlarged Cardiom"
+        },
+        {
+            "id": 2,
+            "label": "Cardiomegaly"
+        },
+        {
+            "id": 3,
+            "label": "Lung Lesion"
+        },
+        {
+            "id": 4,
+            "label": "Lung Opacity"
+        },
+        {
+            "id": 5,
+            "label": "Edema"
+        },
+        {
+            "id": 6,
+            "label": "Consolidation"
+        },
+        {
+            "id": 7,
+            "label": "Pneumonia"
+        },
+        {
+            "id": 8,
+            "label": "Atelectasis"
+        },
+        {
+            "id": 9,
+            "label": "Pneumothorax"
+        },
+        {
+            "id": 10,
+            "label": "Pleural Effusion"
+        },
+        {
+            "id": 11,
+            "label": "Pleural Other"
+        },
+        {
+            "id": 12,
+            "label": "Fracture"
+        },
+        {
+            "id": 13,
+            "label": "Support Devices"
+        },
+        {
+            "id": 14,
+            "label": "root"
+        }
+    ],
+    "links": [
+        {
+            "source": 14,
+            "target": 0
+        },
+        {
+            "source": 14,
+            "target": 1
+        },
+        {
+            "source": 14,
+            "target": 13
+        },
+        {
+            "source": 14,
+            "target": 12
+        },
+        {
+            "source": 14,
+            "target": 4
+        },
+        {
+            "source": 14,
+            "target": 11
+        },
+        {
+            "source": 14,
+            "target": 10
+        },
+        {
+            "source": 14,
+            "target": 9
+        },
+        {
+            "source": 1,
+            "target": 2
+        },
+        {
+            "source": 4,
+            "target": 5
+        },
+        {
+            "source": 4,
+            "target": 6
+        },
+        {
+            "source": 4,
+            "target": 7
+        },
+        {
+            "source": 4,
+            "target": 3
+        },
+        {
+            "source": 4,
+            "target": 8
+        }
+        ,
+        {
+            "source": 6,
+            "target": 7
+        }
+    ]
+
+}
