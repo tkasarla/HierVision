@@ -1,0 +1,317 @@
+{
+    "directed": true,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "label": "road",
+            "id": 0
+        },
+        {
+            "label": "sidewalk",
+            "id": 1
+        },
+        {
+            "label": "parking",
+            "id": 2
+        },
+        {
+            "label": "rail track",
+            "id": 3
+        },
+        {
+            "label": "person",
+            "id": 4
+        },
+        {
+            "label": "rider",
+            "id": 5
+        },
+        {
+            "label": "car",
+            "id": 6
+        },
+        {
+            "label": "truck",
+            "id": 7
+        },
+        {
+            "label": "bus",
+            "id": 8
+        },
+        {
+            "label": "on rails",
+            "id": 9
+        },
+        {
+            "label": "motorcycle",
+            "id": 10
+        },
+        {
+            "label": "bicycle",
+            "id": 11
+        },
+        {
+            "label": "caravan",
+            "id": 12
+        },
+        {
+            "label": "trailer",
+            "id": 13
+        },
+        {
+            "label": "building",
+            "id": 14
+        },
+        {
+            "label": "wall",
+            "id": 15
+        },
+        {
+            "label": "fence",
+            "id": 16
+        },
+        {
+            "label": "guard rail",
+            "id": 17
+        },
+        {
+            "label": "bridge",
+            "id": 18
+        },
+        {
+            "label": "tunnel",
+            "id": 19
+        },
+        {
+            "label": "pole",
+            "id": 20
+        },
+        {
+            "label": "pole group",
+            "id": 21
+        },
+        {
+            "label": "traffic sign",
+            "id": 22
+        },
+        {
+            "label": "traffic light",
+            "id": 23
+        },
+        {
+            "label": "vegetation",
+            "id": 24
+        },
+        {
+            "label": "terrain",
+            "id": 25
+        },
+        {
+            "label": "sky",
+            "id": 26
+        },
+        {
+            "label": "ground",
+            "id": 27
+        },
+        {
+            "label": "dynamic",
+            "id": 28
+        },
+        {
+            "label": "static",
+            "id": 29
+        },
+        {
+            "label": "flat",
+            "id": 30
+        },
+        {
+            "label": "human",
+            "id": 31
+        },
+        {
+            "label": "vehicle",
+            "id": 32
+        },
+        {
+            "label": "construction",
+            "id": 33
+        },
+        {
+            "label": "object",
+            "id": 34
+        },
+        {
+            "label": "nature",
+            "id": 35
+        },
+        {
+            "label": "sky",
+            "id": 36
+        },
+        {
+            "label": "void",
+            "id": 37
+        },
+        {
+            "label": "root",
+            "id": 38
+        }
+    ],
+    "links": [
+        {
+            "source": 30,
+            "target": 0
+        },
+        {
+            "source": 30,
+            "target": 1
+        },
+        {
+            "source": 30,
+            "target": 2
+        },
+        {
+            "source": 30,
+            "target": 3
+        },
+        {
+            "source": 31,
+            "target": 4
+        },
+        {
+            "source": 31,
+            "target": 5
+        },
+        {
+            "source": 32,
+            "target": 6
+        },
+        {
+            "source": 32,
+            "target": 7
+        },
+        {
+            "source": 32,
+            "target": 8
+        },
+        {
+            "source": 32,
+            "target": 9
+        },
+        {
+            "source": 32,
+            "target": 10
+        },
+        {
+            "source": 32,
+            "target": 11
+        },
+        {
+            "source": 32,
+            "target": 12
+        },
+        {
+            "source": 32,
+            "target": 13
+        },
+        {
+            "source": 33,
+            "target": 14
+        },
+        {
+            "source": 33,
+            "target": 15
+        },
+        {
+            "source": 33,
+            "target": 16
+        },
+        {
+            "source": 33,
+            "target": 17
+        },
+        {
+            "source": 33,
+            "target": 18
+        },
+        {
+            "source": 33,
+            "target": 19
+        },
+        {
+            "source": 34,
+            "target": 20
+        },
+        {
+            "source": 34,
+            "target": 21
+        },
+        {
+            "source": 34,
+            "target": 22
+        },
+        {
+            "source": 34,
+            "target": 23
+        },
+        {
+            "source": 35,
+            "target": 24
+        },
+        {
+            "source": 35,
+            "target": 25
+        },
+        {
+            "source": 36,
+            "target": 26
+        },
+        {
+            "source": 37,
+            "target": 27
+        },
+        {
+            "source": 37,
+            "target": 28
+        },
+        {
+            "source": 37,
+            "target": 29
+        },
+        {
+            "source": 38,
+            "target": 30
+        },
+        {
+            "source": 38,
+            "target": 31
+        },
+        {
+            "source": 38,
+            "target": 32
+        },
+        {
+            "source": 38,
+            "target": 33
+        },
+        {
+            "source": 38,
+            "target": 34
+        },
+        {
+            "source": 38,
+            "target": 35
+        },
+        {
+            "source": 38,
+            "target": 36
+        },
+        {
+            "source": 38,
+            "target": 37
+        }
+    ]
+}
