@@ -1,0 +1,213 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "id": 0,
+      "label": "Walking, Running, Jumping"
+    },
+    {
+      "id": 1,
+      "label": "Walking"
+    },
+    {
+      "id": 2,
+      "label": "Locomation on the spot"
+    },
+    {
+      "id": 3,
+      "label": "Locomotion"
+    },
+    {
+      "id": 4,
+      "label": "Locomotion with weights"
+    },
+    {
+      "id": 5,
+      "label": "Grabbing and Depositing"
+    },
+    {
+      "id": 6,
+      "label": "Table and floor"
+    },
+    {
+      "id": 7,
+      "label": "Shelf (while walking)"
+    },
+    {
+      "id": 8,
+      "label": "Shelf (while standing)"
+    },
+    {
+      "id": 9,
+      "label": "Sports"
+    },
+    {
+      "id": 10,
+      "label": "Dancing"
+    },
+    {
+      "id": 11,
+      "label": "Kicking and punching"
+    },
+    {
+      "id": 12,
+      "label": "Throwing"
+    },
+    {
+      "id": 13,
+      "label": "Rotating arms"
+    },
+    {
+      "id": 14,
+      "label": "Workout"
+    },
+    {
+      "id": 15,
+      "label": "Workout I"
+    },
+    {
+      "id": 16,
+      "label": "Workout II"
+    },
+    {
+      "id": 17,
+      "label": "Rope skipping"
+    },
+    {
+      "id": 18,
+      "label": "Badminton"
+    },
+    {
+      "id": 19,
+      "label": "Sitting and Lying Down"
+    },
+    {
+      "id": 20,
+      "label": "Chair, table, floor"
+    },
+    {
+      "id": 21,
+      "label": "Miscellaneous Motions"
+    },
+    {
+      "id": 22,
+      "label": "Clapping and waving"
+    },
+    {
+      "id": 23,
+      "label": "Shouting and tying shoes"
+    },
+    {
+      "id": 24,
+      "label": "Variations of locomotion"
+    },
+    {
+      "id": 25,
+      "label": "Root Node"
+    }
+  ],
+  "links": [
+    {
+      "source": 0,
+      "target": 1
+    },
+    {
+      "source": 0,
+      "target": 2
+    },
+    {
+      "source": 0,
+      "target": 3
+    },
+    {
+      "source": 0,
+      "target": 4
+    },
+    {
+      "source": 5,
+      "target": 6
+    },
+    {
+      "source": 5,
+      "target": 7
+    },
+    {
+      "source": 5,
+      "target": 8
+    },
+    {
+      "source": 9,
+      "target": 10
+    },
+    {
+      "source": 9,
+      "target": 11
+    },
+    {
+      "source": 9,
+      "target": 12
+    },
+    {
+      "source": 9,
+      "target": 13
+    },
+    {
+      "source": 9,
+      "target": 14
+    },
+    {
+      "source": 9,
+      "target": 15
+    },
+    {
+      "source": 9,
+      "target": 16
+    },
+    {
+      "source": 9,
+      "target": 17
+    },
+    {
+      "source": 9,
+      "target": 18
+    },
+    {
+      "source": 19,
+      "target": 20
+    },
+    {
+      "source": 21,
+      "target": 22
+    },
+    {
+      "source": 21,
+      "target": 23
+    },
+    {
+      "source": 21,
+      "target": 24
+    },
+    {
+      "source": 25,
+      "target": 0
+    },
+    {
+      "source": 25,
+      "target": 5
+    },
+    {
+      "source": 25,
+      "target": 9
+    },
+    {
+      "source": 25,
+      "target": 19
+    },
+    {
+      "source": 25,
+      "target": 21
+    }
+  ]
+}
