@@ -1,0 +1,693 @@
+{
+    "directed": true,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "label": "root",
+            "id": 85
+        },
+        {
+            "label": "Order_Carnivora",
+            "id": 50
+        },
+        {
+            "label": "Family_Canidae",
+            "id": 51
+        },
+        {
+            "label": "wolf",
+            "id": 31
+        },
+        {
+            "label": "fox",
+            "id": 21
+        },
+        {
+            "label": "german+shepherd",
+            "id": 7
+        },
+        {
+            "label": "dalmatian",
+            "id": 4
+        },
+        {
+            "label": "chihuahua",
+            "id": 32
+        },
+        {
+            "label": "collie",
+            "id": 45
+        },
+        {
+            "label": "Family_Felidae",
+            "id": 52
+        },
+        {
+            "label": "tiger",
+            "id": 12
+        },
+        {
+            "label": "lion",
+            "id": 42
+        },
+        {
+            "label": "leopard",
+            "id": 14
+        },
+        {
+            "label": "persian+cat",
+            "id": 5
+        },
+        {
+            "label": "siamese+cat",
+            "id": 9
+        },
+        {
+            "label": "bobcat",
+            "id": 40
+        },
+        {
+            "label": "Family_Ursidae",
+            "id": 53
+        },
+        {
+            "label": "grizzly+bear",
+            "id": 1
+        },
+        {
+            "label": "polar+bear",
+            "id": 44
+        },
+        {
+            "label": "giant+panda",
+            "id": 38
+        },
+        {
+            "label": "Family_Mustelidae",
+            "id": 54
+        },
+        {
+            "label": "weasel",
+            "id": 34
+        },
+        {
+            "label": "otter",
+            "id": 35
+        },
+        {
+            "label": "skunk",
+            "id": 10
+        },
+        {
+            "label": "Family_Procyonidae",
+            "id": 55
+        },
+        {
+            "label": "raccoon",
+            "id": 47
+        },
+        {
+            "label": "Family_Pinnipedia",
+            "id": 56
+        },
+        {
+            "label": "seal",
+            "id": 23
+        },
+        {
+            "label": "walrus",
+            "id": 46
+        },
+        {
+            "label": "Order_Cetacea",
+            "id": 57
+        },
+        {
+            "label": "Family_Balaenidae",
+            "id": 58
+        },
+        {
+            "label": "blue+whale",
+            "id": 8
+        },
+        {
+            "label": "humpback+whale",
+            "id": 17
+        },
+        {
+            "label": "Family_Delphinidae",
+            "id": 59
+        },
+        {
+            "label": "killer+whale",
+            "id": 2
+        },
+        {
+            "label": "dolphin",
+            "id": 49
+        },
+        {
+            "label": "Order_Artiodactyla",
+            "id": 60
+        },
+        {
+            "label": "Family_Bovidae",
+            "id": 61
+        },
+        {
+            "label": "cow",
+            "id": 48
+        },
+        {
+            "label": "ox",
+            "id": 20
+        },
+        {
+            "label": "buffalo",
+            "id": 36
+        },
+        {
+            "label": "sheep",
+            "id": 22
+        },
+        {
+            "label": "antelope",
+            "id": 0
+        },
+        {
+            "label": "Family_Suidae",
+            "id": 62
+        },
+        {
+            "label": "pig",
+            "id": 41
+        },
+        {
+            "label": "Family_Cervidae",
+            "id": 63
+        },
+        {
+            "label": "deer",
+            "id": 39
+        },
+        {
+            "label": "moose",
+            "id": 15
+        },
+        {
+            "label": "Family_Giraffidae",
+            "id": 64
+        },
+        {
+            "label": "giraffe",
+            "id": 30
+        },
+        {
+            "label": "Family_Hippopotamidae",
+            "id": 65
+        },
+        {
+            "label": "hippopotamus",
+            "id": 13
+        },
+        {
+            "label": "Order_Perissodactyla",
+            "id": 66
+        },
+        {
+            "label": "Family_Equidae",
+            "id": 67
+        },
+        {
+            "label": "horse",
+            "id": 6
+        },
+        {
+            "label": "zebra",
+            "id": 37
+        },
+        {
+            "label": "Family_Rhinocerotidae",
+            "id": 68
+        },
+        {
+            "label": "rhinoceros",
+            "id": 27
+        },
+        {
+            "label": "Order_Proboscidea",
+            "id": 69
+        },
+        {
+            "label": "Family_Elephantidae",
+            "id": 70
+        },
+        {
+            "label": "elephant",
+            "id": 18
+        },
+        {
+            "label": "Order_Primates",
+            "id": 71
+        },
+        {
+            "label": "Family_Hominidae",
+            "id": 72
+        },
+        {
+            "label": "gorilla",
+            "id": 19
+        },
+        {
+            "label": "chimpanzee",
+            "id": 24
+        },
+        {
+            "label": "Family_Cebidae",
+            "id": 73
+        },
+        {
+            "label": "spider+monkey",
+            "id": 16
+        },
+        {
+            "label": "Order_Rodentia",
+            "id": 74
+        },
+        {
+            "label": "Family_Muridae",
+            "id": 75
+        },
+        {
+            "label": "mouse",
+            "id": 43
+        },
+        {
+            "label": "rat",
+            "id": 33
+        },
+        {
+            "label": "Family_Cricetidae",
+            "id": 76
+        },
+        {
+            "label": "hamster",
+            "id": 25
+        },
+        {
+            "label": "Family_Sciuridae",
+            "id": 77
+        },
+        {
+            "label": "squirrel",
+            "id": 26
+        },
+        {
+            "label": "Family_Leporidae",
+            "id": 78
+        },
+        {
+            "label": "rabbit",
+            "id": 28
+        },
+        {
+            "label": "Order_Chiroptera",
+            "id": 79
+        },
+        {
+            "label": "Family_Vespertilionidae",
+            "id": 80
+        },
+        {
+            "label": "bat",
+            "id": 29
+        },
+        {
+            "label": "Order_Soricomorpha",
+            "id": 81
+        },
+        {
+            "label": "Family_Talpidae",
+            "id": 82
+        },
+        {
+            "label": "mole",
+            "id": 11
+        },
+        {
+            "label": "Order_Castoridae",
+            "id": 83
+        },
+        {
+            "label": "Family_Castoridae",
+            "id": 84
+        },
+        {
+            "label": "beaver",
+            "id": 3
+        }
+    ],
+    "links": [
+        {
+            "source": 85,
+            "target": 50
+        },
+        {
+            "source": 85,
+            "target": 57
+        },
+        {
+            "source": 85,
+            "target": 60
+        },
+        {
+            "source": 85,
+            "target": 66
+        },
+        {
+            "source": 85,
+            "target": 69
+        },
+        {
+            "source": 85,
+            "target": 71
+        },
+        {
+            "source": 85,
+            "target": 74
+        },
+        {
+            "source": 85,
+            "target": 79
+        },
+        {
+            "source": 85,
+            "target": 81
+        },
+        {
+            "source": 85,
+            "target": 83
+        },
+        {
+            "source": 50,
+            "target": 51
+        },
+        {
+            "source": 50,
+            "target": 52
+        },
+        {
+            "source": 50,
+            "target": 53
+        },
+        {
+            "source": 50,
+            "target": 54
+        },
+        {
+            "source": 50,
+            "target": 55
+        },
+        {
+            "source": 50,
+            "target": 56
+        },
+        {
+            "source": 51,
+            "target": 31
+        },
+        {
+            "source": 51,
+            "target": 21
+        },
+        {
+            "source": 51,
+            "target": 7
+        },
+        {
+            "source": 51,
+            "target": 4
+        },
+        {
+            "source": 51,
+            "target": 32
+        },
+        {
+            "source": 51,
+            "target": 45
+        },
+        {
+            "source": 52,
+            "target": 12
+        },
+        {
+            "source": 52,
+            "target": 42
+        },
+        {
+            "source": 52,
+            "target": 14
+        },
+        {
+            "source": 52,
+            "target": 5
+        },
+        {
+            "source": 52,
+            "target": 9
+        },
+        {
+            "source": 52,
+            "target": 40
+        },
+        {
+            "source": 53,
+            "target": 1
+        },
+        {
+            "source": 53,
+            "target": 44
+        },
+        {
+            "source": 53,
+            "target": 38
+        },
+        {
+            "source": 54,
+            "target": 34
+        },
+        {
+            "source": 54,
+            "target": 35
+        },
+        {
+            "source": 54,
+            "target": 10
+        },
+        {
+            "source": 55,
+            "target": 47
+        },
+        {
+            "source": 56,
+            "target": 23
+        },
+        {
+            "source": 56,
+            "target": 46
+        },
+        {
+            "source": 57,
+            "target": 58
+        },
+        {
+            "source": 57,
+            "target": 59
+        },
+        {
+            "source": 58,
+            "target": 8
+        },
+        {
+            "source": 58,
+            "target": 17
+        },
+        {
+            "source": 59,
+            "target": 2
+        },
+        {
+            "source": 59,
+            "target": 49
+        },
+        {
+            "source": 60,
+            "target": 61
+        },
+        {
+            "source": 60,
+            "target": 62
+        },
+        {
+            "source": 60,
+            "target": 63
+        },
+        {
+            "source": 60,
+            "target": 64
+        },
+        {
+            "source": 60,
+            "target": 65
+        },
+        {
+            "source": 61,
+            "target": 48
+        },
+        {
+            "source": 61,
+            "target": 20
+        },
+        {
+            "source": 61,
+            "target": 36
+        },
+        {
+            "source": 61,
+            "target": 22
+        },
+        {
+            "source": 61,
+            "target": 0
+        },
+        {
+            "source": 62,
+            "target": 41
+        },
+        {
+            "source": 63,
+            "target": 39
+        },
+        {
+            "source": 63,
+            "target": 15
+        },
+        {
+            "source": 64,
+            "target": 30
+        },
+        {
+            "source": 65,
+            "target": 13
+        },
+        {
+            "source": 66,
+            "target": 67
+        },
+        {
+            "source": 66,
+            "target": 68
+        },
+        {
+            "source": 67,
+            "target": 6
+        },
+        {
+            "source": 67,
+            "target": 37
+        },
+        {
+            "source": 68,
+            "target": 27
+        },
+        {
+            "source": 69,
+            "target": 70
+        },
+        {
+            "source": 70,
+            "target": 18
+        },
+        {
+            "source": 71,
+            "target": 72
+        },
+        {
+            "source": 71,
+            "target": 73
+        },
+        {
+            "source": 72,
+            "target": 19
+        },
+        {
+            "source": 72,
+            "target": 24
+        },
+        {
+            "source": 73,
+            "target": 16
+        },
+        {
+            "source": 74,
+            "target": 75
+        },
+        {
+            "source": 74,
+            "target": 76
+        },
+        {
+            "source": 74,
+            "target": 77
+        },
+        {
+            "source": 74,
+            "target": 78
+        },
+        {
+            "source": 75,
+            "target": 43
+        },
+        {
+            "source": 75,
+            "target": 33
+        },
+        {
+            "source": 76,
+            "target": 25
+        },
+        {
+            "source": 77,
+            "target": 26
+        },
+        {
+            "source": 78,
+            "target": 28
+        },
+        {
+            "source": 79,
+            "target": 80
+        },
+        {
+            "source": 80,
+            "target": 29
+        },
+        {
+            "source": 81,
+            "target": 82
+        },
+        {
+            "source": 82,
+            "target": 11
+        },
+        {
+            "source": 83,
+            "target": 84
+        },
+        {
+            "source": 84,
+            "target": 3
+        }
+    ]
+}
