@@ -1,0 +1,829 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "id": 0,
+      "label": "Berry fruit"
+    },
+    {
+      "id": 1,
+      "label": "banana"
+    },
+    {
+      "id": 2,
+      "label": "black currant"
+    },
+    {
+      "id": 3,
+      "label": "black grape"
+    },
+    {
+      "id": 4,
+      "label": "blueberry"
+    },
+    {
+      "id": 5,
+      "label": "carambola"
+    },
+    {
+      "id": 6,
+      "label": "cherry tomato"
+    },
+    {
+      "id": 7,
+      "label": "fig"
+    },
+    {
+      "id": 8,
+      "label": "ginseng fruit"
+    },
+    {
+      "id": 9,
+      "label": "grape"
+    },
+    {
+      "id": 10,
+      "label": "grape white"
+    },
+    {
+      "id": 11,
+      "label": "guava"
+    },
+    {
+      "id": 12,
+      "label": "kiwi fruit"
+    },
+    {
+      "id": 13,
+      "label": "munlberry"
+    },
+    {
+      "id": 14,
+      "label": "naseberry"
+    },
+    {
+      "id": 15,
+      "label": "passion fruit"
+    },
+    {
+      "id": 16,
+      "label": "pitaya"
+    },
+    {
+      "id": 17,
+      "label": "pomegranate"
+    },
+    {
+      "id": 18,
+      "label": "raspberry"
+    },
+    {
+      "id": 19,
+      "label": "red grape"
+    },
+    {
+      "id": 20,
+      "label": "syzygium jambos"
+    },
+    {
+      "id": 21,
+      "label": "wampee"
+    },
+    {
+      "id": 22,
+      "label": "wax apple"
+    },
+    {
+      "id": 23,
+      "label": "Drupe"
+    },
+    {
+      "id": 24,
+      "label": "apricot"
+    },
+    {
+      "id": 25,
+      "label": "avocado"
+    },
+    {
+      "id": 26,
+      "label": "bayberry"
+    },
+    {
+      "id": 27,
+      "label": "cherry"
+    },
+    {
+      "id": 28,
+      "label": "flat peach"
+    },
+    {
+      "id": 29,
+      "label": "juicy peach"
+    },
+    {
+      "id": 30,
+      "label": "loquat"
+    },
+    {
+      "id": 31,
+      "label": "mango"
+    },
+    {
+      "id": 32,
+      "label": "nectarine"
+    },
+    {
+      "id": 33,
+      "label": "olive"
+    },
+    {
+      "id": 34,
+      "label": "plum"
+    },
+    {
+      "id": 35,
+      "label": "prune"
+    },
+    {
+      "id": 36,
+      "label": "salak"
+    },
+    {
+      "id": 37,
+      "label": "Citrus fruit"
+    },
+    {
+      "id": 38,
+      "label": "blood orange"
+    },
+    {
+      "id": 39,
+      "label": "citrus"
+    },
+    {
+      "id": 40,
+      "label": "dekopon"
+    },
+    {
+      "id": 41,
+      "label": "grapefruit"
+    },
+    {
+      "id": 42,
+      "label": "kumquat"
+    },
+    {
+      "id": 43,
+      "label": "lemon"
+    },
+    {
+      "id": 44,
+      "label": "lime"
+    },
+    {
+      "id": 45,
+      "label": "mandarin orange"
+    },
+    {
+      "id": 46,
+      "label": "navel orange"
+    },
+    {
+      "id": 47,
+      "label": "pomelo"
+    },
+    {
+      "id": 48,
+      "label": "ponkan"
+    },
+    {
+      "id": 49,
+      "label": "sugar orange"
+    },
+    {
+      "id": 50,
+      "label": "trifoliate orange"
+    },
+    {
+      "id": 51,
+      "label": "Litchies"
+    },
+    {
+      "id": 52,
+      "label": "litchi"
+    },
+    {
+      "id": 53,
+      "label": "longan"
+    },
+    {
+      "id": 54,
+      "label": "rambutan"
+    },
+    {
+      "id": 55,
+      "label": "Persimmons and jujubes fruit"
+    },
+    {
+      "id": 56,
+      "label": "candied date"
+    },
+    {
+      "id": 57,
+      "label": "diospyros lotus"
+    },
+    {
+      "id": 58,
+      "label": "green dates"
+    },
+    {
+      "id": 59,
+      "label": "jujube"
+    },
+    {
+      "id": 60,
+      "label": "persimmon"
+    },
+    {
+      "id": 61,
+      "label": "winter jujube"
+    },
+    {
+      "id": 62,
+      "label": "Nut fruit"
+    },
+    {
+      "id": 63,
+      "label": "almond"
+    },
+    {
+      "id": 64,
+      "label": "cashew nut"
+    },
+    {
+      "id": 65,
+      "label": "coconut"
+    },
+    {
+      "id": 66,
+      "label": "durian"
+    },
+    {
+      "id": 67,
+      "label": "hazelnut"
+    },
+    {
+      "id": 68,
+      "label": "hickory"
+    },
+    {
+      "id": 69,
+      "label": "macadamia"
+    },
+    {
+      "id": 70,
+      "label": "pecans"
+    },
+    {
+      "id": 71,
+      "label": "pistachio"
+    },
+    {
+      "id": 72,
+      "label": "walnuts"
+    },
+    {
+      "id": 73,
+      "label": "Chinese chestnut"
+    },
+    {
+      "id": 74,
+      "label": "Pome"
+    },
+    {
+      "id": 75,
+      "label": "apple"
+    },
+    {
+      "id": 76,
+      "label": "bergamot pear"
+    },
+    {
+      "id": 77,
+      "label": "crown pear"
+    },
+    {
+      "id": 78,
+      "label": "gandaria"
+    },
+    {
+      "id": 79,
+      "label": "green apple"
+    },
+    {
+      "id": 80,
+      "label": "hawthorn"
+    },
+    {
+      "id": 81,
+      "label": "housi pear"
+    },
+    {
+      "id": 82,
+      "label": "mangosteen"
+    },
+    {
+      "id": 83,
+      "label": "plum-leaf crab"
+    },
+    {
+      "id": 84,
+      "label": "sand pear"
+    },
+    {
+      "id": 85,
+      "label": "Dangshan Pear"
+    },
+    {
+      "id": 86,
+      "label": "Other fruit"
+    },
+    {
+      "id": 87,
+      "label": "sugarcane"
+    },
+    {
+      "id": 88,
+      "label": "yacon"
+    },
+    {
+      "id": 89,
+      "label": "Collective fruit"
+    },
+    {
+      "id": 90,
+      "label": "annona muricata"
+    },
+    {
+      "id": 91,
+      "label": "artocarpus heterophyllus"
+    },
+    {
+      "id": 92,
+      "label": "breadfruit"
+    },
+    {
+      "id": 93,
+      "label": "pineapple"
+    },
+    {
+      "id": 94,
+      "label": "sweetsop"
+    },
+    {
+      "id": 95,
+      "label": "Cucurbites"
+    },
+    {
+      "id": 96,
+      "label": "golden melon"
+    },
+    {
+      "id": 97,
+      "label": "honey dew melon"
+    },
+    {
+      "id": 98,
+      "label": "muskmelon"
+    },
+    {
+      "id": 99,
+      "label": "netted melon"
+    },
+    {
+      "id": 100,
+      "label": "papaya"
+    },
+    {
+      "id": 101,
+      "label": "Hami melon"
+    },
+    {
+      "id": 102,
+      "label": "Root Node"
+    }
+  ],
+  "links": [
+    {
+      "source": 0,
+      "target": 1
+    },
+    {
+      "source": 0,
+      "target": 2
+    },
+    {
+      "source": 0,
+      "target": 3
+    },
+    {
+      "source": 0,
+      "target": 4
+    },
+    {
+      "source": 0,
+      "target": 5
+    },
+    {
+      "source": 0,
+      "target": 6
+    },
+    {
+      "source": 0,
+      "target": 7
+    },
+    {
+      "source": 0,
+      "target": 8
+    },
+    {
+      "source": 0,
+      "target": 9
+    },
+    {
+      "source": 0,
+      "target": 10
+    },
+    {
+      "source": 0,
+      "target": 11
+    },
+    {
+      "source": 0,
+      "target": 12
+    },
+    {
+      "source": 0,
+      "target": 13
+    },
+    {
+      "source": 0,
+      "target": 14
+    },
+    {
+      "source": 0,
+      "target": 15
+    },
+    {
+      "source": 0,
+      "target": 16
+    },
+    {
+      "source": 0,
+      "target": 17
+    },
+    {
+      "source": 0,
+      "target": 18
+    },
+    {
+      "source": 0,
+      "target": 19
+    },
+    {
+      "source": 0,
+      "target": 20
+    },
+    {
+      "source": 0,
+      "target": 21
+    },
+    {
+      "source": 0,
+      "target": 22
+    },
+    {
+      "source": 23,
+      "target": 24
+    },
+    {
+      "source": 23,
+      "target": 25
+    },
+    {
+      "source": 23,
+      "target": 26
+    },
+    {
+      "source": 23,
+      "target": 27
+    },
+    {
+      "source": 23,
+      "target": 28
+    },
+    {
+      "source": 23,
+      "target": 29
+    },
+    {
+      "source": 23,
+      "target": 30
+    },
+    {
+      "source": 23,
+      "target": 31
+    },
+    {
+      "source": 23,
+      "target": 32
+    },
+    {
+      "source": 23,
+      "target": 33
+    },
+    {
+      "source": 23,
+      "target": 34
+    },
+    {
+      "source": 23,
+      "target": 35
+    },
+    {
+      "source": 23,
+      "target": 36
+    },
+    {
+      "source": 37,
+      "target": 38
+    },
+    {
+      "source": 37,
+      "target": 39
+    },
+    {
+      "source": 37,
+      "target": 40
+    },
+    {
+      "source": 37,
+      "target": 41
+    },
+    {
+      "source": 37,
+      "target": 42
+    },
+    {
+      "source": 37,
+      "target": 43
+    },
+    {
+      "source": 37,
+      "target": 44
+    },
+    {
+      "source": 37,
+      "target": 45
+    },
+    {
+      "source": 37,
+      "target": 46
+    },
+    {
+      "source": 37,
+      "target": 47
+    },
+    {
+      "source": 37,
+      "target": 48
+    },
+    {
+      "source": 37,
+      "target": 49
+    },
+    {
+      "source": 37,
+      "target": 50
+    },
+    {
+      "source": 51,
+      "target": 52
+    },
+    {
+      "source": 51,
+      "target": 53
+    },
+    {
+      "source": 51,
+      "target": 54
+    },
+    {
+      "source": 55,
+      "target": 56
+    },
+    {
+      "source": 55,
+      "target": 57
+    },
+    {
+      "source": 55,
+      "target": 58
+    },
+    {
+      "source": 55,
+      "target": 59
+    },
+    {
+      "source": 55,
+      "target": 60
+    },
+    {
+      "source": 55,
+      "target": 61
+    },
+    {
+      "source": 62,
+      "target": 63
+    },
+    {
+      "source": 62,
+      "target": 64
+    },
+    {
+      "source": 62,
+      "target": 65
+    },
+    {
+      "source": 62,
+      "target": 66
+    },
+    {
+      "source": 62,
+      "target": 67
+    },
+    {
+      "source": 62,
+      "target": 68
+    },
+    {
+      "source": 62,
+      "target": 69
+    },
+    {
+      "source": 62,
+      "target": 70
+    },
+    {
+      "source": 62,
+      "target": 71
+    },
+    {
+      "source": 62,
+      "target": 72
+    },
+    {
+      "source": 62,
+      "target": 73
+    },
+    {
+      "source": 74,
+      "target": 75
+    },
+    {
+      "source": 74,
+      "target": 76
+    },
+    {
+      "source": 74,
+      "target": 77
+    },
+    {
+      "source": 74,
+      "target": 78
+    },
+    {
+      "source": 74,
+      "target": 79
+    },
+    {
+      "source": 74,
+      "target": 80
+    },
+    {
+      "source": 74,
+      "target": 81
+    },
+    {
+      "source": 74,
+      "target": 82
+    },
+    {
+      "source": 74,
+      "target": 83
+    },
+    {
+      "source": 74,
+      "target": 84
+    },
+    {
+      "source": 74,
+      "target": 85
+    },
+    {
+      "source": 86,
+      "target": 87
+    },
+    {
+      "source": 86,
+      "target": 88
+    },
+    {
+      "source": 89,
+      "target": 90
+    },
+    {
+      "source": 89,
+      "target": 91
+    },
+    {
+      "source": 89,
+      "target": 92
+    },
+    {
+      "source": 89,
+      "target": 93
+    },
+    {
+      "source": 89,
+      "target": 94
+    },
+    {
+      "source": 95,
+      "target": 96
+    },
+    {
+      "source": 95,
+      "target": 97
+    },
+    {
+      "source": 95,
+      "target": 98
+    },
+    {
+      "source": 95,
+      "target": 99
+    },
+    {
+      "source": 95,
+      "target": 100
+    },
+    {
+      "source": 95,
+      "target": 101
+    },
+    {
+      "source": 102,
+      "target": 0
+    },
+    {
+      "source": 102,
+      "target": 23
+    },
+    {
+      "source": 102,
+      "target": 37
+    },
+    {
+      "source": 102,
+      "target": 51
+    },
+    {
+      "source": 102,
+      "target": 55
+    },
+    {
+      "source": 102,
+      "target": 62
+    },
+    {
+      "source": 102,
+      "target": 74
+    },
+    {
+      "source": 102,
+      "target": 86
+    },
+    {
+      "source": 102,
+      "target": 89
+    },
+    {
+      "source": 102,
+      "target": 95
+    }
+  ]
+}
