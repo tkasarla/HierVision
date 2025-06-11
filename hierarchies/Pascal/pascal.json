@@ -1,0 +1,293 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "id": 0,
+      "label": "bottle"
+    },
+    {
+      "id": 1,
+      "label": "chair"
+    },
+    {
+      "id": 2,
+      "label": "couch"
+    },
+    {
+      "id": 3,
+      "label": "dining_table"
+    },
+    {
+      "id": 4,
+      "label": "pot_plant"
+    },
+    {
+      "id": 5,
+      "label": "television"
+    },
+    {
+      "id": 6,
+      "label": "person"
+    },
+    {
+      "id": 7,
+      "label": "bird"
+    },
+    {
+      "id": 8,
+      "label": "dog"
+    },
+    {
+      "id": 9,
+      "label": "cat"
+    },
+    {
+      "id": 10,
+      "label": "cow"
+    },
+    {
+      "id": 11,
+      "label": "sheep"
+    },
+    {
+      "id": 12,
+      "label": "horse"
+    },
+    {
+      "id": 13,
+      "label": "unlabeled"
+    },
+    {
+      "id": 14,
+      "label": "airplane"
+    },
+    {
+      "id": 15,
+      "label": "boat"
+    },
+    {
+      "id": 16,
+      "label": "bicycle"
+    },
+    {
+      "id": 17,
+      "label": "locomotive"
+    },
+    {
+      "id": 18,
+      "label": "bus"
+    },
+    {
+      "id": 19,
+      "label": "car"
+    },
+    {
+      "id": 20,
+      "label": "motorcycle"
+    },
+    {
+      "id": 21,
+      "label": "inside"
+    },
+    {
+      "id": 22,
+      "label": "furniture"
+    },
+    {
+      "id": 23,
+      "label": "organic"
+    },
+    {
+      "id": 24,
+      "label": "vertebrate"
+    },
+    {
+      "id": 25,
+      "label": "placental"
+    },
+    {
+      "id": 26,
+      "label": "carnivore"
+    },
+    {
+      "id": 27,
+      "label": "ungulate"
+    },
+    {
+      "id": 28,
+      "label": "bovid"
+    },
+    {
+      "id": 29,
+      "label": "vehicle"
+    },
+    {
+      "id": 30,
+      "label": "craft"
+    },
+    {
+      "id": 31,
+      "label": "wheeled"
+    },
+    {
+      "id": 32,
+      "label": "self-propelled"
+    },
+    {
+      "id": 33,
+      "label": "motored"
+    },
+    {
+      "id": 34,
+      "label": "motorcar"
+    },
+    {
+      "id": 35,
+      "label": "root"
+    }
+  ],
+  "links": [
+    {
+      "source": 35,
+      "target": 21
+    },
+    {
+      "source": 21,
+      "target": 0
+    },
+    {
+      "source": 21,
+      "target": 22
+    },
+    {
+      "source": 22,
+      "target": 1
+    },
+    {
+      "source": 22,
+      "target": 2
+    },
+    {
+      "source": 22,
+      "target": 3
+    },
+    {
+      "source": 22,
+      "target": 4
+    },
+    {
+      "source": 21,
+      "target": 5
+    },
+    {
+      "source": 35,
+      "target": 23
+    },
+    {
+      "source": 23,
+      "target": 6
+    },
+    {
+      "source": 23,
+      "target": 24
+    },
+    {
+      "source": 24,
+      "target": 7
+    },
+    {
+      "source": 24,
+      "target": 25
+    },
+    {
+      "source": 25,
+      "target": 26
+    },
+    {
+      "source": 26,
+      "target": 8
+    },
+    {
+      "source": 26,
+      "target": 9
+    },
+    {
+      "source": 25,
+      "target": 27
+    },
+    {
+      "source": 27,
+      "target": 28
+    },
+    {
+      "source": 28,
+      "target": 10
+    },
+    {
+      "source": 28,
+      "target": 11
+    },
+    {
+      "source": 27,
+      "target": 12
+    },
+    {
+      "source": 35,
+      "target": 13
+    },
+    {
+      "source": 35,
+      "target": 29
+    },
+    {
+      "source": 29,
+      "target": 30
+    },
+    {
+      "source": 30,
+      "target": 14
+    },
+    {
+      "source": 30,
+      "target": 15
+    },
+    {
+      "source": 29,
+      "target": 31
+    },
+    {
+      "source": 31,
+      "target": 16
+    },
+    {
+      "source": 31,
+      "target": 32
+    },
+    {
+      "source": 32,
+      "target": 17
+    },
+    {
+      "source": 32,
+      "target": 33
+    },
+    {
+      "source": 33,
+      "target": 34
+    },
+    {
+      "source": 34,
+      "target": 18
+    },
+    {
+      "source": 34,
+      "target": 19
+    },
+    {
+      "source": 33,
+      "target": 20
+    }
+  ]
+}

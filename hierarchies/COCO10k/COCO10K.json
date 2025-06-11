@@ -1,0 +1,1877 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "id": 0,
+      "label": "furniture-other"
+    },
+    {
+      "id": 1,
+      "label": "counter"
+    },
+    {
+      "id": 2,
+      "label": "desk-stuff"
+    },
+    {
+      "id": 3,
+      "label": "table"
+    },
+    {
+      "id": 4,
+      "label": "cabinet"
+    },
+    {
+      "id": 5,
+      "label": "cupboard"
+    },
+    {
+      "id": 6,
+      "label": "door-stuff"
+    },
+    {
+      "id": 7,
+      "label": "mirror-stuff"
+    },
+    {
+      "id": 8,
+      "label": "shelf"
+    },
+    {
+      "id": 9,
+      "label": "light"
+    },
+    {
+      "id": 10,
+      "label": "stairs"
+    },
+    {
+      "id": 11,
+      "label": "blanket"
+    },
+    {
+      "id": 12,
+      "label": "pillow"
+    },
+    {
+      "id": 13,
+      "label": "banner"
+    },
+    {
+      "id": 14,
+      "label": "curtain"
+    },
+    {
+      "id": 15,
+      "label": "mat"
+    },
+    {
+      "id": 16,
+      "label": "rug"
+    },
+    {
+      "id": 17,
+      "label": "textile-other"
+    },
+    {
+      "id": 18,
+      "label": "cloth"
+    },
+    {
+      "id": 19,
+      "label": "clothes"
+    },
+    {
+      "id": 20,
+      "label": "napkin"
+    },
+    {
+      "id": 21,
+      "label": "towel"
+    },
+    {
+      "id": 22,
+      "label": "cardboard"
+    },
+    {
+      "id": 23,
+      "label": "metal"
+    },
+    {
+      "id": 24,
+      "label": "paper"
+    },
+    {
+      "id": 25,
+      "label": "plastic"
+    },
+    {
+      "id": 26,
+      "label": "ceiling-other"
+    },
+    {
+      "id": 27,
+      "label": "ceiling-tile"
+    },
+    {
+      "id": 28,
+      "label": "carpet"
+    },
+    {
+      "id": 29,
+      "label": "floor-marble"
+    },
+    {
+      "id": 30,
+      "label": "floor-other"
+    },
+    {
+      "id": 31,
+      "label": "floor-stone"
+    },
+    {
+      "id": 32,
+      "label": "floor-tile"
+    },
+    {
+      "id": 33,
+      "label": "floor-wood"
+    },
+    {
+      "id": 34,
+      "label": "wall-brick"
+    },
+    {
+      "id": 35,
+      "label": "wall-concrete"
+    },
+    {
+      "id": 36,
+      "label": "wall-other"
+    },
+    {
+      "id": 37,
+      "label": "wall-panel"
+    },
+    {
+      "id": 38,
+      "label": "wall-stone"
+    },
+    {
+      "id": 39,
+      "label": "wall-tile"
+    },
+    {
+      "id": 40,
+      "label": "wall-wood"
+    },
+    {
+      "id": 41,
+      "label": "window-blind"
+    },
+    {
+      "id": 42,
+      "label": "window-other"
+    },
+    {
+      "id": 43,
+      "label": "microwave"
+    },
+    {
+      "id": 44,
+      "label": "oven"
+    },
+    {
+      "id": 45,
+      "label": "refrigerator"
+    },
+    {
+      "id": 46,
+      "label": "sink"
+    },
+    {
+      "id": 47,
+      "label": "toaster"
+    },
+    {
+      "id": 48,
+      "label": "bed"
+    },
+    {
+      "id": 49,
+      "label": "chair"
+    },
+    {
+      "id": 50,
+      "label": "couch"
+    },
+    {
+      "id": 51,
+      "label": "dining_table"
+    },
+    {
+      "id": 52,
+      "label": "potted_plant"
+    },
+    {
+      "id": 53,
+      "label": "toilet"
+    },
+    {
+      "id": 54,
+      "label": "cell_phone"
+    },
+    {
+      "id": 55,
+      "label": "keyboard"
+    },
+    {
+      "id": 56,
+      "label": "laptop"
+    },
+    {
+      "id": 57,
+      "label": "mouse"
+    },
+    {
+      "id": 58,
+      "label": "remote"
+    },
+    {
+      "id": 59,
+      "label": "tv"
+    },
+    {
+      "id": 60,
+      "label": "book"
+    },
+    {
+      "id": 61,
+      "label": "clock"
+    },
+    {
+      "id": 62,
+      "label": "hair_drier"
+    },
+    {
+      "id": 63,
+      "label": "scissors"
+    },
+    {
+      "id": 64,
+      "label": "teddy_bear"
+    },
+    {
+      "id": 65,
+      "label": "toothbrush"
+    },
+    {
+      "id": 66,
+      "label": "vase"
+    },
+    {
+      "id": 67,
+      "label": "bottle"
+    },
+    {
+      "id": 68,
+      "label": "bowl"
+    },
+    {
+      "id": 69,
+      "label": "cup"
+    },
+    {
+      "id": 70,
+      "label": "fork"
+    },
+    {
+      "id": 71,
+      "label": "knife"
+    },
+    {
+      "id": 72,
+      "label": "spoon"
+    },
+    {
+      "id": 73,
+      "label": "wine_glass"
+    },
+    {
+      "id": 74,
+      "label": "backpack"
+    },
+    {
+      "id": 75,
+      "label": "handbag"
+    },
+    {
+      "id": 76,
+      "label": "suitcase"
+    },
+    {
+      "id": 77,
+      "label": "tie"
+    },
+    {
+      "id": 78,
+      "label": "umbrella"
+    },
+    {
+      "id": 79,
+      "label": "skateboard"
+    },
+    {
+      "id": 80,
+      "label": "skis"
+    },
+    {
+      "id": 81,
+      "label": "snowboard"
+    },
+    {
+      "id": 82,
+      "label": "surfboard"
+    },
+    {
+      "id": 83,
+      "label": "baseball_bat"
+    },
+    {
+      "id": 84,
+      "label": "baseball_glove"
+    },
+    {
+      "id": 85,
+      "label": "tennis_racket"
+    },
+    {
+      "id": 86,
+      "label": "frisbee"
+    },
+    {
+      "id": 87,
+      "label": "kite"
+    },
+    {
+      "id": 88,
+      "label": "sports_ball"
+    },
+    {
+      "id": 89,
+      "label": "person"
+    },
+    {
+      "id": 90,
+      "label": "bird"
+    },
+    {
+      "id": 91,
+      "label": "bear"
+    },
+    {
+      "id": 92,
+      "label": "cat"
+    },
+    {
+      "id": 93,
+      "label": "dog"
+    },
+    {
+      "id": 94,
+      "label": "elephant"
+    },
+    {
+      "id": 95,
+      "label": "cow"
+    },
+    {
+      "id": 96,
+      "label": "sheep"
+    },
+    {
+      "id": 97,
+      "label": "horse"
+    },
+    {
+      "id": 98,
+      "label": "zebra"
+    },
+    {
+      "id": 99,
+      "label": "giraffe"
+    },
+    {
+      "id": 100,
+      "label": "cake"
+    },
+    {
+      "id": 101,
+      "label": "donut"
+    },
+    {
+      "id": 102,
+      "label": "hot_dog"
+    },
+    {
+      "id": 103,
+      "label": "pizza"
+    },
+    {
+      "id": 104,
+      "label": "sandwich"
+    },
+    {
+      "id": 105,
+      "label": "food-other"
+    },
+    {
+      "id": 106,
+      "label": "apple"
+    },
+    {
+      "id": 107,
+      "label": "banana"
+    },
+    {
+      "id": 108,
+      "label": "fruit"
+    },
+    {
+      "id": 109,
+      "label": "orange"
+    },
+    {
+      "id": 110,
+      "label": "broccoli"
+    },
+    {
+      "id": 111,
+      "label": "carrot"
+    },
+    {
+      "id": 112,
+      "label": "salad"
+    },
+    {
+      "id": 113,
+      "label": "vegetable"
+    },
+    {
+      "id": 114,
+      "label": "branch"
+    },
+    {
+      "id": 115,
+      "label": "bush"
+    },
+    {
+      "id": 116,
+      "label": "flower"
+    },
+    {
+      "id": 117,
+      "label": "grass"
+    },
+    {
+      "id": 118,
+      "label": "leaves"
+    },
+    {
+      "id": 119,
+      "label": "moss"
+    },
+    {
+      "id": 120,
+      "label": "plant-other"
+    },
+    {
+      "id": 121,
+      "label": "straw"
+    },
+    {
+      "id": 122,
+      "label": "tree"
+    },
+    {
+      "id": 123,
+      "label": "bridge"
+    },
+    {
+      "id": 124,
+      "label": "building-other"
+    },
+    {
+      "id": 125,
+      "label": "house"
+    },
+    {
+      "id": 126,
+      "label": "roof"
+    },
+    {
+      "id": 127,
+      "label": "skyscraper"
+    },
+    {
+      "id": 128,
+      "label": "tent"
+    },
+    {
+      "id": 129,
+      "label": "cage"
+    },
+    {
+      "id": 130,
+      "label": "fence"
+    },
+    {
+      "id": 131,
+      "label": "net"
+    },
+    {
+      "id": 132,
+      "label": "railing"
+    },
+    {
+      "id": 133,
+      "label": "structural-other"
+    },
+    {
+      "id": 134,
+      "label": "ground-other"
+    },
+    {
+      "id": 135,
+      "label": "pavement"
+    },
+    {
+      "id": 136,
+      "label": "platform"
+    },
+    {
+      "id": 137,
+      "label": "playingfield"
+    },
+    {
+      "id": 138,
+      "label": "railroad"
+    },
+    {
+      "id": 139,
+      "label": "road"
+    },
+    {
+      "id": 140,
+      "label": "dirt"
+    },
+    {
+      "id": 141,
+      "label": "gravel"
+    },
+    {
+      "id": 142,
+      "label": "mud"
+    },
+    {
+      "id": 143,
+      "label": "sand"
+    },
+    {
+      "id": 144,
+      "label": "snow"
+    },
+    {
+      "id": 145,
+      "label": "clouds"
+    },
+    {
+      "id": 146,
+      "label": "sky-other"
+    },
+    {
+      "id": 147,
+      "label": "hill"
+    },
+    {
+      "id": 148,
+      "label": "mountain"
+    },
+    {
+      "id": 149,
+      "label": "rock"
+    },
+    {
+      "id": 150,
+      "label": "solid-other"
+    },
+    {
+      "id": 151,
+      "label": "stone"
+    },
+    {
+      "id": 152,
+      "label": "wood"
+    },
+    {
+      "id": 153,
+      "label": "fog"
+    },
+    {
+      "id": 154,
+      "label": "river"
+    },
+    {
+      "id": 155,
+      "label": "sea"
+    },
+    {
+      "id": 156,
+      "label": "water-other"
+    },
+    {
+      "id": 157,
+      "label": "waterdrops"
+    },
+    {
+      "id": 158,
+      "label": "bench"
+    },
+    {
+      "id": 159,
+      "label": "fire_hydrant"
+    },
+    {
+      "id": 160,
+      "label": "parking_meter"
+    },
+    {
+      "id": 161,
+      "label": "stop_sign"
+    },
+    {
+      "id": 162,
+      "label": "traffic_light"
+    },
+    {
+      "id": 163,
+      "label": "airplane"
+    },
+    {
+      "id": 164,
+      "label": "boat"
+    },
+    {
+      "id": 165,
+      "label": "bicycle"
+    },
+    {
+      "id": 166,
+      "label": "bus"
+    },
+    {
+      "id": 167,
+      "label": "car"
+    },
+    {
+      "id": 168,
+      "label": "truck"
+    },
+    {
+      "id": 169,
+      "label": "motorcycle"
+    },
+    {
+      "id": 170,
+      "label": "train"
+    },
+    {
+      "id": 171,
+      "label": "indoor"
+    },
+    {
+      "id": 172,
+      "label": "furniture-stuff"
+    },
+    {
+      "id": 173,
+      "label": "furniture-surface"
+    },
+    {
+      "id": 174,
+      "label": "furniture-wall"
+    },
+    {
+      "id": 175,
+      "label": "textile"
+    },
+    {
+      "id": 176,
+      "label": "comfort"
+    },
+    {
+      "id": 177,
+      "label": "decorative"
+    },
+    {
+      "id": 178,
+      "label": "used"
+    },
+    {
+      "id": 179,
+      "label": "rawmaterial"
+    },
+    {
+      "id": 180,
+      "label": "room"
+    },
+    {
+      "id": 181,
+      "label": "ceiling"
+    },
+    {
+      "id": 182,
+      "label": "floor"
+    },
+    {
+      "id": 183,
+      "label": "wall"
+    },
+    {
+      "id": 184,
+      "label": "window"
+    },
+    {
+      "id": 185,
+      "label": "instrumentality"
+    },
+    {
+      "id": 186,
+      "label": "instrumentality-indoor"
+    },
+    {
+      "id": 187,
+      "label": "instrumentality-indoor-furniture"
+    },
+    {
+      "id": 188,
+      "label": "appliance"
+    },
+    {
+      "id": 189,
+      "label": "furniture-things"
+    },
+    {
+      "id": 190,
+      "label": "instrumentality-indoor-items"
+    },
+    {
+      "id": 191,
+      "label": "electronic"
+    },
+    {
+      "id": 192,
+      "label": "indoor-things"
+    },
+    {
+      "id": 193,
+      "label": "kitchen"
+    },
+    {
+      "id": 194,
+      "label": "instrumentality-outdoor"
+    },
+    {
+      "id": 195,
+      "label": "accessory"
+    },
+    {
+      "id": 196,
+      "label": "sports"
+    },
+    {
+      "id": 197,
+      "label": "boards"
+    },
+    {
+      "id": 198,
+      "label": "sports-implement"
+    },
+    {
+      "id": 199,
+      "label": "throwable"
+    },
+    {
+      "id": 200,
+      "label": "organic"
+    },
+    {
+      "id": 201,
+      "label": "animal"
+    },
+    {
+      "id": 202,
+      "label": "vertebrate"
+    },
+    {
+      "id": 203,
+      "label": "placental"
+    },
+    {
+      "id": 204,
+      "label": "carnivore"
+    },
+    {
+      "id": 205,
+      "label": "ungulate"
+    },
+    {
+      "id": 206,
+      "label": "covid"
+    },
+    {
+      "id": 207,
+      "label": "equine"
+    },
+    {
+      "id": 208,
+      "label": "food"
+    },
+    {
+      "id": 209,
+      "label": "dish"
+    },
+    {
+      "id": 210,
+      "label": "fruits"
+    },
+    {
+      "id": 211,
+      "label": "vegetables"
+    },
+    {
+      "id": 212,
+      "label": "plant"
+    },
+    {
+      "id": 213,
+      "label": "outdoor"
+    },
+    {
+      "id": 214,
+      "label": "outdoor-stuff"
+    },
+    {
+      "id": 215,
+      "label": "building-stuff"
+    },
+    {
+      "id": 216,
+      "label": "building"
+    },
+    {
+      "id": 217,
+      "label": "structural"
+    },
+    {
+      "id": 218,
+      "label": "matter"
+    },
+    {
+      "id": 219,
+      "label": "ground"
+    },
+    {
+      "id": 220,
+      "label": "surface"
+    },
+    {
+      "id": 221,
+      "label": "texture"
+    },
+    {
+      "id": 222,
+      "label": "sky"
+    },
+    {
+      "id": 223,
+      "label": "solid"
+    },
+    {
+      "id": 224,
+      "label": "water"
+    },
+    {
+      "id": 225,
+      "label": "outdoor-things"
+    },
+    {
+      "id": 226,
+      "label": "street"
+    },
+    {
+      "id": 227,
+      "label": "vehicle"
+    },
+    {
+      "id": 228,
+      "label": "craft"
+    },
+    {
+      "id": 229,
+      "label": "wheeled"
+    },
+    {
+      "id": 230,
+      "label": "self-propelled"
+    },
+    {
+      "id": 231,
+      "label": "motored"
+    },
+    {
+      "id": 232,
+      "label": "motorcar"
+    },
+    {
+      "id": 233,
+      "label": "root"
+    }
+  ],
+  "links": [
+    {
+      "source": 233,
+      "target": 171
+    },
+    {
+      "source": 171,
+      "target": 172
+    },
+    {
+      "source": 172,
+      "target": 0
+    },
+    {
+      "source": 172,
+      "target": 173
+    },
+    {
+      "source": 173,
+      "target": 1
+    },
+    {
+      "source": 173,
+      "target": 2
+    },
+    {
+      "source": 173,
+      "target": 3
+    },
+    {
+      "source": 172,
+      "target": 174
+    },
+    {
+      "source": 174,
+      "target": 4
+    },
+    {
+      "source": 174,
+      "target": 5
+    },
+    {
+      "source": 174,
+      "target": 6
+    },
+    {
+      "source": 174,
+      "target": 7
+    },
+    {
+      "source": 174,
+      "target": 8
+    },
+    {
+      "source": 172,
+      "target": 9
+    },
+    {
+      "source": 172,
+      "target": 10
+    },
+    {
+      "source": 172,
+      "target": 175
+    },
+    {
+      "source": 175,
+      "target": 176
+    },
+    {
+      "source": 176,
+      "target": 11
+    },
+    {
+      "source": 176,
+      "target": 12
+    },
+    {
+      "source": 175,
+      "target": 177
+    },
+    {
+      "source": 177,
+      "target": 13
+    },
+    {
+      "source": 177,
+      "target": 14
+    },
+    {
+      "source": 177,
+      "target": 15
+    },
+    {
+      "source": 177,
+      "target": 16
+    },
+    {
+      "source": 175,
+      "target": 17
+    },
+    {
+      "source": 175,
+      "target": 178
+    },
+    {
+      "source": 178,
+      "target": 18
+    },
+    {
+      "source": 178,
+      "target": 19
+    },
+    {
+      "source": 178,
+      "target": 20
+    },
+    {
+      "source": 178,
+      "target": 21
+    },
+    {
+      "source": 171,
+      "target": 179
+    },
+    {
+      "source": 179,
+      "target": 22
+    },
+    {
+      "source": 179,
+      "target": 23
+    },
+    {
+      "source": 179,
+      "target": 24
+    },
+    {
+      "source": 179,
+      "target": 25
+    },
+    {
+      "source": 171,
+      "target": 180
+    },
+    {
+      "source": 180,
+      "target": 181
+    },
+    {
+      "source": 181,
+      "target": 26
+    },
+    {
+      "source": 181,
+      "target": 27
+    },
+    {
+      "source": 180,
+      "target": 182
+    },
+    {
+      "source": 182,
+      "target": 28
+    },
+    {
+      "source": 182,
+      "target": 29
+    },
+    {
+      "source": 182,
+      "target": 30
+    },
+    {
+      "source": 182,
+      "target": 31
+    },
+    {
+      "source": 182,
+      "target": 32
+    },
+    {
+      "source": 182,
+      "target": 33
+    },
+    {
+      "source": 180,
+      "target": 183
+    },
+    {
+      "source": 183,
+      "target": 34
+    },
+    {
+      "source": 183,
+      "target": 35
+    },
+    {
+      "source": 183,
+      "target": 36
+    },
+    {
+      "source": 183,
+      "target": 37
+    },
+    {
+      "source": 183,
+      "target": 38
+    },
+    {
+      "source": 183,
+      "target": 39
+    },
+    {
+      "source": 183,
+      "target": 40
+    },
+    {
+      "source": 180,
+      "target": 184
+    },
+    {
+      "source": 184,
+      "target": 41
+    },
+    {
+      "source": 184,
+      "target": 42
+    },
+    {
+      "source": 233,
+      "target": 185
+    },
+    {
+      "source": 185,
+      "target": 186
+    },
+    {
+      "source": 186,
+      "target": 187
+    },
+    {
+      "source": 187,
+      "target": 188
+    },
+    {
+      "source": 188,
+      "target": 43
+    },
+    {
+      "source": 188,
+      "target": 44
+    },
+    {
+      "source": 188,
+      "target": 45
+    },
+    {
+      "source": 188,
+      "target": 46
+    },
+    {
+      "source": 188,
+      "target": 47
+    },
+    {
+      "source": 187,
+      "target": 189
+    },
+    {
+      "source": 189,
+      "target": 48
+    },
+    {
+      "source": 189,
+      "target": 49
+    },
+    {
+      "source": 189,
+      "target": 50
+    },
+    {
+      "source": 189,
+      "target": 51
+    },
+    {
+      "source": 189,
+      "target": 52
+    },
+    {
+      "source": 189,
+      "target": 53
+    },
+    {
+      "source": 186,
+      "target": 190
+    },
+    {
+      "source": 190,
+      "target": 191
+    },
+    {
+      "source": 191,
+      "target": 54
+    },
+    {
+      "source": 191,
+      "target": 55
+    },
+    {
+      "source": 191,
+      "target": 56
+    },
+    {
+      "source": 191,
+      "target": 57
+    },
+    {
+      "source": 191,
+      "target": 58
+    },
+    {
+      "source": 191,
+      "target": 59
+    },
+    {
+      "source": 190,
+      "target": 192
+    },
+    {
+      "source": 192,
+      "target": 60
+    },
+    {
+      "source": 192,
+      "target": 61
+    },
+    {
+      "source": 192,
+      "target": 62
+    },
+    {
+      "source": 192,
+      "target": 63
+    },
+    {
+      "source": 192,
+      "target": 64
+    },
+    {
+      "source": 192,
+      "target": 65
+    },
+    {
+      "source": 192,
+      "target": 66
+    },
+    {
+      "source": 190,
+      "target": 193
+    },
+    {
+      "source": 193,
+      "target": 67
+    },
+    {
+      "source": 193,
+      "target": 68
+    },
+    {
+      "source": 193,
+      "target": 69
+    },
+    {
+      "source": 193,
+      "target": 70
+    },
+    {
+      "source": 193,
+      "target": 71
+    },
+    {
+      "source": 193,
+      "target": 72
+    },
+    {
+      "source": 193,
+      "target": 73
+    },
+    {
+      "source": 185,
+      "target": 194
+    },
+    {
+      "source": 194,
+      "target": 195
+    },
+    {
+      "source": 195,
+      "target": 74
+    },
+    {
+      "source": 195,
+      "target": 75
+    },
+    {
+      "source": 195,
+      "target": 76
+    },
+    {
+      "source": 195,
+      "target": 77
+    },
+    {
+      "source": 195,
+      "target": 78
+    },
+    {
+      "source": 194,
+      "target": 196
+    },
+    {
+      "source": 196,
+      "target": 197
+    },
+    {
+      "source": 197,
+      "target": 79
+    },
+    {
+      "source": 197,
+      "target": 80
+    },
+    {
+      "source": 197,
+      "target": 81
+    },
+    {
+      "source": 197,
+      "target": 82
+    },
+    {
+      "source": 196,
+      "target": 198
+    },
+    {
+      "source": 198,
+      "target": 83
+    },
+    {
+      "source": 198,
+      "target": 84
+    },
+    {
+      "source": 198,
+      "target": 85
+    },
+    {
+      "source": 196,
+      "target": 199
+    },
+    {
+      "source": 199,
+      "target": 86
+    },
+    {
+      "source": 199,
+      "target": 87
+    },
+    {
+      "source": 199,
+      "target": 88
+    },
+    {
+      "source": 233,
+      "target": 200
+    },
+    {
+      "source": 200,
+      "target": 201
+    },
+    {
+      "source": 201,
+      "target": 89
+    },
+    {
+      "source": 201,
+      "target": 202
+    },
+    {
+      "source": 202,
+      "target": 90
+    },
+    {
+      "source": 202,
+      "target": 203
+    },
+    {
+      "source": 203,
+      "target": 204
+    },
+    {
+      "source": 204,
+      "target": 91
+    },
+    {
+      "source": 204,
+      "target": 92
+    },
+    {
+      "source": 204,
+      "target": 93
+    },
+    {
+      "source": 203,
+      "target": 94
+    },
+    {
+      "source": 203,
+      "target": 205
+    },
+    {
+      "source": 205,
+      "target": 206
+    },
+    {
+      "source": 206,
+      "target": 95
+    },
+    {
+      "source": 206,
+      "target": 96
+    },
+    {
+      "source": 205,
+      "target": 207
+    },
+    {
+      "source": 207,
+      "target": 97
+    },
+    {
+      "source": 207,
+      "target": 98
+    },
+    {
+      "source": 205,
+      "target": 99
+    },
+    {
+      "source": 200,
+      "target": 208
+    },
+    {
+      "source": 208,
+      "target": 209
+    },
+    {
+      "source": 209,
+      "target": 100
+    },
+    {
+      "source": 209,
+      "target": 101
+    },
+    {
+      "source": 209,
+      "target": 102
+    },
+    {
+      "source": 209,
+      "target": 103
+    },
+    {
+      "source": 209,
+      "target": 104
+    },
+    {
+      "source": 208,
+      "target": 105
+    },
+    {
+      "source": 208,
+      "target": 210
+    },
+    {
+      "source": 210,
+      "target": 106
+    },
+    {
+      "source": 210,
+      "target": 107
+    },
+    {
+      "source": 210,
+      "target": 108
+    },
+    {
+      "source": 210,
+      "target": 109
+    },
+    {
+      "source": 208,
+      "target": 211
+    },
+    {
+      "source": 211,
+      "target": 110
+    },
+    {
+      "source": 211,
+      "target": 111
+    },
+    {
+      "source": 211,
+      "target": 112
+    },
+    {
+      "source": 211,
+      "target": 113
+    },
+    {
+      "source": 200,
+      "target": 212
+    },
+    {
+      "source": 212,
+      "target": 114
+    },
+    {
+      "source": 212,
+      "target": 115
+    },
+    {
+      "source": 212,
+      "target": 116
+    },
+    {
+      "source": 212,
+      "target": 117
+    },
+    {
+      "source": 212,
+      "target": 118
+    },
+    {
+      "source": 212,
+      "target": 119
+    },
+    {
+      "source": 212,
+      "target": 120
+    },
+    {
+      "source": 212,
+      "target": 121
+    },
+    {
+      "source": 212,
+      "target": 122
+    },
+    {
+      "source": 233,
+      "target": 213
+    },
+    {
+      "source": 213,
+      "target": 214
+    },
+    {
+      "source": 214,
+      "target": 215
+    },
+    {
+      "source": 215,
+      "target": 216
+    },
+    {
+      "source": 216,
+      "target": 123
+    },
+    {
+      "source": 216,
+      "target": 124
+    },
+    {
+      "source": 216,
+      "target": 125
+    },
+    {
+      "source": 216,
+      "target": 126
+    },
+    {
+      "source": 216,
+      "target": 127
+    },
+    {
+      "source": 216,
+      "target": 128
+    },
+    {
+      "source": 215,
+      "target": 217
+    },
+    {
+      "source": 217,
+      "target": 129
+    },
+    {
+      "source": 217,
+      "target": 130
+    },
+    {
+      "source": 217,
+      "target": 131
+    },
+    {
+      "source": 217,
+      "target": 132
+    },
+    {
+      "source": 217,
+      "target": 133
+    },
+    {
+      "source": 214,
+      "target": 218
+    },
+    {
+      "source": 218,
+      "target": 219
+    },
+    {
+      "source": 219,
+      "target": 134
+    },
+    {
+      "source": 219,
+      "target": 220
+    },
+    {
+      "source": 220,
+      "target": 135
+    },
+    {
+      "source": 220,
+      "target": 136
+    },
+    {
+      "source": 220,
+      "target": 137
+    },
+    {
+      "source": 220,
+      "target": 138
+    },
+    {
+      "source": 220,
+      "target": 139
+    },
+    {
+      "source": 219,
+      "target": 221
+    },
+    {
+      "source": 221,
+      "target": 140
+    },
+    {
+      "source": 221,
+      "target": 141
+    },
+    {
+      "source": 221,
+      "target": 142
+    },
+    {
+      "source": 221,
+      "target": 143
+    },
+    {
+      "source": 221,
+      "target": 144
+    },
+    {
+      "source": 218,
+      "target": 222
+    },
+    {
+      "source": 222,
+      "target": 145
+    },
+    {
+      "source": 222,
+      "target": 146
+    },
+    {
+      "source": 218,
+      "target": 223
+    },
+    {
+      "source": 223,
+      "target": 147
+    },
+    {
+      "source": 223,
+      "target": 148
+    },
+    {
+      "source": 223,
+      "target": 149
+    },
+    {
+      "source": 223,
+      "target": 150
+    },
+    {
+      "source": 223,
+      "target": 151
+    },
+    {
+      "source": 223,
+      "target": 152
+    },
+    {
+      "source": 218,
+      "target": 224
+    },
+    {
+      "source": 224,
+      "target": 153
+    },
+    {
+      "source": 224,
+      "target": 154
+    },
+    {
+      "source": 224,
+      "target": 155
+    },
+    {
+      "source": 224,
+      "target": 156
+    },
+    {
+      "source": 224,
+      "target": 157
+    },
+    {
+      "source": 213,
+      "target": 225
+    },
+    {
+      "source": 225,
+      "target": 226
+    },
+    {
+      "source": 226,
+      "target": 158
+    },
+    {
+      "source": 226,
+      "target": 159
+    },
+    {
+      "source": 226,
+      "target": 160
+    },
+    {
+      "source": 226,
+      "target": 161
+    },
+    {
+      "source": 226,
+      "target": 162
+    },
+    {
+      "source": 225,
+      "target": 227
+    },
+    {
+      "source": 227,
+      "target": 228
+    },
+    {
+      "source": 228,
+      "target": 163
+    },
+    {
+      "source": 228,
+      "target": 164
+    },
+    {
+      "source": 227,
+      "target": 229
+    },
+    {
+      "source": 229,
+      "target": 165
+    },
+    {
+      "source": 229,
+      "target": 230
+    },
+    {
+      "source": 230,
+      "target": 231
+    },
+    {
+      "source": 231,
+      "target": 232
+    },
+    {
+      "source": 232,
+      "target": 166
+    },
+    {
+      "source": 232,
+      "target": 167
+    },
+    {
+      "source": 232,
+      "target": 168
+    },
+    {
+      "source": 231,
+      "target": 169
+    },
+    {
+      "source": 230,
+      "target": 170
+    }
+  ]
+}
