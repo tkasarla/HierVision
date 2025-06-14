@@ -1,0 +1,565 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "id": 50,
+      "label": "root"
+    },
+    {
+      "id": 51,
+      "label": "household"
+    },
+    {
+      "id": 52,
+      "label": "electronics"
+    },
+    {
+      "id": 53,
+      "label": "personal"
+    },
+    {
+      "id": 54,
+      "label": "lightning"
+    },
+    {
+      "id": 55,
+      "label": "container"
+    },
+    {
+      "id": 56,
+      "label": "devices"
+    },
+    {
+      "id": 57,
+      "label": "accessories"
+    },
+    {
+      "id": 58,
+      "label": "stationary"
+    },
+    {
+      "id": 59,
+      "label": "recreation"
+    },
+    {
+      "id": 60,
+      "label": "light_bulb"
+    },
+    {
+      "id": 61,
+      "label": "can"
+    },
+    {
+      "id": 62,
+      "label": "cup"
+    },
+    {
+      "id": 63,
+      "label": "mobile_phone"
+    },
+    {
+      "id": 64,
+      "label": "remote_control"
+    },
+    {
+      "id": 65,
+      "label": "plug_adapter"
+    },
+    {
+      "id": 66,
+      "label": "marker"
+    },
+    {
+      "id": 67,
+      "label": "scissor"
+    },
+    {
+      "id": 68,
+      "label": "ball"
+    },
+    {
+      "id": 69,
+      "label": "glass"
+    },
+    {
+      "id": 3,
+      "label": "light_bulb1"
+    },
+    {
+      "id": 33,
+      "label": "light_bulb2"
+    },
+    {
+      "id": 18,
+      "label": "light_bulb3"
+    },
+    {
+      "id": 38,
+      "label": "light_bulb4"
+    },
+    {
+      "id": 28,
+      "label": "light_bulb5"
+    },
+    {
+      "id": 4,
+      "label": "can1"
+    },
+    {
+      "id": 34,
+      "label": "can2"
+    },
+    {
+      "id": 19,
+      "label": "can3"
+    },
+    {
+      "id": 39,
+      "label": "can4"
+    },
+    {
+      "id": 29,
+      "label": "can5"
+    },
+    {
+      "id": 8,
+      "label": "cup1"
+    },
+    {
+      "id": 23,
+      "label": "cup2"
+    },
+    {
+      "id": 43,
+      "label": "cup3"
+    },
+    {
+      "id": 48,
+      "label": "cup4"
+    },
+    {
+      "id": 13,
+      "label": "cup5"
+    },
+    {
+      "id": 1,
+      "label": "mobile_phone1"
+    },
+    {
+      "id": 31,
+      "label": "mobile_phone2"
+    },
+    {
+      "id": 16,
+      "label": "mobile_phone3"
+    },
+    {
+      "id": 36,
+      "label": "mobile_phone4"
+    },
+    {
+      "id": 26,
+      "label": "mobile_phone5"
+    },
+    {
+      "id": 9,
+      "label": "remote_control1"
+    },
+    {
+      "id": 24,
+      "label": "remote_control2"
+    },
+    {
+      "id": 44,
+      "label": "remote_control3"
+    },
+    {
+      "id": 49,
+      "label": "remote_control4"
+    },
+    {
+      "id": 14,
+      "label": "remote_control5"
+    },
+    {
+      "id": 0,
+      "label": "plug_adapter1"
+    },
+    {
+      "id": 30,
+      "label": "plug_adapter2"
+    },
+    {
+      "id": 15,
+      "label": "plug_adapter3"
+    },
+    {
+      "id": 35,
+      "label": "plug_adapter4"
+    },
+    {
+      "id": 25,
+      "label": "plug_adapter5"
+    },
+    {
+      "id": 7,
+      "label": "marker1"
+    },
+    {
+      "id": 22,
+      "label": "marker2"
+    },
+    {
+      "id": 42,
+      "label": "marker3"
+    },
+    {
+      "id": 47,
+      "label": "marker4"
+    },
+    {
+      "id": 12,
+      "label": "marker5"
+    },
+    {
+      "id": 2,
+      "label": "scissor1"
+    },
+    {
+      "id": 32,
+      "label": "scissor2"
+    },
+    {
+      "id": 17,
+      "label": "scissor3"
+    },
+    {
+      "id": 37,
+      "label": "scissor4"
+    },
+    {
+      "id": 27,
+      "label": "scissor5"
+    },
+    {
+      "id": 6,
+      "label": "ball1"
+    },
+    {
+      "id": 21,
+      "label": "ball2"
+    },
+    {
+      "id": 41,
+      "label": "ball3"
+    },
+    {
+      "id": 46,
+      "label": "ball4"
+    },
+    {
+      "id": 11,
+      "label": "ball5"
+    },
+    {
+      "id": 5,
+      "label": "glass1"
+    },
+    {
+      "id": 20,
+      "label": "glass2"
+    },
+    {
+      "id": 40,
+      "label": "glass3"
+    },
+    {
+      "id": 45,
+      "label": "glass4"
+    },
+    {
+      "id": 10,
+      "label": "glass5"
+    }
+  ],
+  "links": [
+    {
+      "source": 50,
+      "target": 51
+    },
+    {
+      "source": 50,
+      "target": 52
+    },
+    {
+      "source": 50,
+      "target": 53
+    },
+    {
+      "source": 51,
+      "target": 54
+    },
+    {
+      "source": 51,
+      "target": 55
+    },
+    {
+      "source": 52,
+      "target": 56
+    },
+    {
+      "source": 52,
+      "target": 57
+    },
+    {
+      "source": 53,
+      "target": 58
+    },
+    {
+      "source": 53,
+      "target": 59
+    },
+    {
+      "source": 54,
+      "target": 60
+    },
+    {
+      "source": 55,
+      "target": 61
+    },
+    {
+      "source": 55,
+      "target": 62
+    },
+    {
+      "source": 56,
+      "target": 63
+    },
+    {
+      "source": 56,
+      "target": 64
+    },
+    {
+      "source": 57,
+      "target": 65
+    },
+    {
+      "source": 58,
+      "target": 66
+    },
+    {
+      "source": 58,
+      "target": 67
+    },
+    {
+      "source": 59,
+      "target": 68
+    },
+    {
+      "source": 59,
+      "target": 69
+    },
+    {
+      "source": 60,
+      "target": 3
+    },
+    {
+      "source": 60,
+      "target": 33
+    },
+    {
+      "source": 60,
+      "target": 18
+    },
+    {
+      "source": 60,
+      "target": 38
+    },
+    {
+      "source": 60,
+      "target": 28
+    },
+    {
+      "source": 61,
+      "target": 4
+    },
+    {
+      "source": 61,
+      "target": 34
+    },
+    {
+      "source": 61,
+      "target": 19
+    },
+    {
+      "source": 61,
+      "target": 39
+    },
+    {
+      "source": 61,
+      "target": 29
+    },
+    {
+      "source": 62,
+      "target": 8
+    },
+    {
+      "source": 62,
+      "target": 23
+    },
+    {
+      "source": 62,
+      "target": 43
+    },
+    {
+      "source": 62,
+      "target": 48
+    },
+    {
+      "source": 62,
+      "target": 13
+    },
+    {
+      "source": 63,
+      "target": 1
+    },
+    {
+      "source": 63,
+      "target": 31
+    },
+    {
+      "source": 63,
+      "target": 16
+    },
+    {
+      "source": 63,
+      "target": 36
+    },
+    {
+      "source": 63,
+      "target": 26
+    },
+    {
+      "source": 64,
+      "target": 9
+    },
+    {
+      "source": 64,
+      "target": 24
+    },
+    {
+      "source": 64,
+      "target": 44
+    },
+    {
+      "source": 64,
+      "target": 49
+    },
+    {
+      "source": 64,
+      "target": 14
+    },
+    {
+      "source": 65,
+      "target": 0
+    },
+    {
+      "source": 65,
+      "target": 30
+    },
+    {
+      "source": 65,
+      "target": 15
+    },
+    {
+      "source": 65,
+      "target": 35
+    },
+    {
+      "source": 65,
+      "target": 25
+    },
+    {
+      "source": 66,
+      "target": 7
+    },
+    {
+      "source": 66,
+      "target": 22
+    },
+    {
+      "source": 66,
+      "target": 42
+    },
+    {
+      "source": 66,
+      "target": 47
+    },
+    {
+      "source": 66,
+      "target": 12
+    },
+    {
+      "source": 67,
+      "target": 2
+    },
+    {
+      "source": 67,
+      "target": 32
+    },
+    {
+      "source": 67,
+      "target": 17
+    },
+    {
+      "source": 67,
+      "target": 37
+    },
+    {
+      "source": 67,
+      "target": 27
+    },
+    {
+      "source": 68,
+      "target": 6
+    },
+    {
+      "source": 68,
+      "target": 21
+    },
+    {
+      "source": 68,
+      "target": 41
+    },
+    {
+      "source": 68,
+      "target": 46
+    },
+    {
+      "source": 68,
+      "target": 11
+    },
+    {
+      "source": 69,
+      "target": 5
+    },
+    {
+      "source": 69,
+      "target": 20
+    },
+    {
+      "source": 69,
+      "target": 40
+    },
+    {
+      "source": 69,
+      "target": 45
+    },
+    {
+      "source": 69,
+      "target": 10
+    }
+  ]
+}
