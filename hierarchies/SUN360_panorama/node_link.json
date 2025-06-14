@@ -1,0 +1,3021 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "id": "root",
+      "label": "Root Node"
+    },
+    {
+      "id": "indoor",
+      "label": "indoor"
+    },
+    {
+      "id": "indoor/accounting",
+      "label": "accounting"
+    },
+    {
+      "id": "indoor/airplane_interior",
+      "label": "airplane_interior"
+    },
+    {
+      "id": "indoor/apartment",
+      "label": "apartment"
+    },
+    {
+      "id": "indoor/apartment/small_room_in_apartmant",
+      "label": "small_room_in_apartmant"
+    },
+    {
+      "id": "indoor/aquarium",
+      "label": "aquarium"
+    },
+    {
+      "id": "indoor/art_gallery",
+      "label": "art_gallery"
+    },
+    {
+      "id": "indoor/bakery",
+      "label": "bakery"
+    },
+    {
+      "id": "indoor/bar",
+      "label": "bar"
+    },
+    {
+      "id": "indoor/basement",
+      "label": "basement"
+    },
+    {
+      "id": "indoor/bathroom",
+      "label": "bathroom"
+    },
+    {
+      "id": "indoor/bedroom",
+      "label": "bedroom"
+    },
+    {
+      "id": "indoor/belfry",
+      "label": "belfry"
+    },
+    {
+      "id": "indoor/bike_parking_lot",
+      "label": "bike_parking_lot"
+    },
+    {
+      "id": "indoor/bike_repair_room",
+      "label": "bike_repair_room"
+    },
+    {
+      "id": "indoor/bird_cage",
+      "label": "bird_cage"
+    },
+    {
+      "id": "indoor/boat_factory",
+      "label": "boat_factory"
+    },
+    {
+      "id": "indoor/boat_interior",
+      "label": "boat_interior"
+    },
+    {
+      "id": "indoor/bodega",
+      "label": "bodega"
+    },
+    {
+      "id": "indoor/book_store",
+      "label": "book_store"
+    },
+    {
+      "id": "indoor/building_in_repair",
+      "label": "building_in_repair"
+    },
+    {
+      "id": "indoor/bus_interior",
+      "label": "bus_interior"
+    },
+    {
+      "id": "indoor/bus_station",
+      "label": "bus_station"
+    },
+    {
+      "id": "indoor/business_hall",
+      "label": "business_hall"
+    },
+    {
+      "id": "indoor/cafe",
+      "label": "cafe"
+    },
+    {
+      "id": "indoor/cafe/stereotype",
+      "label": "stereotype"
+    },
+    {
+      "id": "indoor/car_interior",
+      "label": "car_interior"
+    },
+    {
+      "id": "indoor/car_repair_room",
+      "label": "car_repair_room"
+    },
+    {
+      "id": "indoor/carriage",
+      "label": "carriage"
+    },
+    {
+      "id": "indoor/cave",
+      "label": "cave"
+    },
+    {
+      "id": "indoor/cellar",
+      "label": "cellar"
+    },
+    {
+      "id": "indoor/chat_room",
+      "label": "chat_room"
+    },
+    {
+      "id": "indoor/childs_room_daycare",
+      "label": "childs_room_daycare"
+    },
+    {
+      "id": "indoor/chinese_buiding_interior",
+      "label": "chinese_buiding_interior"
+    },
+    {
+      "id": "indoor/church",
+      "label": "church"
+    },
+    {
+      "id": "indoor/circular_platform",
+      "label": "circular_platform"
+    },
+    {
+      "id": "indoor/classroom",
+      "label": "classroom"
+    },
+    {
+      "id": "indoor/closet",
+      "label": "closet"
+    },
+    {
+      "id": "indoor/coffee_shop",
+      "label": "coffee_shop"
+    },
+    {
+      "id": "indoor/conference_room",
+      "label": "conference_room"
+    },
+    {
+      "id": "indoor/corridor",
+      "label": "corridor"
+    },
+    {
+      "id": "indoor/corridor/chinese_long_corridor",
+      "label": "chinese_long_corridor"
+    },
+    {
+      "id": "indoor/corridor/common_corridor",
+      "label": "common_corridor"
+    },
+    {
+      "id": "indoor/corridor/corridor_with_window",
+      "label": "corridor_with_window"
+    },
+    {
+      "id": "indoor/cybercafe",
+      "label": "cybercafe"
+    },
+    {
+      "id": "indoor/dentists_office",
+      "label": "dentists_office"
+    },
+    {
+      "id": "indoor/dining_room",
+      "label": "dining_room"
+    },
+    {
+      "id": "indoor/disco",
+      "label": "disco"
+    },
+    {
+      "id": "indoor/dormitory",
+      "label": "dormitory"
+    },
+    {
+      "id": "indoor/drugstore",
+      "label": "drugstore"
+    },
+    {
+      "id": "indoor/elevator",
+      "label": "elevator"
+    },
+    {
+      "id": "indoor/empty_room",
+      "label": "empty_room"
+    },
+    {
+      "id": "indoor/entertainment_room",
+      "label": "entertainment_room"
+    },
+    {
+      "id": "indoor/exhibition_hall",
+      "label": "exhibition_hall"
+    },
+    {
+      "id": "indoor/exhibition_hall/boat_exhibition",
+      "label": "boat_exhibition"
+    },
+    {
+      "id": "indoor/exhibition_hall/bonsai_exhibition",
+      "label": "bonsai_exhibition"
+    },
+    {
+      "id": "indoor/exhibition_hall/car_exhibition",
+      "label": "car_exhibition"
+    },
+    {
+      "id": "indoor/exhibition_hall/door_exhibition",
+      "label": "door_exhibition"
+    },
+    {
+      "id": "indoor/exhibition_hall/expo_showroom",
+      "label": "expo_showroom"
+    },
+    {
+      "id": "indoor/exhibition_hall/firearms",
+      "label": "firearms"
+    },
+    {
+      "id": "indoor/exhibition_hall/furniture_exbihition",
+      "label": "furniture_exbihition"
+    },
+    {
+      "id": "indoor/exhibition_hall/guided_missile",
+      "label": "guided_missile"
+    },
+    {
+      "id": "indoor/exhibition_hall/ice_engraving",
+      "label": "ice_engraving"
+    },
+    {
+      "id": "indoor/exhibition_hall/model_boat_exhibition",
+      "label": "model_boat_exhibition"
+    },
+    {
+      "id": "indoor/exhibition_hall/model_car_exhibition",
+      "label": "model_car_exhibition"
+    },
+    {
+      "id": "indoor/exhibition_hall/motorbike_exhibition",
+      "label": "motorbike_exhibition"
+    },
+    {
+      "id": "indoor/exhibition_hall/puppet",
+      "label": "puppet"
+    },
+    {
+      "id": "indoor/exhibition_hall/root_carving",
+      "label": "root_carving"
+    },
+    {
+      "id": "indoor/exhibition_hall/tank",
+      "label": "tank"
+    },
+    {
+      "id": "indoor/exhibition_hall/train_exhibition",
+      "label": "train_exhibition"
+    },
+    {
+      "id": "indoor/factory",
+      "label": "factory"
+    },
+    {
+      "id": "indoor/fire_balloon",
+      "label": "fire_balloon"
+    },
+    {
+      "id": "indoor/fire_fighting_station",
+      "label": "fire_fighting_station"
+    },
+    {
+      "id": "indoor/flower_shop",
+      "label": "flower_shop"
+    },
+    {
+      "id": "indoor/funicular",
+      "label": "funicular"
+    },
+    {
+      "id": "indoor/gambling_house",
+      "label": "gambling_house"
+    },
+    {
+      "id": "indoor/gas_station",
+      "label": "gas_station"
+    },
+    {
+      "id": "indoor/greenhouse",
+      "label": "greenhouse"
+    },
+    {
+      "id": "indoor/gym",
+      "label": "gym"
+    },
+    {
+      "id": "indoor/hair_salon",
+      "label": "hair_salon"
+    },
+    {
+      "id": "indoor/hallway",
+      "label": "hallway"
+    },
+    {
+      "id": "indoor/hangar",
+      "label": "hangar"
+    },
+    {
+      "id": "indoor/historical_building",
+      "label": "historical_building"
+    },
+    {
+      "id": "indoor/historical_building/historical_building_lobby",
+      "label": "historical_building_lobby"
+    },
+    {
+      "id": "indoor/historical_building/historical_building_ruin",
+      "label": "historical_building_ruin"
+    },
+    {
+      "id": "indoor/historical_building/historical_building_stairs",
+      "label": "historical_building_stairs"
+    },
+    {
+      "id": "indoor/hospital_room",
+      "label": "hospital_room"
+    },
+    {
+      "id": "indoor/human_wall",
+      "label": "human_wall"
+    },
+    {
+      "id": "indoor/indoor_construction_site",
+      "label": "indoor_construction_site"
+    },
+    {
+      "id": "indoor/indoor_pool",
+      "label": "indoor_pool"
+    },
+    {
+      "id": "indoor/indoor_stree",
+      "label": "indoor_stree"
+    },
+    {
+      "id": "indoor/jail_cell",
+      "label": "jail_cell"
+    },
+    {
+      "id": "indoor/kitchen",
+      "label": "kitchen"
+    },
+    {
+      "id": "indoor/kitchen/bar",
+      "label": "bar"
+    },
+    {
+      "id": "indoor/kitchen/kitchen_modern_home",
+      "label": "kitchen_modern_home"
+    },
+    {
+      "id": "indoor/kitchen/kitchen_office",
+      "label": "kitchen_office"
+    },
+    {
+      "id": "indoor/kitchen/kitchen_restaurant",
+      "label": "kitchen_restaurant"
+    },
+    {
+      "id": "indoor/kitchen/kitchen_special_home",
+      "label": "kitchen_special_home"
+    },
+    {
+      "id": "indoor/kitchen/kitchen_studio",
+      "label": "kitchen_studio"
+    },
+    {
+      "id": "indoor/laboratory",
+      "label": "laboratory"
+    },
+    {
+      "id": "indoor/lecture_theater",
+      "label": "lecture_theater"
+    },
+    {
+      "id": "indoor/legislative_chamber",
+      "label": "legislative_chamber"
+    },
+    {
+      "id": "indoor/library",
+      "label": "library"
+    },
+    {
+      "id": "indoor/liquor_store",
+      "label": "liquor_store"
+    },
+    {
+      "id": "indoor/living_room",
+      "label": "living_room"
+    },
+    {
+      "id": "indoor/living_room/stereotype",
+      "label": "stereotype"
+    },
+    {
+      "id": "indoor/lobby_atrium",
+      "label": "lobby_atrium"
+    },
+    {
+      "id": "indoor/lobby_atrium/hotel_lobby",
+      "label": "hotel_lobby"
+    },
+    {
+      "id": "indoor/lobby_atrium/reating_area",
+      "label": "reating_area"
+    },
+    {
+      "id": "indoor/lobby_atrium/sand_table",
+      "label": "sand_table"
+    },
+    {
+      "id": "indoor/majiang_room",
+      "label": "majiang_room"
+    },
+    {
+      "id": "indoor/massage_room",
+      "label": "massage_room"
+    },
+    {
+      "id": "indoor/mechanical_room",
+      "label": "mechanical_room"
+    },
+    {
+      "id": "indoor/moldern_wall_painting",
+      "label": "moldern_wall_painting"
+    },
+    {
+      "id": "indoor/monitor_room",
+      "label": "monitor_room"
+    },
+    {
+      "id": "indoor/museum",
+      "label": "museum"
+    },
+    {
+      "id": "indoor/observatory",
+      "label": "observatory"
+    },
+    {
+      "id": "indoor/office",
+      "label": "office"
+    },
+    {
+      "id": "indoor/office/counter_office",
+      "label": "counter_office"
+    },
+    {
+      "id": "indoor/old_wall_painting",
+      "label": "old_wall_painting"
+    },
+    {
+      "id": "indoor/others",
+      "label": "others"
+    },
+    {
+      "id": "indoor/painting_gallery",
+      "label": "painting_gallery"
+    },
+    {
+      "id": "indoor/parking_garage",
+      "label": "parking_garage"
+    },
+    {
+      "id": "indoor/pet_hospital",
+      "label": "pet_hospital"
+    },
+    {
+      "id": "indoor/photographic_studio",
+      "label": "photographic_studio"
+    },
+    {
+      "id": "indoor/piazza_with_ceiling",
+      "label": "piazza_with_ceiling"
+    },
+    {
+      "id": "indoor/pilothouse",
+      "label": "pilothouse"
+    },
+    {
+      "id": "indoor/private_clinic",
+      "label": "private_clinic"
+    },
+    {
+      "id": "indoor/railcar",
+      "label": "railcar"
+    },
+    {
+      "id": "indoor/reading_room",
+      "label": "reading_room"
+    },
+    {
+      "id": "indoor/reception_hall",
+      "label": "reception_hall"
+    },
+    {
+      "id": "indoor/refreshment_room",
+      "label": "refreshment_room"
+    },
+    {
+      "id": "indoor/restaurant",
+      "label": "restaurant"
+    },
+    {
+      "id": "indoor/restaurant/Janpanese_restaurant",
+      "label": "Janpanese_restaurant"
+    },
+    {
+      "id": "indoor/restaurant/McDonald's",
+      "label": "McDonald's"
+    },
+    {
+      "id": "indoor/restaurant/food_making",
+      "label": "food_making"
+    },
+    {
+      "id": "indoor/restaurant/restaurant_in_cave",
+      "label": "restaurant_in_cave"
+    },
+    {
+      "id": "indoor/restaurant/restaurant_in_tent",
+      "label": "restaurant_in_tent"
+    },
+    {
+      "id": "indoor/restaurant/restaurant_with_stage",
+      "label": "restaurant_with_stage"
+    },
+    {
+      "id": "indoor/restaurant/wedding_restaurant",
+      "label": "wedding_restaurant"
+    },
+    {
+      "id": "indoor/sauna",
+      "label": "sauna"
+    },
+    {
+      "id": "indoor/shoe_store",
+      "label": "shoe_store"
+    },
+    {
+      "id": "indoor/shopping_mall",
+      "label": "shopping_mall"
+    },
+    {
+      "id": "indoor/shopping_mall/shopping_mall_atrium",
+      "label": "shopping_mall_atrium"
+    },
+    {
+      "id": "indoor/shopping_mall/shopping_mall_reating_area",
+      "label": "shopping_mall_reating_area"
+    },
+    {
+      "id": "indoor/sports_room",
+      "label": "sports_room"
+    },
+    {
+      "id": "indoor/sports_room/automobile_race",
+      "label": "automobile_race"
+    },
+    {
+      "id": "indoor/sports_room/billiards",
+      "label": "billiards"
+    },
+    {
+      "id": "indoor/sports_room/bowling",
+      "label": "bowling"
+    },
+    {
+      "id": "indoor/sports_room/boxing_hall",
+      "label": "boxing_hall"
+    },
+    {
+      "id": "indoor/sports_room/canoeing",
+      "label": "canoeing"
+    },
+    {
+      "id": "indoor/sports_room/fencing",
+      "label": "fencing"
+    },
+    {
+      "id": "indoor/sports_room/golf_practise_room",
+      "label": "golf_practise_room"
+    },
+    {
+      "id": "indoor/sports_room/skateboard",
+      "label": "skateboard"
+    },
+    {
+      "id": "indoor/sports_room/squash",
+      "label": "squash"
+    },
+    {
+      "id": "indoor/stable",
+      "label": "stable"
+    },
+    {
+      "id": "indoor/stadium",
+      "label": "stadium"
+    },
+    {
+      "id": "indoor/stadium/badminton",
+      "label": "badminton"
+    },
+    {
+      "id": "indoor/stadium/basketball",
+      "label": "basketball"
+    },
+    {
+      "id": "indoor/stadium/general_purpose_stadium",
+      "label": "general_purpose_stadium"
+    },
+    {
+      "id": "indoor/stadium/gymnastics",
+      "label": "gymnastics"
+    },
+    {
+      "id": "indoor/stadium/ice_hockey",
+      "label": "ice_hockey"
+    },
+    {
+      "id": "indoor/stadium/pingpong",
+      "label": "pingpong"
+    },
+    {
+      "id": "indoor/stadium/rock_climbing",
+      "label": "rock_climbing"
+    },
+    {
+      "id": "indoor/stage",
+      "label": "stage"
+    },
+    {
+      "id": "indoor/staircase",
+      "label": "staircase"
+    },
+    {
+      "id": "indoor/stone_bridge",
+      "label": "stone_bridge"
+    },
+    {
+      "id": "indoor/stone_pillar",
+      "label": "stone_pillar"
+    },
+    {
+      "id": "indoor/stone_room",
+      "label": "stone_room"
+    },
+    {
+      "id": "indoor/storage_room",
+      "label": "storage_room"
+    },
+    {
+      "id": "indoor/store",
+      "label": "store"
+    },
+    {
+      "id": "indoor/stowage",
+      "label": "stowage"
+    },
+    {
+      "id": "indoor/studio",
+      "label": "studio"
+    },
+    {
+      "id": "indoor/study_room",
+      "label": "study_room"
+    },
+    {
+      "id": "indoor/subway_station",
+      "label": "subway_station"
+    },
+    {
+      "id": "indoor/telephone_booth",
+      "label": "telephone_booth"
+    },
+    {
+      "id": "indoor/telestudio",
+      "label": "telestudio"
+    },
+    {
+      "id": "indoor/temple",
+      "label": "temple"
+    },
+    {
+      "id": "indoor/tent",
+      "label": "tent"
+    },
+    {
+      "id": "indoor/tent/conference_room_in_tent",
+      "label": "conference_room_in_tent"
+    },
+    {
+      "id": "indoor/tent/shop_in_tent",
+      "label": "shop_in_tent"
+    },
+    {
+      "id": "indoor/tent/theater_in_tent",
+      "label": "theater_in_tent"
+    },
+    {
+      "id": "indoor/terminal_building",
+      "label": "terminal_building"
+    },
+    {
+      "id": "indoor/thatched_cottage",
+      "label": "thatched_cottage"
+    },
+    {
+      "id": "indoor/theater",
+      "label": "theater"
+    },
+    {
+      "id": "indoor/theater/movie_threater",
+      "label": "movie_threater"
+    },
+    {
+      "id": "indoor/tomb",
+      "label": "tomb"
+    },
+    {
+      "id": "indoor/train_interior",
+      "label": "train_interior"
+    },
+    {
+      "id": "indoor/train_station",
+      "label": "train_station"
+    },
+    {
+      "id": "indoor/underground_ tunnel",
+      "label": "underground_ tunnel"
+    },
+    {
+      "id": "indoor/underground_water_tunnel",
+      "label": "underground_water_tunnel"
+    },
+    {
+      "id": "indoor/unsorted",
+      "label": "unsorted"
+    },
+    {
+      "id": "indoor/unsorted/360",
+      "label": "360"
+    },
+    {
+      "id": "indoor/wedding_dress_shop",
+      "label": "wedding_dress_shop"
+    },
+    {
+      "id": "indoor/wood_awning",
+      "label": "wood_awning"
+    },
+    {
+      "id": "indoor/wood_frame",
+      "label": "wood_frame"
+    },
+    {
+      "id": "indoor/wood_room",
+      "label": "wood_room"
+    },
+    {
+      "id": "indoor/workshop",
+      "label": "workshop"
+    },
+    {
+      "id": "indoor/workshop/clothing_workshop",
+      "label": "clothing_workshop"
+    },
+    {
+      "id": "indoor/zoo",
+      "label": "zoo"
+    },
+    {
+      "id": "outdoor",
+      "label": "outdoor"
+    },
+    {
+      "id": "outdoor/air_show",
+      "label": "air_show"
+    },
+    {
+      "id": "outdoor/airplane_repair",
+      "label": "airplane_repair"
+    },
+    {
+      "id": "outdoor/airport",
+      "label": "airport"
+    },
+    {
+      "id": "outdoor/airport_terminal",
+      "label": "airport_terminal"
+    },
+    {
+      "id": "outdoor/amusement_park",
+      "label": "amusement_park"
+    },
+    {
+      "id": "outdoor/archaeological_site",
+      "label": "archaeological_site"
+    },
+    {
+      "id": "outdoor/archway_entrance",
+      "label": "archway_entrance"
+    },
+    {
+      "id": "outdoor/armory",
+      "label": "armory"
+    },
+    {
+      "id": "outdoor/bamboo",
+      "label": "bamboo"
+    },
+    {
+      "id": "outdoor/beehouse",
+      "label": "beehouse"
+    },
+    {
+      "id": "outdoor/bike_parking",
+      "label": "bike_parking"
+    },
+    {
+      "id": "outdoor/bike_road",
+      "label": "bike_road"
+    },
+    {
+      "id": "outdoor/boat",
+      "label": "boat"
+    },
+    {
+      "id": "outdoor/boat_deck",
+      "label": "boat_deck"
+    },
+    {
+      "id": "outdoor/bridge",
+      "label": "bridge"
+    },
+    {
+      "id": "outdoor/bridge_frame",
+      "label": "bridge_frame"
+    },
+    {
+      "id": "outdoor/building",
+      "label": "building"
+    },
+    {
+      "id": "outdoor/building_group",
+      "label": "building_group"
+    },
+    {
+      "id": "outdoor/cable_car",
+      "label": "cable_car"
+    },
+    {
+      "id": "outdoor/car_race",
+      "label": "car_race"
+    },
+    {
+      "id": "outdoor/carved_stone",
+      "label": "carved_stone"
+    },
+    {
+      "id": "outdoor/castle",
+      "label": "castle"
+    },
+    {
+      "id": "outdoor/cave",
+      "label": "cave"
+    },
+    {
+      "id": "outdoor/chinese_architectural",
+      "label": "chinese_architectural"
+    },
+    {
+      "id": "outdoor/church",
+      "label": "church"
+    },
+    {
+      "id": "outdoor/cinema",
+      "label": "cinema"
+    },
+    {
+      "id": "outdoor/city_coast",
+      "label": "city_coast"
+    },
+    {
+      "id": "outdoor/city_river",
+      "label": "city_river"
+    },
+    {
+      "id": "outdoor/city_wall",
+      "label": "city_wall"
+    },
+    {
+      "id": "outdoor/coast",
+      "label": "coast"
+    },
+    {
+      "id": "outdoor/concert",
+      "label": "concert"
+    },
+    {
+      "id": "outdoor/construction_site",
+      "label": "construction_site"
+    },
+    {
+      "id": "outdoor/corridor",
+      "label": "corridor"
+    },
+    {
+      "id": "outdoor/country_road",
+      "label": "country_road"
+    },
+    {
+      "id": "outdoor/countryside",
+      "label": "countryside"
+    },
+    {
+      "id": "outdoor/crane",
+      "label": "crane"
+    },
+    {
+      "id": "outdoor/cropland",
+      "label": "cropland"
+    },
+    {
+      "id": "outdoor/dam",
+      "label": "dam"
+    },
+    {
+      "id": "outdoor/desert",
+      "label": "desert"
+    },
+    {
+      "id": "outdoor/dolphin_show",
+      "label": "dolphin_show"
+    },
+    {
+      "id": "outdoor/doorway",
+      "label": "doorway"
+    },
+    {
+      "id": "outdoor/empty_space",
+      "label": "empty_space"
+    },
+    {
+      "id": "outdoor/factory",
+      "label": "factory"
+    },
+    {
+      "id": "outdoor/field",
+      "label": "field"
+    },
+    {
+      "id": "outdoor/fire_balloon",
+      "label": "fire_balloon"
+    },
+    {
+      "id": "outdoor/firecracker",
+      "label": "firecracker"
+    },
+    {
+      "id": "outdoor/fishing",
+      "label": "fishing"
+    },
+    {
+      "id": "outdoor/fitness_field",
+      "label": "fitness_field"
+    },
+    {
+      "id": "outdoor/flight_model",
+      "label": "flight_model"
+    },
+    {
+      "id": "outdoor/flower_gardens",
+      "label": "flower_gardens"
+    },
+    {
+      "id": "outdoor/flower_market",
+      "label": "flower_market"
+    },
+    {
+      "id": "outdoor/flyover_bridge",
+      "label": "flyover_bridge"
+    },
+    {
+      "id": "outdoor/forest",
+      "label": "forest"
+    },
+    {
+      "id": "outdoor/fort",
+      "label": "fort"
+    },
+    {
+      "id": "outdoor/fountain",
+      "label": "fountain"
+    },
+    {
+      "id": "outdoor/garbage_dump",
+      "label": "garbage_dump"
+    },
+    {
+      "id": "outdoor/garden",
+      "label": "garden"
+    },
+    {
+      "id": "outdoor/gas_station",
+      "label": "gas_station"
+    },
+    {
+      "id": "outdoor/gate",
+      "label": "gate"
+    },
+    {
+      "id": "outdoor/gathering",
+      "label": "gathering"
+    },
+    {
+      "id": "outdoor/golf",
+      "label": "golf"
+    },
+    {
+      "id": "outdoor/grass",
+      "label": "grass"
+    },
+    {
+      "id": "outdoor/gulch",
+      "label": "gulch"
+    },
+    {
+      "id": "outdoor/highway",
+      "label": "highway"
+    },
+    {
+      "id": "outdoor/historical_building",
+      "label": "historical_building"
+    },
+    {
+      "id": "outdoor/historical_sites",
+      "label": "historical_sites"
+    },
+    {
+      "id": "outdoor/horse_farm",
+      "label": "horse_farm"
+    },
+    {
+      "id": "outdoor/hot_spring",
+      "label": "hot_spring"
+    },
+    {
+      "id": "outdoor/house",
+      "label": "house"
+    },
+    {
+      "id": "outdoor/ice",
+      "label": "ice"
+    },
+    {
+      "id": "outdoor/ice_engraving",
+      "label": "ice_engraving"
+    },
+    {
+      "id": "outdoor/ice_ground",
+      "label": "ice_ground"
+    },
+    {
+      "id": "outdoor/jail",
+      "label": "jail"
+    },
+    {
+      "id": "outdoor/jetty",
+      "label": "jetty"
+    },
+    {
+      "id": "outdoor/kayak",
+      "label": "kayak"
+    },
+    {
+      "id": "outdoor/kindergarten",
+      "label": "kindergarten"
+    },
+    {
+      "id": "outdoor/lake",
+      "label": "lake"
+    },
+    {
+      "id": "outdoor/lakeside",
+      "label": "lakeside"
+    },
+    {
+      "id": "outdoor/lawn",
+      "label": "lawn"
+    },
+    {
+      "id": "outdoor/library",
+      "label": "library"
+    },
+    {
+      "id": "outdoor/loading_machine",
+      "label": "loading_machine"
+    },
+    {
+      "id": "outdoor/long_corridor",
+      "label": "long_corridor"
+    },
+    {
+      "id": "outdoor/map",
+      "label": "map"
+    },
+    {
+      "id": "outdoor/market",
+      "label": "market"
+    },
+    {
+      "id": "outdoor/meeting_place",
+      "label": "meeting_place"
+    },
+    {
+      "id": "outdoor/memorial",
+      "label": "memorial"
+    },
+    {
+      "id": "outdoor/monument",
+      "label": "monument"
+    },
+    {
+      "id": "outdoor/motorbike",
+      "label": "motorbike"
+    },
+    {
+      "id": "outdoor/mountain",
+      "label": "mountain"
+    },
+    {
+      "id": "outdoor/mountain_stream",
+      "label": "mountain_stream"
+    },
+    {
+      "id": "outdoor/museum",
+      "label": "museum"
+    },
+    {
+      "id": "outdoor/observation",
+      "label": "observation"
+    },
+    {
+      "id": "outdoor/old_building",
+      "label": "old_building"
+    },
+    {
+      "id": "outdoor/others",
+      "label": "others"
+    },
+    {
+      "id": "outdoor/overpass",
+      "label": "overpass"
+    },
+    {
+      "id": "outdoor/paragliding",
+      "label": "paragliding"
+    },
+    {
+      "id": "outdoor/park",
+      "label": "park"
+    },
+    {
+      "id": "outdoor/parking_lot",
+      "label": "parking_lot"
+    },
+    {
+      "id": "outdoor/parking_lot_abandoned",
+      "label": "parking_lot_abandoned"
+    },
+    {
+      "id": "outdoor/patio",
+      "label": "patio"
+    },
+    {
+      "id": "outdoor/pavilion",
+      "label": "pavilion"
+    },
+    {
+      "id": "outdoor/pedestrian_bridge",
+      "label": "pedestrian_bridge"
+    },
+    {
+      "id": "outdoor/pedestrian_path",
+      "label": "pedestrian_path"
+    },
+    {
+      "id": "outdoor/picture",
+      "label": "picture"
+    },
+    {
+      "id": "outdoor/plaza_courtyard",
+      "label": "plaza_courtyard"
+    },
+    {
+      "id": "outdoor/plaza_with_ceiling",
+      "label": "plaza_with_ceiling"
+    },
+    {
+      "id": "outdoor/pool",
+      "label": "pool"
+    },
+    {
+      "id": "outdoor/power_plant",
+      "label": "power_plant"
+    },
+    {
+      "id": "outdoor/racecourse",
+      "label": "racecourse"
+    },
+    {
+      "id": "outdoor/residential_district",
+      "label": "residential_district"
+    },
+    {
+      "id": "outdoor/restaurant",
+      "label": "restaurant"
+    },
+    {
+      "id": "outdoor/river_bank",
+      "label": "river_bank"
+    },
+    {
+      "id": "outdoor/riverside",
+      "label": "riverside"
+    },
+    {
+      "id": "outdoor/road",
+      "label": "road"
+    },
+    {
+      "id": "outdoor/roller_skating",
+      "label": "roller_skating"
+    },
+    {
+      "id": "outdoor/roof",
+      "label": "roof"
+    },
+    {
+      "id": "outdoor/room_on_sea",
+      "label": "room_on_sea"
+    },
+    {
+      "id": "outdoor/ruin",
+      "label": "ruin"
+    },
+    {
+      "id": "outdoor/sakura",
+      "label": "sakura"
+    },
+    {
+      "id": "outdoor/salt_field",
+      "label": "salt_field"
+    },
+    {
+      "id": "outdoor/sand_sculpture",
+      "label": "sand_sculpture"
+    },
+    {
+      "id": "outdoor/sawmill",
+      "label": "sawmill"
+    },
+    {
+      "id": "outdoor/school",
+      "label": "school"
+    },
+    {
+      "id": "outdoor/sculpture",
+      "label": "sculpture"
+    },
+    {
+      "id": "outdoor/sea",
+      "label": "sea"
+    },
+    {
+      "id": "outdoor/seafront_house",
+      "label": "seafront_house"
+    },
+    {
+      "id": "outdoor/seafront_swimming",
+      "label": "seafront_swimming"
+    },
+    {
+      "id": "outdoor/shady_path",
+      "label": "shady_path"
+    },
+    {
+      "id": "outdoor/shop",
+      "label": "shop"
+    },
+    {
+      "id": "outdoor/sightseeing_balcony",
+      "label": "sightseeing_balcony"
+    },
+    {
+      "id": "outdoor/sightseeing_balcony_on_mountain",
+      "label": "sightseeing_balcony_on_mountain"
+    },
+    {
+      "id": "outdoor/sightseeing_tower",
+      "label": "sightseeing_tower"
+    },
+    {
+      "id": "outdoor/sightseeing_train",
+      "label": "sightseeing_train"
+    },
+    {
+      "id": "outdoor/single_tower",
+      "label": "single_tower"
+    },
+    {
+      "id": "outdoor/skatepark",
+      "label": "skatepark"
+    },
+    {
+      "id": "outdoor/skiing_field",
+      "label": "skiing_field"
+    },
+    {
+      "id": "outdoor/sky",
+      "label": "sky"
+    },
+    {
+      "id": "outdoor/snow_mountain",
+      "label": "snow_mountain"
+    },
+    {
+      "id": "outdoor/snowy_ground",
+      "label": "snowy_ground"
+    },
+    {
+      "id": "outdoor/sports_field",
+      "label": "sports_field"
+    },
+    {
+      "id": "outdoor/stadium",
+      "label": "stadium"
+    },
+    {
+      "id": "outdoor/stairs",
+      "label": "stairs"
+    },
+    {
+      "id": "outdoor/stone",
+      "label": "stone"
+    },
+    {
+      "id": "outdoor/stone_field",
+      "label": "stone_field"
+    },
+    {
+      "id": "outdoor/street",
+      "label": "street"
+    },
+    {
+      "id": "outdoor/street_with_shed",
+      "label": "street_with_shed"
+    },
+    {
+      "id": "outdoor/swimming_pool",
+      "label": "swimming_pool"
+    },
+    {
+      "id": "outdoor/telephone_booth",
+      "label": "telephone_booth"
+    },
+    {
+      "id": "outdoor/temple",
+      "label": "temple"
+    },
+    {
+      "id": "outdoor/temporary_room",
+      "label": "temporary_room"
+    },
+    {
+      "id": "outdoor/theater",
+      "label": "theater"
+    },
+    {
+      "id": "outdoor/tourism_spot",
+      "label": "tourism_spot"
+    },
+    {
+      "id": "outdoor/tower",
+      "label": "tower"
+    },
+    {
+      "id": "outdoor/traffic_sign_exhibition",
+      "label": "traffic_sign_exhibition"
+    },
+    {
+      "id": "outdoor/train_station",
+      "label": "train_station"
+    },
+    {
+      "id": "outdoor/train_station_or_track",
+      "label": "train_station_or_track"
+    },
+    {
+      "id": "outdoor/trolley_rail",
+      "label": "trolley_rail"
+    },
+    {
+      "id": "outdoor/trolley_station",
+      "label": "trolley_station"
+    },
+    {
+      "id": "outdoor/under_bridge",
+      "label": "under_bridge"
+    },
+    {
+      "id": "outdoor/under_roof",
+      "label": "under_roof"
+    },
+    {
+      "id": "outdoor/under_tower",
+      "label": "under_tower"
+    },
+    {
+      "id": "outdoor/under_tree",
+      "label": "under_tree"
+    },
+    {
+      "id": "outdoor/underwater",
+      "label": "underwater"
+    },
+    {
+      "id": "outdoor/unsorted",
+      "label": "unsorted"
+    },
+    {
+      "id": "outdoor/unsorted/360",
+      "label": "360"
+    },
+    {
+      "id": "outdoor/villa",
+      "label": "villa"
+    },
+    {
+      "id": "outdoor/warehouse",
+      "label": "warehouse"
+    },
+    {
+      "id": "outdoor/warship",
+      "label": "warship"
+    },
+    {
+      "id": "outdoor/water_channel",
+      "label": "water_channel"
+    },
+    {
+      "id": "outdoor/waterfall",
+      "label": "waterfall"
+    },
+    {
+      "id": "outdoor/wharf",
+      "label": "wharf"
+    },
+    {
+      "id": "outdoor/wood_frame",
+      "label": "wood_frame"
+    },
+    {
+      "id": "outdoor/woodland",
+      "label": "woodland"
+    },
+    {
+      "id": "outdoor/yard",
+      "label": "yard"
+    },
+    {
+      "id": "outdoor/zoo",
+      "label": "zoo"
+    }
+  ],
+  "links": [
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/accounting"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/airplane_interior"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/apartment"
+    },
+    {
+      "source": "indoor/apartment",
+      "target": "indoor/apartment/small_room_in_apartmant"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/aquarium"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/art_gallery"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/bakery"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/bar"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/basement"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/bathroom"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/bedroom"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/belfry"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/bike_parking_lot"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/bike_repair_room"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/bird_cage"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/boat_factory"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/boat_interior"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/bodega"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/book_store"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/building_in_repair"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/bus_interior"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/bus_station"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/business_hall"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/cafe"
+    },
+    {
+      "source": "indoor/cafe",
+      "target": "indoor/cafe/stereotype"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/car_interior"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/car_repair_room"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/carriage"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/cave"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/cellar"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/chat_room"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/childs_room_daycare"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/chinese_buiding_interior"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/church"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/circular_platform"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/classroom"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/closet"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/coffee_shop"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/conference_room"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/corridor"
+    },
+    {
+      "source": "indoor/corridor",
+      "target": "indoor/corridor/chinese_long_corridor"
+    },
+    {
+      "source": "indoor/corridor",
+      "target": "indoor/corridor/common_corridor"
+    },
+    {
+      "source": "indoor/corridor",
+      "target": "indoor/corridor/corridor_with_window"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/cybercafe"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/dentists_office"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/dining_room"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/disco"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/dormitory"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/drugstore"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/elevator"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/empty_room"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/entertainment_room"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/exhibition_hall"
+    },
+    {
+      "source": "indoor/exhibition_hall",
+      "target": "indoor/exhibition_hall/boat_exhibition"
+    },
+    {
+      "source": "indoor/exhibition_hall",
+      "target": "indoor/exhibition_hall/bonsai_exhibition"
+    },
+    {
+      "source": "indoor/exhibition_hall",
+      "target": "indoor/exhibition_hall/car_exhibition"
+    },
+    {
+      "source": "indoor/exhibition_hall",
+      "target": "indoor/exhibition_hall/door_exhibition"
+    },
+    {
+      "source": "indoor/exhibition_hall",
+      "target": "indoor/exhibition_hall/expo_showroom"
+    },
+    {
+      "source": "indoor/exhibition_hall",
+      "target": "indoor/exhibition_hall/firearms"
+    },
+    {
+      "source": "indoor/exhibition_hall",
+      "target": "indoor/exhibition_hall/furniture_exbihition"
+    },
+    {
+      "source": "indoor/exhibition_hall",
+      "target": "indoor/exhibition_hall/guided_missile"
+    },
+    {
+      "source": "indoor/exhibition_hall",
+      "target": "indoor/exhibition_hall/ice_engraving"
+    },
+    {
+      "source": "indoor/exhibition_hall",
+      "target": "indoor/exhibition_hall/model_boat_exhibition"
+    },
+    {
+      "source": "indoor/exhibition_hall",
+      "target": "indoor/exhibition_hall/model_car_exhibition"
+    },
+    {
+      "source": "indoor/exhibition_hall",
+      "target": "indoor/exhibition_hall/motorbike_exhibition"
+    },
+    {
+      "source": "indoor/exhibition_hall",
+      "target": "indoor/exhibition_hall/puppet"
+    },
+    {
+      "source": "indoor/exhibition_hall",
+      "target": "indoor/exhibition_hall/root_carving"
+    },
+    {
+      "source": "indoor/exhibition_hall",
+      "target": "indoor/exhibition_hall/tank"
+    },
+    {
+      "source": "indoor/exhibition_hall",
+      "target": "indoor/exhibition_hall/train_exhibition"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/factory"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/fire_balloon"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/fire_fighting_station"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/flower_shop"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/funicular"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/gambling_house"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/gas_station"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/greenhouse"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/gym"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/hair_salon"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/hallway"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/hangar"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/historical_building"
+    },
+    {
+      "source": "indoor/historical_building",
+      "target": "indoor/historical_building/historical_building_lobby"
+    },
+    {
+      "source": "indoor/historical_building",
+      "target": "indoor/historical_building/historical_building_ruin"
+    },
+    {
+      "source": "indoor/historical_building",
+      "target": "indoor/historical_building/historical_building_stairs"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/hospital_room"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/human_wall"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/indoor_construction_site"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/indoor_pool"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/indoor_stree"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/jail_cell"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/kitchen"
+    },
+    {
+      "source": "indoor/kitchen",
+      "target": "indoor/kitchen/bar"
+    },
+    {
+      "source": "indoor/kitchen",
+      "target": "indoor/kitchen/kitchen_modern_home"
+    },
+    {
+      "source": "indoor/kitchen",
+      "target": "indoor/kitchen/kitchen_office"
+    },
+    {
+      "source": "indoor/kitchen",
+      "target": "indoor/kitchen/kitchen_restaurant"
+    },
+    {
+      "source": "indoor/kitchen",
+      "target": "indoor/kitchen/kitchen_special_home"
+    },
+    {
+      "source": "indoor/kitchen",
+      "target": "indoor/kitchen/kitchen_studio"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/laboratory"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/lecture_theater"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/legislative_chamber"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/library"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/liquor_store"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/living_room"
+    },
+    {
+      "source": "indoor/living_room",
+      "target": "indoor/living_room/stereotype"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/lobby_atrium"
+    },
+    {
+      "source": "indoor/lobby_atrium",
+      "target": "indoor/lobby_atrium/hotel_lobby"
+    },
+    {
+      "source": "indoor/lobby_atrium",
+      "target": "indoor/lobby_atrium/reating_area"
+    },
+    {
+      "source": "indoor/lobby_atrium",
+      "target": "indoor/lobby_atrium/sand_table"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/majiang_room"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/massage_room"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/mechanical_room"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/moldern_wall_painting"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/monitor_room"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/museum"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/observatory"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/office"
+    },
+    {
+      "source": "indoor/office",
+      "target": "indoor/office/counter_office"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/old_wall_painting"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/others"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/painting_gallery"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/parking_garage"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/pet_hospital"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/photographic_studio"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/piazza_with_ceiling"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/pilothouse"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/private_clinic"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/railcar"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/reading_room"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/reception_hall"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/refreshment_room"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/restaurant"
+    },
+    {
+      "source": "indoor/restaurant",
+      "target": "indoor/restaurant/Janpanese_restaurant"
+    },
+    {
+      "source": "indoor/restaurant",
+      "target": "indoor/restaurant/McDonald's"
+    },
+    {
+      "source": "indoor/restaurant",
+      "target": "indoor/restaurant/food_making"
+    },
+    {
+      "source": "indoor/restaurant",
+      "target": "indoor/restaurant/restaurant_in_cave"
+    },
+    {
+      "source": "indoor/restaurant",
+      "target": "indoor/restaurant/restaurant_in_tent"
+    },
+    {
+      "source": "indoor/restaurant",
+      "target": "indoor/restaurant/restaurant_with_stage"
+    },
+    {
+      "source": "indoor/restaurant",
+      "target": "indoor/restaurant/wedding_restaurant"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/sauna"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/shoe_store"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/shopping_mall"
+    },
+    {
+      "source": "indoor/shopping_mall",
+      "target": "indoor/shopping_mall/shopping_mall_atrium"
+    },
+    {
+      "source": "indoor/shopping_mall",
+      "target": "indoor/shopping_mall/shopping_mall_reating_area"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/sports_room"
+    },
+    {
+      "source": "indoor/sports_room",
+      "target": "indoor/sports_room/automobile_race"
+    },
+    {
+      "source": "indoor/sports_room",
+      "target": "indoor/sports_room/billiards"
+    },
+    {
+      "source": "indoor/sports_room",
+      "target": "indoor/sports_room/bowling"
+    },
+    {
+      "source": "indoor/sports_room",
+      "target": "indoor/sports_room/boxing_hall"
+    },
+    {
+      "source": "indoor/sports_room",
+      "target": "indoor/sports_room/canoeing"
+    },
+    {
+      "source": "indoor/sports_room",
+      "target": "indoor/sports_room/fencing"
+    },
+    {
+      "source": "indoor/sports_room",
+      "target": "indoor/sports_room/golf_practise_room"
+    },
+    {
+      "source": "indoor/sports_room",
+      "target": "indoor/sports_room/skateboard"
+    },
+    {
+      "source": "indoor/sports_room",
+      "target": "indoor/sports_room/squash"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/stable"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/stadium"
+    },
+    {
+      "source": "indoor/stadium",
+      "target": "indoor/stadium/badminton"
+    },
+    {
+      "source": "indoor/stadium",
+      "target": "indoor/stadium/basketball"
+    },
+    {
+      "source": "indoor/stadium",
+      "target": "indoor/stadium/general_purpose_stadium"
+    },
+    {
+      "source": "indoor/stadium",
+      "target": "indoor/stadium/gymnastics"
+    },
+    {
+      "source": "indoor/stadium",
+      "target": "indoor/stadium/ice_hockey"
+    },
+    {
+      "source": "indoor/stadium",
+      "target": "indoor/stadium/pingpong"
+    },
+    {
+      "source": "indoor/stadium",
+      "target": "indoor/stadium/rock_climbing"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/stage"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/staircase"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/stone_bridge"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/stone_pillar"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/stone_room"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/storage_room"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/store"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/stowage"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/studio"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/study_room"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/subway_station"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/telephone_booth"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/telestudio"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/temple"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/tent"
+    },
+    {
+      "source": "indoor/tent",
+      "target": "indoor/tent/conference_room_in_tent"
+    },
+    {
+      "source": "indoor/tent",
+      "target": "indoor/tent/shop_in_tent"
+    },
+    {
+      "source": "indoor/tent",
+      "target": "indoor/tent/theater_in_tent"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/terminal_building"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/thatched_cottage"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/theater"
+    },
+    {
+      "source": "indoor/theater",
+      "target": "indoor/theater/movie_threater"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/tomb"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/train_interior"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/train_station"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/underground_ tunnel"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/underground_water_tunnel"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/unsorted"
+    },
+    {
+      "source": "indoor/unsorted",
+      "target": "indoor/unsorted/360"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/wedding_dress_shop"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/wood_awning"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/wood_frame"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/wood_room"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/workshop"
+    },
+    {
+      "source": "indoor/workshop",
+      "target": "indoor/workshop/clothing_workshop"
+    },
+    {
+      "source": "indoor",
+      "target": "indoor/zoo"
+    },
+    {
+      "source": "root",
+      "target": "outdoor"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/air_show"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/airplane_repair"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/airport"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/airport_terminal"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/amusement_park"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/archaeological_site"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/archway_entrance"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/armory"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/bamboo"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/beehouse"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/bike_parking"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/bike_road"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/boat"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/boat_deck"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/bridge"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/bridge_frame"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/building"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/building_group"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/cable_car"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/car_race"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/carved_stone"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/castle"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/cave"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/chinese_architectural"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/church"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/cinema"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/city_coast"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/city_river"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/city_wall"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/coast"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/concert"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/construction_site"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/corridor"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/country_road"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/countryside"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/crane"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/cropland"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/dam"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/desert"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/dolphin_show"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/doorway"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/empty_space"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/factory"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/field"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/fire_balloon"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/firecracker"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/fishing"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/fitness_field"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/flight_model"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/flower_gardens"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/flower_market"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/flyover_bridge"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/forest"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/fort"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/fountain"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/garbage_dump"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/garden"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/gas_station"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/gate"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/gathering"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/golf"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/grass"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/gulch"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/highway"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/historical_building"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/historical_sites"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/horse_farm"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/hot_spring"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/house"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/ice"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/ice_engraving"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/ice_ground"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/jail"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/jetty"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/kayak"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/kindergarten"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/lake"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/lakeside"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/lawn"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/library"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/loading_machine"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/long_corridor"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/map"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/market"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/meeting_place"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/memorial"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/monument"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/motorbike"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/mountain"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/mountain_stream"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/museum"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/observation"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/old_building"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/others"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/overpass"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/paragliding"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/park"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/parking_lot"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/parking_lot_abandoned"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/patio"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/pavilion"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/pedestrian_bridge"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/pedestrian_path"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/picture"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/plaza_courtyard"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/plaza_with_ceiling"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/pool"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/power_plant"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/racecourse"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/residential_district"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/restaurant"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/river_bank"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/riverside"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/road"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/roller_skating"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/roof"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/room_on_sea"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/ruin"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/sakura"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/salt_field"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/sand_sculpture"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/sawmill"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/school"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/sculpture"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/sea"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/seafront_house"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/seafront_swimming"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/shady_path"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/shop"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/sightseeing_balcony"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/sightseeing_balcony_on_mountain"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/sightseeing_tower"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/sightseeing_train"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/single_tower"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/skatepark"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/skiing_field"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/sky"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/snow_mountain"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/snowy_ground"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/sports_field"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/stadium"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/stairs"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/stone"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/stone_field"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/street"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/street_with_shed"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/swimming_pool"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/telephone_booth"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/temple"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/temporary_room"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/theater"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/tourism_spot"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/tower"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/traffic_sign_exhibition"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/train_station"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/train_station_or_track"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/trolley_rail"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/trolley_station"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/under_bridge"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/under_roof"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/under_tower"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/under_tree"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/underwater"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/unsorted"
+    },
+    {
+      "source": "outdoor/unsorted",
+      "target": "outdoor/unsorted/360"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/villa"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/warehouse"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/warship"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/water_channel"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/waterfall"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/wharf"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/wood_frame"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/woodland"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/yard"
+    },
+    {
+      "source": "outdoor",
+      "target": "outdoor/zoo"
+    }
+  ]
+}
