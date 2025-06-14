@@ -1,0 +1,2712 @@
+{
+  "id": "root",
+  "label": "Root Node",
+  "children": [
+    {
+      "id": "outdoor, man-made",
+      "label": "outdoor, man-made",
+      "children": [
+        {
+          "id": "cultural or historical building/place",
+          "label": "cultural or historical building/place",
+          "children": [
+            {
+              "id": "/a/abbey",
+              "label": "/a/abbey"
+            },
+            {
+              "id": "/a/amphitheater",
+              "label": "/a/amphitheater"
+            },
+            {
+              "id": "/a/aqueduct",
+              "label": "/a/aqueduct"
+            },
+            {
+              "id": "/a/arch",
+              "label": "/a/arch"
+            },
+            {
+              "id": "/b/basilica",
+              "label": "/b/basilica"
+            },
+            {
+              "id": "/b/bazaar/outdoor",
+              "label": "/b/bazaar/outdoor"
+            },
+            {
+              "id": "/c/campus",
+              "label": "/c/campus"
+            },
+            {
+              "id": "/c/castle",
+              "label": "/c/castle"
+            },
+            {
+              "id": "/c/cathedral/outdoor",
+              "label": "/c/cathedral/outdoor"
+            },
+            {
+              "id": "/c/cemetery",
+              "label": "/c/cemetery"
+            },
+            {
+              "id": "/c/church/outdoor",
+              "label": "/c/church/outdoor"
+            },
+            {
+              "id": "/c/courthouse",
+              "label": "/c/courthouse"
+            },
+            {
+              "id": "/c/courtyard",
+              "label": "/c/courtyard"
+            },
+            {
+              "id": "/f/fountain",
+              "label": "/f/fountain"
+            },
+            {
+              "id": "/k/kasbah",
+              "label": "/k/kasbah"
+            },
+            {
+              "id": "/l/labyrinth/outdoor",
+              "label": "/l/labyrinth/outdoor"
+            },
+            {
+              "id": "/l/library/outdoor",
+              "label": "/l/library/outdoor"
+            },
+            {
+              "id": "/l/lighthouse",
+              "label": "/l/lighthouse"
+            },
+            {
+              "id": "/m/mausoleum",
+              "label": "/m/mausoleum"
+            },
+            {
+              "id": "/m/medina",
+              "label": "/m/medina"
+            },
+            {
+              "id": "/m/moat/water",
+              "label": "/m/moat/water"
+            },
+            {
+              "id": "/m/monastery/outdoor",
+              "label": "/m/monastery/outdoor"
+            },
+            {
+              "id": "/m/mosque/outdoor",
+              "label": "/m/mosque/outdoor"
+            },
+            {
+              "id": "/o/oast_house",
+              "label": "/o/oast_house"
+            },
+            {
+              "id": "/o/observatory/outdoor",
+              "label": "/o/observatory/outdoor"
+            },
+            {
+              "id": "/p/pagoda",
+              "label": "/p/pagoda"
+            },
+            {
+              "id": "/p/palace",
+              "label": "/p/palace"
+            },
+            {
+              "id": "/p/planetarium/outdoor",
+              "label": "/p/planetarium/outdoor"
+            },
+            {
+              "id": "/p/plaza",
+              "label": "/p/plaza"
+            },
+            {
+              "id": "/p/podium/outdoor",
+              "label": "/p/podium/outdoor"
+            },
+            {
+              "id": "/r/ruin",
+              "label": "/r/ruin"
+            },
+            {
+              "id": "/s/synagogue/outdoor",
+              "label": "/s/synagogue/outdoor"
+            },
+            {
+              "id": "/t/temple/east_asia",
+              "label": "/t/temple/east_asia"
+            },
+            {
+              "id": "/t/temple/south_asia",
+              "label": "/t/temple/south_asia"
+            },
+            {
+              "id": "/t/tower",
+              "label": "/t/tower"
+            },
+            {
+              "id": "/v/viaduct",
+              "label": "/v/viaduct"
+            },
+            {
+              "id": "/w/windmill",
+              "label": "/w/windmill"
+            }
+          ]
+        },
+        {
+          "id": "commercial buildings, shops, markets, cities, and towns",
+          "label": "commercial buildings, shops, markets, cities, and towns",
+          "children": [
+            {
+              "id": "/a/alley",
+              "label": "/a/alley"
+            },
+            {
+              "id": "/a/apartment_building/outdoor",
+              "label": "/a/apartment_building/outdoor"
+            },
+            {
+              "id": "/b/balcony/exterior",
+              "label": "/b/balcony/exterior"
+            },
+            {
+              "id": "/b/balcony/interior",
+              "label": "/b/balcony/interior"
+            },
+            {
+              "id": "/b/bazaar/outdoor",
+              "label": "/b/bazaar/outdoor"
+            },
+            {
+              "id": "/b/building_facade",
+              "label": "/b/building_facade"
+            },
+            {
+              "id": "/c/courtyard",
+              "label": "/c/courtyard"
+            },
+            {
+              "id": "/c/crosswalk",
+              "label": "/c/crosswalk"
+            },
+            {
+              "id": "/d/diner/outdoor",
+              "label": "/d/diner/outdoor"
+            },
+            {
+              "id": "/d/doorway/outdoor",
+              "label": "/d/doorway/outdoor"
+            },
+            {
+              "id": "/f/fire_escape",
+              "label": "/f/fire_escape"
+            },
+            {
+              "id": "/f/fire_station",
+              "label": "/f/fire_station"
+            },
+            {
+              "id": "/g/gas_station",
+              "label": "/g/gas_station"
+            },
+            {
+              "id": "/g/general_store/outdoor",
+              "label": "/g/general_store/outdoor"
+            },
+            {
+              "id": "/h/hospital",
+              "label": "/h/hospital"
+            },
+            {
+              "id": "/h/hotel/outdoor",
+              "label": "/h/hotel/outdoor"
+            },
+            {
+              "id": "/i/inn/outdoor",
+              "label": "/i/inn/outdoor"
+            },
+            {
+              "id": "/m/market/outdoor",
+              "label": "/m/market/outdoor"
+            },
+            {
+              "id": "/m/medina",
+              "label": "/m/medina"
+            },
+            {
+              "id": "/m/motel",
+              "label": "/m/motel"
+            },
+            {
+              "id": "/o/office_building",
+              "label": "/o/office_building"
+            },
+            {
+              "id": "/p/parking_garage/outdoor",
+              "label": "/p/parking_garage/outdoor"
+            },
+            {
+              "id": "/p/phone_booth",
+              "label": "/p/phone_booth"
+            },
+            {
+              "id": "/p/plaza",
+              "label": "/p/plaza"
+            },
+            {
+              "id": "/r/residential_neighborhood",
+              "label": "/r/residential_neighborhood"
+            },
+            {
+              "id": "/r/restaurant_patio",
+              "label": "/r/restaurant_patio"
+            },
+            {
+              "id": "/s/schoolhouse",
+              "label": "/s/schoolhouse"
+            },
+            {
+              "id": "/s/shopfront",
+              "label": "/s/shopfront"
+            },
+            {
+              "id": "/s/skyscraper",
+              "label": "/s/skyscraper"
+            },
+            {
+              "id": "/s/slum",
+              "label": "/s/slum"
+            },
+            {
+              "id": "/s/street",
+              "label": "/s/street"
+            },
+            {
+              "id": "/t/ticket_booth",
+              "label": "/t/ticket_booth"
+            },
+            {
+              "id": "/v/village",
+              "label": "/v/village"
+            },
+            {
+              "id": "/w/windmill",
+              "label": "/w/windmill"
+            }
+          ]
+        },
+        {
+          "id": "sports fields, parks, leisure spaces",
+          "label": "sports fields, parks, leisure spaces",
+          "children": [
+            {
+              "id": "/a/amusement_park",
+              "label": "/a/amusement_park"
+            },
+            {
+              "id": "/a/athletic_field/outdoor",
+              "label": "/a/athletic_field/outdoor"
+            },
+            {
+              "id": "/b/baseball_field",
+              "label": "/b/baseball_field"
+            },
+            {
+              "id": "/b/basketball_court/outdoor",
+              "label": "/b/basketball_court/outdoor"
+            },
+            {
+              "id": "/b/batters_box",
+              "label": "/b/batters_box"
+            },
+            {
+              "id": "/b/boardwalk",
+              "label": "/b/boardwalk"
+            },
+            {
+              "id": "/b/bullring",
+              "label": "/b/bullring"
+            },
+            {
+              "id": "/c/campsite",
+              "label": "/c/campsite"
+            },
+            {
+              "id": "/c/carrousel",
+              "label": "/c/carrousel"
+            },
+            {
+              "id": "/d/driving_range/outdoor",
+              "label": "/d/driving_range/outdoor"
+            },
+            {
+              "id": "/f/fairway",
+              "label": "/f/fairway"
+            },
+            {
+              "id": "/f/fishpond",
+              "label": "/f/fishpond"
+            },
+            {
+              "id": "/f/forest_road",
+              "label": "/f/forest_road"
+            },
+            {
+              "id": "/g/gazebo/exterior",
+              "label": "/g/gazebo/exterior"
+            },
+            {
+              "id": "/g/golf_course",
+              "label": "/g/golf_course"
+            },
+            {
+              "id": "/h/hot_tub/outdoor",
+              "label": "/h/hot_tub/outdoor"
+            },
+            {
+              "id": "/i/ice_skating_rink/outdoor",
+              "label": "/i/ice_skating_rink/outdoor"
+            },
+            {
+              "id": "/i/igloo",
+              "label": "/i/igloo"
+            },
+            {
+              "id": "/l/labyrinth/outdoor",
+              "label": "/l/labyrinth/outdoor"
+            },
+            {
+              "id": "/l/lido_deck/outdoor",
+              "label": "/l/lido_deck/outdoor"
+            },
+            {
+              "id": "/p/park",
+              "label": "/p/park"
+            },
+            {
+              "id": "/p/pavilion",
+              "label": "/p/pavilion"
+            },
+            {
+              "id": "/p/picnic_area",
+              "label": "/p/picnic_area"
+            },
+            {
+              "id": "/p/playground",
+              "label": "/p/playground"
+            },
+            {
+              "id": "/p/podium/outdoor",
+              "label": "/p/podium/outdoor"
+            },
+            {
+              "id": "/p/putting_green",
+              "label": "/p/putting_green"
+            },
+            {
+              "id": "/r/racecourse",
+              "label": "/r/racecourse"
+            },
+            {
+              "id": "/r/raceway",
+              "label": "/r/raceway"
+            },
+            {
+              "id": "/r/rope_bridge",
+              "label": "/r/rope_bridge"
+            },
+            {
+              "id": "/s/sandbox",
+              "label": "/s/sandbox"
+            },
+            {
+              "id": "/s/skatepark",
+              "label": "/s/skatepark"
+            },
+            {
+              "id": "/s/ski_slope",
+              "label": "/s/ski_slope"
+            },
+            {
+              "id": "/s/stadium/baseball",
+              "label": "/s/stadium/baseball"
+            },
+            {
+              "id": "/s/stadium/football",
+              "label": "/s/stadium/football"
+            },
+            {
+              "id": "/s/swimming_pool/outdoor",
+              "label": "/s/swimming_pool/outdoor"
+            },
+            {
+              "id": "/t/tennis_court/outdoor",
+              "label": "/t/tennis_court/outdoor"
+            },
+            {
+              "id": "/t/tent/outdoor",
+              "label": "/t/tent/outdoor"
+            },
+            {
+              "id": "/t/track/outdoor",
+              "label": "/t/track/outdoor"
+            },
+            {
+              "id": "/t/tree_house",
+              "label": "/t/tree_house"
+            },
+            {
+              "id": "/v/volleyball_court/outdoor",
+              "label": "/v/volleyball_court/outdoor"
+            }
+          ]
+        },
+        {
+          "id": "man-made elements",
+          "label": "man-made elements",
+          "children": [
+            {
+              "id": "/a/aqueduct",
+              "label": "/a/aqueduct"
+            },
+            {
+              "id": "/b/barn",
+              "label": "/b/barn"
+            },
+            {
+              "id": "/b/bayou",
+              "label": "/b/bayou"
+            },
+            {
+              "id": "/b/boardwalk",
+              "label": "/b/boardwalk"
+            },
+            {
+              "id": "/b/boathouse",
+              "label": "/b/boathouse"
+            },
+            {
+              "id": "/b/botanical_garden",
+              "label": "/b/botanical_garden"
+            },
+            {
+              "id": "/c/corral",
+              "label": "/c/corral"
+            },
+            {
+              "id": "/c/cottage_garden",
+              "label": "/c/cottage_garden"
+            },
+            {
+              "id": "/d/dam",
+              "label": "/d/dam"
+            },
+            {
+              "id": "/d/dock",
+              "label": "/d/dock"
+            },
+            {
+              "id": "/f/fairway",
+              "label": "/f/fairway"
+            },
+            {
+              "id": "/f/field/cultivated",
+              "label": "/f/field/cultivated"
+            },
+            {
+              "id": "/f/fishpond",
+              "label": "/f/fishpond"
+            },
+            {
+              "id": "/f/forest_road",
+              "label": "/f/forest_road"
+            },
+            {
+              "id": "/f/formal_garden",
+              "label": "/f/formal_garden"
+            },
+            {
+              "id": "/g/golf_course",
+              "label": "/g/golf_course"
+            },
+            {
+              "id": "/h/hayfield",
+              "label": "/h/hayfield"
+            },
+            {
+              "id": "/h/herb_garden",
+              "label": "/h/herb_garden"
+            },
+            {
+              "id": "/h/highway",
+              "label": "/h/highway"
+            },
+            {
+              "id": "/i/igloo",
+              "label": "/i/igloo"
+            },
+            {
+              "id": "/o/outhouse/outdoor",
+              "label": "/o/outhouse/outdoor"
+            },
+            {
+              "id": "/p/park",
+              "label": "/p/park"
+            },
+            {
+              "id": "/p/picnic_area",
+              "label": "/p/picnic_area"
+            },
+            {
+              "id": "/p/playground",
+              "label": "/p/playground"
+            },
+            {
+              "id": "/p/putting_green",
+              "label": "/p/putting_green"
+            },
+            {
+              "id": "/r/rice_paddy",
+              "label": "/r/rice_paddy"
+            },
+            {
+              "id": "/r/rope_bridge",
+              "label": "/r/rope_bridge"
+            },
+            {
+              "id": "/r/ruin",
+              "label": "/r/ruin"
+            },
+            {
+              "id": "/s/ski_slope",
+              "label": "/s/ski_slope"
+            },
+            {
+              "id": "/t/tent/outdoor",
+              "label": "/t/tent/outdoor"
+            },
+            {
+              "id": "/t/topiary_garden",
+              "label": "/t/topiary_garden"
+            },
+            {
+              "id": "/t/tree_house",
+              "label": "/t/tree_house"
+            },
+            {
+              "id": "/t/trench",
+              "label": "/t/trench"
+            },
+            {
+              "id": "/v/vegetable_garden",
+              "label": "/v/vegetable_garden"
+            },
+            {
+              "id": "/v/viaduct",
+              "label": "/v/viaduct"
+            },
+            {
+              "id": "/v/vineyard",
+              "label": "/v/vineyard"
+            },
+            {
+              "id": "/w/wind_farm",
+              "label": "/w/wind_farm"
+            },
+            {
+              "id": "/y/yard",
+              "label": "/y/yard"
+            }
+          ]
+        },
+        {
+          "id": "transportation (roads, parking, bridges, boats, airports, etc.)",
+          "label": "transportation (roads, parking, bridges, boats, airports, etc.)",
+          "children": [
+            {
+              "id": "/a/arrival_gate/outdoor",
+              "label": "/a/arrival_gate/outdoor"
+            },
+            {
+              "id": "/b/bayou",
+              "label": "/b/bayou"
+            },
+            {
+              "id": "/b/boat_deck",
+              "label": "/b/boat_deck"
+            },
+            {
+              "id": "/b/boathouse",
+              "label": "/b/boathouse"
+            },
+            {
+              "id": "/b/bridge",
+              "label": "/b/bridge"
+            },
+            {
+              "id": "/c/canal/urban",
+              "label": "/c/canal/urban"
+            },
+            {
+              "id": "/c/control_tower/outdoor",
+              "label": "/c/control_tower/outdoor"
+            },
+            {
+              "id": "/c/covered_bridge/exterior",
+              "label": "/c/covered_bridge/exterior"
+            },
+            {
+              "id": "/c/crosswalk",
+              "label": "/c/crosswalk"
+            },
+            {
+              "id": "/d/dock",
+              "label": "/d/dock"
+            },
+            {
+              "id": "/f/forest_road",
+              "label": "/f/forest_road"
+            },
+            {
+              "id": "/g/gas_station",
+              "label": "/g/gas_station"
+            },
+            {
+              "id": "/h/hangar/outdoor",
+              "label": "/h/hangar/outdoor"
+            },
+            {
+              "id": "/h/harbor",
+              "label": "/h/harbor"
+            },
+            {
+              "id": "/h/heliport",
+              "label": "/h/heliport"
+            },
+            {
+              "id": "/h/highway",
+              "label": "/h/highway"
+            },
+            {
+              "id": "/l/landing_deck",
+              "label": "/l/landing_deck"
+            },
+            {
+              "id": "/l/lido_deck/outdoor",
+              "label": "/l/lido_deck/outdoor"
+            },
+            {
+              "id": "/l/lift_bridge",
+              "label": "/l/lift_bridge"
+            },
+            {
+              "id": "/l/lock_chamber",
+              "label": "/l/lock_chamber"
+            },
+            {
+              "id": "/p/parking_garage/outdoor",
+              "label": "/p/parking_garage/outdoor"
+            },
+            {
+              "id": "/p/parking_lot",
+              "label": "/p/parking_lot"
+            },
+            {
+              "id": "/p/promenade_deck",
+              "label": "/p/promenade_deck"
+            },
+            {
+              "id": "/r/railroad_track",
+              "label": "/r/railroad_track"
+            },
+            {
+              "id": "/r/runway",
+              "label": "/r/runway"
+            },
+            {
+              "id": "/t/toll_plaza",
+              "label": "/t/toll_plaza"
+            },
+            {
+              "id": "/t/train_railway",
+              "label": "/t/train_railway"
+            }
+          ]
+        },
+        {
+          "id": "houses, cabins, gardens, and farms",
+          "label": "houses, cabins, gardens, and farms",
+          "children": [
+            {
+              "id": "/b/balcony/exterior",
+              "label": "/b/balcony/exterior"
+            },
+            {
+              "id": "/b/balcony/interior",
+              "label": "/b/balcony/interior"
+            },
+            {
+              "id": "/b/barn",
+              "label": "/b/barn"
+            },
+            {
+              "id": "/b/barndoor",
+              "label": "/b/barndoor"
+            },
+            {
+              "id": "/b/botanical_garden",
+              "label": "/b/botanical_garden"
+            },
+            {
+              "id": "/b/bow_window/outdoor",
+              "label": "/b/bow_window/outdoor"
+            },
+            {
+              "id": "/c/cabin/outdoor",
+              "label": "/c/cabin/outdoor"
+            },
+            {
+              "id": "/c/chalet",
+              "label": "/c/chalet"
+            },
+            {
+              "id": "/c/chicken_coop/outdoor",
+              "label": "/c/chicken_coop/outdoor"
+            },
+            {
+              "id": "/c/corral",
+              "label": "/c/corral"
+            },
+            {
+              "id": "/c/cottage_garden",
+              "label": "/c/cottage_garden"
+            },
+            {
+              "id": "/c/courtyard",
+              "label": "/c/courtyard"
+            },
+            {
+              "id": "/d/doorway/outdoor",
+              "label": "/d/doorway/outdoor"
+            },
+            {
+              "id": "/d/driveway",
+              "label": "/d/driveway"
+            },
+            {
+              "id": "/f/field/cultivated",
+              "label": "/f/field/cultivated"
+            },
+            {
+              "id": "/f/formal_garden",
+              "label": "/f/formal_garden"
+            },
+            {
+              "id": "/g/greenhouse/outdoor",
+              "label": "/g/greenhouse/outdoor"
+            },
+            {
+              "id": "/h/hayfield",
+              "label": "/h/hayfield"
+            },
+            {
+              "id": "/h/herb_garden",
+              "label": "/h/herb_garden"
+            },
+            {
+              "id": "/h/house",
+              "label": "/h/house"
+            },
+            {
+              "id": "/h/hunting_lodge/outdoor",
+              "label": "/h/hunting_lodge/outdoor"
+            },
+            {
+              "id": "/k/kennel/outdoor",
+              "label": "/k/kennel/outdoor"
+            },
+            {
+              "id": "/m/mansion",
+              "label": "/m/mansion"
+            },
+            {
+              "id": "/m/manufactured_home",
+              "label": "/m/manufactured_home"
+            },
+            {
+              "id": "/o/outhouse/outdoor",
+              "label": "/o/outhouse/outdoor"
+            },
+            {
+              "id": "/p/patio",
+              "label": "/p/patio"
+            },
+            {
+              "id": "/r/residential_neighborhood",
+              "label": "/r/residential_neighborhood"
+            },
+            {
+              "id": "/r/rice_paddy",
+              "label": "/r/rice_paddy"
+            },
+            {
+              "id": "/s/shed",
+              "label": "/s/shed"
+            },
+            {
+              "id": "/s/ski_lodge",
+              "label": "/s/ski_lodge"
+            },
+            {
+              "id": "/s/ski_resort",
+              "label": "/s/ski_resort"
+            },
+            {
+              "id": "/t/topiary_garden",
+              "label": "/t/topiary_garden"
+            },
+            {
+              "id": "/t/tree_house",
+              "label": "/t/tree_house"
+            },
+            {
+              "id": "/v/vegetable_garden",
+              "label": "/v/vegetable_garden"
+            },
+            {
+              "id": "/v/veranda",
+              "label": "/v/veranda"
+            },
+            {
+              "id": "/v/vineyard",
+              "label": "/v/vineyard"
+            },
+            {
+              "id": "/y/yard",
+              "label": "/y/yard"
+            }
+          ]
+        },
+        {
+          "id": "forest, field, jungle",
+          "label": "forest, field, jungle",
+          "children": [
+            {
+              "id": "/b/barn",
+              "label": "/b/barn"
+            },
+            {
+              "id": "/b/bayou",
+              "label": "/b/bayou"
+            },
+            {
+              "id": "/b/boardwalk",
+              "label": "/b/boardwalk"
+            },
+            {
+              "id": "/b/botanical_garden",
+              "label": "/b/botanical_garden"
+            },
+            {
+              "id": "/c/corral",
+              "label": "/c/corral"
+            },
+            {
+              "id": "/c/cottage_garden",
+              "label": "/c/cottage_garden"
+            },
+            {
+              "id": "/f/fairway",
+              "label": "/f/fairway"
+            },
+            {
+              "id": "/f/field/cultivated",
+              "label": "/f/field/cultivated"
+            },
+            {
+              "id": "/f/forest_road",
+              "label": "/f/forest_road"
+            },
+            {
+              "id": "/f/formal_garden",
+              "label": "/f/formal_garden"
+            },
+            {
+              "id": "/g/golf_course",
+              "label": "/g/golf_course"
+            },
+            {
+              "id": "/h/hayfield",
+              "label": "/h/hayfield"
+            },
+            {
+              "id": "/h/herb_garden",
+              "label": "/h/herb_garden"
+            },
+            {
+              "id": "/o/outhouse/outdoor",
+              "label": "/o/outhouse/outdoor"
+            },
+            {
+              "id": "/p/park",
+              "label": "/p/park"
+            },
+            {
+              "id": "/p/picnic_area",
+              "label": "/p/picnic_area"
+            },
+            {
+              "id": "/p/playground",
+              "label": "/p/playground"
+            },
+            {
+              "id": "/p/putting_green",
+              "label": "/p/putting_green"
+            },
+            {
+              "id": "/r/rice_paddy",
+              "label": "/r/rice_paddy"
+            },
+            {
+              "id": "/t/topiary_garden",
+              "label": "/t/topiary_garden"
+            },
+            {
+              "id": "/t/tree_house",
+              "label": "/t/tree_house"
+            },
+            {
+              "id": "/v/vegetable_garden",
+              "label": "/v/vegetable_garden"
+            },
+            {
+              "id": "/v/vineyard",
+              "label": "/v/vineyard"
+            },
+            {
+              "id": "/w/wind_farm",
+              "label": "/w/wind_farm"
+            },
+            {
+              "id": "/y/yard",
+              "label": "/y/yard"
+            }
+          ]
+        },
+        {
+          "id": "water, ice, snow",
+          "label": "water, ice, snow",
+          "children": [
+            {
+              "id": "/b/bayou",
+              "label": "/b/bayou"
+            },
+            {
+              "id": "/b/boardwalk",
+              "label": "/b/boardwalk"
+            },
+            {
+              "id": "/b/boathouse",
+              "label": "/b/boathouse"
+            },
+            {
+              "id": "/d/dam",
+              "label": "/d/dam"
+            },
+            {
+              "id": "/d/dock",
+              "label": "/d/dock"
+            },
+            {
+              "id": "/f/fishpond",
+              "label": "/f/fishpond"
+            },
+            {
+              "id": "/i/igloo",
+              "label": "/i/igloo"
+            },
+            {
+              "id": "/s/ski_slope",
+              "label": "/s/ski_slope"
+            }
+          ]
+        },
+        {
+          "id": "industrial and construction",
+          "label": "industrial and construction",
+          "children": [
+            {
+              "id": "/c/construction_site",
+              "label": "/c/construction_site"
+            },
+            {
+              "id": "/d/dam",
+              "label": "/d/dam"
+            },
+            {
+              "id": "/e/electrical_substation",
+              "label": "/e/electrical_substation"
+            },
+            {
+              "id": "/e/excavation",
+              "label": "/e/excavation"
+            },
+            {
+              "id": "/g/garbage_dump",
+              "label": "/g/garbage_dump"
+            },
+            {
+              "id": "/i/industrial_area",
+              "label": "/i/industrial_area"
+            },
+            {
+              "id": "/l/landfill",
+              "label": "/l/landfill"
+            },
+            {
+              "id": "/n/nuclear_power_plant/outdoor",
+              "label": "/n/nuclear_power_plant/outdoor"
+            },
+            {
+              "id": "/o/oil_refinery/outdoor",
+              "label": "/o/oil_refinery/outdoor"
+            },
+            {
+              "id": "/o/oilrig",
+              "label": "/o/oilrig"
+            },
+            {
+              "id": "/p/power_plant/outdoor",
+              "label": "/p/power_plant/outdoor"
+            },
+            {
+              "id": "/t/trench",
+              "label": "/t/trench"
+            },
+            {
+              "id": "/w/water_tower",
+              "label": "/w/water_tower"
+            },
+            {
+              "id": "/w/wind_farm",
+              "label": "/w/wind_farm"
+            },
+            {
+              "id": "/w/windmill",
+              "label": "/w/windmill"
+            }
+          ]
+        },
+        {
+          "id": "transportation (vehicle interiors, stations, etc.)",
+          "label": "transportation (vehicle interiors, stations, etc.)",
+          "children": [
+            {
+              "id": "/p/promenade_deck",
+              "label": "/p/promenade_deck"
+            }
+          ]
+        },
+        {
+          "id": "shopping and dining",
+          "label": "shopping and dining",
+          "children": [
+            {
+              "id": "/t/ticket_booth",
+              "label": "/t/ticket_booth"
+            }
+          ]
+        },
+        {
+          "id": "workplace (office building, factory, lab, etc.)",
+          "label": "workplace (office building, factory, lab, etc.)",
+          "children": [
+            {
+              "id": "/t/ticket_booth",
+              "label": "/t/ticket_booth"
+            }
+          ]
+        },
+        {
+          "id": "cultural (art, education, religion, etc.)",
+          "label": "cultural (art, education, religion, etc.)",
+          "children": [
+            {
+              "id": "/t/ticket_booth",
+              "label": "/t/ticket_booth"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "indoor",
+      "label": "indoor",
+      "children": [
+        {
+          "id": "transportation (vehicle interiors, stations, etc.)",
+          "label": "transportation (vehicle interiors, stations, etc.)",
+          "children": [
+            {
+              "id": "/a/airplane_cabin",
+              "label": "/a/airplane_cabin"
+            },
+            {
+              "id": "/a/airport_terminal",
+              "label": "/a/airport_terminal"
+            },
+            {
+              "id": "/b/baggage_claim",
+              "label": "/b/baggage_claim"
+            },
+            {
+              "id": "/b/berth",
+              "label": "/b/berth"
+            },
+            {
+              "id": "/b/bus_interior",
+              "label": "/b/bus_interior"
+            },
+            {
+              "id": "/c/car_interior/backseat",
+              "label": "/c/car_interior/backseat"
+            },
+            {
+              "id": "/c/car_interior/frontseat",
+              "label": "/c/car_interior/frontseat"
+            },
+            {
+              "id": "/c/cockpit",
+              "label": "/c/cockpit"
+            },
+            {
+              "id": "/d/dinette/vehicle",
+              "label": "/d/dinette/vehicle"
+            },
+            {
+              "id": "/d/dining_car",
+              "label": "/d/dining_car"
+            },
+            {
+              "id": "/e/engine_room",
+              "label": "/e/engine_room"
+            },
+            {
+              "id": "/e/escalator/indoor",
+              "label": "/e/escalator/indoor"
+            },
+            {
+              "id": "/g/galley",
+              "label": "/g/galley"
+            },
+            {
+              "id": "/h/hangar/indoor",
+              "label": "/h/hangar/indoor"
+            },
+            {
+              "id": "/l/limousine_interior",
+              "label": "/l/limousine_interior"
+            },
+            {
+              "id": "/p/pilothouse/indoor",
+              "label": "/p/pilothouse/indoor"
+            },
+            {
+              "id": "/p/promenade_deck",
+              "label": "/p/promenade_deck"
+            },
+            {
+              "id": "/s/subway_interior",
+              "label": "/s/subway_interior"
+            },
+            {
+              "id": "/s/subway_station/platform",
+              "label": "/s/subway_station/platform"
+            },
+            {
+              "id": "/t/train_station/platform",
+              "label": "/t/train_station/platform"
+            },
+            {
+              "id": "/v/van_interior",
+              "label": "/v/van_interior"
+            }
+          ]
+        },
+        {
+          "id": "sports and leisure",
+          "label": "sports and leisure",
+          "children": [
+            {
+              "id": "/a/amusement_arcade",
+              "label": "/a/amusement_arcade"
+            },
+            {
+              "id": "/b/badminton_court/indoor",
+              "label": "/b/badminton_court/indoor"
+            },
+            {
+              "id": "/b/ball_pit",
+              "label": "/b/ball_pit"
+            },
+            {
+              "id": "/b/ballroom",
+              "label": "/b/ballroom"
+            },
+            {
+              "id": "/b/bowling_alley",
+              "label": "/b/bowling_alley"
+            },
+            {
+              "id": "/b/boxing_ring",
+              "label": "/b/boxing_ring"
+            },
+            {
+              "id": "/c/casino/indoor",
+              "label": "/c/casino/indoor"
+            },
+            {
+              "id": "/d/discotheque",
+              "label": "/d/discotheque"
+            },
+            {
+              "id": "/f/firing_range/indoor",
+              "label": "/f/firing_range/indoor"
+            },
+            {
+              "id": "/g/gymnasium/indoor",
+              "label": "/g/gymnasium/indoor"
+            },
+            {
+              "id": "/i/ice_skating_rink/indoor",
+              "label": "/i/ice_skating_rink/indoor"
+            },
+            {
+              "id": "/j/jacuzzi/indoor",
+              "label": "/j/jacuzzi/indoor"
+            },
+            {
+              "id": "/l/locker_room",
+              "label": "/l/locker_room"
+            },
+            {
+              "id": "/m/martial_arts_gym",
+              "label": "/m/martial_arts_gym"
+            },
+            {
+              "id": "/p/poolroom/establishment",
+              "label": "/p/poolroom/establishment"
+            },
+            {
+              "id": "/r/riding_arena",
+              "label": "/r/riding_arena"
+            },
+            {
+              "id": "/s/sauna",
+              "label": "/s/sauna"
+            },
+            {
+              "id": "/s/squash_court",
+              "label": "/s/squash_court"
+            },
+            {
+              "id": "/s/swimming_pool/indoor",
+              "label": "/s/swimming_pool/indoor"
+            },
+            {
+              "id": "/t/tennis_court/indoor",
+              "label": "/t/tennis_court/indoor"
+            },
+            {
+              "id": "/v/volleyball_court/indoor",
+              "label": "/v/volleyball_court/indoor"
+            },
+            {
+              "id": "/w/wrestling_ring/indoor",
+              "label": "/w/wrestling_ring/indoor"
+            }
+          ]
+        },
+        {
+          "id": "workplace (office building, factory, lab, etc.)",
+          "label": "workplace (office building, factory, lab, etc.)",
+          "children": [
+            {
+              "id": "/a/anechoic_chamber",
+              "label": "/a/anechoic_chamber"
+            },
+            {
+              "id": "/a/assembly_line",
+              "label": "/a/assembly_line"
+            },
+            {
+              "id": "/a/atrium/public",
+              "label": "/a/atrium/public"
+            },
+            {
+              "id": "/a/auto_factory",
+              "label": "/a/auto_factory"
+            },
+            {
+              "id": "/b/biology_laboratory",
+              "label": "/b/biology_laboratory"
+            },
+            {
+              "id": "/b/booth/indoor",
+              "label": "/b/booth/indoor"
+            },
+            {
+              "id": "/b/brewery/indoor",
+              "label": "/b/brewery/indoor"
+            },
+            {
+              "id": "/c/cheese_factory",
+              "label": "/c/cheese_factory"
+            },
+            {
+              "id": "/c/chemistry_lab",
+              "label": "/c/chemistry_lab"
+            },
+            {
+              "id": "/c/chicken_coop/indoor",
+              "label": "/c/chicken_coop/indoor"
+            },
+            {
+              "id": "/c/clean_room",
+              "label": "/c/clean_room"
+            },
+            {
+              "id": "/c/computer_room",
+              "label": "/c/computer_room"
+            },
+            {
+              "id": "/c/conference_room",
+              "label": "/c/conference_room"
+            },
+            {
+              "id": "/c/control_room",
+              "label": "/c/control_room"
+            },
+            {
+              "id": "/c/corridor",
+              "label": "/c/corridor"
+            },
+            {
+              "id": "/c/cubicle/office",
+              "label": "/c/cubicle/office"
+            },
+            {
+              "id": "/d/dentists_office",
+              "label": "/d/dentists_office"
+            },
+            {
+              "id": "/e/elevator/door",
+              "label": "/e/elevator/door"
+            },
+            {
+              "id": "/e/elevator/interior",
+              "label": "/e/elevator/interior"
+            },
+            {
+              "id": "/e/elevator_shaft",
+              "label": "/e/elevator_shaft"
+            },
+            {
+              "id": "/e/engine_room",
+              "label": "/e/engine_room"
+            },
+            {
+              "id": "/e/escalator/indoor",
+              "label": "/e/escalator/indoor"
+            },
+            {
+              "id": "/f/factory/indoor",
+              "label": "/f/factory/indoor"
+            },
+            {
+              "id": "/g/greenhouse/indoor",
+              "label": "/g/greenhouse/indoor"
+            },
+            {
+              "id": "/h/hospital_room",
+              "label": "/h/hospital_room"
+            },
+            {
+              "id": "/k/kennel/indoor",
+              "label": "/k/kennel/indoor"
+            },
+            {
+              "id": "/l/laundromat",
+              "label": "/l/laundromat"
+            },
+            {
+              "id": "/l/lobby",
+              "label": "/l/lobby"
+            },
+            {
+              "id": "/o/office",
+              "label": "/o/office"
+            },
+            {
+              "id": "/o/operating_room",
+              "label": "/o/operating_room"
+            },
+            {
+              "id": "/p/parking_garage/indoor",
+              "label": "/p/parking_garage/indoor"
+            },
+            {
+              "id": "/p/physics_laboratory",
+              "label": "/p/physics_laboratory"
+            },
+            {
+              "id": "/r/reception",
+              "label": "/r/reception"
+            },
+            {
+              "id": "/s/server_room",
+              "label": "/s/server_room"
+            },
+            {
+              "id": "/s/stable",
+              "label": "/s/stable"
+            },
+            {
+              "id": "/s/staircase",
+              "label": "/s/staircase"
+            },
+            {
+              "id": "/t/ticket_booth",
+              "label": "/t/ticket_booth"
+            },
+            {
+              "id": "/v/veterinarians_office",
+              "label": "/v/veterinarians_office"
+            },
+            {
+              "id": "/w/waiting_room",
+              "label": "/w/waiting_room"
+            },
+            {
+              "id": "/w/warehouse/indoor",
+              "label": "/w/warehouse/indoor"
+            }
+          ]
+        },
+        {
+          "id": "cultural (art, education, religion, etc.)",
+          "label": "cultural (art, education, religion, etc.)",
+          "children": [
+            {
+              "id": "/a/apse/indoor",
+              "label": "/a/apse/indoor"
+            },
+            {
+              "id": "/a/aquarium",
+              "label": "/a/aquarium"
+            },
+            {
+              "id": "/a/archive",
+              "label": "/a/archive"
+            },
+            {
+              "id": "/a/art_gallery",
+              "label": "/a/art_gallery"
+            },
+            {
+              "id": "/a/art_school",
+              "label": "/a/art_school"
+            },
+            {
+              "id": "/a/art_studio",
+              "label": "/a/art_studio"
+            },
+            {
+              "id": "/a/auditorium",
+              "label": "/a/auditorium"
+            },
+            {
+              "id": "/b/beauty_salon",
+              "label": "/b/beauty_salon"
+            },
+            {
+              "id": "/b/booth/indoor",
+              "label": "/b/booth/indoor"
+            },
+            {
+              "id": "/b/burial_chamber",
+              "label": "/b/burial_chamber"
+            },
+            {
+              "id": "/c/catacomb",
+              "label": "/c/catacomb"
+            },
+            {
+              "id": "/c/cathedral/indoor",
+              "label": "/c/cathedral/indoor"
+            },
+            {
+              "id": "/c/church/indoor",
+              "label": "/c/church/indoor"
+            },
+            {
+              "id": "/c/classroom",
+              "label": "/c/classroom"
+            },
+            {
+              "id": "/c/cloister/indoor",
+              "label": "/c/cloister/indoor"
+            },
+            {
+              "id": "/c/conference_center",
+              "label": "/c/conference_center"
+            },
+            {
+              "id": "/c/courtroom",
+              "label": "/c/courtroom"
+            },
+            {
+              "id": "/j/jail/indoor",
+              "label": "/j/jail/indoor"
+            },
+            {
+              "id": "/j/jail_cell",
+              "label": "/j/jail_cell"
+            },
+            {
+              "id": "/k/kindergarden_classroom",
+              "label": "/k/kindergarden_classroom"
+            },
+            {
+              "id": "/l/lecture_room",
+              "label": "/l/lecture_room"
+            },
+            {
+              "id": "/l/library/indoor",
+              "label": "/l/library/indoor"
+            },
+            {
+              "id": "/m/mosque/indoor",
+              "label": "/m/mosque/indoor"
+            },
+            {
+              "id": "/m/movie_theater/indoor",
+              "label": "/m/movie_theater/indoor"
+            },
+            {
+              "id": "/m/museum/indoor",
+              "label": "/m/museum/indoor"
+            },
+            {
+              "id": "/m/music_store",
+              "label": "/m/music_store"
+            },
+            {
+              "id": "/m/music_studio",
+              "label": "/m/music_studio"
+            },
+            {
+              "id": "/p/podium/indoor",
+              "label": "/p/podium/indoor"
+            },
+            {
+              "id": "/p/pulpit",
+              "label": "/p/pulpit"
+            },
+            {
+              "id": "/s/stage/indoor",
+              "label": "/s/stage/indoor"
+            },
+            {
+              "id": "/s/synagogue/indoor",
+              "label": "/s/synagogue/indoor"
+            },
+            {
+              "id": "/t/television_studio",
+              "label": "/t/television_studio"
+            },
+            {
+              "id": "/t/theater/indoor_procenium",
+              "label": "/t/theater/indoor_procenium"
+            },
+            {
+              "id": "/t/theater/indoor_seats",
+              "label": "/t/theater/indoor_seats"
+            },
+            {
+              "id": "/t/throne_room",
+              "label": "/t/throne_room"
+            },
+            {
+              "id": "/t/ticket_booth",
+              "label": "/t/ticket_booth"
+            }
+          ]
+        },
+        {
+          "id": "home or hotel",
+          "label": "home or hotel",
+          "children": [
+            {
+              "id": "/a/attic",
+              "label": "/a/attic"
+            },
+            {
+              "id": "/b/basement",
+              "label": "/b/basement"
+            },
+            {
+              "id": "/b/bathroom",
+              "label": "/b/bathroom"
+            },
+            {
+              "id": "/b/bedroom",
+              "label": "/b/bedroom"
+            },
+            {
+              "id": "/b/bow_window/indoor",
+              "label": "/b/bow_window/indoor"
+            },
+            {
+              "id": "/c/chicken_coop/indoor",
+              "label": "/c/chicken_coop/indoor"
+            },
+            {
+              "id": "/c/childs_room",
+              "label": "/c/childs_room"
+            },
+            {
+              "id": "/c/closet",
+              "label": "/c/closet"
+            },
+            {
+              "id": "/d/dinette/home",
+              "label": "/d/dinette/home"
+            },
+            {
+              "id": "/d/dining_room",
+              "label": "/d/dining_room"
+            },
+            {
+              "id": "/d/dorm_room",
+              "label": "/d/dorm_room"
+            },
+            {
+              "id": "/g/game_room",
+              "label": "/g/game_room"
+            },
+            {
+              "id": "/g/garage/indoor",
+              "label": "/g/garage/indoor"
+            },
+            {
+              "id": "/h/home_office",
+              "label": "/h/home_office"
+            },
+            {
+              "id": "/h/hotel_room",
+              "label": "/h/hotel_room"
+            },
+            {
+              "id": "/k/kennel/indoor",
+              "label": "/k/kennel/indoor"
+            },
+            {
+              "id": "/k/kitchen",
+              "label": "/k/kitchen"
+            },
+            {
+              "id": "/k/kitchenette",
+              "label": "/k/kitchenette"
+            },
+            {
+              "id": "/l/laundromat",
+              "label": "/l/laundromat"
+            },
+            {
+              "id": "/l/living_room",
+              "label": "/l/living_room"
+            },
+            {
+              "id": "/n/nursery",
+              "label": "/n/nursery"
+            },
+            {
+              "id": "/p/pantry",
+              "label": "/p/pantry"
+            },
+            {
+              "id": "/p/parlor",
+              "label": "/p/parlor"
+            },
+            {
+              "id": "/p/playroom",
+              "label": "/p/playroom"
+            },
+            {
+              "id": "/p/poolroom/home",
+              "label": "/p/poolroom/home"
+            },
+            {
+              "id": "/r/recreation_room",
+              "label": "/r/recreation_room"
+            },
+            {
+              "id": "/r/restaurant_kitchen",
+              "label": "/r/restaurant_kitchen"
+            },
+            {
+              "id": "/s/shower",
+              "label": "/s/shower"
+            },
+            {
+              "id": "/s/stable",
+              "label": "/s/stable"
+            },
+            {
+              "id": "/s/staircase",
+              "label": "/s/staircase"
+            },
+            {
+              "id": "/u/utility_room",
+              "label": "/u/utility_room"
+            },
+            {
+              "id": "/w/wet_bar",
+              "label": "/w/wet_bar"
+            },
+            {
+              "id": "/w/wine_cellar/barrel_storage",
+              "label": "/w/wine_cellar/barrel_storage"
+            },
+            {
+              "id": "/w/wine_cellar/bottle_storage",
+              "label": "/w/wine_cellar/bottle_storage"
+            },
+            {
+              "id": "/y/youth_hostel",
+              "label": "/y/youth_hostel"
+            }
+          ]
+        },
+        {
+          "id": "shopping and dining",
+          "label": "shopping and dining",
+          "children": [
+            {
+              "id": "/b/bakery/shop",
+              "label": "/b/bakery/shop"
+            },
+            {
+              "id": "/b/banquet_hall",
+              "label": "/b/banquet_hall"
+            },
+            {
+              "id": "/b/bar",
+              "label": "/b/bar"
+            },
+            {
+              "id": "/b/bazaar/indoor",
+              "label": "/b/bazaar/indoor"
+            },
+            {
+              "id": "/b/beauty_salon",
+              "label": "/b/beauty_salon"
+            },
+            {
+              "id": "/b/bistro/indoor",
+              "label": "/b/bistro/indoor"
+            },
+            {
+              "id": "/b/bookstore",
+              "label": "/b/bookstore"
+            },
+            {
+              "id": "/b/butchers_shop",
+              "label": "/b/butchers_shop"
+            },
+            {
+              "id": "/c/cafeteria",
+              "label": "/c/cafeteria"
+            },
+            {
+              "id": "/c/candy_store",
+              "label": "/c/candy_store"
+            },
+            {
+              "id": "/c/clothing_store",
+              "label": "/c/clothing_store"
+            },
+            {
+              "id": "/c/coffee_shop",
+              "label": "/c/coffee_shop"
+            },
+            {
+              "id": "/d/delicatessen",
+              "label": "/d/delicatessen"
+            },
+            {
+              "id": "/d/diner/indoor",
+              "label": "/d/diner/indoor"
+            },
+            {
+              "id": "/d/discotheque",
+              "label": "/d/discotheque"
+            },
+            {
+              "id": "/d/drugstore",
+              "label": "/d/drugstore"
+            },
+            {
+              "id": "/e/escalator/indoor",
+              "label": "/e/escalator/indoor"
+            },
+            {
+              "id": "/f/fastfood_restaurant",
+              "label": "/f/fastfood_restaurant"
+            },
+            {
+              "id": "/f/florist_shop/indoor",
+              "label": "/f/florist_shop/indoor"
+            },
+            {
+              "id": "/f/food_court",
+              "label": "/f/food_court"
+            },
+            {
+              "id": "/g/general_store/indoor",
+              "label": "/g/general_store/indoor"
+            },
+            {
+              "id": "/g/gift_shop",
+              "label": "/g/gift_shop"
+            },
+            {
+              "id": "/i/ice_cream_parlor",
+              "label": "/i/ice_cream_parlor"
+            },
+            {
+              "id": "/j/jewelry_shop",
+              "label": "/j/jewelry_shop"
+            },
+            {
+              "id": "/m/market/indoor",
+              "label": "/m/market/indoor"
+            },
+            {
+              "id": "/m/music_store",
+              "label": "/m/music_store"
+            },
+            {
+              "id": "/p/pharmacy",
+              "label": "/p/pharmacy"
+            },
+            {
+              "id": "/p/pub/indoor",
+              "label": "/p/pub/indoor"
+            },
+            {
+              "id": "/r/restaurant",
+              "label": "/r/restaurant"
+            },
+            {
+              "id": "/r/restaurant_kitchen",
+              "label": "/r/restaurant_kitchen"
+            },
+            {
+              "id": "/s/shoe_shop",
+              "label": "/s/shoe_shop"
+            },
+            {
+              "id": "/s/shopping_mall/indoor",
+              "label": "/s/shopping_mall/indoor"
+            },
+            {
+              "id": "/s/supermarket",
+              "label": "/s/supermarket"
+            },
+            {
+              "id": "/s/sushi_bar",
+              "label": "/s/sushi_bar"
+            },
+            {
+              "id": "/t/thriftshop",
+              "label": "/t/thriftshop"
+            },
+            {
+              "id": "/t/ticket_booth",
+              "label": "/t/ticket_booth"
+            },
+            {
+              "id": "/t/toyshop",
+              "label": "/t/toyshop"
+            },
+            {
+              "id": "/v/videostore",
+              "label": "/v/videostore"
+            },
+            {
+              "id": "/w/wine_cellar/barrel_storage",
+              "label": "/w/wine_cellar/barrel_storage"
+            },
+            {
+              "id": "/w/wine_cellar/bottle_storage",
+              "label": "/w/wine_cellar/bottle_storage"
+            }
+          ]
+        },
+        {
+          "id": "transportation (roads, parking, bridges, boats, airports, etc.)",
+          "label": "transportation (roads, parking, bridges, boats, airports, etc.)",
+          "children": [
+            {
+              "id": "/p/promenade_deck",
+              "label": "/p/promenade_deck"
+            }
+          ]
+        },
+        {
+          "id": "commercial buildings, shops, markets, cities, and towns",
+          "label": "commercial buildings, shops, markets, cities, and towns",
+          "children": [
+            {
+              "id": "/t/ticket_booth",
+              "label": "/t/ticket_booth"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "outdoor, natural",
+      "label": "outdoor, natural",
+      "children": [
+        {
+          "id": "man-made elements",
+          "label": "man-made elements",
+          "children": [
+            {
+              "id": "/a/aqueduct",
+              "label": "/a/aqueduct"
+            },
+            {
+              "id": "/b/barn",
+              "label": "/b/barn"
+            },
+            {
+              "id": "/b/bayou",
+              "label": "/b/bayou"
+            },
+            {
+              "id": "/b/boardwalk",
+              "label": "/b/boardwalk"
+            },
+            {
+              "id": "/b/boathouse",
+              "label": "/b/boathouse"
+            },
+            {
+              "id": "/b/botanical_garden",
+              "label": "/b/botanical_garden"
+            },
+            {
+              "id": "/c/corral",
+              "label": "/c/corral"
+            },
+            {
+              "id": "/c/cottage_garden",
+              "label": "/c/cottage_garden"
+            },
+            {
+              "id": "/d/dam",
+              "label": "/d/dam"
+            },
+            {
+              "id": "/d/dock",
+              "label": "/d/dock"
+            },
+            {
+              "id": "/f/fairway",
+              "label": "/f/fairway"
+            },
+            {
+              "id": "/f/field/cultivated",
+              "label": "/f/field/cultivated"
+            },
+            {
+              "id": "/f/fishpond",
+              "label": "/f/fishpond"
+            },
+            {
+              "id": "/f/forest_road",
+              "label": "/f/forest_road"
+            },
+            {
+              "id": "/f/formal_garden",
+              "label": "/f/formal_garden"
+            },
+            {
+              "id": "/g/golf_course",
+              "label": "/g/golf_course"
+            },
+            {
+              "id": "/h/hayfield",
+              "label": "/h/hayfield"
+            },
+            {
+              "id": "/h/herb_garden",
+              "label": "/h/herb_garden"
+            },
+            {
+              "id": "/h/highway",
+              "label": "/h/highway"
+            },
+            {
+              "id": "/i/igloo",
+              "label": "/i/igloo"
+            },
+            {
+              "id": "/o/outhouse/outdoor",
+              "label": "/o/outhouse/outdoor"
+            },
+            {
+              "id": "/p/park",
+              "label": "/p/park"
+            },
+            {
+              "id": "/p/picnic_area",
+              "label": "/p/picnic_area"
+            },
+            {
+              "id": "/p/playground",
+              "label": "/p/playground"
+            },
+            {
+              "id": "/p/putting_green",
+              "label": "/p/putting_green"
+            },
+            {
+              "id": "/r/raft",
+              "label": "/r/raft"
+            },
+            {
+              "id": "/r/rice_paddy",
+              "label": "/r/rice_paddy"
+            },
+            {
+              "id": "/r/rope_bridge",
+              "label": "/r/rope_bridge"
+            },
+            {
+              "id": "/r/ruin",
+              "label": "/r/ruin"
+            },
+            {
+              "id": "/s/ski_slope",
+              "label": "/s/ski_slope"
+            },
+            {
+              "id": "/t/tent/outdoor",
+              "label": "/t/tent/outdoor"
+            },
+            {
+              "id": "/t/topiary_garden",
+              "label": "/t/topiary_garden"
+            },
+            {
+              "id": "/t/tree_house",
+              "label": "/t/tree_house"
+            },
+            {
+              "id": "/t/trench",
+              "label": "/t/trench"
+            },
+            {
+              "id": "/v/vegetable_garden",
+              "label": "/v/vegetable_garden"
+            },
+            {
+              "id": "/v/viaduct",
+              "label": "/v/viaduct"
+            },
+            {
+              "id": "/v/vineyard",
+              "label": "/v/vineyard"
+            },
+            {
+              "id": "/w/wind_farm",
+              "label": "/w/wind_farm"
+            },
+            {
+              "id": "/y/yard",
+              "label": "/y/yard"
+            }
+          ]
+        },
+        {
+          "id": "cultural or historical building/place",
+          "label": "cultural or historical building/place",
+          "children": [
+            {
+              "id": "/a/aqueduct",
+              "label": "/a/aqueduct"
+            },
+            {
+              "id": "/r/ruin",
+              "label": "/r/ruin"
+            },
+            {
+              "id": "/v/viaduct",
+              "label": "/v/viaduct"
+            }
+          ]
+        },
+        {
+          "id": "mountains, hills, desert, sky",
+          "label": "mountains, hills, desert, sky",
+          "children": [
+            {
+              "id": "/b/badlands",
+              "label": "/b/badlands"
+            },
+            {
+              "id": "/b/butte",
+              "label": "/b/butte"
+            },
+            {
+              "id": "/c/canyon",
+              "label": "/c/canyon"
+            },
+            {
+              "id": "/c/cavern/indoor",
+              "label": "/c/cavern/indoor"
+            },
+            {
+              "id": "/c/cliff",
+              "label": "/c/cliff"
+            },
+            {
+              "id": "/d/desert/sand",
+              "label": "/d/desert/sand"
+            },
+            {
+              "id": "/d/desert/vegetation",
+              "label": "/d/desert/vegetation"
+            },
+            {
+              "id": "/h/hill",
+              "label": "/h/hill"
+            },
+            {
+              "id": "/m/mountain",
+              "label": "/m/mountain"
+            },
+            {
+              "id": "/m/mountain_snowy",
+              "label": "/m/mountain_snowy"
+            },
+            {
+              "id": "/r/rock_arch",
+              "label": "/r/rock_arch"
+            },
+            {
+              "id": "/s/sky",
+              "label": "/s/sky"
+            },
+            {
+              "id": "/v/valley",
+              "label": "/v/valley"
+            },
+            {
+              "id": "/v/volcano",
+              "label": "/v/volcano"
+            }
+          ]
+        },
+        {
+          "id": "forest, field, jungle",
+          "label": "forest, field, jungle",
+          "children": [
+            {
+              "id": "/b/bamboo_forest",
+              "label": "/b/bamboo_forest"
+            },
+            {
+              "id": "/b/barn",
+              "label": "/b/barn"
+            },
+            {
+              "id": "/b/bayou",
+              "label": "/b/bayou"
+            },
+            {
+              "id": "/b/boardwalk",
+              "label": "/b/boardwalk"
+            },
+            {
+              "id": "/b/botanical_garden",
+              "label": "/b/botanical_garden"
+            },
+            {
+              "id": "/c/corn_field",
+              "label": "/c/corn_field"
+            },
+            {
+              "id": "/c/corral",
+              "label": "/c/corral"
+            },
+            {
+              "id": "/c/cottage_garden",
+              "label": "/c/cottage_garden"
+            },
+            {
+              "id": "/f/fairway",
+              "label": "/f/fairway"
+            },
+            {
+              "id": "/f/field/cultivated",
+              "label": "/f/field/cultivated"
+            },
+            {
+              "id": "/f/field/wild",
+              "label": "/f/field/wild"
+            },
+            {
+              "id": "/f/forest/broadleaf",
+              "label": "/f/forest/broadleaf"
+            },
+            {
+              "id": "/f/forest/needleleaf",
+              "label": "/f/forest/needleleaf"
+            },
+            {
+              "id": "/f/forest_path",
+              "label": "/f/forest_path"
+            },
+            {
+              "id": "/f/forest_road",
+              "label": "/f/forest_road"
+            },
+            {
+              "id": "/f/formal_garden",
+              "label": "/f/formal_garden"
+            },
+            {
+              "id": "/g/golf_course",
+              "label": "/g/golf_course"
+            },
+            {
+              "id": "/h/hayfield",
+              "label": "/h/hayfield"
+            },
+            {
+              "id": "/h/herb_garden",
+              "label": "/h/herb_garden"
+            },
+            {
+              "id": "/m/marsh",
+              "label": "/m/marsh"
+            },
+            {
+              "id": "/o/orchard",
+              "label": "/o/orchard"
+            },
+            {
+              "id": "/o/outhouse/outdoor",
+              "label": "/o/outhouse/outdoor"
+            },
+            {
+              "id": "/p/park",
+              "label": "/p/park"
+            },
+            {
+              "id": "/p/pasture",
+              "label": "/p/pasture"
+            },
+            {
+              "id": "/p/picnic_area",
+              "label": "/p/picnic_area"
+            },
+            {
+              "id": "/p/playground",
+              "label": "/p/playground"
+            },
+            {
+              "id": "/p/putting_green",
+              "label": "/p/putting_green"
+            },
+            {
+              "id": "/r/rainforest",
+              "label": "/r/rainforest"
+            },
+            {
+              "id": "/r/rice_paddy",
+              "label": "/r/rice_paddy"
+            },
+            {
+              "id": "/s/swamp",
+              "label": "/s/swamp"
+            },
+            {
+              "id": "/t/topiary_garden",
+              "label": "/t/topiary_garden"
+            },
+            {
+              "id": "/t/tree_farm",
+              "label": "/t/tree_farm"
+            },
+            {
+              "id": "/t/tree_house",
+              "label": "/t/tree_house"
+            },
+            {
+              "id": "/v/vegetable_garden",
+              "label": "/v/vegetable_garden"
+            },
+            {
+              "id": "/v/vineyard",
+              "label": "/v/vineyard"
+            },
+            {
+              "id": "/w/wheat_field",
+              "label": "/w/wheat_field"
+            },
+            {
+              "id": "/w/wind_farm",
+              "label": "/w/wind_farm"
+            },
+            {
+              "id": "/y/yard",
+              "label": "/y/yard"
+            }
+          ]
+        },
+        {
+          "id": "houses, cabins, gardens, and farms",
+          "label": "houses, cabins, gardens, and farms",
+          "children": [
+            {
+              "id": "/b/barn",
+              "label": "/b/barn"
+            },
+            {
+              "id": "/b/botanical_garden",
+              "label": "/b/botanical_garden"
+            },
+            {
+              "id": "/c/corral",
+              "label": "/c/corral"
+            },
+            {
+              "id": "/c/cottage_garden",
+              "label": "/c/cottage_garden"
+            },
+            {
+              "id": "/f/field/cultivated",
+              "label": "/f/field/cultivated"
+            },
+            {
+              "id": "/f/formal_garden",
+              "label": "/f/formal_garden"
+            },
+            {
+              "id": "/h/hayfield",
+              "label": "/h/hayfield"
+            },
+            {
+              "id": "/h/herb_garden",
+              "label": "/h/herb_garden"
+            },
+            {
+              "id": "/o/outhouse/outdoor",
+              "label": "/o/outhouse/outdoor"
+            },
+            {
+              "id": "/r/rice_paddy",
+              "label": "/r/rice_paddy"
+            },
+            {
+              "id": "/t/topiary_garden",
+              "label": "/t/topiary_garden"
+            },
+            {
+              "id": "/t/tree_house",
+              "label": "/t/tree_house"
+            },
+            {
+              "id": "/v/vegetable_garden",
+              "label": "/v/vegetable_garden"
+            },
+            {
+              "id": "/v/vineyard",
+              "label": "/v/vineyard"
+            },
+            {
+              "id": "/y/yard",
+              "label": "/y/yard"
+            }
+          ]
+        },
+        {
+          "id": "water, ice, snow",
+          "label": "water, ice, snow",
+          "children": [
+            {
+              "id": "/b/bayou",
+              "label": "/b/bayou"
+            },
+            {
+              "id": "/b/beach",
+              "label": "/b/beach"
+            },
+            {
+              "id": "/b/boardwalk",
+              "label": "/b/boardwalk"
+            },
+            {
+              "id": "/b/boathouse",
+              "label": "/b/boathouse"
+            },
+            {
+              "id": "/c/canal/natural",
+              "label": "/c/canal/natural"
+            },
+            {
+              "id": "/c/coast",
+              "label": "/c/coast"
+            },
+            {
+              "id": "/c/creek",
+              "label": "/c/creek"
+            },
+            {
+              "id": "/c/crevasse",
+              "label": "/c/crevasse"
+            },
+            {
+              "id": "/d/dam",
+              "label": "/d/dam"
+            },
+            {
+              "id": "/d/dock",
+              "label": "/d/dock"
+            },
+            {
+              "id": "/f/fishpond",
+              "label": "/f/fishpond"
+            },
+            {
+              "id": "/h/hot_spring",
+              "label": "/h/hot_spring"
+            },
+            {
+              "id": "/i/ice_floe",
+              "label": "/i/ice_floe"
+            },
+            {
+              "id": "/i/ice_shelf",
+              "label": "/i/ice_shelf"
+            },
+            {
+              "id": "/i/iceberg",
+              "label": "/i/iceberg"
+            },
+            {
+              "id": "/i/igloo",
+              "label": "/i/igloo"
+            },
+            {
+              "id": "/i/islet",
+              "label": "/i/islet"
+            },
+            {
+              "id": "/l/lake/natural",
+              "label": "/l/lake/natural"
+            },
+            {
+              "id": "/m/marsh",
+              "label": "/m/marsh"
+            },
+            {
+              "id": "/m/mountain_snowy",
+              "label": "/m/mountain_snowy"
+            },
+            {
+              "id": "/o/ocean",
+              "label": "/o/ocean"
+            },
+            {
+              "id": "/p/pond",
+              "label": "/p/pond"
+            },
+            {
+              "id": "/r/raft",
+              "label": "/r/raft"
+            },
+            {
+              "id": "/r/river",
+              "label": "/r/river"
+            },
+            {
+              "id": "/s/sandbar",
+              "label": "/s/sandbar"
+            },
+            {
+              "id": "/s/sea_cliff",
+              "label": "/s/sea_cliff"
+            },
+            {
+              "id": "/s/ski_slope",
+              "label": "/s/ski_slope"
+            },
+            {
+              "id": "/s/snowfield",
+              "label": "/s/snowfield"
+            },
+            {
+              "id": "/s/swamp",
+              "label": "/s/swamp"
+            },
+            {
+              "id": "/u/underwater/coral_reef",
+              "label": "/u/underwater/coral_reef"
+            },
+            {
+              "id": "/w/waterfall/block",
+              "label": "/w/waterfall/block"
+            },
+            {
+              "id": "/w/waterfall/fan",
+              "label": "/w/waterfall/fan"
+            },
+            {
+              "id": "/w/waterfall/plunge",
+              "label": "/w/waterfall/plunge"
+            },
+            {
+              "id": "/w/watering_hole",
+              "label": "/w/watering_hole"
+            },
+            {
+              "id": "/w/wave",
+              "label": "/w/wave"
+            }
+          ]
+        },
+        {
+          "id": "transportation (roads, parking, bridges, boats, airports, etc.)",
+          "label": "transportation (roads, parking, bridges, boats, airports, etc.)",
+          "children": [
+            {
+              "id": "/b/bayou",
+              "label": "/b/bayou"
+            },
+            {
+              "id": "/b/boathouse",
+              "label": "/b/boathouse"
+            },
+            {
+              "id": "/d/dock",
+              "label": "/d/dock"
+            },
+            {
+              "id": "/f/forest_road",
+              "label": "/f/forest_road"
+            },
+            {
+              "id": "/h/highway",
+              "label": "/h/highway"
+            }
+          ]
+        },
+        {
+          "id": "sports fields, parks, leisure spaces",
+          "label": "sports fields, parks, leisure spaces",
+          "children": [
+            {
+              "id": "/b/boardwalk",
+              "label": "/b/boardwalk"
+            },
+            {
+              "id": "/f/fairway",
+              "label": "/f/fairway"
+            },
+            {
+              "id": "/f/fishpond",
+              "label": "/f/fishpond"
+            },
+            {
+              "id": "/f/forest_road",
+              "label": "/f/forest_road"
+            },
+            {
+              "id": "/g/golf_course",
+              "label": "/g/golf_course"
+            },
+            {
+              "id": "/i/igloo",
+              "label": "/i/igloo"
+            },
+            {
+              "id": "/p/park",
+              "label": "/p/park"
+            },
+            {
+              "id": "/p/picnic_area",
+              "label": "/p/picnic_area"
+            },
+            {
+              "id": "/p/playground",
+              "label": "/p/playground"
+            },
+            {
+              "id": "/p/putting_green",
+              "label": "/p/putting_green"
+            },
+            {
+              "id": "/r/rope_bridge",
+              "label": "/r/rope_bridge"
+            },
+            {
+              "id": "/s/ski_slope",
+              "label": "/s/ski_slope"
+            },
+            {
+              "id": "/t/tent/outdoor",
+              "label": "/t/tent/outdoor"
+            },
+            {
+              "id": "/t/tree_house",
+              "label": "/t/tree_house"
+            }
+          ]
+        },
+        {
+          "id": "industrial and construction",
+          "label": "industrial and construction",
+          "children": [
+            {
+              "id": "/d/dam",
+              "label": "/d/dam"
+            },
+            {
+              "id": "/t/trench",
+              "label": "/t/trench"
+            },
+            {
+              "id": "/w/wind_farm",
+              "label": "/w/wind_farm"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
