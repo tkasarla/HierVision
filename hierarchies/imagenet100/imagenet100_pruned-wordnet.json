@@ -1,0 +1,1037 @@
+{
+  "directed": true,
+  "graph": {},
+  "multigraph": false,
+  "nodes": [
+    {
+      "id": 128,
+      "label": "root"
+    },
+    {
+      "id": 127,
+      "label": "artifact"
+    },
+    {
+      "id": 126,
+      "label": "living thing"
+    },
+    {
+      "id": 125,
+      "label": "clothing"
+    },
+    {
+      "id": 124,
+      "label": "ball"
+    },
+    {
+      "id": 123,
+      "label": "stringed instrument"
+    },
+    {
+      "id": 122,
+      "label": "vehicle"
+    },
+    {
+      "id": 121,
+      "label": "fungus"
+    },
+    {
+      "id": 120,
+      "label": "invertebrate"
+    },
+    {
+      "id": 119,
+      "label": "vertebrate"
+    },
+    {
+      "id": 118,
+      "label": "sweatshirt"
+    },
+    {
+      "id": 117,
+      "label": "cardigan"
+    },
+    {
+      "id": 116,
+      "label": "lab coat"
+    },
+    {
+      "id": 115,
+      "label": "trench coat"
+    },
+    {
+      "id": 114,
+      "label": "suit"
+    },
+    {
+      "id": 113,
+      "label": "volleyball"
+    },
+    {
+      "id": 112,
+      "label": "soccer ball"
+    },
+    {
+      "id": 111,
+      "label": "baseball"
+    },
+    {
+      "id": 110,
+      "label": "basketball"
+    },
+    {
+      "id": 109,
+      "label": "rugby ball"
+    },
+    {
+      "id": 108,
+      "label": "electric guitar"
+    },
+    {
+      "id": 107,
+      "label": "acoustic guitar"
+    },
+    {
+      "id": 106,
+      "label": "banjo"
+    },
+    {
+      "id": 105,
+      "label": "cello"
+    },
+    {
+      "id": 104,
+      "label": "harp"
+    },
+    {
+      "id": 103,
+      "label": "train"
+    },
+    {
+      "id": 102,
+      "label": "car/truck"
+    },
+    {
+      "id": 101,
+      "label": "vessel"
+    },
+    {
+      "id": 100,
+      "label": "bullet train"
+    },
+    {
+      "id": 99,
+      "label": "freight car"
+    },
+    {
+      "id": 98,
+      "label": "electric locomotive"
+    },
+    {
+      "id": 97,
+      "label": "steam locomotive"
+    },
+    {
+      "id": 96,
+      "label": "streetcar"
+    },
+    {
+      "id": 95,
+      "label": "pickup"
+    },
+    {
+      "id": 94,
+      "label": "police van"
+    },
+    {
+      "id": 93,
+      "label": "sports car"
+    },
+    {
+      "id": 92,
+      "label": "jeep"
+    },
+    {
+      "id": 91,
+      "label": "minivan"
+    },
+    {
+      "id": 90,
+      "label": "container ship"
+    },
+    {
+      "id": 89,
+      "label": "liner"
+    },
+    {
+      "id": 88,
+      "label": "aircraft carrier"
+    },
+    {
+      "id": 87,
+      "label": "fireboat"
+    },
+    {
+      "id": 86,
+      "label": "lifeboat"
+    },
+    {
+      "id": 85,
+      "label": "agaric"
+    },
+    {
+      "id": 84,
+      "label": "gyromitra"
+    },
+    {
+      "id": 83,
+      "label": "stinkhorn"
+    },
+    {
+      "id": 82,
+      "label": "earthstar"
+    },
+    {
+      "id": 81,
+      "label": "hen-of-the-woods"
+    },
+    {
+      "id": 80,
+      "label": "insect"
+    },
+    {
+      "id": 79,
+      "label": "crab"
+    },
+    {
+      "id": 78,
+      "label": "spider"
+    },
+    {
+      "id": 77,
+      "label": "bird"
+    },
+    {
+      "id": 76,
+      "label": "turtle"
+    },
+    {
+      "id": 75,
+      "label": "lizard"
+    },
+    {
+      "id": 74,
+      "label": "fish"
+    },
+    {
+      "id": 73,
+      "label": "snake"
+    },
+    {
+      "id": 72,
+      "label": "mammal"
+    },
+    {
+      "id": 71,
+      "label": "beetle"
+    },
+    {
+      "id": 70,
+      "label": "butterfly"
+    },
+    {
+      "id": 69,
+      "label": "ground beetle"
+    },
+    {
+      "id": 68,
+      "label": "long-horned beetle"
+    },
+    {
+      "id": 67,
+      "label": "leaf beetle"
+    },
+    {
+      "id": 66,
+      "label": "dung beetle"
+    },
+    {
+      "id": 65,
+      "label": "rhinoceros beetle"
+    },
+    {
+      "id": 64,
+      "label": "ringlet butterfly"
+    },
+    {
+      "id": 63,
+      "label": "monarch butterfly"
+    },
+    {
+      "id": 62,
+      "label": "cabbage butterfly"
+    },
+    {
+      "id": 61,
+      "label": "sulphur butterfly"
+    },
+    {
+      "id": 60,
+      "label": "lycaenid butterfly"
+    },
+    {
+      "id": 59,
+      "label": "American lobster"
+    },
+    {
+      "id": 58,
+      "label": "Dungeness crab"
+    },
+    {
+      "id": 57,
+      "label": "rock crab"
+    },
+    {
+      "id": 56,
+      "label": "fiddler crab"
+    },
+    {
+      "id": 55,
+      "label": "king crab"
+    },
+    {
+      "id": 54,
+      "label": "black widow"
+    },
+    {
+      "id": 53,
+      "label": "tarantula"
+    },
+    {
+      "id": 52,
+      "label": "garden spider"
+    },
+    {
+      "id": 51,
+      "label": "barn spider"
+    },
+    {
+      "id": 50,
+      "label": "black and gold garden spider"
+    },
+    {
+      "id": 49,
+      "label": "feline"
+    },
+    {
+      "id": 48,
+      "label": "dog"
+    },
+    {
+      "id": 47,
+      "label": "monkey"
+    },
+    {
+      "id": 46,
+      "label": "big cat"
+    },
+    {
+      "id": 45,
+      "label": "domestic cat"
+    },
+    {
+      "id": 44,
+      "label": "cheetah"
+    },
+    {
+      "id": 43,
+      "label": "tiger"
+    },
+    {
+      "id": 42,
+      "label": "lion"
+    },
+    {
+      "id": 41,
+      "label": "jaguar"
+    },
+    {
+      "id": 40,
+      "label": "snow leopard"
+    },
+    {
+      "id": 39,
+      "label": "Egyptian cat"
+    },
+    {
+      "id": 38,
+      "label": "Siamese cat"
+    },
+    {
+      "id": 37,
+      "label": "Persian cat"
+    },
+    {
+      "id": 36,
+      "label": "tiger cat"
+    },
+    {
+      "id": 35,
+      "label": "tabby cat"
+    },
+    {
+      "id": 34,
+      "label": "Chesapeake Bay retriever"
+    },
+    {
+      "id": 33,
+      "label": "Labrador retriever"
+    },
+    {
+      "id": 32,
+      "label": "golden retriever"
+    },
+    {
+      "id": 31,
+      "label": "curly-coated retriever"
+    },
+    {
+      "id": 30,
+      "label": "flat-coated retriever"
+    },
+    {
+      "id": 29,
+      "label": "colobus"
+    },
+    {
+      "id": 28,
+      "label": "langur"
+    },
+    {
+      "id": 27,
+      "label": "macaque"
+    },
+    {
+      "id": 26,
+      "label": "baboon"
+    },
+    {
+      "id": 25,
+      "label": "patas"
+    },
+    {
+      "id": 24,
+      "label": "night snake"
+    },
+    {
+      "id": 23,
+      "label": "rock python"
+    },
+    {
+      "id": 22,
+      "label": "boa constrictor"
+    },
+    {
+      "id": 21,
+      "label": "Indian cobra"
+    },
+    {
+      "id": 20,
+      "label": "green mamba"
+    },
+    {
+      "id": 19,
+      "label": "Gila monster"
+    },
+    {
+      "id": 18,
+      "label": "green lizard"
+    },
+    {
+      "id": 17,
+      "label": "alligator lizard"
+    },
+    {
+      "id": 16,
+      "label": "frilled lizard"
+    },
+    {
+      "id": 15,
+      "label": "agama"
+    },
+    {
+      "id": 14,
+      "label": "loggerhead"
+    },
+    {
+      "id": 13,
+      "label": "leatherback turtle"
+    },
+    {
+      "id": 12,
+      "label": "mud turtle"
+    },
+    {
+      "id": 11,
+      "label": "terrapin"
+    },
+    {
+      "id": 10,
+      "label": "box turtle"
+    },
+    {
+      "id": 9,
+      "label": "puffer"
+    },
+    {
+      "id": 8,
+      "label": "lionfish"
+    },
+    {
+      "id": 7,
+      "label": "anemone fish"
+    },
+    {
+      "id": 6,
+      "label": "sturgeon"
+    },
+    {
+      "id": 5,
+      "label": "gar"
+    },
+    {
+      "id": 4,
+      "label": "brambling"
+    },
+    {
+      "id": 3,
+      "label": "goldfinch"
+    },
+    {
+      "id": 2,
+      "label": "house finch"
+    },
+    {
+      "id": 1,
+      "label": "junco"
+    },
+    {
+      "id": 0,
+      "label": "indigo bunting"
+    }
+  ],
+    "links": [
+    {
+      "source": 128,
+      "target": 127
+    },
+    {
+      "source": 128,
+      "target": 126
+    },
+    {
+      "source": 127,
+      "target": 125
+    },
+    {
+      "source": 127,
+      "target": 124
+    },
+    {
+      "source": 127,
+      "target": 123
+    },
+    {
+      "source": 127,
+      "target": 122
+    },
+    {
+      "source": 126,
+      "target": 121
+    },
+    {
+      "source": 126,
+      "target": 120
+    },
+    {
+      "source": 126,
+      "target": 119
+    },
+    {
+      "source": 125,
+      "target": 118
+    },
+    {
+      "source": 125,
+      "target": 117
+    },
+    {
+      "source": 125,
+      "target": 116
+    },
+    {
+      "source": 125,
+      "target": 115
+    },
+    {
+      "source": 125,
+      "target": 114
+    },
+    {
+      "source": 124,
+      "target": 113
+    },
+    {
+      "source": 124,
+      "target": 112
+    },
+    {
+      "source": 124,
+      "target": 111
+    },
+    {
+      "source": 124,
+      "target": 110
+    },
+    {
+      "source": 124,
+      "target": 109
+    },
+    {
+      "source": 123,
+      "target": 108
+    },
+    {
+      "source": 123,
+      "target": 107
+    },
+    {
+      "source": 123,
+      "target": 106
+    },
+    {
+      "source": 123,
+      "target": 105
+    },
+    {
+      "source": 123,
+      "target": 104
+    },
+    {
+      "source": 122,
+      "target": 103
+    },
+    {
+      "source": 122,
+      "target": 102
+    },
+    {
+      "source": 122,
+      "target": 101
+    },
+    {
+      "source": 121,
+      "target": 85
+    },
+    {
+      "source": 121,
+      "target": 84
+    },
+    {
+      "source": 121,
+      "target": 83
+    },
+    {
+      "source": 121,
+      "target": 82
+    },
+    {
+      "source": 121,
+      "target": 81
+    },
+    {
+      "source": 120,
+      "target": 80
+    },
+    {
+      "source": 120,
+      "target": 79
+    },
+    {
+      "source": 120,
+      "target": 78
+    },
+    {
+      "source": 119,
+      "target": 77
+    },
+    {
+      "source": 119,
+      "target": 76
+    },
+    {
+      "source": 119,
+      "target": 75
+    },
+    {
+      "source": 119,
+      "target": 74
+    },
+    {
+      "source": 119,
+      "target": 73
+    },
+    {
+      "source": 119,
+      "target": 72
+    },
+    {
+      "source": 103,
+      "target": 100
+    },
+    {
+      "source": 103,
+      "target": 99
+    },
+    {
+      "source": 103,
+      "target": 98
+    },
+    {
+      "source": 103,
+      "target": 97
+    },
+    {
+      "source": 103,
+      "target": 96
+    },
+    {
+      "source": 102,
+      "target": 95
+    },
+    {
+      "source": 102,
+      "target": 94
+    },
+    {
+      "source": 102,
+      "target": 93
+    },
+    {
+      "source": 102,
+      "target": 92
+    },
+    {
+      "source": 102,
+      "target": 91
+    },
+    {
+      "source": 101,
+      "target": 90
+    },
+    {
+      "source": 101,
+      "target": 89
+    },
+    {
+      "source": 101,
+      "target": 88
+    },
+    {
+      "source": 101,
+      "target": 87
+    },
+    {
+      "source": 101,
+      "target": 86
+    },
+    {
+      "source": 80,
+      "target": 71
+    },
+    {
+      "source": 80,
+      "target": 70
+    },
+    {
+      "source": 79,
+      "target": 59
+    },
+    {
+      "source": 79,
+      "target": 58
+    },
+    {
+      "source": 79,
+      "target": 57
+    },
+    {
+      "source": 79,
+      "target": 56
+    },
+    {
+      "source": 79,
+      "target": 55
+    },
+    {
+      "source": 78,
+      "target": 54
+    },
+    {
+      "source": 78,
+      "target": 53
+    },
+    {
+      "source": 78,
+      "target": 52
+    },
+    {
+      "source": 78,
+      "target": 51
+    },
+    {
+      "source": 78,
+      "target": 50
+    },
+    {
+      "source": 77,
+      "target": 4
+    },
+    {
+      "source": 77,
+      "target": 3
+    },
+    {
+      "source": 77,
+      "target": 2
+    },
+    {
+      "source": 77,
+      "target": 1
+    },
+    {
+      "source": 77,
+      "target": 0
+    },
+    {
+      "source": 76,
+      "target": 14
+    },
+    {
+      "source": 76,
+      "target": 13
+    },
+    {
+      "source": 76,
+      "target": 12
+    },
+    {
+      "source": 76,
+      "target": 11
+    },
+    {
+      "source": 76,
+      "target": 10
+    },
+    {
+      "source": 75,
+      "target": 19
+    },
+    {
+      "source": 75,
+      "target": 18
+    },
+    {
+      "source": 75,
+      "target": 17
+    },
+    {
+      "source": 75,
+      "target": 16
+    },
+    {
+      "source": 75,
+      "target": 15
+    },
+    {
+      "source": 74,
+      "target": 9
+    },
+    {
+      "source": 74,
+      "target": 8
+    },
+    {
+      "source": 74,
+      "target": 7
+    },
+    {
+      "source": 74,
+      "target": 6
+    },
+    {
+      "source": 74,
+      "target": 5
+    },
+    {
+      "source": 73,
+      "target": 24
+    },
+    {
+      "source": 73,
+      "target": 23
+    },
+    {
+      "source": 73,
+      "target": 22
+    },
+    {
+      "source": 73,
+      "target": 21
+    },
+    {
+      "source": 73,
+      "target": 20
+    },
+    {
+      "source": 72,
+      "target": 49
+    },
+    {
+      "source": 72,
+      "target": 48
+    },
+    {
+      "source": 72,
+      "target": 47
+    },
+    {
+      "source": 71,
+      "target": 69
+    },
+    {
+      "source": 71,
+      "target": 68
+    },
+    {
+      "source": 71,
+      "target": 67
+    },
+    {
+      "source": 71,
+      "target": 66
+    },
+    {
+      "source": 71,
+      "target": 65
+    },
+    {
+      "source": 70,
+      "target": 64
+    },
+    {
+      "source": 70,
+      "target": 63
+    },
+    {
+      "source": 70,
+      "target": 62
+    },
+    {
+      "source": 70,
+      "target": 61
+    },
+    {
+      "source": 70,
+      "target": 60
+    },
+    {
+      "source": 49,
+      "target": 46
+    },
+    {
+      "source": 49,
+      "target": 45
+    },
+    {
+      "source": 48,
+      "target": 34
+    },
+    {
+      "source": 48,
+      "target": 33
+    },
+    {
+      "source": 48,
+      "target": 32
+    },
+    {
+      "source": 48,
+      "target": 31
+    },
+    {
+      "source": 48,
+      "target": 30
+    },
+    {
+      "source": 47,
+      "target": 29
+    },
+    {
+      "source": 47,
+      "target": 28
+    },
+    {
+      "source": 47,
+      "target": 27
+    },
+    {
+      "source": 47,
+      "target": 26
+    },
+    {
+      "source": 47,
+      "target": 25
+    },
+    {
+      "source": 46,
+      "target": 44
+    },
+    {
+      "source": 46,
+      "target": 43
+    },
+    {
+      "source": 46,
+      "target": 42
+    },
+    {
+      "source": 46,
+      "target": 41
+    },
+    {
+      "source": 46,
+      "target": 40
+    },
+    {
+      "source": 45,
+      "target": 39
+    },
+    {
+      "source": 45,
+      "target": 38
+    },
+    {
+      "source": 45,
+      "target": 37
+    },
+    {
+      "source": 45,
+      "target": 36
+    },
+    {
+      "source": 45,
+      "target": 35
+    }
+  ] 
+}
