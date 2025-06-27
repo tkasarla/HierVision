@@ -1,11 +1,14 @@
 from ast import arg, parse
 import json
+from platform import node
+from turtle import color
 from count_classes import count_leaves, count_leaves_of_parent
 import os
 import networkx as nx
 from tqdm import tqdm
 import plotly.express as px
 import kaleido
+import numpy as np
 
 def get_hierarchy_files(hierarchies_directory="./HierVision/hierarchies/"):
     """
@@ -19,15 +22,15 @@ def get_hierarchy_files(hierarchies_directory="./HierVision/hierarchies/"):
         for file in files:
             if file.endswith(".json") and not file.startswith("nested") and not file.startswith("imagenet100"):
                 hierarchy_file = os.path.join(root, file)
-                # print(f"Found hierarchy file: {hierarchy_file}")
+                print(f"Found hierarchy file: {hierarchy_file}")
                 hierarchy_files.append(hierarchy_file)
     # remove filepaths with these names in them
     for filepath in hierarchy_files:
-        if "heirarchy_sun360_2012_with_count" in filepath or "gene_ontology_mapping.json" in filepath or "ADE20K" in filepath or "bbox_labels_600_hierarchy" in filepath or "imagenet100" in filepath:
+        if "heirarchy_sun360_2012_with_count" in filepath or "gene_ontology_mapping.json" in filepath or "bbox_labels_600_hierarchy" in filepath or "imagenet100" in filepath:
             print(f"Removing unformatted hierarchy file: {filepath}")
             hierarchy_files.remove(filepath)
     print(f"Found {len(hierarchy_files)} hierarchy files in the directory: {hierarchies_directory}")
-    # print(f"files are {hierarchy_files}")
+    print(f"files are {hierarchy_files}")
     return hierarchy_files
 
 # define a hierarchy class below
@@ -90,10 +93,15 @@ class Hierarchy:
         Returns:
             float: Average branching factor of the hierarchy.
         Explanation: 
-        The average branching factor is calculated as the total number of branches (outgoing edges) divided by the number of nodes.
+        The average branching factor is calculated as the average number of children per internal node (meaning excluding leaf nodes).
         """
-        total_branches = sum(self.graph.out_degree(n) for n in self.graph.nodes)
-        return total_branches / self.get_number_of_nodes() if self.get_number_of_nodes() > 0 else 0
+        if self.graph.number_of_nodes() == 0:
+            return 0.0
+        total_children = sum(self.graph.out_degree(n) for n in self.graph.nodes if self.graph.out_degree(n) > 0)
+        internal_nodes_count = sum(1 for n in self.graph.nodes if self.graph.out_degree(n) > 0)
+        if internal_nodes_count == 0:
+            return 0.0
+        return total_children / internal_nodes_count
 
 
 def process_hierarchy_files(hierarchy_files, show_print=True):
@@ -143,29 +151,28 @@ def plot_histogram_of_node_counts(dataset_info, bins=30, binsize=100):
         print(f"Plotting histogram of node counts for {len(dataset_info)} datasets.")
     else:
         raise ValueError("No dataset info provided. Please process hierarchy files first.")
-
+    print(dataset_info)
     node_counts = [info['number_of_nodes'] for info in dataset_info.values()]
+    print(node_counts)
+    log_bins = np.logspace(np.log10(min(node_counts)), np.log10(max(node_counts)), num=20)
+
+    # Calculate histogram frequencies
+    hist, bin_edges = np.histogram(node_counts, bins=log_bins)
+
+    print(f"node counts: {node_counts}")
     for dataset_name, info in dataset_info.items():
         print(f"{dataset_name}: {info['number_of_nodes']} nodes")
-    # plot based on bin size
-    # bin the node counts based on the binsize
-    node_counts_binned = [count // binsize * binsize for count in node_counts]
-    print(f"Node counts binned: {node_counts_binned}")
-    fig = px.histogram(node_counts_binned, nbins=bins, title="Histogram of Node Counts per Hierarchy")
-    fig.update_layout(
-        xaxis_title="Number of Nodes",
-        yaxis_title="Frequency (# of Datasets)",
-        bargap=0.2
+    fig = px.bar(
+        x=bin_edges[:-1],  # Bin start points
+        y=hist,  # Frequencies
+        labels={"x": "Number of Nodes (Log Scale)", "y": "Frequency (# of Datasets)"},
+        title="Histogram of Node Counts"
     )
-    fig.show()
 
-    ## uncomment to plot based on bins
-    # fig = px.histogram(node_counts, nbins=bins, title="Histogram of Node Counts per Hierarchy")
-    # fig.update_layout(
-    #     xaxis_title="Number of Nodes",
-    #     yaxis_title="Frequency (# of Datasets)",
-    #     bargap=0.2
-    # )
+    fig.update_layout(
+        xaxis_type="log",  # Apply log scale to x-axis
+        bargap=0.2,
+    )
     fig.show() 
     fig.write_image("histogram_of_node_counts.png")
 
@@ -185,12 +192,18 @@ def plot_semantic_granularity_histogram(dataset_info, bins=30, color="blue"):
         raise ValueError("No dataset info provided. Please process hierarchy files first.")
 
     max_depths = [info['depth'] for info in dataset_info.values()]
-    fig = px.histogram(max_depths, nbins=bins, title="Histogram of Maximum Tree Depths")
+    fig = px.histogram(
+        max_depths, 
+        title="Histogram of Maximum Tree Depths",
+        color_discrete_sequence=["blue"]  # Set a static color for the histogram
+        )
+    
     fig.update_layout(
         xaxis_title="Maximum Tree Depth",
         yaxis_title="Frequency (# of Datasets)",
         bargap=0.2,
-        template="plotly_white"
+        template="plotly_white",
+        xaxis_type="log",  # Apply log scale to x-axis
     )
     fig.update_traces(marker_color=color)
     fig.show()
@@ -215,7 +228,8 @@ def plot_max_depth_by_nodes_scatterplot(dataset_info):
     dataset_names = list(dataset_info.keys())
     max_depths = [info['depth'] for info in dataset_info.values()]
     node_counts = [info['number_of_nodes'] for info in dataset_info.values()]
-
+    branching_factors = [info['average_branching_factor'] for info in dataset_info.values()]
+    branching_factors_weighted = 12+ np.array(branching_factors)  # Scale the branching factors for better visibility in the plot
     # Conditionally add text for datapoints with >1000 nodes
     text_labels = [
         name if nodes > 1000 else None
@@ -227,6 +241,7 @@ def plot_max_depth_by_nodes_scatterplot(dataset_info):
     fig = px.scatter(
         x=node_counts,
         y=max_depths,
+        size=branching_factors_weighted,  # Circle size proportional to average branching factor
         title="Maximum Depth vs Node Count",
         hover_name=dataset_names,  # Add dataset names as hover text only
         opacity=0.5,  # Set transparency for overlapping points
@@ -238,7 +253,7 @@ def plot_max_depth_by_nodes_scatterplot(dataset_info):
 
     # Update marker size and layout for log scale
     fig.update_traces(
-        marker=dict(size=20),  # Increase marker size
+        # marker=dict(size=20),  # Increase marker size
         textposition="top center"  # Position text above datapoints
     )
     fig.update_layout(
@@ -252,6 +267,220 @@ def plot_max_depth_by_nodes_scatterplot(dataset_info):
     fig.show()
     fig.write_image("max_depth_vs_node_count_scatterplot_log_scale.png")
 
+def plot_average_branching_factor(dataset_info):
+    """
+    Plot the average branching factor per dataset.
+    X-axis: Dataset name
+    Y-axis: Average branching factor
+    """
+    # Extract dataset names and average branching factors
+    if type(dataset_info) == str:
+        print(f"dataset info is a string: {dataset_info}")
+        with open(dataset_info, 'r') as f:
+            dataset_info = json.load(f)
+    dataset_names = list(dataset_info.keys())
+    branching_factors = [info['average_branching_factor'] for info in dataset_info.values()]
+
+    # Create bar plot
+    fig = px.bar(
+        x=dataset_names,
+        y=branching_factors,
+        labels={"x": "Dataset Name", "y": "Average Branching Factor"},
+        title="Average Branching Factor per Dataset",
+        color_discrete_sequence=["purple"]  # Set a static color for the bars
+    )
+
+    # Update layout for better visualization
+    fig.update_layout(
+        xaxis=dict(tickangle=-45),  # Rotate x-axis labels for readability
+        template="plotly_white"
+    )
+
+    # Show the plot
+    fig.show()
+    fig.write_image("average_branching_factor_per_dataset.png")
+
+def plot_radar_min_max(dataset_info):
+    """
+    Create a radar plot for the minimum and maximum values of:
+    - Number of nodes
+    - Depth
+    - Number of leaves
+    - Average branching factor
+    """
+    if type(dataset_info) == str:
+        print(f"dataset info is a string: {dataset_info}")
+        with open(dataset_info, 'r') as f:
+            dataset_info = json.load(f)
+    # Extract values
+    node_counts = [info['number_of_nodes'] for info in dataset_info.values()]
+    depths = [info['depth'] for info in dataset_info.values()]
+    leaf_counts = [info['number_of_leaves'] for info in dataset_info.values()]
+    branching_factors = [info['average_branching_factor'] for info in dataset_info.values()]
+
+    # Calculate min and max for each metric
+    metrics = {
+        "Number of Nodes": (min(node_counts), max(node_counts)),
+        "Depth": (min(depths), max(depths)),
+        "Number of Leaves": (min(leaf_counts), max(leaf_counts)),
+        "Average Branching Factor": (min(branching_factors), max(branching_factors))
+    }
+
+    # Prepare data for radar plot
+    categories = list(metrics.keys())
+    min_values = [np.log10(metrics[metric][0]) if metrics[metric][0] > 0 else 0 for metric in categories]
+    max_values = [np.log10(metrics[metric][1]) if metrics[metric][1] > 0 else 0 for metric in categories]
+    print(f"Categories: {categories}")
+    print(f"Log Min values: {min_values}")
+    print(f"Log Max values: {max_values}")
+
+    # Create radar plot
+    import plotly.graph_objects as go
+    fig = go.Figure()
+
+    # Add min values
+    fig.add_trace(go.Scatterpolar(
+        r=min_values,
+        theta=categories,
+        fill='toself',
+        name='Minimum Values (Log Scale)'
+    ))
+
+    # Add max values
+    fig.add_trace(go.Scatterpolar(
+        r=max_values,
+        theta=categories,
+        fill='toself',
+        name='Maximum Values (Log Scale)'
+    ))
+
+    # Update layout
+    fig.update_layout(
+        polar=dict(
+            radialaxis=dict(
+                visible=True,
+                title="Log Scale"
+            )
+        ),
+        title="Radar Plot of Min and Max Values Across Metrics (Log Scale)",
+        template="plotly_white"
+    )
+
+    # Show the plot
+    fig.show()
+    fig.write_image("radar_plot_min_max_log_scale.png")
+
+import matplotlib.pyplot as plt
+import seaborn as sns
+import numpy as np
+
+def plot_hexbin_with_marginals(dataset_info):
+    """
+    Hexbin plot of Max Depth vs. Average Branching Factor with marginal distributions.
+    """
+    if type(dataset_info) == str:
+        with open(dataset_info, 'r') as f:
+            dataset_info = json.load(f)
+    elif type(dataset_info) == dict:
+        print(f"Plotting hexbin with marginals for {len(dataset_info)} datasets.")
+    else:
+        raise ValueError("No dataset info provided. Please process hierarchy files first.")
+    # Extract data
+    max_depths = [info['depth'] for info in dataset_info.values()]
+    branching_factors = [info['average_branching_factor'] for info in dataset_info.values()]
+
+    # Create figure and gridspec for marginal distributions
+    fig = plt.figure(figsize=(10, 8))
+    grid = plt.GridSpec(4, 4, hspace=0.5, wspace=0.5)
+
+    # Main hexbin plot
+    ax_main = fig.add_subplot(grid[1:4, 0:3])
+    hb = ax_main.hexbin(branching_factors, max_depths, gridsize=15, cmap='cool', mincnt=1)
+    ax_main.set_xlabel("Average Branching Factor")
+    ax_main.set_ylabel("Maximum Depth")
+    ax_main.set_title("Hexbin Plot of Max Depth vs. Branching Factor")
+    cb = fig.colorbar(hb, ax=ax_main)
+    cb.set_label("Frequency")
+
+    # Marginal distribution for branching factors
+    ax_top = fig.add_subplot(grid[0, 0:3], sharex=ax_main)
+    sns.histplot(branching_factors, bins=30, kde=True, ax=ax_top, color="blue")
+    ax_top.set_ylabel("Frequency")
+    ax_top.set_title("Marginal Distribution of Branching Factor")
+
+    # Marginal distribution for max depths
+    ax_right = fig.add_subplot(grid[1:4, 3], sharey=ax_main)
+    sns.histplot(max_depths, bins=30, kde=True, ax=ax_right, color="blue", orientation="horizontal")
+    ax_right.set_xlabel("Frequency")
+    ax_right.set_title("Marginal Distribution of Max Depth")
+
+    # Adjust layout
+    plt.tight_layout()
+    plt.show()
+    fig.savefig("hexbin_with_marginals.png")
+
+import plotly.express as px
+
+def plot_treemap(dataset_info, color_metric="depth"):
+    """
+    Create a treemap where:
+    - Block size: Total node count
+    - Block color: Max depth or average branching factor
+    - Block label: Dataset name
+    Args:
+        dataset_info (dict): Dictionary containing dataset information.
+        color_metric (str): Metric to use for block color ("depth" or "average_branching_factor").
+    """
+    if type(dataset_info) == str:
+        print(f"dataset info is a string: {dataset_info}")
+        with open(dataset_info, 'r') as f:
+            dataset_info = json.load(f)
+    elif type(dataset_info) != dict:
+        raise ValueError("No valid dataset info provided. Please process hierarchy files first.")
+
+    # Prepare data for treemap
+    dataset_names = list(dataset_info.keys())
+    node_counts = [info['number_of_nodes'] for info in dataset_info.values()]
+    color_values = [info[color_metric] for info in dataset_info.values()]
+    normalized_color_values = np.array(color_values) / np.max(color_values)  # Normalize color values for better visualization
+    print(f"Dataset Names: {dataset_names}")
+    print(f"Node Counts: {node_counts}")
+    # print(f"Color Values ({color_metric}): {color_values}")
+    
+    # Filter invalid data
+    filtered_data = [
+        (name, nodes, color)
+        for name, nodes, color in zip(dataset_names, node_counts, normalized_color_values)
+        if nodes > 0 and color is not None
+    ]
+
+    if not filtered_data:
+        raise ValueError("No valid data to plot the treemap.")
+
+    dataset_names, node_counts, normalized_color_values = zip(*filtered_data)
+
+    print(f"Filtered Dataset Names: {dataset_names}")
+    print(f"Filtered Node Counts: {node_counts}")
+    print(f"Filtered Normalized Color Values: {normalized_color_values}")
+
+    # Create treemap
+    fig = px.treemap(
+        names=dataset_names,  # Dataset names as labels
+        values=node_counts,  # Block size based on node count
+        color=normalized_color_values,  # Block color based on the chosen metric
+        color_continuous_scale="Viridis",  # Color scale
+        title=f"Treemap of Node Count (Block Size) vs {color_metric.capitalize()} (Block Color)"
+    )
+
+    # Update layout for better visualization
+    fig.update_layout(
+        template="plotly_white",
+        coloraxis_colorbar=dict(title=color_metric.capitalize())
+    )
+
+    # Show the plot
+    fig.show()
+    fig.write_image(f"treemap_node_count_vs_{color_metric}.png")
 
 # accept command line arguments as input
 import argparse
@@ -264,7 +493,9 @@ parser.add_argument("--binsize", type=int, default=100, help="Size of each bin f
 parser.add_argument("--plot_semantic_granularity", action='store_true', help="Whether to plot the semantic granularity histogram.")
 parser.add_argument("--plot_node_counts", action='store_true', help="Whether to plot the histogram of node counts.")
 parser.add_argument("--color", type=str, default="pink", help="Color for the semantic granularity histogram.")
-
+parser.add_argument("--plot_max_depth_by_nodes", action='store_true', help="Whether to plot the scatter plot of maximum depth vs node count.")
+parser.add_argument("--plot_average_branching_factor", action='store_true', help="Whether to plot the average branching factor per dataset.")
+parser.add_argument("--plot_radar_min_max", action='store_true', help="Whether to plot the radar plot of min and max values across metrics.")
 args = parser.parse_args()
 
 if __name__ == "__main__":
@@ -275,7 +506,14 @@ if __name__ == "__main__":
     if args.dataset_info_filepath != None and os.path.exists(args.dataset_info_filepath):
         dataset_info = args.dataset_info_filepath
         print(f"Skipping processing hierarchies, using existing hierarchy info from {args.dataset_info_filepath}")
-        plot_max_depth_by_nodes_scatterplot(dataset_info)
+        # plot_treemap(dataset_info, color_metric="depth")
+        # plot_hexbin_with_marginals(dataset_info)
+        if args.plot_max_depth_by_nodes:
+            plot_max_depth_by_nodes_scatterplot(dataset_info)
+        if args.plot_average_branching_factor:
+            plot_average_branching_factor(dataset_info)
+        if args.plot_radar_min_max:
+            plot_radar_min_max(dataset_info)
         if args.plot_semantic_granularity:
             print("Plotting semantic granularity histogram...")
             plot_semantic_granularity_histogram(dataset_info, bins=args.bins)
@@ -286,5 +524,5 @@ if __name__ == "__main__":
         print(f"Processing hierarchy files from directory: {args.hierarchies_directory}")
         hierarchy_files = get_hierarchy_files(args.hierarchies_directory)
         dataset_info = process_hierarchy_files(hierarchy_files, show_print=args.show_print)
-        plot_histogram_of_node_counts(bins=args.bins, dataset_info=dataset_info)
+        # plot_histogram_of_node_counts(bins=args.bins, dataset_info=dataset_info)
         print("Processing complete. Dataset info saved to 'dataset_info.json'.")
