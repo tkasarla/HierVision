@@ -113,6 +113,15 @@ def process_hierarchy_files(hierarchy_files, show_print=True):
         print(f"Processing hierarchy file: {hierarchy_file}")
         hierarchy_obj = Hierarchy(hierarchy_file)
         dataset_name = hierarchy_file.split("/")[3]
+        if hierarchy_file.split("/")[3] == "medical_imaging_datasets":
+            print(f"Found medical_imaging_datasets hierarchy file: {hierarchy_file}")
+            dataset_name = hierarchy_file.split("/")[4]
+            print(f"dataset name here is {dataset_name}")
+        if "_" in dataset_name:
+            # replace the _ by space
+            dataset_name = dataset_name.replace("_", " ")
+            # capitalize the first letter of each word
+            dataset_name = dataset_name.title()
         dataset_info[dataset_name] = {
             "number_of_nodes": hierarchy_obj.get_number_of_nodes(),
             "depth": hierarchy_obj.get_depth(),
@@ -135,7 +144,68 @@ def process_hierarchy_files(hierarchy_files, show_print=True):
     df.to_csv("dataset_info.csv", index_label="dataset_name")
     return dataset_info
 
-def plot_histogram_of_node_counts(dataset_info, bins=30, binsize=100):
+def increase_font_size(fig):
+    # Update layout to increase font sizes
+    fig.update_layout(
+        title=dict(
+            font=dict(size=30)  # Increase title font size
+        ),
+        xaxis=dict(
+            title=dict(
+                font=dict(size=24)  # Increase x-axis title font size
+            )
+        ),
+        yaxis=dict(
+            title=dict(
+                font=dict(size=24)  # Increase y-axis title font size
+            )
+        ),
+        font=dict(size=20)  # Increase font size for text labels
+    )
+
+def plot_histogram_of_node_counts(dataset_info, binsize=50):
+    """
+    Plot a histogram of node counts per hierarchy using plotly.express.histogram.
+    Args:
+        dataset_info (dict or str): Dataset information or path to JSON file.
+        binsize (int): Size of each bin (e.g., 50 for bins like 0-50, 50-100, etc.).
+    """
+    if type(dataset_info) == str:
+        print(f"dataset info is a string: {dataset_info}")
+        with open(dataset_info, 'r') as f:
+            dataset_info = json.load(f)
+        print(f"Plotting histogram of node counts for {len(dataset_info)} datasets.")
+    elif type(dataset_info) == dict:
+        print(f"Plotting histogram of node counts for {len(dataset_info)} datasets.")
+    else:
+        raise ValueError("No dataset info provided. Please process hierarchy files first.")
+
+    # Extract node counts
+    node_counts = [info['number_of_nodes'] for info in dataset_info.values()]
+    print(f"Node counts: {node_counts}")
+
+    # Create histogram using plotly.express
+    fig = px.histogram(
+        x=node_counts,
+        nbins=int(max(node_counts) / binsize),  # Define number of bins based on binsize
+        labels={"x": "Number of Nodes", "y": "Frequency (# of Datasets)"},
+        title="Histogram of Node Counts",
+        color_discrete_sequence=["blue"]  # Set a static color for the bars
+    )
+
+    # Update layout for better visualization
+    fig.update_layout(
+        xaxis=dict(title="Number of Nodes"),
+        yaxis=dict(title="Frequency (# of Datasets)"),
+        bargap=0.2,  # Adjust spacing between bars
+        template="plotly_white"
+    )
+
+    increase_font_size(fig)  # Increase font size for better readability
+    fig.show()
+
+
+def plot_histogram_of_node_counts2(dataset_info, bins=30, binsize=100):
     """
 - **Histogram of Node Counts per Hierarchy**
     - **X-axis**: Number of nodes (bucketed)
@@ -162,21 +232,36 @@ def plot_histogram_of_node_counts(dataset_info, bins=30, binsize=100):
     print(f"node counts: {node_counts}")
     for dataset_name, info in dataset_info.items():
         print(f"{dataset_name}: {info['number_of_nodes']} nodes")
-    fig = px.bar(
-        x=bin_edges[:-1],  # Bin start points
-        y=hist,  # Frequencies
-        labels={"x": "Number of Nodes (Log Scale)", "y": "Frequency (# of Datasets)"},
-        title="Histogram of Node Counts"
+
+    bar_width = 10  # Set a fixed width for the bars
+    import plotly.graph_objects as go
+    fig = go.Figure()
+
+    fig.add_trace(
+        go.Bar(
+            x=bin_edges[:-1],  # Bin start points
+            y=hist,  # Frequencies
+            width=[bar_width] * len(hist),  # Fixed width for all bars
+            name="Node Counts",
+        )
     )
 
     fig.update_layout(
-        xaxis_type="log",  # Apply log scale to x-axis
-        bargap=0.2,
+        xaxis=dict(
+            title="Number of Nodes (Log Scale)",
+            type="log",  # Apply log scale to x-axis
+        ),
+        yaxis=dict(
+            title="Frequency (# of Datasets)",
+        ),
+        title="Histogram of Node Counts",
+        bargap=0.2,  # Adjust spacing between bars
     )
-    fig.show() 
-    fig.write_image("histogram_of_node_counts.png")
 
-def plot_semantic_granularity_histogram(dataset_info, bins=30, color="blue"):
+    increase_font_size(fig)  # Increase font size for better readability
+    fig.show()
+
+def plot_semantic_granularity_histogram(dataset_info, color="blue", bins=None):
     """
     - **Histogram of Maximum Tree Depths**
     - Useful to show semantic granularity (e.g., 2–3 levels = coarse; 7+ = fine-grained)
@@ -192,6 +277,9 @@ def plot_semantic_granularity_histogram(dataset_info, bins=30, color="blue"):
         raise ValueError("No dataset info provided. Please process hierarchy files first.")
 
     max_depths = [info['depth'] for info in dataset_info.values()]
+    # use custom bins
+    if bins:
+        bins = np.arange(0, max(max_depths) + 1, bins)  # Create bins from 0 to max depth with specified size
     fig = px.histogram(
         max_depths, 
         title="Histogram of Maximum Tree Depths",
@@ -203,11 +291,15 @@ def plot_semantic_granularity_histogram(dataset_info, bins=30, color="blue"):
         yaxis_title="Frequency (# of Datasets)",
         bargap=0.2,
         template="plotly_white",
-        xaxis_type="log",  # Apply log scale to x-axis
+        # xaxis_type="log",  # Apply log scale to x-axis
+        showlegend=False  # Remove the legend
     )
+    increase_font_size(fig)  # Increase font size for better readability
     fig.update_traces(marker_color=color)
     fig.show()
     fig.write_image("histogram_of_maximum_tree_depths.png")
+
+
 
 def plot_max_depth_by_nodes_scatterplot(dataset_info):
     """
@@ -230,6 +322,8 @@ def plot_max_depth_by_nodes_scatterplot(dataset_info):
     node_counts = [info['number_of_nodes'] for info in dataset_info.values()]
     branching_factors = [info['average_branching_factor'] for info in dataset_info.values()]
     branching_factors_weighted = 12+ np.array(branching_factors)  # Scale the branching factors for better visibility in the plot
+    # fixed size each circle the same
+    branching_factors_fixed = [12] * len(branching_factors_weighted)  # Set a fixed size for all circles
     # Conditionally add text for datapoints with >1000 nodes
     text_labels = [
         name if nodes > 1000 else None
@@ -241,7 +335,7 @@ def plot_max_depth_by_nodes_scatterplot(dataset_info):
     fig = px.scatter(
         x=node_counts,
         y=max_depths,
-        size=branching_factors_weighted,  # Circle size proportional to average branching factor
+        size=branching_factors_fixed,  # Circle size proportional to average branching factor
         title="Maximum Depth vs Node Count",
         hover_name=dataset_names,  # Add dataset names as hover text only
         opacity=0.5,  # Set transparency for overlapping points
@@ -262,6 +356,7 @@ def plot_max_depth_by_nodes_scatterplot(dataset_info):
         xaxis_type="log",  # Apply log scale to x-axis
         template="plotly_white"
     )
+    increase_font_size(fig)  # Increase font size for better readability
 
     # Show the plot and save it as an image
     fig.show()
@@ -280,6 +375,10 @@ def plot_average_branching_factor(dataset_info):
             dataset_info = json.load(f)
     dataset_names = list(dataset_info.keys())
     branching_factors = [info['average_branching_factor'] for info in dataset_info.values()]
+    # make them sorted
+    sorted_indices = np.argsort(branching_factors)
+    dataset_names = [dataset_names[i] for i in sorted_indices]
+    branching_factors = [branching_factors[i] for i in sorted_indices]
 
     # Create bar plot
     fig = px.bar(
@@ -295,6 +394,9 @@ def plot_average_branching_factor(dataset_info):
         xaxis=dict(tickangle=-45),  # Rotate x-axis labels for readability
         template="plotly_white"
     )
+
+    # Increase font size for better readability
+    increase_font_size(fig)
 
     # Show the plot
     fig.show()
@@ -507,7 +609,7 @@ if __name__ == "__main__":
         dataset_info = args.dataset_info_filepath
         print(f"Skipping processing hierarchies, using existing hierarchy info from {args.dataset_info_filepath}")
         # plot_treemap(dataset_info, color_metric="depth")
-        # plot_hexbin_with_marginals(dataset_info)
+        plot_hexbin_with_marginals(dataset_info)
         if args.plot_max_depth_by_nodes:
             plot_max_depth_by_nodes_scatterplot(dataset_info)
         if args.plot_average_branching_factor:
@@ -519,10 +621,9 @@ if __name__ == "__main__":
             plot_semantic_granularity_histogram(dataset_info, bins=args.bins)
         if args.plot_node_counts:
             print("Plotting histogram of node counts...")
-            plot_histogram_of_node_counts(bins=args.bins, dataset_info="dataset_info.json", binsize=args.binsize)
+            plot_histogram_of_node_counts(dataset_info="dataset_info.json", binsize=args.binsize)
     else:
         print(f"Processing hierarchy files from directory: {args.hierarchies_directory}")
         hierarchy_files = get_hierarchy_files(args.hierarchies_directory)
         dataset_info = process_hierarchy_files(hierarchy_files, show_print=args.show_print)
-        # plot_histogram_of_node_counts(bins=args.bins, dataset_info=dataset_info)
         print("Processing complete. Dataset info saved to 'dataset_info.json'.")
