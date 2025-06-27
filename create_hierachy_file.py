@@ -12,6 +12,7 @@ import pandas as pd
 import plotly.graph_objects as go
 import torch
 from tqdm import tqdm
+from collections import defaultdict
 from loguru import logger
 from nltk.corpus import wordnet as wn
 from typing import List, Set
@@ -106,21 +107,44 @@ class HierarchyFileCreator:
             objects = json.loads(content)["annotation"]["object"]
             id_to_name = {}
             part_of = {}
+            local_to_global_ids = {}
+
             for obj in objects:
-                node = obj["name"]
-                id_to_name[obj["id"]] = node
-                part_of[node] = obj["parts"]["ispartof"]
-                if node not in G:
-                    G.add_node(node, label=node)
-            
-            for node in part_of:
-                parent_id = part_of[node]
-                if parent_id != [] and parent_id in id_to_name:
-                    parent = id_to_name[parent_id]
-                    if parent not in G:
-                        G.add_node(parent, label=parent)
-                    if not G.has_edge(parent, node):
-                        G.add_edge(parent, node)
+                obj_id = obj["id"]
+                node = obj["raw_name"]
+                if node == "root":
+                    node = node + " (entity)" # to avoid conflicts with the root node
+                node_id = obj["name_ndx"]
+                local_to_global_ids[obj_id] = node_id
+                id_to_name[node_id] = node
+                part_of[node_id] = obj["parts"]["ispartof"]
+                if node_id not in G:
+                    G.add_node(node_id, label=node)
+            try:
+                for node_id in part_of:
+                    if (local_parent_id := part_of[node_id]) == []: 
+                        continue
+                    if local_parent_id not in local_to_global_ids:
+                        continue
+                    parent_id = local_to_global_ids[local_parent_id]
+                    # Fix 1: Check for valid parent and prevent self-loops
+                    if (parent_id in id_to_name and 
+                        parent_id != node_id):  # Prevent self-loops
+                        
+                        parent = id_to_name[parent_id]
+                        # Fix 2: Check parent_id instead of parent string
+                        if parent_id not in G:
+                            G.add_node(parent_id, label=parent)
+                        
+                        # Fix 3: Prevent cycles by checking if adding edge would create cycle
+                        if not G.has_edge(parent_id, node_id) and not nx.has_path(G, node_id, parent_id):
+                            G.add_edge(parent_id, node_id)
+                        elif nx.has_path(G, node_id, parent_id):
+                            logger.warning(f"Skipping edge {parent_id}->{node_id} to prevent cycle")
+            except Exception as e:
+                print(e)
+                breakpoint()
+    
         logger.info(f"Created graph for {self.dataset_name} with {G.number_of_nodes()} nodes.")
         return G
     
@@ -591,7 +615,7 @@ class HierarchyFileCreator:
         def get_hypernym_paths(synset):
             paths = synset.hypernym_paths()
             path = paths[0] # if multiple paths, take the first one
-            path = [s.name().split('.')[0] for s in path]
+            path = [(s.name(),s.name().split('.')[0]) for s in path]
             return path
 
         assert entity_names is not None or entity_ids is not None, "Either entity_names or entity_ids must be provided."
@@ -605,13 +629,18 @@ class HierarchyFileCreator:
             chain = get_hypernym_paths(synset)
 
             for i in range(len(chain) - 1):
-                parent, child = chain[i], chain[i + 1]
-                if not G.has_node(parent):
-                    G.add_node(parent, label=parent)
-                if not G.has_node(child):
-                    G.add_node(child, label=child)
-                if not G.has_edge(parent, child):
-                    G.add_edge(parent, child)
+                parent_id, child_id = chain[i][0], chain[i + 1][0]
+                parent, child = chain[i][1], chain[i + 1][1]
+                if parent == "root":
+                    parent = parent + " (entity)"  # to avoid conflicts with the root node
+                if child == "root":
+                    child = child + " (entity)"
+                if not G.has_node(parent_id):
+                    G.add_node(parent_id, label=parent)
+                if not G.has_node(child_id):
+                    G.add_node(child_id, label=child)
+                if not G.has_edge(parent_id, child_id):
+                    G.add_edge(parent_id, child_id)
 
         logger.info(f"Created WordNet graph with {G.number_of_nodes()} nodes.")
         return G
@@ -710,6 +739,8 @@ class HierarchyFileCreator:
             G (nx.DiGraph): The graph with a virtual root node added.
         """
         logger.info("Adding virtual root node to the graph.")
+        progressive_ids = {n:i for i, n in enumerate(G.nodes)}
+        G = nx.relabel_nodes(G, progressive_ids, copy=True)  # Ensure nodes have unique ids
         # Find nodes with no incoming edges
         roots = [n for n in G.nodes if G.in_degree(n) == 0]
 
@@ -989,7 +1020,8 @@ class HierarchyFileCreator:
         logger.info("Visualizing the hierarchy.")
         self._visualize_hierarchy(G, number_of_nodes, max_depth)
         self._visualize_hierarchy_from_file(os.path.join(self.hierarchy_files_path, "hierarchy.json"))
-
+        from utils.graph_utils import plot_hierarchy
+        plot_hierarchy(os.path.join(self.hierarchy_files_path, "hierarchy.json"))
 
 def main():
     parser = argparse.ArgumentParser(description="Create hierarchy file for a dataset.")

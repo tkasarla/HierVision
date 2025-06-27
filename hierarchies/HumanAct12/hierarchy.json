@@ -1,0 +1,381 @@
+{
+    "directed": true,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "id": 0,
+            "label": "Warm_up"
+        },
+        {
+            "id": 1,
+            "label": "Warm_up_wristankle"
+        },
+        {
+            "id": 2,
+            "label": "Warm_up_pectoral"
+        },
+        {
+            "id": 3,
+            "label": "Warm_up_eblowback"
+        },
+        {
+            "id": 4,
+            "label": "Warm_up_bodylean_right_arm"
+        },
+        {
+            "id": 5,
+            "label": "Warm_up_bodylean_left_arm"
+        },
+        {
+            "id": 6,
+            "label": "Warm_up_bow_right"
+        },
+        {
+            "id": 7,
+            "label": "Warm_up_bow_left"
+        },
+        {
+            "id": 8,
+            "label": "Walk"
+        },
+        {
+            "id": 9,
+            "label": "Walk"
+        },
+        {
+            "id": 10,
+            "label": "Run"
+        },
+        {
+            "id": 11,
+            "label": "Run"
+        },
+        {
+            "id": 12,
+            "label": "Jump"
+        },
+        {
+            "id": 13,
+            "label": "Jump_handsup"
+        },
+        {
+            "id": 14,
+            "label": "Jump_vertical"
+        },
+        {
+            "id": 15,
+            "label": "Drink"
+        },
+        {
+            "id": 16,
+            "label": "Drink_bottle_righthand"
+        },
+        {
+            "id": 17,
+            "label": "Drink_bottle_lefthand"
+        },
+        {
+            "id": 18,
+            "label": "Drink_cup_righthand"
+        },
+        {
+            "id": 19,
+            "label": "Drink_cup_lefthand"
+        },
+        {
+            "id": 20,
+            "label": "Drink_both_hands"
+        },
+        {
+            "id": 21,
+            "label": "Lift_dumbbell"
+        },
+        {
+            "id": 22,
+            "label": "Lift_dumbbell_righthand"
+        },
+        {
+            "id": 23,
+            "label": "Lift_dumbbell_lefthand"
+        },
+        {
+            "id": 24,
+            "label": "Lift_dumbbell_bothhands"
+        },
+        {
+            "id": 25,
+            "label": "Lift_dumbbell_overhead"
+        },
+        {
+            "id": 26,
+            "label": "Lift_dumbbell_bothhands_bend_legs"
+        },
+        {
+            "id": 27,
+            "label": "Sit"
+        },
+        {
+            "id": 28,
+            "label": "Sit"
+        },
+        {
+            "id": 29,
+            "label": "Eat"
+        },
+        {
+            "id": 30,
+            "label": "Eat_righthand"
+        },
+        {
+            "id": 31,
+            "label": "Eat_lefthand"
+        },
+        {
+            "id": 32,
+            "label": "Eat_pie/burger"
+        },
+        {
+            "id": 33,
+            "label": "Turn_steering_wheel"
+        },
+        {
+            "id": 34,
+            "label": "Turn_steering_wheel"
+        },
+        {
+            "id": 35,
+            "label": "Phone"
+        },
+        {
+            "id": 36,
+            "label": "Take out phone, call and put back"
+        },
+        {
+            "id": 37,
+            "label": "Call with left hand"
+        },
+        {
+            "id": 38,
+            "label": "Boxing"
+        },
+        {
+            "id": 39,
+            "label": "Boxing_left_right"
+        },
+        {
+            "id": 40,
+            "label": "Boxing_left_upwards"
+        },
+        {
+            "id": 41,
+            "label": "Boxing_right_upwards"
+        },
+        {
+            "id": 42,
+            "label": "Boxing_right_left"
+        },
+        {
+            "id": 43,
+            "label": "Throw"
+        },
+        {
+            "id": 44,
+            "label": "Throw_right_hand"
+        },
+        {
+            "id": 45,
+            "label": "Throw_both_hand"
+        },
+        {
+            "id": 46,
+            "label": "Root Node"
+        }
+    ],
+    "links": [
+        {
+            "source": 0,
+            "target": 1
+        },
+        {
+            "source": 0,
+            "target": 2
+        },
+        {
+            "source": 0,
+            "target": 3
+        },
+        {
+            "source": 0,
+            "target": 4
+        },
+        {
+            "source": 0,
+            "target": 5
+        },
+        {
+            "source": 0,
+            "target": 6
+        },
+        {
+            "source": 0,
+            "target": 7
+        },
+        {
+            "source": 8,
+            "target": 9
+        },
+        {
+            "source": 10,
+            "target": 11
+        },
+        {
+            "source": 12,
+            "target": 13
+        },
+        {
+            "source": 12,
+            "target": 14
+        },
+        {
+            "source": 15,
+            "target": 16
+        },
+        {
+            "source": 15,
+            "target": 17
+        },
+        {
+            "source": 15,
+            "target": 18
+        },
+        {
+            "source": 15,
+            "target": 19
+        },
+        {
+            "source": 15,
+            "target": 20
+        },
+        {
+            "source": 21,
+            "target": 22
+        },
+        {
+            "source": 21,
+            "target": 23
+        },
+        {
+            "source": 21,
+            "target": 24
+        },
+        {
+            "source": 21,
+            "target": 25
+        },
+        {
+            "source": 21,
+            "target": 26
+        },
+        {
+            "source": 27,
+            "target": 28
+        },
+        {
+            "source": 29,
+            "target": 30
+        },
+        {
+            "source": 29,
+            "target": 31
+        },
+        {
+            "source": 29,
+            "target": 32
+        },
+        {
+            "source": 33,
+            "target": 34
+        },
+        {
+            "source": 35,
+            "target": 36
+        },
+        {
+            "source": 35,
+            "target": 37
+        },
+        {
+            "source": 38,
+            "target": 39
+        },
+        {
+            "source": 38,
+            "target": 40
+        },
+        {
+            "source": 38,
+            "target": 41
+        },
+        {
+            "source": 38,
+            "target": 42
+        },
+        {
+            "source": 43,
+            "target": 44
+        },
+        {
+            "source": 43,
+            "target": 45
+        },
+        {
+            "source": 46,
+            "target": 0
+        },
+        {
+            "source": 46,
+            "target": 8
+        },
+        {
+            "source": 46,
+            "target": 10
+        },
+        {
+            "source": 46,
+            "target": 12
+        },
+        {
+            "source": 46,
+            "target": 15
+        },
+        {
+            "source": 46,
+            "target": 21
+        },
+        {
+            "source": 46,
+            "target": 27
+        },
+        {
+            "source": 46,
+            "target": 29
+        },
+        {
+            "source": 46,
+            "target": 33
+        },
+        {
+            "source": 46,
+            "target": 35
+        },
+        {
+            "source": 46,
+            "target": 38
+        },
+        {
+            "source": 46,
+            "target": 43
+        }
+    ]
+}

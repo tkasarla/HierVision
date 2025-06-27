@@ -1,0 +1,142 @@
+{
+    "directed": true,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "id": 0,
+            "label": "golgi"
+        },
+        {
+            "id": 1,
+            "label": "nucleolus_gc"
+        },
+        {
+            "id": 2,
+            "label": "centrosome"
+        },
+        {
+            "id": 3,
+            "label": "chromatin"
+        },
+        {
+            "id": 4,
+            "label": "membrane"
+        },
+        {
+            "id": 5,
+            "label": "cytoplasmic"
+        },
+        {
+            "id": 6,
+            "label": "nucleoplasm"
+        },
+        {
+            "id": 7,
+            "label": "cell_contact"
+        },
+        {
+            "id": 8,
+            "label": "nucleolus_fc_dfc"
+        },
+        {
+            "id": 9,
+            "label": "er"
+        },
+        {
+            "id": 10,
+            "label": "cytoskeleton"
+        },
+        {
+            "id": 11,
+            "label": "focal_adhesions"
+        },
+        {
+            "id": 12,
+            "label": "nuclear_membrane"
+        },
+        {
+            "id": 13,
+            "label": "vesicles"
+        },
+        {
+            "id": 14,
+            "label": "nuclear_punctae"
+        },
+        {
+            "id": 15,
+            "label": "mitochondria"
+        },
+        {
+            "id": 16,
+            "label": "root"
+        }
+    ],
+    "links": [
+        {
+            "source": 7,
+            "target": 11
+        },
+        {
+            "source": 5,
+            "target": 0
+        },
+        {
+            "source": 5,
+            "target": 9
+        },
+        {
+            "source": 5,
+            "target": 15
+        },
+        {
+            "source": 10,
+            "target": 2
+        },
+        {
+            "source": 6,
+            "target": 3
+        },
+        {
+            "source": 3,
+            "target": 14
+        },
+        {
+            "source": 16,
+            "target": 4
+        },
+        {
+            "source": 16,
+            "target": 13
+        },
+        {
+            "source": 16,
+            "target": 7
+        },
+        {
+            "source": 16,
+            "target": 5
+        },
+        {
+            "source": 16,
+            "target": 12
+        },
+        {
+            "source": 16,
+            "target": 10
+        },
+        {
+            "source": 16,
+            "target": 1
+        },
+        {
+            "source": 16,
+            "target": 8
+        },
+        {
+            "source": 16,
+            "target": 6
+        }
+    ]
+
+}

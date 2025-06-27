@@ -1,0 +1,10 @@
+Root
+    Indoor
+        Commodity
+        Music instrument
+    Outdoor
+        Non animal
+        Animal
+            Bird
+            Mammal
+            Aquicolous Animal

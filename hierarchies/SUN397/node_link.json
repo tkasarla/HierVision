@@ -1,0 +1,8441 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "id": "root",
+      "label": "Root Node"
+    },
+    {
+      "id": "outdoor, man-made",
+      "label": "outdoor, man-made"
+    },
+    {
+      "id": "cultural or historical building/place",
+      "label": "cultural or historical building/place"
+    },
+    {
+      "id": "/a/abbey",
+      "label": "/a/abbey"
+    },
+    {
+      "id": "indoor",
+      "label": "indoor"
+    },
+    {
+      "id": "transportation (vehicle interiors, stations, etc.)",
+      "label": "transportation (vehicle interiors, stations, etc.)"
+    },
+    {
+      "id": "/a/airplane_cabin",
+      "label": "/a/airplane_cabin"
+    },
+    {
+      "id": "/a/airport_terminal",
+      "label": "/a/airport_terminal"
+    },
+    {
+      "id": "commercial buildings, shops, markets, cities, and towns",
+      "label": "commercial buildings, shops, markets, cities, and towns"
+    },
+    {
+      "id": "/a/alley",
+      "label": "/a/alley"
+    },
+    {
+      "id": "/a/amphitheater",
+      "label": "/a/amphitheater"
+    },
+    {
+      "id": "sports and leisure",
+      "label": "sports and leisure"
+    },
+    {
+      "id": "/a/amusement_arcade",
+      "label": "/a/amusement_arcade"
+    },
+    {
+      "id": "sports fields, parks, leisure spaces",
+      "label": "sports fields, parks, leisure spaces"
+    },
+    {
+      "id": "/a/amusement_park",
+      "label": "/a/amusement_park"
+    },
+    {
+      "id": "workplace (office building, factory, lab, etc.)",
+      "label": "workplace (office building, factory, lab, etc.)"
+    },
+    {
+      "id": "/a/anechoic_chamber",
+      "label": "/a/anechoic_chamber"
+    },
+    {
+      "id": "/a/apartment_building/outdoor",
+      "label": "/a/apartment_building/outdoor"
+    },
+    {
+      "id": "cultural (art, education, religion, etc.)",
+      "label": "cultural (art, education, religion, etc.)"
+    },
+    {
+      "id": "/a/apse/indoor",
+      "label": "/a/apse/indoor"
+    },
+    {
+      "id": "/a/aquarium",
+      "label": "/a/aquarium"
+    },
+    {
+      "id": "outdoor, natural",
+      "label": "outdoor, natural"
+    },
+    {
+      "id": "man-made elements",
+      "label": "man-made elements"
+    },
+    {
+      "id": "/a/aqueduct",
+      "label": "/a/aqueduct"
+    },
+    {
+      "id": "/a/arch",
+      "label": "/a/arch"
+    },
+    {
+      "id": "/a/archive",
+      "label": "/a/archive"
+    },
+    {
+      "id": "transportation (roads, parking, bridges, boats, airports, etc.)",
+      "label": "transportation (roads, parking, bridges, boats, airports, etc.)"
+    },
+    {
+      "id": "/a/arrival_gate/outdoor",
+      "label": "/a/arrival_gate/outdoor"
+    },
+    {
+      "id": "/a/art_gallery",
+      "label": "/a/art_gallery"
+    },
+    {
+      "id": "/a/art_school",
+      "label": "/a/art_school"
+    },
+    {
+      "id": "/a/art_studio",
+      "label": "/a/art_studio"
+    },
+    {
+      "id": "/a/assembly_line",
+      "label": "/a/assembly_line"
+    },
+    {
+      "id": "/a/athletic_field/outdoor",
+      "label": "/a/athletic_field/outdoor"
+    },
+    {
+      "id": "/a/atrium/public",
+      "label": "/a/atrium/public"
+    },
+    {
+      "id": "home or hotel",
+      "label": "home or hotel"
+    },
+    {
+      "id": "/a/attic",
+      "label": "/a/attic"
+    },
+    {
+      "id": "/a/auditorium",
+      "label": "/a/auditorium"
+    },
+    {
+      "id": "/a/auto_factory",
+      "label": "/a/auto_factory"
+    },
+    {
+      "id": "mountains, hills, desert, sky",
+      "label": "mountains, hills, desert, sky"
+    },
+    {
+      "id": "/b/badlands",
+      "label": "/b/badlands"
+    },
+    {
+      "id": "/b/badminton_court/indoor",
+      "label": "/b/badminton_court/indoor"
+    },
+    {
+      "id": "/b/baggage_claim",
+      "label": "/b/baggage_claim"
+    },
+    {
+      "id": "shopping and dining",
+      "label": "shopping and dining"
+    },
+    {
+      "id": "/b/bakery/shop",
+      "label": "/b/bakery/shop"
+    },
+    {
+      "id": "houses, cabins, gardens, and farms",
+      "label": "houses, cabins, gardens, and farms"
+    },
+    {
+      "id": "/b/balcony/exterior",
+      "label": "/b/balcony/exterior"
+    },
+    {
+      "id": "/b/balcony/interior",
+      "label": "/b/balcony/interior"
+    },
+    {
+      "id": "/b/ball_pit",
+      "label": "/b/ball_pit"
+    },
+    {
+      "id": "/b/ballroom",
+      "label": "/b/ballroom"
+    },
+    {
+      "id": "forest, field, jungle",
+      "label": "forest, field, jungle"
+    },
+    {
+      "id": "/b/bamboo_forest",
+      "label": "/b/bamboo_forest"
+    },
+    {
+      "id": "/b/banquet_hall",
+      "label": "/b/banquet_hall"
+    },
+    {
+      "id": "/b/bar",
+      "label": "/b/bar"
+    },
+    {
+      "id": "/b/barn",
+      "label": "/b/barn"
+    },
+    {
+      "id": "/b/barndoor",
+      "label": "/b/barndoor"
+    },
+    {
+      "id": "/b/baseball_field",
+      "label": "/b/baseball_field"
+    },
+    {
+      "id": "/b/basement",
+      "label": "/b/basement"
+    },
+    {
+      "id": "/b/basilica",
+      "label": "/b/basilica"
+    },
+    {
+      "id": "/b/basketball_court/outdoor",
+      "label": "/b/basketball_court/outdoor"
+    },
+    {
+      "id": "/b/bathroom",
+      "label": "/b/bathroom"
+    },
+    {
+      "id": "/b/batters_box",
+      "label": "/b/batters_box"
+    },
+    {
+      "id": "water, ice, snow",
+      "label": "water, ice, snow"
+    },
+    {
+      "id": "/b/bayou",
+      "label": "/b/bayou"
+    },
+    {
+      "id": "/b/bazaar/indoor",
+      "label": "/b/bazaar/indoor"
+    },
+    {
+      "id": "/b/bazaar/outdoor",
+      "label": "/b/bazaar/outdoor"
+    },
+    {
+      "id": "/b/beach",
+      "label": "/b/beach"
+    },
+    {
+      "id": "/b/beauty_salon",
+      "label": "/b/beauty_salon"
+    },
+    {
+      "id": "/b/bedroom",
+      "label": "/b/bedroom"
+    },
+    {
+      "id": "/b/berth",
+      "label": "/b/berth"
+    },
+    {
+      "id": "/b/biology_laboratory",
+      "label": "/b/biology_laboratory"
+    },
+    {
+      "id": "/b/bistro/indoor",
+      "label": "/b/bistro/indoor"
+    },
+    {
+      "id": "/b/boardwalk",
+      "label": "/b/boardwalk"
+    },
+    {
+      "id": "/b/boat_deck",
+      "label": "/b/boat_deck"
+    },
+    {
+      "id": "/b/boathouse",
+      "label": "/b/boathouse"
+    },
+    {
+      "id": "/b/bookstore",
+      "label": "/b/bookstore"
+    },
+    {
+      "id": "/b/booth/indoor",
+      "label": "/b/booth/indoor"
+    },
+    {
+      "id": "/b/botanical_garden",
+      "label": "/b/botanical_garden"
+    },
+    {
+      "id": "/b/bow_window/indoor",
+      "label": "/b/bow_window/indoor"
+    },
+    {
+      "id": "/b/bow_window/outdoor",
+      "label": "/b/bow_window/outdoor"
+    },
+    {
+      "id": "/b/bowling_alley",
+      "label": "/b/bowling_alley"
+    },
+    {
+      "id": "/b/boxing_ring",
+      "label": "/b/boxing_ring"
+    },
+    {
+      "id": "/b/brewery/indoor",
+      "label": "/b/brewery/indoor"
+    },
+    {
+      "id": "/b/bridge",
+      "label": "/b/bridge"
+    },
+    {
+      "id": "/b/building_facade",
+      "label": "/b/building_facade"
+    },
+    {
+      "id": "/b/bullring",
+      "label": "/b/bullring"
+    },
+    {
+      "id": "/b/burial_chamber",
+      "label": "/b/burial_chamber"
+    },
+    {
+      "id": "/b/bus_interior",
+      "label": "/b/bus_interior"
+    },
+    {
+      "id": "/b/butchers_shop",
+      "label": "/b/butchers_shop"
+    },
+    {
+      "id": "/b/butte",
+      "label": "/b/butte"
+    },
+    {
+      "id": "/c/cabin/outdoor",
+      "label": "/c/cabin/outdoor"
+    },
+    {
+      "id": "/c/cafeteria",
+      "label": "/c/cafeteria"
+    },
+    {
+      "id": "/c/campsite",
+      "label": "/c/campsite"
+    },
+    {
+      "id": "/c/campus",
+      "label": "/c/campus"
+    },
+    {
+      "id": "/c/canal/natural",
+      "label": "/c/canal/natural"
+    },
+    {
+      "id": "/c/canal/urban",
+      "label": "/c/canal/urban"
+    },
+    {
+      "id": "/c/candy_store",
+      "label": "/c/candy_store"
+    },
+    {
+      "id": "/c/canyon",
+      "label": "/c/canyon"
+    },
+    {
+      "id": "/c/car_interior/backseat",
+      "label": "/c/car_interior/backseat"
+    },
+    {
+      "id": "/c/car_interior/frontseat",
+      "label": "/c/car_interior/frontseat"
+    },
+    {
+      "id": "/c/carrousel",
+      "label": "/c/carrousel"
+    },
+    {
+      "id": "/c/casino/indoor",
+      "label": "/c/casino/indoor"
+    },
+    {
+      "id": "/c/castle",
+      "label": "/c/castle"
+    },
+    {
+      "id": "/c/catacomb",
+      "label": "/c/catacomb"
+    },
+    {
+      "id": "/c/cathedral/indoor",
+      "label": "/c/cathedral/indoor"
+    },
+    {
+      "id": "/c/cathedral/outdoor",
+      "label": "/c/cathedral/outdoor"
+    },
+    {
+      "id": "/c/cavern/indoor",
+      "label": "/c/cavern/indoor"
+    },
+    {
+      "id": "/c/cemetery",
+      "label": "/c/cemetery"
+    },
+    {
+      "id": "/c/chalet",
+      "label": "/c/chalet"
+    },
+    {
+      "id": "/c/cheese_factory",
+      "label": "/c/cheese_factory"
+    },
+    {
+      "id": "/c/chemistry_lab",
+      "label": "/c/chemistry_lab"
+    },
+    {
+      "id": "/c/chicken_coop/indoor",
+      "label": "/c/chicken_coop/indoor"
+    },
+    {
+      "id": "/c/chicken_coop/outdoor",
+      "label": "/c/chicken_coop/outdoor"
+    },
+    {
+      "id": "/c/childs_room",
+      "label": "/c/childs_room"
+    },
+    {
+      "id": "/c/church/indoor",
+      "label": "/c/church/indoor"
+    },
+    {
+      "id": "/c/church/outdoor",
+      "label": "/c/church/outdoor"
+    },
+    {
+      "id": "/c/classroom",
+      "label": "/c/classroom"
+    },
+    {
+      "id": "/c/clean_room",
+      "label": "/c/clean_room"
+    },
+    {
+      "id": "/c/cliff",
+      "label": "/c/cliff"
+    },
+    {
+      "id": "/c/cloister/indoor",
+      "label": "/c/cloister/indoor"
+    },
+    {
+      "id": "/c/closet",
+      "label": "/c/closet"
+    },
+    {
+      "id": "/c/clothing_store",
+      "label": "/c/clothing_store"
+    },
+    {
+      "id": "/c/coast",
+      "label": "/c/coast"
+    },
+    {
+      "id": "/c/cockpit",
+      "label": "/c/cockpit"
+    },
+    {
+      "id": "/c/coffee_shop",
+      "label": "/c/coffee_shop"
+    },
+    {
+      "id": "/c/computer_room",
+      "label": "/c/computer_room"
+    },
+    {
+      "id": "/c/conference_center",
+      "label": "/c/conference_center"
+    },
+    {
+      "id": "/c/conference_room",
+      "label": "/c/conference_room"
+    },
+    {
+      "id": "industrial and construction",
+      "label": "industrial and construction"
+    },
+    {
+      "id": "/c/construction_site",
+      "label": "/c/construction_site"
+    },
+    {
+      "id": "/c/control_room",
+      "label": "/c/control_room"
+    },
+    {
+      "id": "/c/control_tower/outdoor",
+      "label": "/c/control_tower/outdoor"
+    },
+    {
+      "id": "/c/corn_field",
+      "label": "/c/corn_field"
+    },
+    {
+      "id": "/c/corral",
+      "label": "/c/corral"
+    },
+    {
+      "id": "/c/corridor",
+      "label": "/c/corridor"
+    },
+    {
+      "id": "/c/cottage_garden",
+      "label": "/c/cottage_garden"
+    },
+    {
+      "id": "/c/courthouse",
+      "label": "/c/courthouse"
+    },
+    {
+      "id": "/c/courtroom",
+      "label": "/c/courtroom"
+    },
+    {
+      "id": "/c/courtyard",
+      "label": "/c/courtyard"
+    },
+    {
+      "id": "/c/covered_bridge/exterior",
+      "label": "/c/covered_bridge/exterior"
+    },
+    {
+      "id": "/c/creek",
+      "label": "/c/creek"
+    },
+    {
+      "id": "/c/crevasse",
+      "label": "/c/crevasse"
+    },
+    {
+      "id": "/c/crosswalk",
+      "label": "/c/crosswalk"
+    },
+    {
+      "id": "/c/cubicle/office",
+      "label": "/c/cubicle/office"
+    },
+    {
+      "id": "/d/dam",
+      "label": "/d/dam"
+    },
+    {
+      "id": "/d/delicatessen",
+      "label": "/d/delicatessen"
+    },
+    {
+      "id": "/d/dentists_office",
+      "label": "/d/dentists_office"
+    },
+    {
+      "id": "/d/desert/sand",
+      "label": "/d/desert/sand"
+    },
+    {
+      "id": "/d/desert/vegetation",
+      "label": "/d/desert/vegetation"
+    },
+    {
+      "id": "/d/diner/indoor",
+      "label": "/d/diner/indoor"
+    },
+    {
+      "id": "/d/diner/outdoor",
+      "label": "/d/diner/outdoor"
+    },
+    {
+      "id": "/d/dinette/home",
+      "label": "/d/dinette/home"
+    },
+    {
+      "id": "/d/dinette/vehicle",
+      "label": "/d/dinette/vehicle"
+    },
+    {
+      "id": "/d/dining_car",
+      "label": "/d/dining_car"
+    },
+    {
+      "id": "/d/dining_room",
+      "label": "/d/dining_room"
+    },
+    {
+      "id": "/d/discotheque",
+      "label": "/d/discotheque"
+    },
+    {
+      "id": "/d/dock",
+      "label": "/d/dock"
+    },
+    {
+      "id": "/d/doorway/outdoor",
+      "label": "/d/doorway/outdoor"
+    },
+    {
+      "id": "/d/dorm_room",
+      "label": "/d/dorm_room"
+    },
+    {
+      "id": "/d/driveway",
+      "label": "/d/driveway"
+    },
+    {
+      "id": "/d/driving_range/outdoor",
+      "label": "/d/driving_range/outdoor"
+    },
+    {
+      "id": "/d/drugstore",
+      "label": "/d/drugstore"
+    },
+    {
+      "id": "/e/electrical_substation",
+      "label": "/e/electrical_substation"
+    },
+    {
+      "id": "/e/elevator/door",
+      "label": "/e/elevator/door"
+    },
+    {
+      "id": "/e/elevator/interior",
+      "label": "/e/elevator/interior"
+    },
+    {
+      "id": "/e/elevator_shaft",
+      "label": "/e/elevator_shaft"
+    },
+    {
+      "id": "/e/engine_room",
+      "label": "/e/engine_room"
+    },
+    {
+      "id": "/e/escalator/indoor",
+      "label": "/e/escalator/indoor"
+    },
+    {
+      "id": "/e/excavation",
+      "label": "/e/excavation"
+    },
+    {
+      "id": "/f/factory/indoor",
+      "label": "/f/factory/indoor"
+    },
+    {
+      "id": "/f/fairway",
+      "label": "/f/fairway"
+    },
+    {
+      "id": "/f/fastfood_restaurant",
+      "label": "/f/fastfood_restaurant"
+    },
+    {
+      "id": "/f/field/cultivated",
+      "label": "/f/field/cultivated"
+    },
+    {
+      "id": "/f/field/wild",
+      "label": "/f/field/wild"
+    },
+    {
+      "id": "/f/fire_escape",
+      "label": "/f/fire_escape"
+    },
+    {
+      "id": "/f/fire_station",
+      "label": "/f/fire_station"
+    },
+    {
+      "id": "/f/firing_range/indoor",
+      "label": "/f/firing_range/indoor"
+    },
+    {
+      "id": "/f/fishpond",
+      "label": "/f/fishpond"
+    },
+    {
+      "id": "/f/florist_shop/indoor",
+      "label": "/f/florist_shop/indoor"
+    },
+    {
+      "id": "/f/food_court",
+      "label": "/f/food_court"
+    },
+    {
+      "id": "/f/forest/broadleaf",
+      "label": "/f/forest/broadleaf"
+    },
+    {
+      "id": "/f/forest/needleleaf",
+      "label": "/f/forest/needleleaf"
+    },
+    {
+      "id": "/f/forest_path",
+      "label": "/f/forest_path"
+    },
+    {
+      "id": "/f/forest_road",
+      "label": "/f/forest_road"
+    },
+    {
+      "id": "/f/formal_garden",
+      "label": "/f/formal_garden"
+    },
+    {
+      "id": "/f/fountain",
+      "label": "/f/fountain"
+    },
+    {
+      "id": "/g/galley",
+      "label": "/g/galley"
+    },
+    {
+      "id": "/g/game_room",
+      "label": "/g/game_room"
+    },
+    {
+      "id": "/g/garage/indoor",
+      "label": "/g/garage/indoor"
+    },
+    {
+      "id": "/g/garbage_dump",
+      "label": "/g/garbage_dump"
+    },
+    {
+      "id": "/g/gas_station",
+      "label": "/g/gas_station"
+    },
+    {
+      "id": "/g/gazebo/exterior",
+      "label": "/g/gazebo/exterior"
+    },
+    {
+      "id": "/g/general_store/indoor",
+      "label": "/g/general_store/indoor"
+    },
+    {
+      "id": "/g/general_store/outdoor",
+      "label": "/g/general_store/outdoor"
+    },
+    {
+      "id": "/g/gift_shop",
+      "label": "/g/gift_shop"
+    },
+    {
+      "id": "/g/golf_course",
+      "label": "/g/golf_course"
+    },
+    {
+      "id": "/g/greenhouse/indoor",
+      "label": "/g/greenhouse/indoor"
+    },
+    {
+      "id": "/g/greenhouse/outdoor",
+      "label": "/g/greenhouse/outdoor"
+    },
+    {
+      "id": "/g/gymnasium/indoor",
+      "label": "/g/gymnasium/indoor"
+    },
+    {
+      "id": "/h/hangar/indoor",
+      "label": "/h/hangar/indoor"
+    },
+    {
+      "id": "/h/hangar/outdoor",
+      "label": "/h/hangar/outdoor"
+    },
+    {
+      "id": "/h/harbor",
+      "label": "/h/harbor"
+    },
+    {
+      "id": "/h/hayfield",
+      "label": "/h/hayfield"
+    },
+    {
+      "id": "/h/heliport",
+      "label": "/h/heliport"
+    },
+    {
+      "id": "/h/herb_garden",
+      "label": "/h/herb_garden"
+    },
+    {
+      "id": "/h/highway",
+      "label": "/h/highway"
+    },
+    {
+      "id": "/h/hill",
+      "label": "/h/hill"
+    },
+    {
+      "id": "/h/home_office",
+      "label": "/h/home_office"
+    },
+    {
+      "id": "/h/hospital",
+      "label": "/h/hospital"
+    },
+    {
+      "id": "/h/hospital_room",
+      "label": "/h/hospital_room"
+    },
+    {
+      "id": "/h/hot_spring",
+      "label": "/h/hot_spring"
+    },
+    {
+      "id": "/h/hot_tub/outdoor",
+      "label": "/h/hot_tub/outdoor"
+    },
+    {
+      "id": "/h/hotel/outdoor",
+      "label": "/h/hotel/outdoor"
+    },
+    {
+      "id": "/h/hotel_room",
+      "label": "/h/hotel_room"
+    },
+    {
+      "id": "/h/house",
+      "label": "/h/house"
+    },
+    {
+      "id": "/h/hunting_lodge/outdoor",
+      "label": "/h/hunting_lodge/outdoor"
+    },
+    {
+      "id": "/i/ice_cream_parlor",
+      "label": "/i/ice_cream_parlor"
+    },
+    {
+      "id": "/i/ice_floe",
+      "label": "/i/ice_floe"
+    },
+    {
+      "id": "/i/ice_shelf",
+      "label": "/i/ice_shelf"
+    },
+    {
+      "id": "/i/ice_skating_rink/indoor",
+      "label": "/i/ice_skating_rink/indoor"
+    },
+    {
+      "id": "/i/ice_skating_rink/outdoor",
+      "label": "/i/ice_skating_rink/outdoor"
+    },
+    {
+      "id": "/i/iceberg",
+      "label": "/i/iceberg"
+    },
+    {
+      "id": "/i/igloo",
+      "label": "/i/igloo"
+    },
+    {
+      "id": "/i/industrial_area",
+      "label": "/i/industrial_area"
+    },
+    {
+      "id": "/i/inn/outdoor",
+      "label": "/i/inn/outdoor"
+    },
+    {
+      "id": "/i/islet",
+      "label": "/i/islet"
+    },
+    {
+      "id": "/j/jacuzzi/indoor",
+      "label": "/j/jacuzzi/indoor"
+    },
+    {
+      "id": "/j/jail/indoor",
+      "label": "/j/jail/indoor"
+    },
+    {
+      "id": "/j/jail_cell",
+      "label": "/j/jail_cell"
+    },
+    {
+      "id": "/j/jewelry_shop",
+      "label": "/j/jewelry_shop"
+    },
+    {
+      "id": "/k/kasbah",
+      "label": "/k/kasbah"
+    },
+    {
+      "id": "/k/kennel/indoor",
+      "label": "/k/kennel/indoor"
+    },
+    {
+      "id": "/k/kennel/outdoor",
+      "label": "/k/kennel/outdoor"
+    },
+    {
+      "id": "/k/kindergarden_classroom",
+      "label": "/k/kindergarden_classroom"
+    },
+    {
+      "id": "/k/kitchen",
+      "label": "/k/kitchen"
+    },
+    {
+      "id": "/k/kitchenette",
+      "label": "/k/kitchenette"
+    },
+    {
+      "id": "/l/labyrinth/outdoor",
+      "label": "/l/labyrinth/outdoor"
+    },
+    {
+      "id": "/l/lake/natural",
+      "label": "/l/lake/natural"
+    },
+    {
+      "id": "/l/landfill",
+      "label": "/l/landfill"
+    },
+    {
+      "id": "/l/landing_deck",
+      "label": "/l/landing_deck"
+    },
+    {
+      "id": "/l/laundromat",
+      "label": "/l/laundromat"
+    },
+    {
+      "id": "/l/lecture_room",
+      "label": "/l/lecture_room"
+    },
+    {
+      "id": "/l/library/indoor",
+      "label": "/l/library/indoor"
+    },
+    {
+      "id": "/l/library/outdoor",
+      "label": "/l/library/outdoor"
+    },
+    {
+      "id": "/l/lido_deck/outdoor",
+      "label": "/l/lido_deck/outdoor"
+    },
+    {
+      "id": "/l/lift_bridge",
+      "label": "/l/lift_bridge"
+    },
+    {
+      "id": "/l/lighthouse",
+      "label": "/l/lighthouse"
+    },
+    {
+      "id": "/l/limousine_interior",
+      "label": "/l/limousine_interior"
+    },
+    {
+      "id": "/l/living_room",
+      "label": "/l/living_room"
+    },
+    {
+      "id": "/l/lobby",
+      "label": "/l/lobby"
+    },
+    {
+      "id": "/l/lock_chamber",
+      "label": "/l/lock_chamber"
+    },
+    {
+      "id": "/l/locker_room",
+      "label": "/l/locker_room"
+    },
+    {
+      "id": "/m/mansion",
+      "label": "/m/mansion"
+    },
+    {
+      "id": "/m/manufactured_home",
+      "label": "/m/manufactured_home"
+    },
+    {
+      "id": "/m/market/indoor",
+      "label": "/m/market/indoor"
+    },
+    {
+      "id": "/m/market/outdoor",
+      "label": "/m/market/outdoor"
+    },
+    {
+      "id": "/m/marsh",
+      "label": "/m/marsh"
+    },
+    {
+      "id": "/m/martial_arts_gym",
+      "label": "/m/martial_arts_gym"
+    },
+    {
+      "id": "/m/mausoleum",
+      "label": "/m/mausoleum"
+    },
+    {
+      "id": "/m/medina",
+      "label": "/m/medina"
+    },
+    {
+      "id": "/m/moat/water",
+      "label": "/m/moat/water"
+    },
+    {
+      "id": "/m/monastery/outdoor",
+      "label": "/m/monastery/outdoor"
+    },
+    {
+      "id": "/m/mosque/indoor",
+      "label": "/m/mosque/indoor"
+    },
+    {
+      "id": "/m/mosque/outdoor",
+      "label": "/m/mosque/outdoor"
+    },
+    {
+      "id": "/m/motel",
+      "label": "/m/motel"
+    },
+    {
+      "id": "/m/mountain",
+      "label": "/m/mountain"
+    },
+    {
+      "id": "/m/mountain_snowy",
+      "label": "/m/mountain_snowy"
+    },
+    {
+      "id": "/m/movie_theater/indoor",
+      "label": "/m/movie_theater/indoor"
+    },
+    {
+      "id": "/m/museum/indoor",
+      "label": "/m/museum/indoor"
+    },
+    {
+      "id": "/m/music_store",
+      "label": "/m/music_store"
+    },
+    {
+      "id": "/m/music_studio",
+      "label": "/m/music_studio"
+    },
+    {
+      "id": "/n/nuclear_power_plant/outdoor",
+      "label": "/n/nuclear_power_plant/outdoor"
+    },
+    {
+      "id": "/n/nursery",
+      "label": "/n/nursery"
+    },
+    {
+      "id": "/o/oast_house",
+      "label": "/o/oast_house"
+    },
+    {
+      "id": "/o/observatory/outdoor",
+      "label": "/o/observatory/outdoor"
+    },
+    {
+      "id": "/o/ocean",
+      "label": "/o/ocean"
+    },
+    {
+      "id": "/o/office",
+      "label": "/o/office"
+    },
+    {
+      "id": "/o/office_building",
+      "label": "/o/office_building"
+    },
+    {
+      "id": "/o/oil_refinery/outdoor",
+      "label": "/o/oil_refinery/outdoor"
+    },
+    {
+      "id": "/o/oilrig",
+      "label": "/o/oilrig"
+    },
+    {
+      "id": "/o/operating_room",
+      "label": "/o/operating_room"
+    },
+    {
+      "id": "/o/orchard",
+      "label": "/o/orchard"
+    },
+    {
+      "id": "/o/outhouse/outdoor",
+      "label": "/o/outhouse/outdoor"
+    },
+    {
+      "id": "/p/pagoda",
+      "label": "/p/pagoda"
+    },
+    {
+      "id": "/p/palace",
+      "label": "/p/palace"
+    },
+    {
+      "id": "/p/pantry",
+      "label": "/p/pantry"
+    },
+    {
+      "id": "/p/park",
+      "label": "/p/park"
+    },
+    {
+      "id": "/p/parking_garage/indoor",
+      "label": "/p/parking_garage/indoor"
+    },
+    {
+      "id": "/p/parking_garage/outdoor",
+      "label": "/p/parking_garage/outdoor"
+    },
+    {
+      "id": "/p/parking_lot",
+      "label": "/p/parking_lot"
+    },
+    {
+      "id": "/p/parlor",
+      "label": "/p/parlor"
+    },
+    {
+      "id": "/p/pasture",
+      "label": "/p/pasture"
+    },
+    {
+      "id": "/p/patio",
+      "label": "/p/patio"
+    },
+    {
+      "id": "/p/pavilion",
+      "label": "/p/pavilion"
+    },
+    {
+      "id": "/p/pharmacy",
+      "label": "/p/pharmacy"
+    },
+    {
+      "id": "/p/phone_booth",
+      "label": "/p/phone_booth"
+    },
+    {
+      "id": "/p/physics_laboratory",
+      "label": "/p/physics_laboratory"
+    },
+    {
+      "id": "/p/picnic_area",
+      "label": "/p/picnic_area"
+    },
+    {
+      "id": "/p/pilothouse/indoor",
+      "label": "/p/pilothouse/indoor"
+    },
+    {
+      "id": "/p/planetarium/outdoor",
+      "label": "/p/planetarium/outdoor"
+    },
+    {
+      "id": "/p/playground",
+      "label": "/p/playground"
+    },
+    {
+      "id": "/p/playroom",
+      "label": "/p/playroom"
+    },
+    {
+      "id": "/p/plaza",
+      "label": "/p/plaza"
+    },
+    {
+      "id": "/p/podium/indoor",
+      "label": "/p/podium/indoor"
+    },
+    {
+      "id": "/p/podium/outdoor",
+      "label": "/p/podium/outdoor"
+    },
+    {
+      "id": "/p/pond",
+      "label": "/p/pond"
+    },
+    {
+      "id": "/p/poolroom/establishment",
+      "label": "/p/poolroom/establishment"
+    },
+    {
+      "id": "/p/poolroom/home",
+      "label": "/p/poolroom/home"
+    },
+    {
+      "id": "/p/power_plant/outdoor",
+      "label": "/p/power_plant/outdoor"
+    },
+    {
+      "id": "/p/promenade_deck",
+      "label": "/p/promenade_deck"
+    },
+    {
+      "id": "/p/pub/indoor",
+      "label": "/p/pub/indoor"
+    },
+    {
+      "id": "/p/pulpit",
+      "label": "/p/pulpit"
+    },
+    {
+      "id": "/p/putting_green",
+      "label": "/p/putting_green"
+    },
+    {
+      "id": "/r/racecourse",
+      "label": "/r/racecourse"
+    },
+    {
+      "id": "/r/raceway",
+      "label": "/r/raceway"
+    },
+    {
+      "id": "/r/raft",
+      "label": "/r/raft"
+    },
+    {
+      "id": "/r/railroad_track",
+      "label": "/r/railroad_track"
+    },
+    {
+      "id": "/r/rainforest",
+      "label": "/r/rainforest"
+    },
+    {
+      "id": "/r/reception",
+      "label": "/r/reception"
+    },
+    {
+      "id": "/r/recreation_room",
+      "label": "/r/recreation_room"
+    },
+    {
+      "id": "/r/residential_neighborhood",
+      "label": "/r/residential_neighborhood"
+    },
+    {
+      "id": "/r/restaurant",
+      "label": "/r/restaurant"
+    },
+    {
+      "id": "/r/restaurant_kitchen",
+      "label": "/r/restaurant_kitchen"
+    },
+    {
+      "id": "/r/restaurant_patio",
+      "label": "/r/restaurant_patio"
+    },
+    {
+      "id": "/r/rice_paddy",
+      "label": "/r/rice_paddy"
+    },
+    {
+      "id": "/r/riding_arena",
+      "label": "/r/riding_arena"
+    },
+    {
+      "id": "/r/river",
+      "label": "/r/river"
+    },
+    {
+      "id": "/r/rock_arch",
+      "label": "/r/rock_arch"
+    },
+    {
+      "id": "/r/rope_bridge",
+      "label": "/r/rope_bridge"
+    },
+    {
+      "id": "/r/ruin",
+      "label": "/r/ruin"
+    },
+    {
+      "id": "/r/runway",
+      "label": "/r/runway"
+    },
+    {
+      "id": "/s/sandbar",
+      "label": "/s/sandbar"
+    },
+    {
+      "id": "/s/sandbox",
+      "label": "/s/sandbox"
+    },
+    {
+      "id": "/s/sauna",
+      "label": "/s/sauna"
+    },
+    {
+      "id": "/s/schoolhouse",
+      "label": "/s/schoolhouse"
+    },
+    {
+      "id": "/s/sea_cliff",
+      "label": "/s/sea_cliff"
+    },
+    {
+      "id": "/s/server_room",
+      "label": "/s/server_room"
+    },
+    {
+      "id": "/s/shed",
+      "label": "/s/shed"
+    },
+    {
+      "id": "/s/shoe_shop",
+      "label": "/s/shoe_shop"
+    },
+    {
+      "id": "/s/shopfront",
+      "label": "/s/shopfront"
+    },
+    {
+      "id": "/s/shopping_mall/indoor",
+      "label": "/s/shopping_mall/indoor"
+    },
+    {
+      "id": "/s/shower",
+      "label": "/s/shower"
+    },
+    {
+      "id": "/s/skatepark",
+      "label": "/s/skatepark"
+    },
+    {
+      "id": "/s/ski_lodge",
+      "label": "/s/ski_lodge"
+    },
+    {
+      "id": "/s/ski_resort",
+      "label": "/s/ski_resort"
+    },
+    {
+      "id": "/s/ski_slope",
+      "label": "/s/ski_slope"
+    },
+    {
+      "id": "/s/sky",
+      "label": "/s/sky"
+    },
+    {
+      "id": "/s/skyscraper",
+      "label": "/s/skyscraper"
+    },
+    {
+      "id": "/s/slum",
+      "label": "/s/slum"
+    },
+    {
+      "id": "/s/snowfield",
+      "label": "/s/snowfield"
+    },
+    {
+      "id": "/s/squash_court",
+      "label": "/s/squash_court"
+    },
+    {
+      "id": "/s/stable",
+      "label": "/s/stable"
+    },
+    {
+      "id": "/s/stadium/baseball",
+      "label": "/s/stadium/baseball"
+    },
+    {
+      "id": "/s/stadium/football",
+      "label": "/s/stadium/football"
+    },
+    {
+      "id": "/s/stage/indoor",
+      "label": "/s/stage/indoor"
+    },
+    {
+      "id": "/s/staircase",
+      "label": "/s/staircase"
+    },
+    {
+      "id": "/s/street",
+      "label": "/s/street"
+    },
+    {
+      "id": "/s/subway_interior",
+      "label": "/s/subway_interior"
+    },
+    {
+      "id": "/s/subway_station/platform",
+      "label": "/s/subway_station/platform"
+    },
+    {
+      "id": "/s/supermarket",
+      "label": "/s/supermarket"
+    },
+    {
+      "id": "/s/sushi_bar",
+      "label": "/s/sushi_bar"
+    },
+    {
+      "id": "/s/swamp",
+      "label": "/s/swamp"
+    },
+    {
+      "id": "/s/swimming_pool/indoor",
+      "label": "/s/swimming_pool/indoor"
+    },
+    {
+      "id": "/s/swimming_pool/outdoor",
+      "label": "/s/swimming_pool/outdoor"
+    },
+    {
+      "id": "/s/synagogue/indoor",
+      "label": "/s/synagogue/indoor"
+    },
+    {
+      "id": "/s/synagogue/outdoor",
+      "label": "/s/synagogue/outdoor"
+    },
+    {
+      "id": "/t/television_studio",
+      "label": "/t/television_studio"
+    },
+    {
+      "id": "/t/temple/east_asia",
+      "label": "/t/temple/east_asia"
+    },
+    {
+      "id": "/t/temple/south_asia",
+      "label": "/t/temple/south_asia"
+    },
+    {
+      "id": "/t/tennis_court/indoor",
+      "label": "/t/tennis_court/indoor"
+    },
+    {
+      "id": "/t/tennis_court/outdoor",
+      "label": "/t/tennis_court/outdoor"
+    },
+    {
+      "id": "/t/tent/outdoor",
+      "label": "/t/tent/outdoor"
+    },
+    {
+      "id": "/t/theater/indoor_procenium",
+      "label": "/t/theater/indoor_procenium"
+    },
+    {
+      "id": "/t/theater/indoor_seats",
+      "label": "/t/theater/indoor_seats"
+    },
+    {
+      "id": "/t/thriftshop",
+      "label": "/t/thriftshop"
+    },
+    {
+      "id": "/t/throne_room",
+      "label": "/t/throne_room"
+    },
+    {
+      "id": "/t/ticket_booth",
+      "label": "/t/ticket_booth"
+    },
+    {
+      "id": "/t/toll_plaza",
+      "label": "/t/toll_plaza"
+    },
+    {
+      "id": "/t/topiary_garden",
+      "label": "/t/topiary_garden"
+    },
+    {
+      "id": "/t/tower",
+      "label": "/t/tower"
+    },
+    {
+      "id": "/t/toyshop",
+      "label": "/t/toyshop"
+    },
+    {
+      "id": "/t/track/outdoor",
+      "label": "/t/track/outdoor"
+    },
+    {
+      "id": "/t/train_railway",
+      "label": "/t/train_railway"
+    },
+    {
+      "id": "/t/train_station/platform",
+      "label": "/t/train_station/platform"
+    },
+    {
+      "id": "/t/tree_farm",
+      "label": "/t/tree_farm"
+    },
+    {
+      "id": "/t/tree_house",
+      "label": "/t/tree_house"
+    },
+    {
+      "id": "/t/trench",
+      "label": "/t/trench"
+    },
+    {
+      "id": "/u/underwater/coral_reef",
+      "label": "/u/underwater/coral_reef"
+    },
+    {
+      "id": "/u/utility_room",
+      "label": "/u/utility_room"
+    },
+    {
+      "id": "/v/valley",
+      "label": "/v/valley"
+    },
+    {
+      "id": "/v/van_interior",
+      "label": "/v/van_interior"
+    },
+    {
+      "id": "/v/vegetable_garden",
+      "label": "/v/vegetable_garden"
+    },
+    {
+      "id": "/v/veranda",
+      "label": "/v/veranda"
+    },
+    {
+      "id": "/v/veterinarians_office",
+      "label": "/v/veterinarians_office"
+    },
+    {
+      "id": "/v/viaduct",
+      "label": "/v/viaduct"
+    },
+    {
+      "id": "/v/videostore",
+      "label": "/v/videostore"
+    },
+    {
+      "id": "/v/village",
+      "label": "/v/village"
+    },
+    {
+      "id": "/v/vineyard",
+      "label": "/v/vineyard"
+    },
+    {
+      "id": "/v/volcano",
+      "label": "/v/volcano"
+    },
+    {
+      "id": "/v/volleyball_court/indoor",
+      "label": "/v/volleyball_court/indoor"
+    },
+    {
+      "id": "/v/volleyball_court/outdoor",
+      "label": "/v/volleyball_court/outdoor"
+    },
+    {
+      "id": "/w/waiting_room",
+      "label": "/w/waiting_room"
+    },
+    {
+      "id": "/w/warehouse/indoor",
+      "label": "/w/warehouse/indoor"
+    },
+    {
+      "id": "/w/water_tower",
+      "label": "/w/water_tower"
+    },
+    {
+      "id": "/w/waterfall/block",
+      "label": "/w/waterfall/block"
+    },
+    {
+      "id": "/w/waterfall/fan",
+      "label": "/w/waterfall/fan"
+    },
+    {
+      "id": "/w/waterfall/plunge",
+      "label": "/w/waterfall/plunge"
+    },
+    {
+      "id": "/w/watering_hole",
+      "label": "/w/watering_hole"
+    },
+    {
+      "id": "/w/wave",
+      "label": "/w/wave"
+    },
+    {
+      "id": "/w/wet_bar",
+      "label": "/w/wet_bar"
+    },
+    {
+      "id": "/w/wheat_field",
+      "label": "/w/wheat_field"
+    },
+    {
+      "id": "/w/wind_farm",
+      "label": "/w/wind_farm"
+    },
+    {
+      "id": "/w/windmill",
+      "label": "/w/windmill"
+    },
+    {
+      "id": "/w/wine_cellar/barrel_storage",
+      "label": "/w/wine_cellar/barrel_storage"
+    },
+    {
+      "id": "/w/wine_cellar/bottle_storage",
+      "label": "/w/wine_cellar/bottle_storage"
+    },
+    {
+      "id": "/w/wrestling_ring/indoor",
+      "label": "/w/wrestling_ring/indoor"
+    },
+    {
+      "id": "/y/yard",
+      "label": "/y/yard"
+    },
+    {
+      "id": "/y/youth_hostel",
+      "label": "/y/youth_hostel"
+    }
+  ],
+  "links": [
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "cultural or historical building/place"
+    },
+    {
+      "source": "cultural or historical building/place",
+      "target": "/a/abbey"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "transportation (vehicle interiors, stations, etc.)"
+    },
+    {
+      "source": "transportation (vehicle interiors, stations, etc.)",
+      "target": "/a/airplane_cabin"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "transportation (vehicle interiors, stations, etc.)"
+    },
+    {
+      "source": "transportation (vehicle interiors, stations, etc.)",
+      "target": "/a/airport_terminal"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "commercial buildings, shops, markets, cities, and towns"
+    },
+    {
+      "source": "commercial buildings, shops, markets, cities, and towns",
+      "target": "/a/alley"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "cultural or historical building/place"
+    },
+    {
+      "source": "cultural or historical building/place",
+      "target": "/a/amphitheater"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "sports and leisure"
+    },
+    {
+      "source": "sports and leisure",
+      "target": "/a/amusement_arcade"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "sports fields, parks, leisure spaces"
+    },
+    {
+      "source": "sports fields, parks, leisure spaces",
+      "target": "/a/amusement_park"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "workplace (office building, factory, lab, etc.)"
+    },
+    {
+      "source": "workplace (office building, factory, lab, etc.)",
+      "target": "/a/anechoic_chamber"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "commercial buildings, shops, markets, cities, and towns"
+    },
+    {
+      "source": "commercial buildings, shops, markets, cities, and towns",
+      "target": "/a/apartment_building/outdoor"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "cultural (art, education, religion, etc.)"
+    },
+    {
+      "source": "cultural (art, education, religion, etc.)",
+      "target": "/a/apse/indoor"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "cultural (art, education, religion, etc.)"
+    },
+    {
+      "source": "cultural (art, education, religion, etc.)",
+      "target": "/a/aquarium"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/a/aqueduct"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "cultural or historical building/place"
+    },
+    {
+      "source": "cultural or historical building/place",
+      "target": "/a/aqueduct"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/a/aqueduct"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "cultural or historical building/place"
+    },
+    {
+      "source": "cultural or historical building/place",
+      "target": "/a/aqueduct"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "cultural or historical building/place"
+    },
+    {
+      "source": "cultural or historical building/place",
+      "target": "/a/arch"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "cultural (art, education, religion, etc.)"
+    },
+    {
+      "source": "cultural (art, education, religion, etc.)",
+      "target": "/a/archive"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "transportation (roads, parking, bridges, boats, airports, etc.)"
+    },
+    {
+      "source": "transportation (roads, parking, bridges, boats, airports, etc.)",
+      "target": "/a/arrival_gate/outdoor"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "cultural (art, education, religion, etc.)"
+    },
+    {
+      "source": "cultural (art, education, religion, etc.)",
+      "target": "/a/art_gallery"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "cultural (art, education, religion, etc.)"
+    },
+    {
+      "source": "cultural (art, education, religion, etc.)",
+      "target": "/a/art_school"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "cultural (art, education, religion, etc.)"
+    },
+    {
+      "source": "cultural (art, education, religion, etc.)",
+      "target": "/a/art_studio"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "workplace (office building, factory, lab, etc.)"
+    },
+    {
+      "source": "workplace (office building, factory, lab, etc.)",
+      "target": "/a/assembly_line"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "sports fields, parks, leisure spaces"
+    },
+    {
+      "source": "sports fields, parks, leisure spaces",
+      "target": "/a/athletic_field/outdoor"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "workplace (office building, factory, lab, etc.)"
+    },
+    {
+      "source": "workplace (office building, factory, lab, etc.)",
+      "target": "/a/atrium/public"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "home or hotel"
+    },
+    {
+      "source": "home or hotel",
+      "target": "/a/attic"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "cultural (art, education, religion, etc.)"
+    },
+    {
+      "source": "cultural (art, education, religion, etc.)",
+      "target": "/a/auditorium"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "workplace (office building, factory, lab, etc.)"
+    },
+    {
+      "source": "workplace (office building, factory, lab, etc.)",
+      "target": "/a/auto_factory"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "mountains, hills, desert, sky"
+    },
+    {
+      "source": "mountains, hills, desert, sky",
+      "target": "/b/badlands"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "sports and leisure"
+    },
+    {
+      "source": "sports and leisure",
+      "target": "/b/badminton_court/indoor"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "transportation (vehicle interiors, stations, etc.)"
+    },
+    {
+      "source": "transportation (vehicle interiors, stations, etc.)",
+      "target": "/b/baggage_claim"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "shopping and dining"
+    },
+    {
+      "source": "shopping and dining",
+      "target": "/b/bakery/shop"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "houses, cabins, gardens, and farms"
+    },
+    {
+      "source": "houses, cabins, gardens, and farms",
+      "target": "/b/balcony/exterior"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "commercial buildings, shops, markets, cities, and towns"
+    },
+    {
+      "source": "commercial buildings, shops, markets, cities, and towns",
+      "target": "/b/balcony/exterior"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "houses, cabins, gardens, and farms"
+    },
+    {
+      "source": "houses, cabins, gardens, and farms",
+      "target": "/b/balcony/interior"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "commercial buildings, shops, markets, cities, and towns"
+    },
+    {
+      "source": "commercial buildings, shops, markets, cities, and towns",
+      "target": "/b/balcony/interior"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "sports and leisure"
+    },
+    {
+      "source": "sports and leisure",
+      "target": "/b/ball_pit"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "sports and leisure"
+    },
+    {
+      "source": "sports and leisure",
+      "target": "/b/ballroom"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/b/bamboo_forest"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "shopping and dining"
+    },
+    {
+      "source": "shopping and dining",
+      "target": "/b/banquet_hall"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "shopping and dining"
+    },
+    {
+      "source": "shopping and dining",
+      "target": "/b/bar"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/b/barn"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/b/barn"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "houses, cabins, gardens, and farms"
+    },
+    {
+      "source": "houses, cabins, gardens, and farms",
+      "target": "/b/barn"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/b/barn"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/b/barn"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "houses, cabins, gardens, and farms"
+    },
+    {
+      "source": "houses, cabins, gardens, and farms",
+      "target": "/b/barn"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "houses, cabins, gardens, and farms"
+    },
+    {
+      "source": "houses, cabins, gardens, and farms",
+      "target": "/b/barndoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "sports fields, parks, leisure spaces"
+    },
+    {
+      "source": "sports fields, parks, leisure spaces",
+      "target": "/b/baseball_field"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "home or hotel"
+    },
+    {
+      "source": "home or hotel",
+      "target": "/b/basement"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "cultural or historical building/place"
+    },
+    {
+      "source": "cultural or historical building/place",
+      "target": "/b/basilica"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "sports fields, parks, leisure spaces"
+    },
+    {
+      "source": "sports fields, parks, leisure spaces",
+      "target": "/b/basketball_court/outdoor"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "home or hotel"
+    },
+    {
+      "source": "home or hotel",
+      "target": "/b/bathroom"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "sports fields, parks, leisure spaces"
+    },
+    {
+      "source": "sports fields, parks, leisure spaces",
+      "target": "/b/batters_box"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "water, ice, snow"
+    },
+    {
+      "source": "water, ice, snow",
+      "target": "/b/bayou"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/b/bayou"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/b/bayou"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "transportation (roads, parking, bridges, boats, airports, etc.)"
+    },
+    {
+      "source": "transportation (roads, parking, bridges, boats, airports, etc.)",
+      "target": "/b/bayou"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "water, ice, snow"
+    },
+    {
+      "source": "water, ice, snow",
+      "target": "/b/bayou"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/b/bayou"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/b/bayou"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "transportation (roads, parking, bridges, boats, airports, etc.)"
+    },
+    {
+      "source": "transportation (roads, parking, bridges, boats, airports, etc.)",
+      "target": "/b/bayou"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "shopping and dining"
+    },
+    {
+      "source": "shopping and dining",
+      "target": "/b/bazaar/indoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "cultural or historical building/place"
+    },
+    {
+      "source": "cultural or historical building/place",
+      "target": "/b/bazaar/outdoor"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "commercial buildings, shops, markets, cities, and towns"
+    },
+    {
+      "source": "commercial buildings, shops, markets, cities, and towns",
+      "target": "/b/bazaar/outdoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "water, ice, snow"
+    },
+    {
+      "source": "water, ice, snow",
+      "target": "/b/beach"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "shopping and dining"
+    },
+    {
+      "source": "shopping and dining",
+      "target": "/b/beauty_salon"
+    },
+    {
+      "source": "indoor",
+      "target": "cultural (art, education, religion, etc.)"
+    },
+    {
+      "source": "cultural (art, education, religion, etc.)",
+      "target": "/b/beauty_salon"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "home or hotel"
+    },
+    {
+      "source": "home or hotel",
+      "target": "/b/bedroom"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "transportation (vehicle interiors, stations, etc.)"
+    },
+    {
+      "source": "transportation (vehicle interiors, stations, etc.)",
+      "target": "/b/berth"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "workplace (office building, factory, lab, etc.)"
+    },
+    {
+      "source": "workplace (office building, factory, lab, etc.)",
+      "target": "/b/biology_laboratory"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "shopping and dining"
+    },
+    {
+      "source": "shopping and dining",
+      "target": "/b/bistro/indoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "water, ice, snow"
+    },
+    {
+      "source": "water, ice, snow",
+      "target": "/b/boardwalk"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/b/boardwalk"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/b/boardwalk"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "sports fields, parks, leisure spaces"
+    },
+    {
+      "source": "sports fields, parks, leisure spaces",
+      "target": "/b/boardwalk"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "water, ice, snow"
+    },
+    {
+      "source": "water, ice, snow",
+      "target": "/b/boardwalk"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/b/boardwalk"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/b/boardwalk"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "sports fields, parks, leisure spaces"
+    },
+    {
+      "source": "sports fields, parks, leisure spaces",
+      "target": "/b/boardwalk"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "transportation (roads, parking, bridges, boats, airports, etc.)"
+    },
+    {
+      "source": "transportation (roads, parking, bridges, boats, airports, etc.)",
+      "target": "/b/boat_deck"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "water, ice, snow"
+    },
+    {
+      "source": "water, ice, snow",
+      "target": "/b/boathouse"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/b/boathouse"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "transportation (roads, parking, bridges, boats, airports, etc.)"
+    },
+    {
+      "source": "transportation (roads, parking, bridges, boats, airports, etc.)",
+      "target": "/b/boathouse"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "water, ice, snow"
+    },
+    {
+      "source": "water, ice, snow",
+      "target": "/b/boathouse"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/b/boathouse"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "transportation (roads, parking, bridges, boats, airports, etc.)"
+    },
+    {
+      "source": "transportation (roads, parking, bridges, boats, airports, etc.)",
+      "target": "/b/boathouse"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "shopping and dining"
+    },
+    {
+      "source": "shopping and dining",
+      "target": "/b/bookstore"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "workplace (office building, factory, lab, etc.)"
+    },
+    {
+      "source": "workplace (office building, factory, lab, etc.)",
+      "target": "/b/booth/indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "cultural (art, education, religion, etc.)"
+    },
+    {
+      "source": "cultural (art, education, religion, etc.)",
+      "target": "/b/booth/indoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/b/botanical_garden"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/b/botanical_garden"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "houses, cabins, gardens, and farms"
+    },
+    {
+      "source": "houses, cabins, gardens, and farms",
+      "target": "/b/botanical_garden"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/b/botanical_garden"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/b/botanical_garden"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "houses, cabins, gardens, and farms"
+    },
+    {
+      "source": "houses, cabins, gardens, and farms",
+      "target": "/b/botanical_garden"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "home or hotel"
+    },
+    {
+      "source": "home or hotel",
+      "target": "/b/bow_window/indoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "houses, cabins, gardens, and farms"
+    },
+    {
+      "source": "houses, cabins, gardens, and farms",
+      "target": "/b/bow_window/outdoor"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "sports and leisure"
+    },
+    {
+      "source": "sports and leisure",
+      "target": "/b/bowling_alley"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "sports and leisure"
+    },
+    {
+      "source": "sports and leisure",
+      "target": "/b/boxing_ring"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "workplace (office building, factory, lab, etc.)"
+    },
+    {
+      "source": "workplace (office building, factory, lab, etc.)",
+      "target": "/b/brewery/indoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "transportation (roads, parking, bridges, boats, airports, etc.)"
+    },
+    {
+      "source": "transportation (roads, parking, bridges, boats, airports, etc.)",
+      "target": "/b/bridge"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "commercial buildings, shops, markets, cities, and towns"
+    },
+    {
+      "source": "commercial buildings, shops, markets, cities, and towns",
+      "target": "/b/building_facade"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "sports fields, parks, leisure spaces"
+    },
+    {
+      "source": "sports fields, parks, leisure spaces",
+      "target": "/b/bullring"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "cultural (art, education, religion, etc.)"
+    },
+    {
+      "source": "cultural (art, education, religion, etc.)",
+      "target": "/b/burial_chamber"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "transportation (vehicle interiors, stations, etc.)"
+    },
+    {
+      "source": "transportation (vehicle interiors, stations, etc.)",
+      "target": "/b/bus_interior"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "shopping and dining"
+    },
+    {
+      "source": "shopping and dining",
+      "target": "/b/butchers_shop"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "mountains, hills, desert, sky"
+    },
+    {
+      "source": "mountains, hills, desert, sky",
+      "target": "/b/butte"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "houses, cabins, gardens, and farms"
+    },
+    {
+      "source": "houses, cabins, gardens, and farms",
+      "target": "/c/cabin/outdoor"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "shopping and dining"
+    },
+    {
+      "source": "shopping and dining",
+      "target": "/c/cafeteria"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "sports fields, parks, leisure spaces"
+    },
+    {
+      "source": "sports fields, parks, leisure spaces",
+      "target": "/c/campsite"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "cultural or historical building/place"
+    },
+    {
+      "source": "cultural or historical building/place",
+      "target": "/c/campus"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "water, ice, snow"
+    },
+    {
+      "source": "water, ice, snow",
+      "target": "/c/canal/natural"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "transportation (roads, parking, bridges, boats, airports, etc.)"
+    },
+    {
+      "source": "transportation (roads, parking, bridges, boats, airports, etc.)",
+      "target": "/c/canal/urban"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "shopping and dining"
+    },
+    {
+      "source": "shopping and dining",
+      "target": "/c/candy_store"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "mountains, hills, desert, sky"
+    },
+    {
+      "source": "mountains, hills, desert, sky",
+      "target": "/c/canyon"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "transportation (vehicle interiors, stations, etc.)"
+    },
+    {
+      "source": "transportation (vehicle interiors, stations, etc.)",
+      "target": "/c/car_interior/backseat"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "transportation (vehicle interiors, stations, etc.)"
+    },
+    {
+      "source": "transportation (vehicle interiors, stations, etc.)",
+      "target": "/c/car_interior/frontseat"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "sports fields, parks, leisure spaces"
+    },
+    {
+      "source": "sports fields, parks, leisure spaces",
+      "target": "/c/carrousel"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "sports and leisure"
+    },
+    {
+      "source": "sports and leisure",
+      "target": "/c/casino/indoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "cultural or historical building/place"
+    },
+    {
+      "source": "cultural or historical building/place",
+      "target": "/c/castle"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "cultural (art, education, religion, etc.)"
+    },
+    {
+      "source": "cultural (art, education, religion, etc.)",
+      "target": "/c/catacomb"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "cultural (art, education, religion, etc.)"
+    },
+    {
+      "source": "cultural (art, education, religion, etc.)",
+      "target": "/c/cathedral/indoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "cultural or historical building/place"
+    },
+    {
+      "source": "cultural or historical building/place",
+      "target": "/c/cathedral/outdoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "mountains, hills, desert, sky"
+    },
+    {
+      "source": "mountains, hills, desert, sky",
+      "target": "/c/cavern/indoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "cultural or historical building/place"
+    },
+    {
+      "source": "cultural or historical building/place",
+      "target": "/c/cemetery"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "houses, cabins, gardens, and farms"
+    },
+    {
+      "source": "houses, cabins, gardens, and farms",
+      "target": "/c/chalet"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "workplace (office building, factory, lab, etc.)"
+    },
+    {
+      "source": "workplace (office building, factory, lab, etc.)",
+      "target": "/c/cheese_factory"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "workplace (office building, factory, lab, etc.)"
+    },
+    {
+      "source": "workplace (office building, factory, lab, etc.)",
+      "target": "/c/chemistry_lab"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "workplace (office building, factory, lab, etc.)"
+    },
+    {
+      "source": "workplace (office building, factory, lab, etc.)",
+      "target": "/c/chicken_coop/indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "home or hotel"
+    },
+    {
+      "source": "home or hotel",
+      "target": "/c/chicken_coop/indoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "houses, cabins, gardens, and farms"
+    },
+    {
+      "source": "houses, cabins, gardens, and farms",
+      "target": "/c/chicken_coop/outdoor"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "home or hotel"
+    },
+    {
+      "source": "home or hotel",
+      "target": "/c/childs_room"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "cultural (art, education, religion, etc.)"
+    },
+    {
+      "source": "cultural (art, education, religion, etc.)",
+      "target": "/c/church/indoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "cultural or historical building/place"
+    },
+    {
+      "source": "cultural or historical building/place",
+      "target": "/c/church/outdoor"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "cultural (art, education, religion, etc.)"
+    },
+    {
+      "source": "cultural (art, education, religion, etc.)",
+      "target": "/c/classroom"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "workplace (office building, factory, lab, etc.)"
+    },
+    {
+      "source": "workplace (office building, factory, lab, etc.)",
+      "target": "/c/clean_room"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "mountains, hills, desert, sky"
+    },
+    {
+      "source": "mountains, hills, desert, sky",
+      "target": "/c/cliff"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "cultural (art, education, religion, etc.)"
+    },
+    {
+      "source": "cultural (art, education, religion, etc.)",
+      "target": "/c/cloister/indoor"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "home or hotel"
+    },
+    {
+      "source": "home or hotel",
+      "target": "/c/closet"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "shopping and dining"
+    },
+    {
+      "source": "shopping and dining",
+      "target": "/c/clothing_store"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "water, ice, snow"
+    },
+    {
+      "source": "water, ice, snow",
+      "target": "/c/coast"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "transportation (vehicle interiors, stations, etc.)"
+    },
+    {
+      "source": "transportation (vehicle interiors, stations, etc.)",
+      "target": "/c/cockpit"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "shopping and dining"
+    },
+    {
+      "source": "shopping and dining",
+      "target": "/c/coffee_shop"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "workplace (office building, factory, lab, etc.)"
+    },
+    {
+      "source": "workplace (office building, factory, lab, etc.)",
+      "target": "/c/computer_room"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "cultural (art, education, religion, etc.)"
+    },
+    {
+      "source": "cultural (art, education, religion, etc.)",
+      "target": "/c/conference_center"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "workplace (office building, factory, lab, etc.)"
+    },
+    {
+      "source": "workplace (office building, factory, lab, etc.)",
+      "target": "/c/conference_room"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "industrial and construction"
+    },
+    {
+      "source": "industrial and construction",
+      "target": "/c/construction_site"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "workplace (office building, factory, lab, etc.)"
+    },
+    {
+      "source": "workplace (office building, factory, lab, etc.)",
+      "target": "/c/control_room"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "transportation (roads, parking, bridges, boats, airports, etc.)"
+    },
+    {
+      "source": "transportation (roads, parking, bridges, boats, airports, etc.)",
+      "target": "/c/control_tower/outdoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/c/corn_field"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/c/corral"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/c/corral"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "houses, cabins, gardens, and farms"
+    },
+    {
+      "source": "houses, cabins, gardens, and farms",
+      "target": "/c/corral"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/c/corral"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/c/corral"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "houses, cabins, gardens, and farms"
+    },
+    {
+      "source": "houses, cabins, gardens, and farms",
+      "target": "/c/corral"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "workplace (office building, factory, lab, etc.)"
+    },
+    {
+      "source": "workplace (office building, factory, lab, etc.)",
+      "target": "/c/corridor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/c/cottage_garden"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/c/cottage_garden"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "houses, cabins, gardens, and farms"
+    },
+    {
+      "source": "houses, cabins, gardens, and farms",
+      "target": "/c/cottage_garden"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/c/cottage_garden"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/c/cottage_garden"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "houses, cabins, gardens, and farms"
+    },
+    {
+      "source": "houses, cabins, gardens, and farms",
+      "target": "/c/cottage_garden"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "cultural or historical building/place"
+    },
+    {
+      "source": "cultural or historical building/place",
+      "target": "/c/courthouse"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "cultural (art, education, religion, etc.)"
+    },
+    {
+      "source": "cultural (art, education, religion, etc.)",
+      "target": "/c/courtroom"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "cultural or historical building/place"
+    },
+    {
+      "source": "cultural or historical building/place",
+      "target": "/c/courtyard"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "houses, cabins, gardens, and farms"
+    },
+    {
+      "source": "houses, cabins, gardens, and farms",
+      "target": "/c/courtyard"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "commercial buildings, shops, markets, cities, and towns"
+    },
+    {
+      "source": "commercial buildings, shops, markets, cities, and towns",
+      "target": "/c/courtyard"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "transportation (roads, parking, bridges, boats, airports, etc.)"
+    },
+    {
+      "source": "transportation (roads, parking, bridges, boats, airports, etc.)",
+      "target": "/c/covered_bridge/exterior"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "water, ice, snow"
+    },
+    {
+      "source": "water, ice, snow",
+      "target": "/c/creek"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "water, ice, snow"
+    },
+    {
+      "source": "water, ice, snow",
+      "target": "/c/crevasse"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "transportation (roads, parking, bridges, boats, airports, etc.)"
+    },
+    {
+      "source": "transportation (roads, parking, bridges, boats, airports, etc.)",
+      "target": "/c/crosswalk"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "commercial buildings, shops, markets, cities, and towns"
+    },
+    {
+      "source": "commercial buildings, shops, markets, cities, and towns",
+      "target": "/c/crosswalk"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "workplace (office building, factory, lab, etc.)"
+    },
+    {
+      "source": "workplace (office building, factory, lab, etc.)",
+      "target": "/c/cubicle/office"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "water, ice, snow"
+    },
+    {
+      "source": "water, ice, snow",
+      "target": "/d/dam"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/d/dam"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "industrial and construction"
+    },
+    {
+      "source": "industrial and construction",
+      "target": "/d/dam"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "water, ice, snow"
+    },
+    {
+      "source": "water, ice, snow",
+      "target": "/d/dam"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/d/dam"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "industrial and construction"
+    },
+    {
+      "source": "industrial and construction",
+      "target": "/d/dam"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "shopping and dining"
+    },
+    {
+      "source": "shopping and dining",
+      "target": "/d/delicatessen"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "workplace (office building, factory, lab, etc.)"
+    },
+    {
+      "source": "workplace (office building, factory, lab, etc.)",
+      "target": "/d/dentists_office"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "mountains, hills, desert, sky"
+    },
+    {
+      "source": "mountains, hills, desert, sky",
+      "target": "/d/desert/sand"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "mountains, hills, desert, sky"
+    },
+    {
+      "source": "mountains, hills, desert, sky",
+      "target": "/d/desert/vegetation"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "shopping and dining"
+    },
+    {
+      "source": "shopping and dining",
+      "target": "/d/diner/indoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "commercial buildings, shops, markets, cities, and towns"
+    },
+    {
+      "source": "commercial buildings, shops, markets, cities, and towns",
+      "target": "/d/diner/outdoor"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "home or hotel"
+    },
+    {
+      "source": "home or hotel",
+      "target": "/d/dinette/home"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "transportation (vehicle interiors, stations, etc.)"
+    },
+    {
+      "source": "transportation (vehicle interiors, stations, etc.)",
+      "target": "/d/dinette/vehicle"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "transportation (vehicle interiors, stations, etc.)"
+    },
+    {
+      "source": "transportation (vehicle interiors, stations, etc.)",
+      "target": "/d/dining_car"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "home or hotel"
+    },
+    {
+      "source": "home or hotel",
+      "target": "/d/dining_room"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "shopping and dining"
+    },
+    {
+      "source": "shopping and dining",
+      "target": "/d/discotheque"
+    },
+    {
+      "source": "indoor",
+      "target": "sports and leisure"
+    },
+    {
+      "source": "sports and leisure",
+      "target": "/d/discotheque"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "water, ice, snow"
+    },
+    {
+      "source": "water, ice, snow",
+      "target": "/d/dock"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/d/dock"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "transportation (roads, parking, bridges, boats, airports, etc.)"
+    },
+    {
+      "source": "transportation (roads, parking, bridges, boats, airports, etc.)",
+      "target": "/d/dock"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "water, ice, snow"
+    },
+    {
+      "source": "water, ice, snow",
+      "target": "/d/dock"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/d/dock"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "transportation (roads, parking, bridges, boats, airports, etc.)"
+    },
+    {
+      "source": "transportation (roads, parking, bridges, boats, airports, etc.)",
+      "target": "/d/dock"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "houses, cabins, gardens, and farms"
+    },
+    {
+      "source": "houses, cabins, gardens, and farms",
+      "target": "/d/doorway/outdoor"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "commercial buildings, shops, markets, cities, and towns"
+    },
+    {
+      "source": "commercial buildings, shops, markets, cities, and towns",
+      "target": "/d/doorway/outdoor"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "home or hotel"
+    },
+    {
+      "source": "home or hotel",
+      "target": "/d/dorm_room"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "houses, cabins, gardens, and farms"
+    },
+    {
+      "source": "houses, cabins, gardens, and farms",
+      "target": "/d/driveway"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "sports fields, parks, leisure spaces"
+    },
+    {
+      "source": "sports fields, parks, leisure spaces",
+      "target": "/d/driving_range/outdoor"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "shopping and dining"
+    },
+    {
+      "source": "shopping and dining",
+      "target": "/d/drugstore"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "industrial and construction"
+    },
+    {
+      "source": "industrial and construction",
+      "target": "/e/electrical_substation"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "workplace (office building, factory, lab, etc.)"
+    },
+    {
+      "source": "workplace (office building, factory, lab, etc.)",
+      "target": "/e/elevator/door"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "workplace (office building, factory, lab, etc.)"
+    },
+    {
+      "source": "workplace (office building, factory, lab, etc.)",
+      "target": "/e/elevator/interior"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "workplace (office building, factory, lab, etc.)"
+    },
+    {
+      "source": "workplace (office building, factory, lab, etc.)",
+      "target": "/e/elevator_shaft"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "workplace (office building, factory, lab, etc.)"
+    },
+    {
+      "source": "workplace (office building, factory, lab, etc.)",
+      "target": "/e/engine_room"
+    },
+    {
+      "source": "indoor",
+      "target": "transportation (vehicle interiors, stations, etc.)"
+    },
+    {
+      "source": "transportation (vehicle interiors, stations, etc.)",
+      "target": "/e/engine_room"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "shopping and dining"
+    },
+    {
+      "source": "shopping and dining",
+      "target": "/e/escalator/indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "workplace (office building, factory, lab, etc.)"
+    },
+    {
+      "source": "workplace (office building, factory, lab, etc.)",
+      "target": "/e/escalator/indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "transportation (vehicle interiors, stations, etc.)"
+    },
+    {
+      "source": "transportation (vehicle interiors, stations, etc.)",
+      "target": "/e/escalator/indoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "industrial and construction"
+    },
+    {
+      "source": "industrial and construction",
+      "target": "/e/excavation"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "workplace (office building, factory, lab, etc.)"
+    },
+    {
+      "source": "workplace (office building, factory, lab, etc.)",
+      "target": "/f/factory/indoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/f/fairway"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/f/fairway"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "sports fields, parks, leisure spaces"
+    },
+    {
+      "source": "sports fields, parks, leisure spaces",
+      "target": "/f/fairway"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/f/fairway"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/f/fairway"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "sports fields, parks, leisure spaces"
+    },
+    {
+      "source": "sports fields, parks, leisure spaces",
+      "target": "/f/fairway"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "shopping and dining"
+    },
+    {
+      "source": "shopping and dining",
+      "target": "/f/fastfood_restaurant"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/f/field/cultivated"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/f/field/cultivated"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "houses, cabins, gardens, and farms"
+    },
+    {
+      "source": "houses, cabins, gardens, and farms",
+      "target": "/f/field/cultivated"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/f/field/cultivated"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/f/field/cultivated"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "houses, cabins, gardens, and farms"
+    },
+    {
+      "source": "houses, cabins, gardens, and farms",
+      "target": "/f/field/cultivated"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/f/field/wild"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "commercial buildings, shops, markets, cities, and towns"
+    },
+    {
+      "source": "commercial buildings, shops, markets, cities, and towns",
+      "target": "/f/fire_escape"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "commercial buildings, shops, markets, cities, and towns"
+    },
+    {
+      "source": "commercial buildings, shops, markets, cities, and towns",
+      "target": "/f/fire_station"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "sports and leisure"
+    },
+    {
+      "source": "sports and leisure",
+      "target": "/f/firing_range/indoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "water, ice, snow"
+    },
+    {
+      "source": "water, ice, snow",
+      "target": "/f/fishpond"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/f/fishpond"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "sports fields, parks, leisure spaces"
+    },
+    {
+      "source": "sports fields, parks, leisure spaces",
+      "target": "/f/fishpond"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "water, ice, snow"
+    },
+    {
+      "source": "water, ice, snow",
+      "target": "/f/fishpond"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/f/fishpond"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "sports fields, parks, leisure spaces"
+    },
+    {
+      "source": "sports fields, parks, leisure spaces",
+      "target": "/f/fishpond"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "shopping and dining"
+    },
+    {
+      "source": "shopping and dining",
+      "target": "/f/florist_shop/indoor"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "shopping and dining"
+    },
+    {
+      "source": "shopping and dining",
+      "target": "/f/food_court"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/f/forest/broadleaf"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/f/forest/needleleaf"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/f/forest_path"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/f/forest_road"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/f/forest_road"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "transportation (roads, parking, bridges, boats, airports, etc.)"
+    },
+    {
+      "source": "transportation (roads, parking, bridges, boats, airports, etc.)",
+      "target": "/f/forest_road"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "sports fields, parks, leisure spaces"
+    },
+    {
+      "source": "sports fields, parks, leisure spaces",
+      "target": "/f/forest_road"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/f/forest_road"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/f/forest_road"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "transportation (roads, parking, bridges, boats, airports, etc.)"
+    },
+    {
+      "source": "transportation (roads, parking, bridges, boats, airports, etc.)",
+      "target": "/f/forest_road"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "sports fields, parks, leisure spaces"
+    },
+    {
+      "source": "sports fields, parks, leisure spaces",
+      "target": "/f/forest_road"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/f/formal_garden"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/f/formal_garden"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "houses, cabins, gardens, and farms"
+    },
+    {
+      "source": "houses, cabins, gardens, and farms",
+      "target": "/f/formal_garden"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/f/formal_garden"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/f/formal_garden"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "houses, cabins, gardens, and farms"
+    },
+    {
+      "source": "houses, cabins, gardens, and farms",
+      "target": "/f/formal_garden"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "cultural or historical building/place"
+    },
+    {
+      "source": "cultural or historical building/place",
+      "target": "/f/fountain"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "transportation (vehicle interiors, stations, etc.)"
+    },
+    {
+      "source": "transportation (vehicle interiors, stations, etc.)",
+      "target": "/g/galley"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "home or hotel"
+    },
+    {
+      "source": "home or hotel",
+      "target": "/g/game_room"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "home or hotel"
+    },
+    {
+      "source": "home or hotel",
+      "target": "/g/garage/indoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "industrial and construction"
+    },
+    {
+      "source": "industrial and construction",
+      "target": "/g/garbage_dump"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "transportation (roads, parking, bridges, boats, airports, etc.)"
+    },
+    {
+      "source": "transportation (roads, parking, bridges, boats, airports, etc.)",
+      "target": "/g/gas_station"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "commercial buildings, shops, markets, cities, and towns"
+    },
+    {
+      "source": "commercial buildings, shops, markets, cities, and towns",
+      "target": "/g/gas_station"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "sports fields, parks, leisure spaces"
+    },
+    {
+      "source": "sports fields, parks, leisure spaces",
+      "target": "/g/gazebo/exterior"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "shopping and dining"
+    },
+    {
+      "source": "shopping and dining",
+      "target": "/g/general_store/indoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "commercial buildings, shops, markets, cities, and towns"
+    },
+    {
+      "source": "commercial buildings, shops, markets, cities, and towns",
+      "target": "/g/general_store/outdoor"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "shopping and dining"
+    },
+    {
+      "source": "shopping and dining",
+      "target": "/g/gift_shop"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/g/golf_course"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/g/golf_course"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "sports fields, parks, leisure spaces"
+    },
+    {
+      "source": "sports fields, parks, leisure spaces",
+      "target": "/g/golf_course"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/g/golf_course"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/g/golf_course"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "sports fields, parks, leisure spaces"
+    },
+    {
+      "source": "sports fields, parks, leisure spaces",
+      "target": "/g/golf_course"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "workplace (office building, factory, lab, etc.)"
+    },
+    {
+      "source": "workplace (office building, factory, lab, etc.)",
+      "target": "/g/greenhouse/indoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "houses, cabins, gardens, and farms"
+    },
+    {
+      "source": "houses, cabins, gardens, and farms",
+      "target": "/g/greenhouse/outdoor"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "sports and leisure"
+    },
+    {
+      "source": "sports and leisure",
+      "target": "/g/gymnasium/indoor"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "transportation (vehicle interiors, stations, etc.)"
+    },
+    {
+      "source": "transportation (vehicle interiors, stations, etc.)",
+      "target": "/h/hangar/indoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "transportation (roads, parking, bridges, boats, airports, etc.)"
+    },
+    {
+      "source": "transportation (roads, parking, bridges, boats, airports, etc.)",
+      "target": "/h/hangar/outdoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "transportation (roads, parking, bridges, boats, airports, etc.)"
+    },
+    {
+      "source": "transportation (roads, parking, bridges, boats, airports, etc.)",
+      "target": "/h/harbor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/h/hayfield"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/h/hayfield"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "houses, cabins, gardens, and farms"
+    },
+    {
+      "source": "houses, cabins, gardens, and farms",
+      "target": "/h/hayfield"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/h/hayfield"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/h/hayfield"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "houses, cabins, gardens, and farms"
+    },
+    {
+      "source": "houses, cabins, gardens, and farms",
+      "target": "/h/hayfield"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "transportation (roads, parking, bridges, boats, airports, etc.)"
+    },
+    {
+      "source": "transportation (roads, parking, bridges, boats, airports, etc.)",
+      "target": "/h/heliport"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/h/herb_garden"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/h/herb_garden"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "houses, cabins, gardens, and farms"
+    },
+    {
+      "source": "houses, cabins, gardens, and farms",
+      "target": "/h/herb_garden"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/h/herb_garden"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/h/herb_garden"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "houses, cabins, gardens, and farms"
+    },
+    {
+      "source": "houses, cabins, gardens, and farms",
+      "target": "/h/herb_garden"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/h/highway"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "transportation (roads, parking, bridges, boats, airports, etc.)"
+    },
+    {
+      "source": "transportation (roads, parking, bridges, boats, airports, etc.)",
+      "target": "/h/highway"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/h/highway"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "transportation (roads, parking, bridges, boats, airports, etc.)"
+    },
+    {
+      "source": "transportation (roads, parking, bridges, boats, airports, etc.)",
+      "target": "/h/highway"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "mountains, hills, desert, sky"
+    },
+    {
+      "source": "mountains, hills, desert, sky",
+      "target": "/h/hill"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "home or hotel"
+    },
+    {
+      "source": "home or hotel",
+      "target": "/h/home_office"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "commercial buildings, shops, markets, cities, and towns"
+    },
+    {
+      "source": "commercial buildings, shops, markets, cities, and towns",
+      "target": "/h/hospital"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "workplace (office building, factory, lab, etc.)"
+    },
+    {
+      "source": "workplace (office building, factory, lab, etc.)",
+      "target": "/h/hospital_room"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "water, ice, snow"
+    },
+    {
+      "source": "water, ice, snow",
+      "target": "/h/hot_spring"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "sports fields, parks, leisure spaces"
+    },
+    {
+      "source": "sports fields, parks, leisure spaces",
+      "target": "/h/hot_tub/outdoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "commercial buildings, shops, markets, cities, and towns"
+    },
+    {
+      "source": "commercial buildings, shops, markets, cities, and towns",
+      "target": "/h/hotel/outdoor"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "home or hotel"
+    },
+    {
+      "source": "home or hotel",
+      "target": "/h/hotel_room"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "houses, cabins, gardens, and farms"
+    },
+    {
+      "source": "houses, cabins, gardens, and farms",
+      "target": "/h/house"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "houses, cabins, gardens, and farms"
+    },
+    {
+      "source": "houses, cabins, gardens, and farms",
+      "target": "/h/hunting_lodge/outdoor"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "shopping and dining"
+    },
+    {
+      "source": "shopping and dining",
+      "target": "/i/ice_cream_parlor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "water, ice, snow"
+    },
+    {
+      "source": "water, ice, snow",
+      "target": "/i/ice_floe"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "water, ice, snow"
+    },
+    {
+      "source": "water, ice, snow",
+      "target": "/i/ice_shelf"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "sports and leisure"
+    },
+    {
+      "source": "sports and leisure",
+      "target": "/i/ice_skating_rink/indoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "sports fields, parks, leisure spaces"
+    },
+    {
+      "source": "sports fields, parks, leisure spaces",
+      "target": "/i/ice_skating_rink/outdoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "water, ice, snow"
+    },
+    {
+      "source": "water, ice, snow",
+      "target": "/i/iceberg"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "water, ice, snow"
+    },
+    {
+      "source": "water, ice, snow",
+      "target": "/i/igloo"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/i/igloo"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "sports fields, parks, leisure spaces"
+    },
+    {
+      "source": "sports fields, parks, leisure spaces",
+      "target": "/i/igloo"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "water, ice, snow"
+    },
+    {
+      "source": "water, ice, snow",
+      "target": "/i/igloo"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/i/igloo"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "sports fields, parks, leisure spaces"
+    },
+    {
+      "source": "sports fields, parks, leisure spaces",
+      "target": "/i/igloo"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "industrial and construction"
+    },
+    {
+      "source": "industrial and construction",
+      "target": "/i/industrial_area"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "commercial buildings, shops, markets, cities, and towns"
+    },
+    {
+      "source": "commercial buildings, shops, markets, cities, and towns",
+      "target": "/i/inn/outdoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "water, ice, snow"
+    },
+    {
+      "source": "water, ice, snow",
+      "target": "/i/islet"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "sports and leisure"
+    },
+    {
+      "source": "sports and leisure",
+      "target": "/j/jacuzzi/indoor"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "cultural (art, education, religion, etc.)"
+    },
+    {
+      "source": "cultural (art, education, religion, etc.)",
+      "target": "/j/jail/indoor"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "cultural (art, education, religion, etc.)"
+    },
+    {
+      "source": "cultural (art, education, religion, etc.)",
+      "target": "/j/jail_cell"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "shopping and dining"
+    },
+    {
+      "source": "shopping and dining",
+      "target": "/j/jewelry_shop"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "cultural or historical building/place"
+    },
+    {
+      "source": "cultural or historical building/place",
+      "target": "/k/kasbah"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "workplace (office building, factory, lab, etc.)"
+    },
+    {
+      "source": "workplace (office building, factory, lab, etc.)",
+      "target": "/k/kennel/indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "home or hotel"
+    },
+    {
+      "source": "home or hotel",
+      "target": "/k/kennel/indoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "houses, cabins, gardens, and farms"
+    },
+    {
+      "source": "houses, cabins, gardens, and farms",
+      "target": "/k/kennel/outdoor"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "cultural (art, education, religion, etc.)"
+    },
+    {
+      "source": "cultural (art, education, religion, etc.)",
+      "target": "/k/kindergarden_classroom"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "home or hotel"
+    },
+    {
+      "source": "home or hotel",
+      "target": "/k/kitchen"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "home or hotel"
+    },
+    {
+      "source": "home or hotel",
+      "target": "/k/kitchenette"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "cultural or historical building/place"
+    },
+    {
+      "source": "cultural or historical building/place",
+      "target": "/l/labyrinth/outdoor"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "sports fields, parks, leisure spaces"
+    },
+    {
+      "source": "sports fields, parks, leisure spaces",
+      "target": "/l/labyrinth/outdoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "water, ice, snow"
+    },
+    {
+      "source": "water, ice, snow",
+      "target": "/l/lake/natural"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "industrial and construction"
+    },
+    {
+      "source": "industrial and construction",
+      "target": "/l/landfill"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "transportation (roads, parking, bridges, boats, airports, etc.)"
+    },
+    {
+      "source": "transportation (roads, parking, bridges, boats, airports, etc.)",
+      "target": "/l/landing_deck"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "workplace (office building, factory, lab, etc.)"
+    },
+    {
+      "source": "workplace (office building, factory, lab, etc.)",
+      "target": "/l/laundromat"
+    },
+    {
+      "source": "indoor",
+      "target": "home or hotel"
+    },
+    {
+      "source": "home or hotel",
+      "target": "/l/laundromat"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "cultural (art, education, religion, etc.)"
+    },
+    {
+      "source": "cultural (art, education, religion, etc.)",
+      "target": "/l/lecture_room"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "cultural (art, education, religion, etc.)"
+    },
+    {
+      "source": "cultural (art, education, religion, etc.)",
+      "target": "/l/library/indoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "cultural or historical building/place"
+    },
+    {
+      "source": "cultural or historical building/place",
+      "target": "/l/library/outdoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "transportation (roads, parking, bridges, boats, airports, etc.)"
+    },
+    {
+      "source": "transportation (roads, parking, bridges, boats, airports, etc.)",
+      "target": "/l/lido_deck/outdoor"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "sports fields, parks, leisure spaces"
+    },
+    {
+      "source": "sports fields, parks, leisure spaces",
+      "target": "/l/lido_deck/outdoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "transportation (roads, parking, bridges, boats, airports, etc.)"
+    },
+    {
+      "source": "transportation (roads, parking, bridges, boats, airports, etc.)",
+      "target": "/l/lift_bridge"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "cultural or historical building/place"
+    },
+    {
+      "source": "cultural or historical building/place",
+      "target": "/l/lighthouse"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "transportation (vehicle interiors, stations, etc.)"
+    },
+    {
+      "source": "transportation (vehicle interiors, stations, etc.)",
+      "target": "/l/limousine_interior"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "home or hotel"
+    },
+    {
+      "source": "home or hotel",
+      "target": "/l/living_room"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "workplace (office building, factory, lab, etc.)"
+    },
+    {
+      "source": "workplace (office building, factory, lab, etc.)",
+      "target": "/l/lobby"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "transportation (roads, parking, bridges, boats, airports, etc.)"
+    },
+    {
+      "source": "transportation (roads, parking, bridges, boats, airports, etc.)",
+      "target": "/l/lock_chamber"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "sports and leisure"
+    },
+    {
+      "source": "sports and leisure",
+      "target": "/l/locker_room"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "houses, cabins, gardens, and farms"
+    },
+    {
+      "source": "houses, cabins, gardens, and farms",
+      "target": "/m/mansion"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "houses, cabins, gardens, and farms"
+    },
+    {
+      "source": "houses, cabins, gardens, and farms",
+      "target": "/m/manufactured_home"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "shopping and dining"
+    },
+    {
+      "source": "shopping and dining",
+      "target": "/m/market/indoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "commercial buildings, shops, markets, cities, and towns"
+    },
+    {
+      "source": "commercial buildings, shops, markets, cities, and towns",
+      "target": "/m/market/outdoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "water, ice, snow"
+    },
+    {
+      "source": "water, ice, snow",
+      "target": "/m/marsh"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/m/marsh"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "sports and leisure"
+    },
+    {
+      "source": "sports and leisure",
+      "target": "/m/martial_arts_gym"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "cultural or historical building/place"
+    },
+    {
+      "source": "cultural or historical building/place",
+      "target": "/m/mausoleum"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "cultural or historical building/place"
+    },
+    {
+      "source": "cultural or historical building/place",
+      "target": "/m/medina"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "commercial buildings, shops, markets, cities, and towns"
+    },
+    {
+      "source": "commercial buildings, shops, markets, cities, and towns",
+      "target": "/m/medina"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "cultural or historical building/place"
+    },
+    {
+      "source": "cultural or historical building/place",
+      "target": "/m/moat/water"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "cultural or historical building/place"
+    },
+    {
+      "source": "cultural or historical building/place",
+      "target": "/m/monastery/outdoor"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "cultural (art, education, religion, etc.)"
+    },
+    {
+      "source": "cultural (art, education, religion, etc.)",
+      "target": "/m/mosque/indoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "cultural or historical building/place"
+    },
+    {
+      "source": "cultural or historical building/place",
+      "target": "/m/mosque/outdoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "commercial buildings, shops, markets, cities, and towns"
+    },
+    {
+      "source": "commercial buildings, shops, markets, cities, and towns",
+      "target": "/m/motel"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "mountains, hills, desert, sky"
+    },
+    {
+      "source": "mountains, hills, desert, sky",
+      "target": "/m/mountain"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "water, ice, snow"
+    },
+    {
+      "source": "water, ice, snow",
+      "target": "/m/mountain_snowy"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "mountains, hills, desert, sky"
+    },
+    {
+      "source": "mountains, hills, desert, sky",
+      "target": "/m/mountain_snowy"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "cultural (art, education, religion, etc.)"
+    },
+    {
+      "source": "cultural (art, education, religion, etc.)",
+      "target": "/m/movie_theater/indoor"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "cultural (art, education, religion, etc.)"
+    },
+    {
+      "source": "cultural (art, education, religion, etc.)",
+      "target": "/m/museum/indoor"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "shopping and dining"
+    },
+    {
+      "source": "shopping and dining",
+      "target": "/m/music_store"
+    },
+    {
+      "source": "indoor",
+      "target": "cultural (art, education, religion, etc.)"
+    },
+    {
+      "source": "cultural (art, education, religion, etc.)",
+      "target": "/m/music_store"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "cultural (art, education, religion, etc.)"
+    },
+    {
+      "source": "cultural (art, education, religion, etc.)",
+      "target": "/m/music_studio"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "industrial and construction"
+    },
+    {
+      "source": "industrial and construction",
+      "target": "/n/nuclear_power_plant/outdoor"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "home or hotel"
+    },
+    {
+      "source": "home or hotel",
+      "target": "/n/nursery"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "cultural or historical building/place"
+    },
+    {
+      "source": "cultural or historical building/place",
+      "target": "/o/oast_house"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "cultural or historical building/place"
+    },
+    {
+      "source": "cultural or historical building/place",
+      "target": "/o/observatory/outdoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "water, ice, snow"
+    },
+    {
+      "source": "water, ice, snow",
+      "target": "/o/ocean"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "workplace (office building, factory, lab, etc.)"
+    },
+    {
+      "source": "workplace (office building, factory, lab, etc.)",
+      "target": "/o/office"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "commercial buildings, shops, markets, cities, and towns"
+    },
+    {
+      "source": "commercial buildings, shops, markets, cities, and towns",
+      "target": "/o/office_building"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "industrial and construction"
+    },
+    {
+      "source": "industrial and construction",
+      "target": "/o/oil_refinery/outdoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "industrial and construction"
+    },
+    {
+      "source": "industrial and construction",
+      "target": "/o/oilrig"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "workplace (office building, factory, lab, etc.)"
+    },
+    {
+      "source": "workplace (office building, factory, lab, etc.)",
+      "target": "/o/operating_room"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/o/orchard"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/o/outhouse/outdoor"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/o/outhouse/outdoor"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "houses, cabins, gardens, and farms"
+    },
+    {
+      "source": "houses, cabins, gardens, and farms",
+      "target": "/o/outhouse/outdoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/o/outhouse/outdoor"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/o/outhouse/outdoor"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "houses, cabins, gardens, and farms"
+    },
+    {
+      "source": "houses, cabins, gardens, and farms",
+      "target": "/o/outhouse/outdoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "cultural or historical building/place"
+    },
+    {
+      "source": "cultural or historical building/place",
+      "target": "/p/pagoda"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "cultural or historical building/place"
+    },
+    {
+      "source": "cultural or historical building/place",
+      "target": "/p/palace"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "home or hotel"
+    },
+    {
+      "source": "home or hotel",
+      "target": "/p/pantry"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/p/park"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/p/park"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "sports fields, parks, leisure spaces"
+    },
+    {
+      "source": "sports fields, parks, leisure spaces",
+      "target": "/p/park"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/p/park"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/p/park"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "sports fields, parks, leisure spaces"
+    },
+    {
+      "source": "sports fields, parks, leisure spaces",
+      "target": "/p/park"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "workplace (office building, factory, lab, etc.)"
+    },
+    {
+      "source": "workplace (office building, factory, lab, etc.)",
+      "target": "/p/parking_garage/indoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "transportation (roads, parking, bridges, boats, airports, etc.)"
+    },
+    {
+      "source": "transportation (roads, parking, bridges, boats, airports, etc.)",
+      "target": "/p/parking_garage/outdoor"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "commercial buildings, shops, markets, cities, and towns"
+    },
+    {
+      "source": "commercial buildings, shops, markets, cities, and towns",
+      "target": "/p/parking_garage/outdoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "transportation (roads, parking, bridges, boats, airports, etc.)"
+    },
+    {
+      "source": "transportation (roads, parking, bridges, boats, airports, etc.)",
+      "target": "/p/parking_lot"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "home or hotel"
+    },
+    {
+      "source": "home or hotel",
+      "target": "/p/parlor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/p/pasture"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "houses, cabins, gardens, and farms"
+    },
+    {
+      "source": "houses, cabins, gardens, and farms",
+      "target": "/p/patio"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "sports fields, parks, leisure spaces"
+    },
+    {
+      "source": "sports fields, parks, leisure spaces",
+      "target": "/p/pavilion"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "shopping and dining"
+    },
+    {
+      "source": "shopping and dining",
+      "target": "/p/pharmacy"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "commercial buildings, shops, markets, cities, and towns"
+    },
+    {
+      "source": "commercial buildings, shops, markets, cities, and towns",
+      "target": "/p/phone_booth"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "workplace (office building, factory, lab, etc.)"
+    },
+    {
+      "source": "workplace (office building, factory, lab, etc.)",
+      "target": "/p/physics_laboratory"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/p/picnic_area"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/p/picnic_area"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "sports fields, parks, leisure spaces"
+    },
+    {
+      "source": "sports fields, parks, leisure spaces",
+      "target": "/p/picnic_area"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/p/picnic_area"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/p/picnic_area"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "sports fields, parks, leisure spaces"
+    },
+    {
+      "source": "sports fields, parks, leisure spaces",
+      "target": "/p/picnic_area"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "transportation (vehicle interiors, stations, etc.)"
+    },
+    {
+      "source": "transportation (vehicle interiors, stations, etc.)",
+      "target": "/p/pilothouse/indoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "cultural or historical building/place"
+    },
+    {
+      "source": "cultural or historical building/place",
+      "target": "/p/planetarium/outdoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/p/playground"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/p/playground"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "sports fields, parks, leisure spaces"
+    },
+    {
+      "source": "sports fields, parks, leisure spaces",
+      "target": "/p/playground"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/p/playground"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/p/playground"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "sports fields, parks, leisure spaces"
+    },
+    {
+      "source": "sports fields, parks, leisure spaces",
+      "target": "/p/playground"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "home or hotel"
+    },
+    {
+      "source": "home or hotel",
+      "target": "/p/playroom"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "cultural or historical building/place"
+    },
+    {
+      "source": "cultural or historical building/place",
+      "target": "/p/plaza"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "commercial buildings, shops, markets, cities, and towns"
+    },
+    {
+      "source": "commercial buildings, shops, markets, cities, and towns",
+      "target": "/p/plaza"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "cultural (art, education, religion, etc.)"
+    },
+    {
+      "source": "cultural (art, education, religion, etc.)",
+      "target": "/p/podium/indoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "cultural or historical building/place"
+    },
+    {
+      "source": "cultural or historical building/place",
+      "target": "/p/podium/outdoor"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "sports fields, parks, leisure spaces"
+    },
+    {
+      "source": "sports fields, parks, leisure spaces",
+      "target": "/p/podium/outdoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "water, ice, snow"
+    },
+    {
+      "source": "water, ice, snow",
+      "target": "/p/pond"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "sports and leisure"
+    },
+    {
+      "source": "sports and leisure",
+      "target": "/p/poolroom/establishment"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "home or hotel"
+    },
+    {
+      "source": "home or hotel",
+      "target": "/p/poolroom/home"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "industrial and construction"
+    },
+    {
+      "source": "industrial and construction",
+      "target": "/p/power_plant/outdoor"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "transportation (vehicle interiors, stations, etc.)"
+    },
+    {
+      "source": "transportation (vehicle interiors, stations, etc.)",
+      "target": "/p/promenade_deck"
+    },
+    {
+      "source": "indoor",
+      "target": "transportation (roads, parking, bridges, boats, airports, etc.)"
+    },
+    {
+      "source": "transportation (roads, parking, bridges, boats, airports, etc.)",
+      "target": "/p/promenade_deck"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "transportation (vehicle interiors, stations, etc.)"
+    },
+    {
+      "source": "transportation (vehicle interiors, stations, etc.)",
+      "target": "/p/promenade_deck"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "transportation (roads, parking, bridges, boats, airports, etc.)"
+    },
+    {
+      "source": "transportation (roads, parking, bridges, boats, airports, etc.)",
+      "target": "/p/promenade_deck"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "shopping and dining"
+    },
+    {
+      "source": "shopping and dining",
+      "target": "/p/pub/indoor"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "cultural (art, education, religion, etc.)"
+    },
+    {
+      "source": "cultural (art, education, religion, etc.)",
+      "target": "/p/pulpit"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/p/putting_green"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/p/putting_green"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "sports fields, parks, leisure spaces"
+    },
+    {
+      "source": "sports fields, parks, leisure spaces",
+      "target": "/p/putting_green"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/p/putting_green"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/p/putting_green"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "sports fields, parks, leisure spaces"
+    },
+    {
+      "source": "sports fields, parks, leisure spaces",
+      "target": "/p/putting_green"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "sports fields, parks, leisure spaces"
+    },
+    {
+      "source": "sports fields, parks, leisure spaces",
+      "target": "/r/racecourse"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "sports fields, parks, leisure spaces"
+    },
+    {
+      "source": "sports fields, parks, leisure spaces",
+      "target": "/r/raceway"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "water, ice, snow"
+    },
+    {
+      "source": "water, ice, snow",
+      "target": "/r/raft"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/r/raft"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "transportation (roads, parking, bridges, boats, airports, etc.)"
+    },
+    {
+      "source": "transportation (roads, parking, bridges, boats, airports, etc.)",
+      "target": "/r/railroad_track"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/r/rainforest"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "workplace (office building, factory, lab, etc.)"
+    },
+    {
+      "source": "workplace (office building, factory, lab, etc.)",
+      "target": "/r/reception"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "home or hotel"
+    },
+    {
+      "source": "home or hotel",
+      "target": "/r/recreation_room"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "houses, cabins, gardens, and farms"
+    },
+    {
+      "source": "houses, cabins, gardens, and farms",
+      "target": "/r/residential_neighborhood"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "commercial buildings, shops, markets, cities, and towns"
+    },
+    {
+      "source": "commercial buildings, shops, markets, cities, and towns",
+      "target": "/r/residential_neighborhood"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "shopping and dining"
+    },
+    {
+      "source": "shopping and dining",
+      "target": "/r/restaurant"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "shopping and dining"
+    },
+    {
+      "source": "shopping and dining",
+      "target": "/r/restaurant_kitchen"
+    },
+    {
+      "source": "indoor",
+      "target": "home or hotel"
+    },
+    {
+      "source": "home or hotel",
+      "target": "/r/restaurant_kitchen"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "commercial buildings, shops, markets, cities, and towns"
+    },
+    {
+      "source": "commercial buildings, shops, markets, cities, and towns",
+      "target": "/r/restaurant_patio"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/r/rice_paddy"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/r/rice_paddy"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "houses, cabins, gardens, and farms"
+    },
+    {
+      "source": "houses, cabins, gardens, and farms",
+      "target": "/r/rice_paddy"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/r/rice_paddy"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/r/rice_paddy"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "houses, cabins, gardens, and farms"
+    },
+    {
+      "source": "houses, cabins, gardens, and farms",
+      "target": "/r/rice_paddy"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "sports and leisure"
+    },
+    {
+      "source": "sports and leisure",
+      "target": "/r/riding_arena"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "water, ice, snow"
+    },
+    {
+      "source": "water, ice, snow",
+      "target": "/r/river"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "mountains, hills, desert, sky"
+    },
+    {
+      "source": "mountains, hills, desert, sky",
+      "target": "/r/rock_arch"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/r/rope_bridge"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "sports fields, parks, leisure spaces"
+    },
+    {
+      "source": "sports fields, parks, leisure spaces",
+      "target": "/r/rope_bridge"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/r/rope_bridge"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "sports fields, parks, leisure spaces"
+    },
+    {
+      "source": "sports fields, parks, leisure spaces",
+      "target": "/r/rope_bridge"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/r/ruin"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "cultural or historical building/place"
+    },
+    {
+      "source": "cultural or historical building/place",
+      "target": "/r/ruin"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/r/ruin"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "cultural or historical building/place"
+    },
+    {
+      "source": "cultural or historical building/place",
+      "target": "/r/ruin"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "transportation (roads, parking, bridges, boats, airports, etc.)"
+    },
+    {
+      "source": "transportation (roads, parking, bridges, boats, airports, etc.)",
+      "target": "/r/runway"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "water, ice, snow"
+    },
+    {
+      "source": "water, ice, snow",
+      "target": "/s/sandbar"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "sports fields, parks, leisure spaces"
+    },
+    {
+      "source": "sports fields, parks, leisure spaces",
+      "target": "/s/sandbox"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "sports and leisure"
+    },
+    {
+      "source": "sports and leisure",
+      "target": "/s/sauna"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "commercial buildings, shops, markets, cities, and towns"
+    },
+    {
+      "source": "commercial buildings, shops, markets, cities, and towns",
+      "target": "/s/schoolhouse"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "water, ice, snow"
+    },
+    {
+      "source": "water, ice, snow",
+      "target": "/s/sea_cliff"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "workplace (office building, factory, lab, etc.)"
+    },
+    {
+      "source": "workplace (office building, factory, lab, etc.)",
+      "target": "/s/server_room"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "houses, cabins, gardens, and farms"
+    },
+    {
+      "source": "houses, cabins, gardens, and farms",
+      "target": "/s/shed"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "shopping and dining"
+    },
+    {
+      "source": "shopping and dining",
+      "target": "/s/shoe_shop"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "commercial buildings, shops, markets, cities, and towns"
+    },
+    {
+      "source": "commercial buildings, shops, markets, cities, and towns",
+      "target": "/s/shopfront"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "shopping and dining"
+    },
+    {
+      "source": "shopping and dining",
+      "target": "/s/shopping_mall/indoor"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "home or hotel"
+    },
+    {
+      "source": "home or hotel",
+      "target": "/s/shower"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "sports fields, parks, leisure spaces"
+    },
+    {
+      "source": "sports fields, parks, leisure spaces",
+      "target": "/s/skatepark"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "houses, cabins, gardens, and farms"
+    },
+    {
+      "source": "houses, cabins, gardens, and farms",
+      "target": "/s/ski_lodge"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "houses, cabins, gardens, and farms"
+    },
+    {
+      "source": "houses, cabins, gardens, and farms",
+      "target": "/s/ski_resort"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "water, ice, snow"
+    },
+    {
+      "source": "water, ice, snow",
+      "target": "/s/ski_slope"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/s/ski_slope"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "sports fields, parks, leisure spaces"
+    },
+    {
+      "source": "sports fields, parks, leisure spaces",
+      "target": "/s/ski_slope"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "water, ice, snow"
+    },
+    {
+      "source": "water, ice, snow",
+      "target": "/s/ski_slope"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/s/ski_slope"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "sports fields, parks, leisure spaces"
+    },
+    {
+      "source": "sports fields, parks, leisure spaces",
+      "target": "/s/ski_slope"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "mountains, hills, desert, sky"
+    },
+    {
+      "source": "mountains, hills, desert, sky",
+      "target": "/s/sky"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "commercial buildings, shops, markets, cities, and towns"
+    },
+    {
+      "source": "commercial buildings, shops, markets, cities, and towns",
+      "target": "/s/skyscraper"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "commercial buildings, shops, markets, cities, and towns"
+    },
+    {
+      "source": "commercial buildings, shops, markets, cities, and towns",
+      "target": "/s/slum"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "water, ice, snow"
+    },
+    {
+      "source": "water, ice, snow",
+      "target": "/s/snowfield"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "sports and leisure"
+    },
+    {
+      "source": "sports and leisure",
+      "target": "/s/squash_court"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "workplace (office building, factory, lab, etc.)"
+    },
+    {
+      "source": "workplace (office building, factory, lab, etc.)",
+      "target": "/s/stable"
+    },
+    {
+      "source": "indoor",
+      "target": "home or hotel"
+    },
+    {
+      "source": "home or hotel",
+      "target": "/s/stable"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "sports fields, parks, leisure spaces"
+    },
+    {
+      "source": "sports fields, parks, leisure spaces",
+      "target": "/s/stadium/baseball"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "sports fields, parks, leisure spaces"
+    },
+    {
+      "source": "sports fields, parks, leisure spaces",
+      "target": "/s/stadium/football"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "cultural (art, education, religion, etc.)"
+    },
+    {
+      "source": "cultural (art, education, religion, etc.)",
+      "target": "/s/stage/indoor"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "workplace (office building, factory, lab, etc.)"
+    },
+    {
+      "source": "workplace (office building, factory, lab, etc.)",
+      "target": "/s/staircase"
+    },
+    {
+      "source": "indoor",
+      "target": "home or hotel"
+    },
+    {
+      "source": "home or hotel",
+      "target": "/s/staircase"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "commercial buildings, shops, markets, cities, and towns"
+    },
+    {
+      "source": "commercial buildings, shops, markets, cities, and towns",
+      "target": "/s/street"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "transportation (vehicle interiors, stations, etc.)"
+    },
+    {
+      "source": "transportation (vehicle interiors, stations, etc.)",
+      "target": "/s/subway_interior"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "transportation (vehicle interiors, stations, etc.)"
+    },
+    {
+      "source": "transportation (vehicle interiors, stations, etc.)",
+      "target": "/s/subway_station/platform"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "shopping and dining"
+    },
+    {
+      "source": "shopping and dining",
+      "target": "/s/supermarket"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "shopping and dining"
+    },
+    {
+      "source": "shopping and dining",
+      "target": "/s/sushi_bar"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "water, ice, snow"
+    },
+    {
+      "source": "water, ice, snow",
+      "target": "/s/swamp"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/s/swamp"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "sports and leisure"
+    },
+    {
+      "source": "sports and leisure",
+      "target": "/s/swimming_pool/indoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "sports fields, parks, leisure spaces"
+    },
+    {
+      "source": "sports fields, parks, leisure spaces",
+      "target": "/s/swimming_pool/outdoor"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "cultural (art, education, religion, etc.)"
+    },
+    {
+      "source": "cultural (art, education, religion, etc.)",
+      "target": "/s/synagogue/indoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "cultural or historical building/place"
+    },
+    {
+      "source": "cultural or historical building/place",
+      "target": "/s/synagogue/outdoor"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "cultural (art, education, religion, etc.)"
+    },
+    {
+      "source": "cultural (art, education, religion, etc.)",
+      "target": "/t/television_studio"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "cultural or historical building/place"
+    },
+    {
+      "source": "cultural or historical building/place",
+      "target": "/t/temple/east_asia"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "cultural or historical building/place"
+    },
+    {
+      "source": "cultural or historical building/place",
+      "target": "/t/temple/south_asia"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "sports and leisure"
+    },
+    {
+      "source": "sports and leisure",
+      "target": "/t/tennis_court/indoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "sports fields, parks, leisure spaces"
+    },
+    {
+      "source": "sports fields, parks, leisure spaces",
+      "target": "/t/tennis_court/outdoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/t/tent/outdoor"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "sports fields, parks, leisure spaces"
+    },
+    {
+      "source": "sports fields, parks, leisure spaces",
+      "target": "/t/tent/outdoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/t/tent/outdoor"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "sports fields, parks, leisure spaces"
+    },
+    {
+      "source": "sports fields, parks, leisure spaces",
+      "target": "/t/tent/outdoor"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "cultural (art, education, religion, etc.)"
+    },
+    {
+      "source": "cultural (art, education, religion, etc.)",
+      "target": "/t/theater/indoor_procenium"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "cultural (art, education, religion, etc.)"
+    },
+    {
+      "source": "cultural (art, education, religion, etc.)",
+      "target": "/t/theater/indoor_seats"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "shopping and dining"
+    },
+    {
+      "source": "shopping and dining",
+      "target": "/t/thriftshop"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "cultural (art, education, religion, etc.)"
+    },
+    {
+      "source": "cultural (art, education, religion, etc.)",
+      "target": "/t/throne_room"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "shopping and dining"
+    },
+    {
+      "source": "shopping and dining",
+      "target": "/t/ticket_booth"
+    },
+    {
+      "source": "indoor",
+      "target": "workplace (office building, factory, lab, etc.)"
+    },
+    {
+      "source": "workplace (office building, factory, lab, etc.)",
+      "target": "/t/ticket_booth"
+    },
+    {
+      "source": "indoor",
+      "target": "cultural (art, education, religion, etc.)"
+    },
+    {
+      "source": "cultural (art, education, religion, etc.)",
+      "target": "/t/ticket_booth"
+    },
+    {
+      "source": "indoor",
+      "target": "commercial buildings, shops, markets, cities, and towns"
+    },
+    {
+      "source": "commercial buildings, shops, markets, cities, and towns",
+      "target": "/t/ticket_booth"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "shopping and dining"
+    },
+    {
+      "source": "shopping and dining",
+      "target": "/t/ticket_booth"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "workplace (office building, factory, lab, etc.)"
+    },
+    {
+      "source": "workplace (office building, factory, lab, etc.)",
+      "target": "/t/ticket_booth"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "cultural (art, education, religion, etc.)"
+    },
+    {
+      "source": "cultural (art, education, religion, etc.)",
+      "target": "/t/ticket_booth"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "commercial buildings, shops, markets, cities, and towns"
+    },
+    {
+      "source": "commercial buildings, shops, markets, cities, and towns",
+      "target": "/t/ticket_booth"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "transportation (roads, parking, bridges, boats, airports, etc.)"
+    },
+    {
+      "source": "transportation (roads, parking, bridges, boats, airports, etc.)",
+      "target": "/t/toll_plaza"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/t/topiary_garden"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/t/topiary_garden"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "houses, cabins, gardens, and farms"
+    },
+    {
+      "source": "houses, cabins, gardens, and farms",
+      "target": "/t/topiary_garden"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/t/topiary_garden"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/t/topiary_garden"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "houses, cabins, gardens, and farms"
+    },
+    {
+      "source": "houses, cabins, gardens, and farms",
+      "target": "/t/topiary_garden"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "cultural or historical building/place"
+    },
+    {
+      "source": "cultural or historical building/place",
+      "target": "/t/tower"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "shopping and dining"
+    },
+    {
+      "source": "shopping and dining",
+      "target": "/t/toyshop"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "sports fields, parks, leisure spaces"
+    },
+    {
+      "source": "sports fields, parks, leisure spaces",
+      "target": "/t/track/outdoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "transportation (roads, parking, bridges, boats, airports, etc.)"
+    },
+    {
+      "source": "transportation (roads, parking, bridges, boats, airports, etc.)",
+      "target": "/t/train_railway"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "transportation (vehicle interiors, stations, etc.)"
+    },
+    {
+      "source": "transportation (vehicle interiors, stations, etc.)",
+      "target": "/t/train_station/platform"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/t/tree_farm"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/t/tree_house"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/t/tree_house"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "sports fields, parks, leisure spaces"
+    },
+    {
+      "source": "sports fields, parks, leisure spaces",
+      "target": "/t/tree_house"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "houses, cabins, gardens, and farms"
+    },
+    {
+      "source": "houses, cabins, gardens, and farms",
+      "target": "/t/tree_house"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/t/tree_house"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/t/tree_house"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "sports fields, parks, leisure spaces"
+    },
+    {
+      "source": "sports fields, parks, leisure spaces",
+      "target": "/t/tree_house"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "houses, cabins, gardens, and farms"
+    },
+    {
+      "source": "houses, cabins, gardens, and farms",
+      "target": "/t/tree_house"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/t/trench"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "industrial and construction"
+    },
+    {
+      "source": "industrial and construction",
+      "target": "/t/trench"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/t/trench"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "industrial and construction"
+    },
+    {
+      "source": "industrial and construction",
+      "target": "/t/trench"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "water, ice, snow"
+    },
+    {
+      "source": "water, ice, snow",
+      "target": "/u/underwater/coral_reef"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "home or hotel"
+    },
+    {
+      "source": "home or hotel",
+      "target": "/u/utility_room"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "mountains, hills, desert, sky"
+    },
+    {
+      "source": "mountains, hills, desert, sky",
+      "target": "/v/valley"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "transportation (vehicle interiors, stations, etc.)"
+    },
+    {
+      "source": "transportation (vehicle interiors, stations, etc.)",
+      "target": "/v/van_interior"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/v/vegetable_garden"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/v/vegetable_garden"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "houses, cabins, gardens, and farms"
+    },
+    {
+      "source": "houses, cabins, gardens, and farms",
+      "target": "/v/vegetable_garden"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/v/vegetable_garden"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/v/vegetable_garden"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "houses, cabins, gardens, and farms"
+    },
+    {
+      "source": "houses, cabins, gardens, and farms",
+      "target": "/v/vegetable_garden"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "houses, cabins, gardens, and farms"
+    },
+    {
+      "source": "houses, cabins, gardens, and farms",
+      "target": "/v/veranda"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "workplace (office building, factory, lab, etc.)"
+    },
+    {
+      "source": "workplace (office building, factory, lab, etc.)",
+      "target": "/v/veterinarians_office"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/v/viaduct"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "cultural or historical building/place"
+    },
+    {
+      "source": "cultural or historical building/place",
+      "target": "/v/viaduct"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/v/viaduct"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "cultural or historical building/place"
+    },
+    {
+      "source": "cultural or historical building/place",
+      "target": "/v/viaduct"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "shopping and dining"
+    },
+    {
+      "source": "shopping and dining",
+      "target": "/v/videostore"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "commercial buildings, shops, markets, cities, and towns"
+    },
+    {
+      "source": "commercial buildings, shops, markets, cities, and towns",
+      "target": "/v/village"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/v/vineyard"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/v/vineyard"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "houses, cabins, gardens, and farms"
+    },
+    {
+      "source": "houses, cabins, gardens, and farms",
+      "target": "/v/vineyard"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/v/vineyard"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/v/vineyard"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "houses, cabins, gardens, and farms"
+    },
+    {
+      "source": "houses, cabins, gardens, and farms",
+      "target": "/v/vineyard"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "mountains, hills, desert, sky"
+    },
+    {
+      "source": "mountains, hills, desert, sky",
+      "target": "/v/volcano"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "sports and leisure"
+    },
+    {
+      "source": "sports and leisure",
+      "target": "/v/volleyball_court/indoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "sports fields, parks, leisure spaces"
+    },
+    {
+      "source": "sports fields, parks, leisure spaces",
+      "target": "/v/volleyball_court/outdoor"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "workplace (office building, factory, lab, etc.)"
+    },
+    {
+      "source": "workplace (office building, factory, lab, etc.)",
+      "target": "/w/waiting_room"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "workplace (office building, factory, lab, etc.)"
+    },
+    {
+      "source": "workplace (office building, factory, lab, etc.)",
+      "target": "/w/warehouse/indoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "industrial and construction"
+    },
+    {
+      "source": "industrial and construction",
+      "target": "/w/water_tower"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "water, ice, snow"
+    },
+    {
+      "source": "water, ice, snow",
+      "target": "/w/waterfall/block"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "water, ice, snow"
+    },
+    {
+      "source": "water, ice, snow",
+      "target": "/w/waterfall/fan"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "water, ice, snow"
+    },
+    {
+      "source": "water, ice, snow",
+      "target": "/w/waterfall/plunge"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "water, ice, snow"
+    },
+    {
+      "source": "water, ice, snow",
+      "target": "/w/watering_hole"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "water, ice, snow"
+    },
+    {
+      "source": "water, ice, snow",
+      "target": "/w/wave"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "home or hotel"
+    },
+    {
+      "source": "home or hotel",
+      "target": "/w/wet_bar"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/w/wheat_field"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/w/wind_farm"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/w/wind_farm"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "industrial and construction"
+    },
+    {
+      "source": "industrial and construction",
+      "target": "/w/wind_farm"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/w/wind_farm"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/w/wind_farm"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "industrial and construction"
+    },
+    {
+      "source": "industrial and construction",
+      "target": "/w/wind_farm"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "cultural or historical building/place"
+    },
+    {
+      "source": "cultural or historical building/place",
+      "target": "/w/windmill"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "industrial and construction"
+    },
+    {
+      "source": "industrial and construction",
+      "target": "/w/windmill"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "commercial buildings, shops, markets, cities, and towns"
+    },
+    {
+      "source": "commercial buildings, shops, markets, cities, and towns",
+      "target": "/w/windmill"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "shopping and dining"
+    },
+    {
+      "source": "shopping and dining",
+      "target": "/w/wine_cellar/barrel_storage"
+    },
+    {
+      "source": "indoor",
+      "target": "home or hotel"
+    },
+    {
+      "source": "home or hotel",
+      "target": "/w/wine_cellar/barrel_storage"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "shopping and dining"
+    },
+    {
+      "source": "shopping and dining",
+      "target": "/w/wine_cellar/bottle_storage"
+    },
+    {
+      "source": "indoor",
+      "target": "home or hotel"
+    },
+    {
+      "source": "home or hotel",
+      "target": "/w/wine_cellar/bottle_storage"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "sports and leisure"
+    },
+    {
+      "source": "sports and leisure",
+      "target": "/w/wrestling_ring/indoor"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, natural"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/y/yard"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/y/yard"
+    },
+    {
+      "source": "outdoor, natural",
+      "target": "houses, cabins, gardens, and farms"
+    },
+    {
+      "source": "houses, cabins, gardens, and farms",
+      "target": "/y/yard"
+    },
+    {
+      "source": "root",
+      "target": "outdoor, man-made"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "forest, field, jungle"
+    },
+    {
+      "source": "forest, field, jungle",
+      "target": "/y/yard"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "man-made elements"
+    },
+    {
+      "source": "man-made elements",
+      "target": "/y/yard"
+    },
+    {
+      "source": "outdoor, man-made",
+      "target": "houses, cabins, gardens, and farms"
+    },
+    {
+      "source": "houses, cabins, gardens, and farms",
+      "target": "/y/yard"
+    },
+    {
+      "source": "root",
+      "target": "indoor"
+    },
+    {
+      "source": "indoor",
+      "target": "home or hotel"
+    },
+    {
+      "source": "home or hotel",
+      "target": "/y/youth_hostel"
+    }
+  ]
+}

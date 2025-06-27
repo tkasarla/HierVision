@@ -1,0 +1,18 @@
+{
+    "golgi": "Golgi apparatus",
+    "nucleolus_gc": "Nucleolus",
+    "centrosome": "Centrosome",
+    "chromatin": "Nuclear body",
+    "membrane": "Plasma membrane",
+    "cytoplasmic": "Cytoplasm/cytosol",
+    "nucleoplasm": "Nucleoplasm",
+    "cell_contact": "Cell juction",
+    "nucleolus_fc_dfc": "Nucleolus",
+    "er": "Endoplasmic reticulum",
+    "cytoskeleton": "Cytoskeleton",
+    "focal_adhesions": "Focal adhesion",
+    "nuclear_membrane": "Nuclear membrane",
+    "vesicles": "Vesicle",
+    "nuclear_punctae": "Nuclear speck",
+    "mitochondria": "Mitochondria"
+}
