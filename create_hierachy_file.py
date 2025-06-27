@@ -11,6 +11,7 @@ import numpy as np
 import pandas as pd
 import plotly.graph_objects as go
 import torch
+from tqdm import tqdm
 from collections import defaultdict
 from loguru import logger
 from nltk.corpus import wordnet as wn
@@ -27,8 +28,7 @@ class HierarchyFileCreator:
     # Supported datasets
     datasets = {
         "ade20k_coarse_to_fine", # semantic segmentation
-        "ade20k_scene_cls-train", # semantic segmentation
-        "ade20k_scene_cls-val", # semantic segmentation
+        "ade20k_scene_cls", # semantic segmentation
         "ade20k_wordnet", # semantic segmentation
         "babel", # action recognition
         "biotrove-balanced", # image classification
@@ -148,6 +148,35 @@ class HierarchyFileCreator:
         logger.info(f"Created graph for {self.dataset_name} with {G.number_of_nodes()} nodes.")
         return G
     
+    # def _ade20k_scene_cls(self):
+    #     """
+    #     Creates a hierarchy graph for the ADE20K dataset for scene classification tasks.
+    #     The hierarchy is inferred from the "scene" attribute in the annotations.
+        
+    #     Args:
+    #         split (str): Split name, either "training" or "validation".
+    #     Returns:
+    #         G (nx.DiGraph): Directed graph representing the hierarchy.
+    #     """
+    #     annotation_jsons = glob(os.path.join(self.dataset_path, "images", "**", "*.json"), recursive=True)
+    #     G = nx.DiGraph()
+    #     for json_file in tqdm(annotation_jsons):
+    #         with open(json_file, 'r', encoding="ISO-8859-1", errors="ignore") as f:
+    #             content = f.read()
+            
+    #         content = content.encode("utf-8", errors="ignore")
+    #         scene_chain = json.loads(content)["annotation"]["scene"]
+    #         for i in range(len(scene_chain) - 1):
+    #             scene = scene_chain[i]
+    #             if scene not in G:
+    #                 G.add_node(scene, label=scene)
+    #             if scene_chain[i + 1] not in G:
+    #                 G.add_node(scene_chain[i + 1], label=scene_chain[i + 1])
+    #             if not G.has_edge(scene, scene_chain[i + 1]):
+    #                 G.add_edge(scene, scene_chain[i + 1])
+    #     logger.info(f"Created graph for {self.dataset_name} with {G.number_of_nodes()} nodes.")
+    #     return G
+    
     def _ade20k_scene_cls(self, split: str):
         """
         Creates a hierarchy graph for the ADE20K dataset for scene classification tasks.
@@ -185,6 +214,33 @@ class HierarchyFileCreator:
         Returns:
             G (nx.DiGraph): Directed graph representing the hierarchy.
         """
+        # annotation_jsons = glob(os.path.join(self.dataset_path, "images", "**", "*.json"), recursive=True)
+        # G = nx.DiGraph()
+        # for json_file in tqdm(annotation_jsons):
+        #     with open(json_file, 'r', encoding="ISO-8859-1", errors="ignore") as f:
+        #         content = f.read()
+            
+        #     content = content.encode("utf-8", errors="ignore")
+        #     objects = json.loads(content)["annotation"]["object"]
+        #     for obj in objects:
+        #         hypernyms = obj["hypernym"][::-1]
+        #         if len(hypernyms) == 0:
+        #             continue
+        #         node = hypernyms[-1]  # the last hypernym is the object name
+        #         node_idx = obj["name_ndx"]
+        #         if node_idx not in G:
+        #             G.add_node(node_idx, label=node)
+                    
+        #         for i in range(len(hypernyms) - 1):
+        #             if hypernyms[i] not in G:
+        #                 G.add_node(hypernyms[i], label=hypernyms[i])
+        #             if hypernyms[i + 1] not in G:
+        #                 G.add_node(hypernyms[i + 1], label=hypernyms[i + 1])
+        #             if not G.has_edge(hypernyms[i], hypernyms[i + 1]):
+        #                 G.add_edge(hypernyms[i], hypernyms[i + 1])
+
+        # logger.info(f"Created graph for {self.dataset_name} with {G.number_of_nodes()} nodes.")
+        # return G
         ds_metadata = pd.read_pickle(os.path.join(self.dataset_path, "index_ade20k.pkl"))
 
         chains = ds_metadata["wordnet_synset"]
@@ -257,59 +313,75 @@ class HierarchyFileCreator:
         logger.info(f"Created graph for {self.dataset_name} with {G.number_of_nodes()} nodes.")
         return G
 
-    def _imagenet21k(self):
+    def _imagenet21k(self, mode="wordnet"):
         """
         Creates a hierarchy graph for the ImageNet-21K dataset.
         The hierarchy is constructed based on the WordNet synsets of the ImageNet classes.
 
         Args:
-            None
+            mode (str): Mode for creating the hierarchy. ["wordnet", "imagenet21k-p"]
         Returns:
             G (nx.DiGraph): Directed graph representing the hierarchy.
         """
-        # child_to_parent, id_to_name = self._get_imagenet21k_mapping()
+        def get_name(class_id, id_to_name):
+            if class_id in id_to_name:
+                return id_to_name[class_id]
+            else:
+                class_idx = int(class_id[1:])  # Convert to integer ID
+                return wn.synset_from_pos_and_offset('n', class_idx).lemma_names()[0]
 
-        # G = nx.DiGraph()
-        # for child, parent in child_to_parent.items():
-        #     child_name = id_to_name[child]
-        #     parent_name = id_to_name[parent]
-        #     G.add_node(child, label=child_name)
-        #     G.add_node(parent, label=parent_name)
-        #     if not G.has_edge(parent, child):
-        #         G.add_edge(parent, child)
-        class_list = self._get_imagenet21k_mapping()
-        class_list = [int(class_id[1:]) for class_id in class_list]  # Convert to integer IDs
-        G = self._apply_wordnet_hierarchy(entity_ids=class_list)
+        child_to_parent, id_to_name, class_list = self._get_imagenet21k_mapping()
+        if mode == "wordnet":
+            class_list = [int(class_id[1:]) for class_id in class_list]  # Convert to integer IDs
+            G = self._apply_wordnet_hierarchy(entity_ids=class_list)
+        else:
+            G = nx.DiGraph()
+            for child, parent in child_to_parent.items():
+                child_name = get_name(child, id_to_name)
+                parent_name = get_name(parent, id_to_name)
+                G.add_node(child, label=child_name)
+                G.add_node(parent, label=parent_name)
+                if not G.has_edge(parent, child):
+                    G.add_edge(parent, child)
 
         logger.info(f"Created graph for {self.dataset_name} with {G.number_of_nodes()} nodes.")
         return G
 
-    def _imagenetood(self):
+    def _imagenetood(self, mode="wordnet"):
         """
         Creates a hierarchy graph for the ImageNet-OOD dataset.
         The hierarchy is constructed based on the WordNet synsets of the ImageNet classes.
 
         Args:
-            None
+            mode (str): Mode for creating the hierarchy. ["wordnet", "imagenet21k-p"]
         Returns:
             G (nx.DiGraph): Directed graph representing the hierarchy.
         """
+        def get_name(class_id, id_to_name):
+            if class_id in id_to_name:
+                return id_to_name[class_id]
+            else:
+                class_idx = int(class_id[1:])  # Convert to integer ID
+                return wn.synset_from_pos_and_offset('n', class_idx).lemma_names()[0]
         images = glob(os.path.join(self.dataset_path, "*.JPEG"))
-        class_ids = set((int(os.path.basename(img).split("_")[0][1:]) for img in images))
-        # imagenet_classes = self._imagenet_id_to_name()
-        # child_to_parent, id_to_name = self._get_imagenet21k_mapping()
+        class_ids = set((os.path.basename(img).split("_")[0] for img in images))
+        if mode == "wordnet":
+            class_ids = {int(class_id[1:]) for class_id in class_ids}  # Convert to integer IDs
+            G = self._apply_wordnet_hierarchy(entity_ids=class_ids)
+        else:
+            child_to_parent, id_to_name, _ = self._get_imagenet21k_mapping()
 
-        # G = nx.DiGraph()
-        # for class_id in class_ids:
-        #     child_name = id_to_name.get(class_id, imagenet_classes[class_id])
-        #     G.add_node(class_id, label=child_name)
+            G = nx.DiGraph()
+            for class_id in class_ids:
+                child_name = get_name(class_id, id_to_name)
+                G.add_node(class_id, label=child_name)
 
-        #     if class_id in child_to_parent:
-        #         parent_name = id_to_name[child_to_parent[class_id]]
-        #         G.add_node(parent_name, label=parent_name)
-        #         if not G.has_edge(parent_name, class_id):
-        #             G.add_edge(parent_name, class_id)
-        G = self._apply_wordnet_hierarchy(entity_ids=class_ids)
+                if class_id in child_to_parent:
+                    parent_id = child_to_parent[class_id]
+                    parent_name = get_name(parent_id, id_to_name)
+                    G.add_node(parent_id, label=parent_name)
+                    if not G.has_edge(parent_id, class_id):
+                        G.add_edge(parent_id, class_id)
         logger.info(f"Created WordNet graph for {self.dataset_name} with {G.number_of_nodes()} nodes.")
         return G
 
@@ -513,12 +585,11 @@ class HierarchyFileCreator:
             class_list (list): List of ImageNet-21K class IDs.
         """
         class_mapping = torch.load(os.path.join("datasets", "imagenet21k_miil_tree.pth"), map_location="cpu", weights_only=False)
-        return class_mapping["class_list"]
-        # child_to_parent = class_mapping["child_2_parent"]
-        # id_to_name = class_mapping["class_description"]
+        child_to_parent = class_mapping["child_2_parent"]
+        id_to_name = class_mapping["class_description"]
 
-        # return child_to_parent, id_to_name
-    
+        return child_to_parent, id_to_name, class_mapping["class_list"]
+
     def _imagenet_id_to_name(self):
         """
         Loads the ImageNet class index mapping from a JSON file.
@@ -884,10 +955,8 @@ class HierarchyFileCreator:
                 logger.info("Creating hierarchy for ADE20K using coarse-to-fine.")
                 G = self._ade20k_coarse_to_fine()
             elif "scene_cls" in self.dataset_name:
-                split = self.dataset_name.split("-")[-1]
-                split = "training" if split == "train" else "validation"
-                logger.info(f"Creating hierarchy for ADE20K scene classification ({split}).")
-                G = self._ade20k_scene_cls(split)
+                logger.info(f"Creating hierarchy for ADE20K scene classification.")
+                G = self._ade20k_scene_cls()
         elif self.dataset_name == "babel":
             raise NotImplementedError("Babel hierarchy creation is not implemented yet.")
             # G = self._babel()
