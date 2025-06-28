@@ -3,17 +3,33 @@ import networkx as nx
 import plotly.graph_objects as go
 
 
-def load_graph_from_file(file_path: str) -> nx.DiGraph:
+def load_graph_from_file(file_path: str, throw_error=False) -> nx.DiGraph:
     with open(file_path, "r") as json_file:
         graph_dict = json.load(json_file)
-    #search for root node
-    root_name =  'root'  
-    idx = [root_name == i['label'].lower() for i in graph_dict["nodes"]].index(True)
-    root_id = graph_dict["nodes"][idx]["id"]
 
-    graph = nx.node_link_graph(graph_dict)
+    # Create a directed graph
+    G = nx.DiGraph()
 
-    return graph,root_id
+    # Add nodes
+    for node in graph_dict["nodes"]:
+        G.add_node(node["id"], label=node["label"])
+
+    # Add edges
+    for link in graph_dict["links"]:
+        G.add_edge(link["source"], link["target"])
+
+    
+    root_id = [node for node, degree in G.in_degree() if degree == 0]
+
+    if throw_error and len(root_id) != 1:
+        raise ValueError(f"There should be exactly one root node in the hierarchy. Found {len(root_id)}")
+    else:
+        if any([isinstance(s, str) for s in root_id]):
+            root_id = root_id[0]  # If root_id is a list with one string, take that string
+        else:
+            root_id = max(root_id)
+
+    return G, root_id
 
 # below code from hulikalruthu
 

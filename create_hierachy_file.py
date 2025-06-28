@@ -112,8 +112,7 @@ class HierarchyFileCreator:
             for obj in objects:
                 obj_id = obj["id"]
                 node = obj["raw_name"]
-                if node == "root":
-                    node = node + " (entity)" # to avoid conflicts with the root node
+                node = self._check_root_ambiguity(node, self._root_label)
                 node_id = obj["name_ndx"]
                 local_to_global_ids[obj_id] = node_id
                 id_to_name[node_id] = node
@@ -132,6 +131,7 @@ class HierarchyFileCreator:
                         parent_id != node_id):  # Prevent self-loops
                         
                         parent = id_to_name[parent_id]
+                        parent = self._check_root_ambiguity(parent, self._root_label)
                         # Fix 2: Check parent_id instead of parent string
                         if parent_id not in G:
                             G.add_node(parent_id, label=parent)
@@ -339,6 +339,8 @@ class HierarchyFileCreator:
             for child, parent in child_to_parent.items():
                 child_name = get_name(child, id_to_name)
                 parent_name = get_name(parent, id_to_name)
+                child_name = self._check_root_ambiguity(child_name, self._root_label)
+                parent_name = self._check_root_ambiguity(parent_name, self._root_label)
                 G.add_node(child, label=child_name)
                 G.add_node(parent, label=parent_name)
                 if not G.has_edge(parent, child):
@@ -374,11 +376,13 @@ class HierarchyFileCreator:
             G = nx.DiGraph()
             for class_id in class_ids:
                 child_name = get_name(class_id, id_to_name)
+                child_name = self._check_root_ambiguity(child_name, self._root_label)
                 G.add_node(class_id, label=child_name)
 
                 if class_id in child_to_parent:
                     parent_id = child_to_parent[class_id]
                     parent_name = get_name(parent_id, id_to_name)
+                    parent_name = self._check_root_ambiguity(parent_name, self._root_label)
                     G.add_node(parent_id, label=parent_name)
                     if not G.has_edge(parent_id, class_id):
                         G.add_edge(parent_id, class_id)
@@ -478,10 +482,12 @@ class HierarchyFileCreator:
             anns = obj_ann_id_to_anns[ann["obj_ann_id"]] # (object annotation, list of part annotations)
             parent_id = anns[0]["category_id"]
             parent = cat_id_to_name[parent_id]
+            parent = self._check_root_ambiguity(parent, self._root_label)
             G.add_node(parent_id, label=parent)
             for part_ann in anns[1]:
                 child_id = part_ann["category_id"]
                 child = cat_id_to_name[child_id]
+                child = self._check_root_ambiguity(child, self._root_label)
                 G.add_node(child_id, label=child)
                 if not G.has_edge(parent_id, child_id):
                     G.add_edge(parent_id, child_id)
@@ -577,6 +583,21 @@ class HierarchyFileCreator:
     ### (End) Methods to create hierarchy graphs for different datasets
 
     ### Helper methods
+
+    def _check_root_ambiguity(self, label: str, root_label: str):
+        """
+        Resolves ambiguity in the root label by checking if the label is equal to the root label.
+        If it is, it appends " (entity)" to the label.
+        
+        Args:
+            label (str): The label to resolve.
+            root_label (str): The root label to compare against.
+        Returns:
+            str: Resolved label.
+        """
+        if label == root_label:
+            return f"{label} (entity)"
+        return label
         
     def _get_imagenet21k_mapping(self):
         """
@@ -694,6 +715,7 @@ class HierarchyFileCreator:
         # Step 1: Find all leaves (nodes with no outgoing edges)
         logger.info("Identifying leaf nodes in the graph.")
         leaves = [n for n in G.nodes if G.out_degree(n) == 0]
+        roots = [n for n in G.nodes if G.in_degree(n) == 0]
 
         # Step 2: Assign IDs to leaves
         logger.info(f"Assigning IDs to {len(leaves)} leaf nodes.")
@@ -704,7 +726,7 @@ class HierarchyFileCreator:
         # Step 3: Assign IDs to internal nodes
         logger.info("Processing internal nodes.")
         # For cyclic graphs, use a queue to process nodes whose children are already assigned
-        unassigned = set(G.nodes) - set(assigned_ids)
+        unassigned = set(G.nodes) - set(assigned_ids) - set(roots)  # Exclude leaves and roots from unassigned
         while unassigned:
             progress = False
             for node in list(unassigned):
@@ -722,6 +744,14 @@ class HierarchyFileCreator:
                     next_id += 1
                 break
 
+        # Step 4: Assign IDs to root nodes
+        logger.info(f"Assigning IDs to {len(roots)} root nodes.")
+        for root in roots:
+            if root not in assigned_ids:
+                assigned_ids[root] = next_id
+                next_id += 1
+        
+        # Step 5: Relabel nodes in the graph with assigned ids
         G = nx.relabel_nodes(G, assigned_ids, copy=True)
 
         logger.info(f"Assigned {len(assigned_ids)} unique ids to nodes in the graph.")

@@ -4,10 +4,6 @@
     "graph": {},
     "nodes": [
         {
-            "label": "root",
-            "id": 120
-        },
-        {
             "label": "bicycle",
             "id": 1
         },
@@ -57,10 +53,6 @@
         }
     ],
     "links": [
-        {
-            "source": 1,
-            "target": 1
-        },
         {
             "source": 1,
             "target": 2

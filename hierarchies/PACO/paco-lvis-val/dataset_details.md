@@ -1,5 +1,5 @@
 
         Paco-lvis-val
-        number of levels in hierarchy: 1
+        number of levels in hierarchy: 2
         number of classes: 412
         
