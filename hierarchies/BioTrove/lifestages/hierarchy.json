@@ -24,7 +24,7 @@
             "id": 4
         },
         {
-            "label": "Hippodamia",
+            "label": "Actias",
             "id": 5
         },
         {
@@ -32,23 +32,23 @@
             "id": 6
         },
         {
-            "label": "Papilio",
+            "label": "Danaus",
             "id": 7
         },
         {
-            "label": "Danaus",
+            "label": "Hippodamia",
             "id": 8
         },
         {
-            "label": "Actias",
+            "label": "Papilio",
             "id": 9
         },
         {
-            "label": "Coccinellidae",
+            "label": "Saturniidae",
             "id": 10
         },
         {
-            "label": "Papilionidae",
+            "label": "Coccinellidae",
             "id": 11
         },
         {
@@ -56,15 +56,15 @@
             "id": 12
         },
         {
-            "label": "Saturniidae",
+            "label": "Papilionidae",
             "id": 13
         },
         {
-            "label": "Coleoptera",
+            "label": "Lepidoptera",
             "id": 14
         },
         {
-            "label": "Lepidoptera",
+            "label": "Coleoptera",
             "id": 15
         },
         {
@@ -91,43 +91,43 @@
         },
         {
             "source": 16,
-            "target": 15
-        },
-        {
-            "source": 16,
             "target": 14
         },
         {
-            "source": 15,
-            "target": 13
-        },
-        {
-            "source": 15,
-            "target": 12
-        },
-        {
-            "source": 15,
-            "target": 11
-        },
-        {
-            "source": 13,
-            "target": 9
-        },
-        {
-            "source": 9,
-            "target": 0
+            "source": 16,
+            "target": 15
         },
         {
             "source": 14,
             "target": 10
         },
         {
-            "source": 10,
-            "target": 6
+            "source": 14,
+            "target": 12
+        },
+        {
+            "source": 14,
+            "target": 13
         },
         {
             "source": 10,
             "target": 5
+        },
+        {
+            "source": 5,
+            "target": 0
+        },
+        {
+            "source": 15,
+            "target": 11
+        },
+        {
+            "source": 11,
+            "target": 6
+        },
+        {
+            "source": 11,
+            "target": 8
         },
         {
             "source": 6,
@@ -135,22 +135,22 @@
         },
         {
             "source": 12,
-            "target": 8
-        },
-        {
-            "source": 8,
-            "target": 2
-        },
-        {
-            "source": 5,
-            "target": 3
-        },
-        {
-            "source": 11,
             "target": 7
         },
         {
             "source": 7,
+            "target": 2
+        },
+        {
+            "source": 8,
+            "target": 3
+        },
+        {
+            "source": 13,
+            "target": 9
+        },
+        {
+            "source": 9,
             "target": 4
         }
     ]
