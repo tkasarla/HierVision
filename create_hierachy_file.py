@@ -280,12 +280,16 @@ class HierarchyFileCreator:
         G = nx.DiGraph()
         for _, row in chains.iterrows():
             hierarchy = [row[col] for col in cols if pd.notna(row[col])]
-            for i in range(len(hierarchy) - 1):
+            hierarchy_ids = [hierarchy[0]] + [hierarchy[i] + " " + hierarchy[i + 1] for i in range(len(hierarchy) - 1)] # to avoid collisions with common attributes in the chain, e.g. "maximus"
+            for i in range(len(hierarchy) - 2):
                 parent, child = hierarchy[i], hierarchy[i + 1]
-                G.add_node(parent, label=parent)
-                G.add_node(child, label=child)
-                if not G.has_edge(parent, child):
-                    G.add_edge(parent, child)
+
+                G.add_node(hierarchy_ids[i], label=parent)
+                G.add_node(hierarchy_ids[i + 1], label=child)
+                if not G.has_edge(hierarchy_ids[i], hierarchy_ids[i + 1]):
+                    G.add_edge(hierarchy_ids[i], hierarchy_ids[i + 1])
+                    
+        assert max(dict(G.in_degree()).values()) == 1, "The created graph is not a tree."
 
         logger.info(f"Created graph for {self.dataset_name}/{split} with {G.number_of_nodes()} nodes.")
         return G
@@ -510,12 +514,22 @@ class HierarchyFileCreator:
         G = nx.DiGraph()
         for _, row in chains.iterrows():
             hierarchy = [row[col] for col in cols if pd.notna(row[col])]
-            for i in range(len(hierarchy) - 1):
+
+            for i in range(len(hierarchy) - 2):
                 parent, child = hierarchy[i], hierarchy[i + 1]
                 G.add_node(parent, label=parent)
                 G.add_node(child, label=child)
                 if not G.has_edge(parent, child):
                     G.add_edge(parent, child)
+                    
+            # treat species separately
+            parent, child = hierarchy[-2], hierarchy[-1]
+            G.add_node(parent, label=parent)
+            G.add_node(parent + " " + child, label=child) # avoid collisions with common attributes in species names, e.g. "maximus"
+            if not G.has_edge(parent, parent + " " + child):
+                G.add_edge(parent, parent + " " + child)
+
+        assert nx.is_tree(G), "The created graph is not a tree."
 
         logger.info(f"Created graph for {self.dataset_name}/rare_species with {G.number_of_nodes()} nodes.")
         return G
@@ -1025,6 +1039,8 @@ class HierarchyFileCreator:
 
         # Assign level ids
         G, number_of_classes = self._assign_level_ids(G)
+        
+        assert nx.is_tree(G), f"The created graph for {self.dataset_name} is not a tree."
 
         # Export in JSON format
         logger.info("Exporting hierarchy to JSON format.")
