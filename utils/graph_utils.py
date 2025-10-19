@@ -22,7 +22,7 @@ class Hierarchy:
     
     def __init__(self, hierarchy_file):
         self.hierarchy_file = hierarchy_file
-        self.graph = self.load_hierarchy_file(hierarchy_file)
+        self.graph, self.root_id = self.load_hierarchy_file(hierarchy_file)
 
     @classmethod
     def load_hierarchy_file(cls, file_path: str, throw_error=True) -> nx.DiGraph:
@@ -52,7 +52,8 @@ class Hierarchy:
         root_id = [node for node, degree in G.in_degree() if degree == 0]
 
         if throw_error and len(root_id) != 1:
-            raise ValueError(f"There should be exactly one root node in the hierarchy {file_path}. Found {len(root_id)}")
+            print(f"Warning: There should be exactly one root node in the hierarchy {file_path}. Found {len(root_id)}")
+            # raise ValueError(f"There should be exactly one root node in the hierarchy {file_path}. Found {len(root_id)}")
         else:
             if any([isinstance(s, str) for s in root_id]):
                 root_id = root_id[0]  # If root_id is a list with one string, take that string
@@ -71,6 +72,17 @@ class Hierarchy:
         if not hasattr(self, '_number_of_nodes'):
             self._number_of_nodes = self.graph.number_of_nodes()
         return self._number_of_nodes
+    
+    @property
+    def number_of_edges(self):
+        """
+        Get the number of edges in the hierarchy.
+        Returns:
+            int: Number of edges in the hierarchy.
+        """
+        if not hasattr(self, '_number_of_edges'):
+            self._number_of_edges = self.graph.number_of_edges()
+        return self._number_of_edges
 
     @property
     def depth(self):
@@ -80,7 +92,7 @@ class Hierarchy:
             int: Depth of the hierarchy.
         """
         if not hasattr(self, '_depth'):
-            self._depth = nx.dag_longest_path_length(self.graph)
+            self._depth = max(nx.single_source_shortest_path_length(self.graph, self.root_id).values())
         return self._depth
 
     @property
@@ -93,6 +105,15 @@ class Hierarchy:
         if not hasattr(self, '_number_of_leaves'):
             self._number_of_leaves = len([n for n in self.graph.nodes if self.graph.out_degree(n) == 0])
         return self._number_of_leaves
+    
+    @property
+    def number_of_classes(self):
+        """
+        Get the number of classes (leaf nodes) in the hierarchy. Alias for `number_of_leaves`.
+        Returns:
+            int: Number of classes in the hierarchy.
+        """
+        return self.number_of_leaves
 
     @property
     def average_branching_factor(self):
@@ -114,8 +135,22 @@ class Hierarchy:
                 self._average_branching_factor = total_children / internal_nodes_count
         return self._average_branching_factor
     
+    def summary(self):
+        """
+        Print a summary of the hierarchy's properties.
+        """
+        print(self.__repr__())
+        
+    def __repr__(self):
+        out = f"Hierarchy Summary:\n"
+        out += f"Number of nodes: {self.number_of_nodes}\n"
+        out += f"Number of edges: {self.number_of_edges}\n"
+        out += f"Depth: {self.depth}\n"
+        out += f"Number of leaves: {self.number_of_leaves}\n"
+        out += f"Average branching factor: {self.average_branching_factor:.2f}\n"
+        return out
     
-
+    
 class HierarchyCatalog:
     """
     A catalog to manage and access different hierarchy files for datasets.
