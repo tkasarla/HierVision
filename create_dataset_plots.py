@@ -1,246 +1,13 @@
-from ast import arg, parse
 import json
-from platform import node
-from turtle import color
 import os
 import networkx as nx
 from tqdm import tqdm
 import plotly.express as px
-import kaleido
 import numpy as np
 import sys
 
-def get_hierarchy_files(hierarchies_directory="./HierVision/hierarchies/"):
-    """
-    Get all hierarchy files from the specified directory.
-    Returns:
-        list: A list of paths to hierarchy files.
-    """
-    # find all the .json files in all the sub and sub subdirectories of the hierarchies directory
-    hierarchy_files = []
-    for root, dirs, files in os.walk(hierarchies_directory):
-        for file in files:
-            if file.endswith(".json"):
-            # if file.endswith(".json") and not file.startswith("nested") and not file.startswith("imagenet100"):
-                hierarchy_file = os.path.join(root, file)
-                print(f"Found hierarchy file: {hierarchy_file}")
-                hierarchy_files.append(hierarchy_file)
-    # remove filepaths with these names in them
-    # for filepath in hierarchy_files:
-    #     if "heirarchy_sun360_2012_with_count" in filepath or "gene_ontology_mapping.json" in filepath or "bbox_labels_600_hierarchy" in filepath or "imagenet100" in filepath:
-    #         print(f"Removing unformatted hierarchy file: {filepath}")
-    #         hierarchy_files.remove(filepath)
-    print(f"Found {len(hierarchy_files)} hierarchy files in the directory: {hierarchies_directory}")
-    # print(f"files are {hierarchy_files}")
-    return hierarchy_files
-
-# define a hierarchy class below
-class Hierarchy:
-    def __init__(self, hierarchy_file):
-        self.hierarchy_file = hierarchy_file
-        self.graph = self.load_hierarchy_file(hierarchy_file)
-
-    def load_hierarchy_file(self, json_file):
-        """
-        Load a hierarchy file and return the graph object.
-        Args:
-            json_file (str): Path to the hierarchy JSON file.
-        Returns:
-            nx.DiGraph: A directed graph representing the hierarchy.
-        """
-        with open(json_file, 'r') as f:
-            data = json.load(f)
-
-        # Create a directed graph
-        G = nx.DiGraph()
-
-        # Add nodes
-        for node in data["nodes"]:
-            G.add_node(node["id"])
-
-        # Add edges
-        for link in data["links"]:
-            G.add_edge(link["source"], link["target"])
-
-        return G
-
-    def get_number_of_nodes(self):
-        """
-        Get the number of nodes in the hierarchy.
-        Returns:
-            int: Number of nodes in the hierarchy.
-        """
-        return self.graph.number_of_nodes()
-    
-    def get_depth(self):
-        """
-        Get the depth of the hierarchy.
-        Returns:
-            int: Depth of the hierarchy.
-        """
-        return nx.dag_longest_path_length(self.graph)
-    
-    def get_number_of_leaves(self):
-        """
-        Get the number of leaf nodes in the hierarchy.
-        Returns:
-            int: Number of leaf nodes in the hierarchy.
-        """
-        return len([n for n in self.graph.nodes if self.graph.out_degree(n) == 0])
-    
-    def get_average_branching_factor(self):
-        """
-        Get the average branching factor of the hierarchy.
-        Returns:
-            float: Average branching factor of the hierarchy.
-        Explanation: 
-        The average branching factor is calculated as the average number of children per internal node (meaning excluding leaf nodes).
-        """
-        if self.graph.number_of_nodes() == 0:
-            return 0.0
-        total_children = sum(self.graph.out_degree(n) for n in self.graph.nodes if self.graph.out_degree(n) > 0)
-        internal_nodes_count = sum(1 for n in self.graph.nodes if self.graph.out_degree(n) > 0)
-        if internal_nodes_count == 0:
-            return 0.0
-        return total_children / internal_nodes_count
-
-    def cycles_check(self):
-        cycles = list(nx.simple_cycles(self.graph))
-        if cycles:
-            print("Circular references detected!")
-            for cycle in cycles:
-                print(f"Cycle: {cycle}")
-                sys.exit()
-        else:
-            print("No circular references detected.")
-
-    def _check_root_ambiguity(self):
-        """
-        Resolves ambiguity in the root label by checking if the label is equal to the root label.
-        If it is, it appends " (entity)" to the label.
-        
-        Args:
-            label (str): The label to resolve.
-            root_label (str): The root label to compare against.
-        Returns:
-            str: Resolved label.
-        """
-        # Find nodes with no incoming edges (potential root nodes)
-        root_candidates = [n for n in self.graph.nodes if self.graph.in_degree(n) == 0]
-
-        if not root_candidates:
-            return "The graph does not have a root node (no nodes with in-degree 0)."
-            sys.exit()
-
-        # Check if any root candidate has the label "root" (case-insensitive)
-        for root in root_candidates:
-            label = self.graph.nodes[root].get("label", "")  # Get the label of the node
-            if label.lower() == "root":
-                return f"The root node is labeled '{label}'."
-
-        return "The graph has a root node, but none are labeled 'root' (case-insensitive)."
-
-
-    def _add_virtual_root(self):
-        """
-        Adds a virtual root node to the graph if there is no root.
-        A virtual root node is added to connect all nodes that have no incoming edges.
-        This is useful for visualizing the hierarchy as a tree structure.
-
-        Args:
-            G (nx.DiGraph): The graph representing the hierarchy.
-        Returns:
-            G (nx.DiGraph): The graph with a virtual root node added.
-        """
-        logger.info("Adding virtual root node to the graph.")
-        progressive_ids = {n:i for i, n in enumerate(G.nodes)}
-        G = nx.relabel_nodes(G, progressive_ids, copy=True)  # Ensure nodes have unique ids
-        # Find nodes with no incoming edges
-        roots = [n for n in G.nodes if G.in_degree(n) == 0]
-
-        if len(roots) == 1:
-            logger.info("Only one root candidate found, no need to add a virtual root.")
-            return G
-
-        # Add a virtual root node
-        root_id = G.number_of_nodes()
-        G.add_node(root_id, label=self._root_label)
-
-        # Connect root to all current root candidates
-        for node in roots:
-            G.add_edge(root_id, node)
-        logger.info(f"Virtual root added with {G.number_of_nodes()} total nodes.")
-        return G
-        
-    def _check_tree(self):
-        # Check if the graph is a directed acyclic graph (DAG)
-        if not nx.is_directed_acyclic_graph(self.graph):
-            cycles = list(nx.simple_cycles(self.graph))
-            raise ValueError(f"The graph contains cycles: {cycles}")
-
-        num_nodes = self.graph.number_of_nodes()
-        num_edges = self.graph.number_of_edges()
-        print(f"Number of nodes: {num_nodes}, Number of edges: {num_edges}")
-
-        # Check if the graph is connected
-        if not nx.is_weakly_connected(self.graph):
-            components = list(nx.weakly_connected_components(self.graph))
-            raise ValueError(f"The graph is not connected. Components: {components}")
-
-        # Check for multiple root nodes
-        root_candidates = [n for n in self.graph.nodes if self.graph.in_degree(n) == 0]
-        print(f"Root candidates: {root_candidates}")
-        if not root_candidates[0] == self.graph.number_of_edges():
-            print("The root is not the highest node.")
-        # assert root_candidates[0] == self.graph.number_of_edges(), f"The root is not the highest node."
-        if len(root_candidates) != 1:
-            raise ValueError(f"The graph has {len(root_candidates)} root nodes: {root_candidates}")
-
-        cycles = list(nx.simple_cycles(self.graph))
-        if cycles != []:
-            print(f"Cycles: {cycles}")
-        self_loops = list(nx.selfloop_edges(self.graph))
-        if self_loops != []:
-            print(f"Self-loops: {self_loops}")
-        duplicate_edges = [e for e in self.graph.edges if self.graph.number_of_edges(*e) > 1]
-        if duplicate_edges != []:
-            print(f"Duplicate edges: {duplicate_edges}")
-        print(f"Is tree: {nx.is_tree(self.graph)}")
-        if num_edges != num_nodes - 1:
-            print("The graph does not have exactly n-1 edges for n nodes.")
-            # Check for extra edges using a spanning tree
-        spanning_tree = nx.minimum_spanning_tree(self.graph.to_undirected())
-        extra_edges = set(self.graph.edges) - set(spanning_tree.edges)
-        assert nx.is_tree(self.graph), f"The created graph is not a tree."
-                
-    def get_dataset_stats(dataset_key, file_path):
-            try:
-                G, root_id = load_graph_from_file(file_path)
-            except Exception as e:
-                logger.warning(f"File {file_path} does not contain a hierarchy. Skipping...")
-                print(e)
-                raise e
-            # statistics
-            num_nodes = G.number_of_nodes()
-            num_edges = G.number_of_edges()
-            num_classes = len([n for n in G.nodes() if G.out_degree(n) == 0])
-            max_depth = max(nx.single_source_shortest_path_length(G, root_id).values())
-        
-            # create a DataFrame with the statistics
-            stats = {
-                "Tasks": dataset_tasks.get(dataset_key),
-                "Dataset": get_dataset_name(dataset_key, file_path),
-                "Hierarchy Source": hierarchy_sources.get(dataset_key, "-"),
-                "Original Format": original_format.get(dataset_key, "-"),
-                "Nodes": num_nodes,
-                "Edges": num_edges,
-                "Depth": max_depth,
-                "Classes": num_classes,
-            }
-                
-            return stats
-
-
+from utils import Hierarchy, HierarchyCatalog
+from utils.validate import HierarchyValidator
 
 
 def process_hierarchy_files(hierarchy_files, show_print=True):
@@ -747,13 +514,13 @@ if __name__ == "__main__":
 
     if args.sanity_check == True:
         print("sanity checking")
-        hierarchy_files = get_hierarchy_files(args.hierarchies_directory)
-        hierarchy_files = sorted(hierarchy_files)
-        for hierarchy_file in tqdm(hierarchy_files):
-            print(f"Processing hierarchy file: {hierarchy_file}")
-            hierarchy_obj = Hierarchy(hierarchy_file)
-            hierarchy_obj.cycles_check()
-            hierarchy_obj._check_tree()
+        hierarchy_validator = HierarchyValidator()
+        hierarchies = sorted(list(hierarchy_validator.catalog.hierarchies.keys()))
+        for hierarchy in tqdm(hierarchies):
+            print(f"Processing hierarchy file: {hierarchy}")
+            hierarchy_obj = hierarchy_validator.catalog.get(hierarchy)
+            hierarchy_validator._cycles_check(hierarchy)
+            hierarchy_validator._check_tree(hierarchy)
         sys.exit() 
 
 
@@ -776,6 +543,6 @@ if __name__ == "__main__":
             plot_histogram_of_node_counts(dataset_info="dataset_info.json", binsize=args.binsize)
     else:
         print(f"Processing hierarchy files from directory: {args.hierarchies_directory}")
-        hierarchy_files = get_hierarchy_files(args.hierarchies_directory)
+        hierarchy_files = HierarchyCatalog(args.hierarchies_directory).hierarchies.values()
         dataset_info = process_hierarchy_files(hierarchy_files, show_print=args.show_print)
         print("Processing complete. Dataset info saved to 'dataset_info.json'.")
