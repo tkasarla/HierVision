@@ -2,7 +2,6 @@ import argparse
 import json
 import math
 import os
-import warnings
 from glob import glob
 
 import matplotlib.pyplot as plt
@@ -11,15 +10,10 @@ import numpy as np
 import pandas as pd
 import plotly.graph_objects as go
 import torch
-from tqdm import tqdm
-from collections import defaultdict
 from loguru import logger
 from nltk.corpus import wordnet as wn
 from typing import List, Set
-
-from utils.graph_utils import load_graph_from_file
-
-warnings.filterwarnings("ignore")
+from . import Hierarchy
 
 
 
@@ -148,35 +142,6 @@ class HierarchyFileCreator:
         logger.info(f"Created graph for {self.dataset_name} with {G.number_of_nodes()} nodes.")
         return G
     
-    # def _ade20k_scene_cls(self):
-    #     """
-    #     Creates a hierarchy graph for the ADE20K dataset for scene classification tasks.
-    #     The hierarchy is inferred from the "scene" attribute in the annotations.
-        
-    #     Args:
-    #         split (str): Split name, either "training" or "validation".
-    #     Returns:
-    #         G (nx.DiGraph): Directed graph representing the hierarchy.
-    #     """
-    #     annotation_jsons = glob(os.path.join(self.dataset_path, "images", "**", "*.json"), recursive=True)
-    #     G = nx.DiGraph()
-    #     for json_file in tqdm(annotation_jsons):
-    #         with open(json_file, 'r', encoding="ISO-8859-1", errors="ignore") as f:
-    #             content = f.read()
-            
-    #         content = content.encode("utf-8", errors="ignore")
-    #         scene_chain = json.loads(content)["annotation"]["scene"]
-    #         for i in range(len(scene_chain) - 1):
-    #             scene = scene_chain[i]
-    #             if scene not in G:
-    #                 G.add_node(scene, label=scene)
-    #             if scene_chain[i + 1] not in G:
-    #                 G.add_node(scene_chain[i + 1], label=scene_chain[i + 1])
-    #             if not G.has_edge(scene, scene_chain[i + 1]):
-    #                 G.add_edge(scene, scene_chain[i + 1])
-    #     logger.info(f"Created graph for {self.dataset_name} with {G.number_of_nodes()} nodes.")
-    #     return G
-    
     def _ade20k_scene_cls(self, split: str):
         """
         Creates a hierarchy graph for the ADE20K dataset for scene classification tasks.
@@ -214,33 +179,6 @@ class HierarchyFileCreator:
         Returns:
             G (nx.DiGraph): Directed graph representing the hierarchy.
         """
-        # annotation_jsons = glob(os.path.join(self.dataset_path, "images", "**", "*.json"), recursive=True)
-        # G = nx.DiGraph()
-        # for json_file in tqdm(annotation_jsons):
-        #     with open(json_file, 'r', encoding="ISO-8859-1", errors="ignore") as f:
-        #         content = f.read()
-            
-        #     content = content.encode("utf-8", errors="ignore")
-        #     objects = json.loads(content)["annotation"]["object"]
-        #     for obj in objects:
-        #         hypernyms = obj["hypernym"][::-1]
-        #         if len(hypernyms) == 0:
-        #             continue
-        #         node = hypernyms[-1]  # the last hypernym is the object name
-        #         node_idx = obj["name_ndx"]
-        #         if node_idx not in G:
-        #             G.add_node(node_idx, label=node)
-                    
-        #         for i in range(len(hypernyms) - 1):
-        #             if hypernyms[i] not in G:
-        #                 G.add_node(hypernyms[i], label=hypernyms[i])
-        #             if hypernyms[i + 1] not in G:
-        #                 G.add_node(hypernyms[i + 1], label=hypernyms[i + 1])
-        #             if not G.has_edge(hypernyms[i], hypernyms[i + 1]):
-        #                 G.add_edge(hypernyms[i], hypernyms[i + 1])
-
-        # logger.info(f"Created graph for {self.dataset_name} with {G.number_of_nodes()} nodes.")
-        # return G
         ds_metadata = pd.read_pickle(os.path.join(self.dataset_path, "index_ade20k.pkl"))
 
         chains = ds_metadata["wordnet_synset"]
@@ -694,7 +632,7 @@ class HierarchyFileCreator:
         logger.info("Using train ids to assign level ids for evaluation datasets.")
         dataset_folder = os.path.basename(self.dataset_path)
         train_split = "-".join(self.dataset_name.split("-")[:-1]) + "-train"
-        train_graph, _ = load_graph_from_file(os.path.join("metadata", dataset_folder, train_split, "hierarchy.json"))
+        train_graph, _ = Hierarchy.load_hierarchy_file(os.path.join("metadata", dataset_folder, train_split, "hierarchy.json"))
         train_labels_to_ids = {data['label']:node for node, data in train_graph.nodes(data=True)}
         train_labels_to_ids.pop(self._root_label, None)  # Remove root label if exists
         current_labels_to_ids = {data['label']:node for node, data in G.nodes(data=True)}
@@ -1135,9 +1073,3 @@ def scrape_objects365():
 
     with open("../datasets/Objects365/objects365_hierarchy.json", "w") as f:
         json.dump(hierarchy, f, indent=4)
-
-
-if __name__ == "__main__":
-    main()
-    # Run the script from command line
-    # python create_hierarchy_file.py tree_of_life /path/to/dataset /path/to/hierarchy_file.json
