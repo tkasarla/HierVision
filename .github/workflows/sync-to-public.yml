@@ -26,10 +26,12 @@ jobs:
 
       - name: Configure SSH (deploy key for PUBLIC repo)
         run: |
+          set -euo pipefail
           install -m 700 -d ~/.ssh
-          echo "${{ secrets.PUBLIC_DEPLOY_KEY }}" > ~/.ssh/id_ed25519
+          echo "${{ secrets.PUBLIC_DEPLOY_KEY_B64 }}" | base64 --decode > ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
           ssh-keyscan -t ed25519 github.com >> ~/.ssh/known_hosts
+          ssh -T git@github.com || true
 
       - name: Set Git identity
         run: |
