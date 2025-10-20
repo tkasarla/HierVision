@@ -1,4 +1,4 @@
-name: Mirror main -> public HierVision (debug)
+name: Mirror main -> public HierVision
 
 on:
   push:
@@ -9,55 +9,41 @@ jobs:
   mirror:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout private repo @ main
+      - name: Checkout private repo @ main (with LFS)
         uses: actions/checkout@v4
         with:
           ref: main
           fetch-depth: 0
+          lfs: true                # <-- pull LFS pointers + blobs
           persist-credentials: false
+
+      - name: Ensure LFS files are present
+        run: |
+          git lfs install
+          # Fetch ALL LFS objects referenced by current refs, then materialize them
+          git lfs fetch --all
+          git lfs checkout
 
       - name: Configure Git identity
         run: |
           git config user.name "mirror-bot"
           git config user.email "mirror-bot@users.noreply.github.com"
 
-      - name: Debug variables and source branch
-        run: |
-          set -euxo pipefail
-          echo "Current repo: $GITHUB_REPOSITORY"
-          echo "Current ref: $GITHUB_REF"
-          echo "List local branches:"
-          git branch -vv || true
-          echo "Verify source branch exists"
-          git show-ref --verify refs/heads/main
-
-      - name: Push ONLY main to public repo (with diagnostics)
+      - name: Push ONLY main to public repo
         env:
           MIRROR_TOKEN: ${{ secrets.MIRROR_TOKEN }}
-          GIT_TRACE: "1"
-          GIT_CURL_VERBOSE: "1"
         run: |
           set -euxo pipefail
-
-          if [ -z "${MIRROR_TOKEN}" ]; then
-            echo "::error::Secret MIRROR_TOKEN is missing in HierVision_private."
-            exit 1
-          fi
-
-          SRC_BRANCH="main"                 # private repo branch
-          DEST_BRANCH="main"                # public repo branch
+          SRC_BRANCH="main"
+          DEST_BRANCH="main"
           TARGET_OWNER="tkasarla"
-          TARGET_REPO="HierVision"          # public repo name
+          TARGET_REPO="HierVision"
           TARGET_URL="https://${MIRROR_TOKEN}@github.com/${TARGET_OWNER}/${TARGET_REPO}.git"
 
-          echo "Adding publish remote -> ${TARGET_OWNER}/${TARGET_REPO}"
           git remote add publish "$TARGET_URL"
 
-          echo "Show remotes:"
-          git remote -v
+          # Optional: push LFS objects proactively (then the ref)
+          git lfs push publish --all || true
 
-          echo "Test auth to target with ls-remote (should list refs or be empty if repo is new)"
-          git ls-remote publish || true
-
-          echo "Pushing only ${SRC_BRANCH} -> ${DEST_BRANCH} (force to keep mirror exact)"
+          # Push exactly the branch; --force keeps mirror exact
           git push publish "refs/heads/${SRC_BRANCH}:refs/heads/${DEST_BRANCH}" --force
