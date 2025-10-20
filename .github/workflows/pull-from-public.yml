@@ -1,0 +1,66 @@
+name: Pull public main -> private main (FF-only, release tags)
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"   # every 10 minutes; adjust as you like
+  workflow_dispatch: {}       # run manually after merging a public PR
+
+jobs:
+  pull_public_into_private:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout private@main (full history + LFS)
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+          lfs: true
+          # default credentials (GITHUB_TOKEN) are fine to push back to this repo
+
+      - name: Install & hydrate LFS
+        run: |
+          git lfs install
+          git lfs fetch --all
+          git lfs checkout
+
+      - name: Fetch public main + release tags
+        run: |
+          set -euo pipefail
+          git remote add public "https://github.com/tkasarla/HierVision.git" || true
+          # Fetch main and only the release tag patterns
+          git fetch public main --force
+          git fetch public 'refs/tags/v*:refs/tags/v*' 'refs/tags/release/*:refs/tags/release/*' --force || true
+
+      - name: Fast-forward private main to public main
+        run: |
+          set -euo pipefail
+          PRIV_SHA=$(git rev-parse main)
+          PUB_SHA=$(git rev-parse remotes/public/main)
+          BASE=$(git merge-base "$PRIV_SHA" "$PUB_SHA")
+
+          if [ "$BASE" = "$PRIV_SHA" ] && [ "$PRIV_SHA" != "$PUB_SHA" ]; then
+            echo "Private is behind public -> fast-forward"
+            git checkout main
+            git merge --ff-only "$PUB_SHA"
+            git push origin main
+          else
+            echo "No fast-forward needed (already up-to-date or histories diverged)."
+          fi
+
+      - name: Push release tags to PRIVATE (match public)
+        run: |
+          set -euo pipefail
+          # After fetch, these tags now exist locally; push them to origin
+          # Push globs in one go; fall back to per-tag if server disallows globs
+          git push origin 'refs/tags/v*:refs/tags/v*' 'refs/tags/release/*:refs/tags/release/*' --force || {
+            mapfile -t TAGS < <(git tag -l 'v*' 'release/*' | sort -u)
+            if [ "${#TAGS[@]}" -gt 0 ]; then
+              echo "Pushing ${#TAGS[@]} release tag(s) to PRIVATE individually:"
+              printf '  - %s\n' "${TAGS[@]}"
+              for t in "${TAGS[@]}"; do
+                git push origin "refs/tags/${t}:refs/tags/${t}" --force || true
+              done
+            else
+              echo "No release tags found to push."
+            fi
+          }
