@@ -1,0 +1,60 @@
+name: Mirror `main` to public repo
+
+on:
+  push:
+    branches:
+      - main          # mirror when main changes
+  workflow_dispatch:  # allow manual runs
+  # Optional: run on a schedule too
+  # schedule:
+  #   - cron: "0 */6 * * *"  # every 6 hours
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      # ----- Choose ONE auth method -----
+
+      # (A) Authenticate using a Personal Access Token (PAT).
+      # If you use this, set MIRROR_TOKEN secret in the private repo.
+      - name: Configure Git identity
+        run: |
+          git config user.name "mirror-bot"
+          git config user.email "mirror-bot@users.noreply.github.com"
+
+      # (B) Authenticate using an SSH deploy key (if you prefer SSH).
+      # Uncomment this block and remove MIRROR_TOKEN env below if using deploy key.
+      # - name: Configure SSH for deploy key
+      #   run: |
+      #     install -m 700 -d ~/.ssh
+      #     echo "${{ secrets.MIRROR_DEPLOY_KEY }}" > ~/.ssh/id_ed25519
+      #     chmod 600 ~/.ssh/id_ed25519
+      #     ssh-keyscan -t ed25519 github.com >> ~/.ssh/known_hosts
+
+      - name: Push to public repo
+        env:
+          # If using PAT; comment this out if using SSH deploy key
+          MIRROR_TOKEN: ${{ secrets.MIRROR_TOKEN }}
+        run: |
+          SRC_BRANCH="main"                         # source branch (private repo)
+          DEST_BRANCH="main"                        # destination branch (public repo)
+          TARGET_OWNER="tkasarla"                   # <- your GitHub user/org
+          TARGET_REPO="HierVision"           # <- public repo name
+
+          if [ -n "${MIRROR_TOKEN}" ]; then
+            TARGET_URL="https://${MIRROR_TOKEN}@github.com/${TARGET_OWNER}/${TARGET_REPO}.git"
+          else
+            TARGET_URL="git@github.com:${TARGET_OWNER}/${TARGET_REPO}.git"
+          fi
+
+          # Create an orphan temporary mirror to avoid pushing other refs
+          git remote add publish "$TARGET_URL"
+
+          # Push **only** the selected branch ref; --force keeps it in exact sync
+          git push publish "refs/heads/${SRC_BRANCH}:refs/heads/${DEST_BRANCH}" --force
