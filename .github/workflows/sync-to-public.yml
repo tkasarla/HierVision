@@ -15,40 +15,82 @@ jobs:
     if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:
-      # ... your existing steps ...
-      # checkout (lfs: true), hydrate LFS, configure SSH w/ PUBLIC_DEPLOY_KEY, set identity
+      - name: Checkout private@main (full history + LFS)
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+          lfs: true
+          persist-credentials: false
+
+      - name: Sanity check: confirm we are in a git repo
+        run: |
+          set -euo pipefail
+          pwd
+          ls -la
+          test -d .git || (echo "::error::.git missing; checkout failed or cwd wrong" && exit 1)
+          git rev-parse --is-inside-work-tree
+          git status
+
+      - name: Install & hydrate LFS
+        run: |
+          set -euo pipefail
+          git lfs install
+          git lfs fetch --all
+          git lfs checkout
+
+      - name: Configure SSH (deploy key for PUBLIC repo)
+        run: |
+          set -euo pipefail
+          install -m 700 -d ~/.ssh
+          # Use your base64 secret; switch to --decode or -d works on Ubuntu
+          printf '%s' "${{ secrets.PUBLIC_DEPLOY_KEY_B64 }}" | base64 --decode > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -t ed25519 github.com >> ~/.ssh/known_hosts
+          # quick auth probe (expected: "successfully authenticated")
+          ssh -T git@github.com || true
+
+      - name: Set Git identity
+        run: |
+          git config user.name "sync-bot"
+          git config user.email "sync-bot@users.noreply.github.com"
 
       - name: Conditional push main (prefer non-force; allow manual FORCE)
         env:
           FORCE: ${{ github.event.inputs.force }}
         run: |
           set -euo pipefail
-          REMOTE="publish"
-          SRC="main"
-          DST="main"
+          REMOTE_NAME="publish"
+          REMOTE_URL="git@github.com:tkasarla/HierVision.git"
 
-          git remote add "$REMOTE" "git@github.com:tkasarla/HierVision.git" || true
+          # Ensure remote exists and points to the public repo
+          if git remote get-url "$REMOTE_NAME" >/dev/null 2>&1; then
+            git remote set-url "$REMOTE_NAME" "$REMOTE_URL"
+          else
+            git remote add "$REMOTE_NAME" "$REMOTE_URL"
+          fi
+          git remote -v
 
           if [ "${FORCE:-false}" = "true" ]; then
             echo "::warning::FORCING private/main -> public/main (will overwrite public history)"
-            # Upload LFS first (optional)
-            git lfs push "$REMOTE" --all || true
-            # Force branch update
-            git push "$REMOTE" "refs/heads/$SRC:refs/heads/$DST" --force
+            git lfs push "$REMOTE_NAME" --all || true
+            git push "$REMOTE_NAME" refs/heads/main:refs/heads/main --force
           else
             echo "Attempting non-force fast-forward"
-            git fetch "$REMOTE" "$DST" || true
-            SRC_SHA=$(git rev-parse "$SRC")
+            git fetch "$REMOTE_NAME" main || true
+            SRC_SHA=$(git rev-parse main)
             DST_SHA=$(git rev-parse FETCH_HEAD 2>/dev/null || echo "")
             if [ -z "$DST_SHA" ]; then
-              git push "$REMOTE" "refs/heads/$SRC:refs/heads/$DST"
+              echo "Public main does not exist -> creating (no force)"
+              git push "$REMOTE_NAME" refs/heads/main:refs/heads/main
             else
               BASE=$(git merge-base "$SRC_SHA" "$DST_SHA")
               if [ "$BASE" = "$DST_SHA" ]; then
-                git push "$REMOTE" "refs/heads/$SRC:refs/heads/$DST"
+                echo "Fast-forward push"
+                git push "$REMOTE_NAME" refs/heads/main:refs/heads/main
               else
                 echo "::warning::Public/main diverged; not forcing (by policy)."
-                echo "Run this workflow manually with input force=true to overwrite public."
+                echo "Run 'Pull public -> private' to realign, or re-run this workflow with force=true."
                 exit 1
               fi
             fi
@@ -57,14 +99,14 @@ jobs:
       - name: Push release tags (v* and release/*) to PUBLIC
         run: |
           set -euo pipefail
-          REMOTE="publish"
-          git remote add "$REMOTE" "git@github.com:tkasarla/HierVision.git" || true
+          REMOTE_NAME="publish"
+          # push only release tags; force so re-tagged releases update
           mapfile -t TAGS < <(git tag -l 'v*' 'release/*' | sort -u)
           if [ "${#TAGS[@]}" -gt 0 ]; then
             echo "Pushing ${#TAGS[@]} release tag(s) to PUBLIC:"
             printf '  - %s\n' "${TAGS[@]}"
             for t in "${TAGS[@]}"; do
-              git push "$REMOTE" "refs/tags/${t}:refs/tags/${t}" --force
+              git push "$REMOTE_NAME" "refs/tags/${t}:refs/tags/${t}" --force
             done
           else
             echo "No release tags to push."
