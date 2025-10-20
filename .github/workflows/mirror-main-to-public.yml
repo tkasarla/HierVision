@@ -1,4 +1,4 @@
-name: Mirror main -> public HierVision
+name: Mirror main -> public HierVision (no workflows)
 
 on:
   push:
@@ -9,41 +9,45 @@ jobs:
   mirror:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout private repo @ main (with LFS)
+      - name: Checkout private repo @ main with LFS
         uses: actions/checkout@v4
         with:
           ref: main
           fetch-depth: 0
-          lfs: true                # <-- pull LFS pointers + blobs
+          lfs: true
           persist-credentials: false
 
-      - name: Ensure LFS files are present
-        run: |
-          git lfs install
-          # Fetch ALL LFS objects referenced by current refs, then materialize them
-          git lfs fetch --all
-          git lfs checkout
-
-      - name: Configure Git identity
-        run: |
-          git config user.name "mirror-bot"
-          git config user.email "mirror-bot@users.noreply.github.com"
-
-      - name: Push ONLY main to public repo
-        env:
-          MIRROR_TOKEN: ${{ secrets.MIRROR_TOKEN }}
+      - name: Prepare publish tree (exclude workflows)
         run: |
           set -euxo pipefail
-          SRC_BRANCH="main"
-          DEST_BRANCH="main"
+          rm -rf publish
+          mkdir -p publish
+          # copy everything except the workflows directory
+          rsync -a --delete --exclude='.git' --exclude='.github/workflows' ./ publish/
+
+      - name: Rebuild repo for publishing (fresh history)
+        working-directory: publish
+        run: |
+          set -euxo pipefail
+          git init
+          git checkout -b main
+          git lfs install
+          git config user.name "mirror-bot"
+          git config user.email "mirror-bot@users.noreply.github.com"
+          git add -A
+          git commit -m "Mirror from HierVision_private @ $GITHUB_SHA"
+
+      - name: Push to public repo
+        env:
+          MIRROR_TOKEN: ${{ secrets.MIRROR_TOKEN }}
+        working-directory: publish
+        run: |
+          set -euxo pipefail
           TARGET_OWNER="tkasarla"
           TARGET_REPO="HierVision"
           TARGET_URL="https://${MIRROR_TOKEN}@github.com/${TARGET_OWNER}/${TARGET_REPO}.git"
 
           git remote add publish "$TARGET_URL"
-
-          # Optional: push LFS objects proactively (then the ref)
+          # optional: push LFS first, then the ref
           git lfs push publish --all || true
-
-          # Push exactly the branch; --force keeps mirror exact
-          git push publish "refs/heads/${SRC_BRANCH}:refs/heads/${DEST_BRANCH}" --force
+          git push publish "refs/heads/main:refs/heads/main" --force
