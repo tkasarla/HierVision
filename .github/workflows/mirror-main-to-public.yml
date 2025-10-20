@@ -1,60 +1,63 @@
-name: Mirror `main` to public repo
+name: Mirror main -> public HierVision (debug)
 
 on:
   push:
-    branches:
-      - main          # mirror when main changes
-  workflow_dispatch:  # allow manual runs
-  # Optional: run on a schedule too
-  # schedule:
-  #   - cron: "0 */6 * * *"  # every 6 hours
+    branches: [ main ]
+  workflow_dispatch:
 
 jobs:
   mirror:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout main
+      - name: Checkout private repo @ main
         uses: actions/checkout@v4
         with:
           ref: main
           fetch-depth: 0
+          persist-credentials: false
 
-      # ----- Choose ONE auth method -----
-
-      # (A) Authenticate using a Personal Access Token (PAT).
-      # If you use this, set MIRROR_TOKEN secret in the private repo.
       - name: Configure Git identity
         run: |
           git config user.name "mirror-bot"
           git config user.email "mirror-bot@users.noreply.github.com"
 
-      # (B) Authenticate using an SSH deploy key (if you prefer SSH).
-      # Uncomment this block and remove MIRROR_TOKEN env below if using deploy key.
-      # - name: Configure SSH for deploy key
-      #   run: |
-      #     install -m 700 -d ~/.ssh
-      #     echo "${{ secrets.MIRROR_DEPLOY_KEY }}" > ~/.ssh/id_ed25519
-      #     chmod 600 ~/.ssh/id_ed25519
-      #     ssh-keyscan -t ed25519 github.com >> ~/.ssh/known_hosts
-
-      - name: Push to public repo
-        env:
-          # If using PAT; comment this out if using SSH deploy key
-          MIRROR_TOKEN: ${{ secrets.MIRROR_TOKEN }}
+      - name: Debug variables and source branch
         run: |
-          SRC_BRANCH="main"                         # source branch (private repo)
-          DEST_BRANCH="main"                        # destination branch (public repo)
-          TARGET_OWNER="tkasarla"                   # <- your GitHub user/org
-          TARGET_REPO="HierVision"           # <- public repo name
+          set -euxo pipefail
+          echo "Current repo: $GITHUB_REPOSITORY"
+          echo "Current ref: $GITHUB_REF"
+          echo "List local branches:"
+          git branch -vv || true
+          echo "Verify source branch exists"
+          git show-ref --verify refs/heads/main
 
-          if [ -n "${MIRROR_TOKEN}" ]; then
-            TARGET_URL="https://${MIRROR_TOKEN}@github.com/${TARGET_OWNER}/${TARGET_REPO}.git"
-          else
-            TARGET_URL="git@github.com:${TARGET_OWNER}/${TARGET_REPO}.git"
+      - name: Push ONLY main to public repo (with diagnostics)
+        env:
+          MIRROR_TOKEN: ${{ secrets.MIRROR_TOKEN }}
+          GIT_TRACE: "1"
+          GIT_CURL_VERBOSE: "1"
+        run: |
+          set -euxo pipefail
+
+          if [ -z "${MIRROR_TOKEN}" ]; then
+            echo "::error::Secret MIRROR_TOKEN is missing in HierVision_private."
+            exit 1
           fi
 
-          # Create an orphan temporary mirror to avoid pushing other refs
+          SRC_BRANCH="main"                 # private repo branch
+          DEST_BRANCH="main"                # public repo branch
+          TARGET_OWNER="tkasarla"
+          TARGET_REPO="HierVision"          # public repo name
+          TARGET_URL="https://${MIRROR_TOKEN}@github.com/${TARGET_OWNER}/${TARGET_REPO}.git"
+
+          echo "Adding publish remote -> ${TARGET_OWNER}/${TARGET_REPO}"
           git remote add publish "$TARGET_URL"
 
-          # Push **only** the selected branch ref; --force keeps it in exact sync
+          echo "Show remotes:"
+          git remote -v
+
+          echo "Test auth to target with ls-remote (should list refs or be empty if repo is new)"
+          git ls-remote publish || true
+
+          echo "Pushing only ${SRC_BRANCH} -> ${DEST_BRANCH} (force to keep mirror exact)"
           git push publish "refs/heads/${SRC_BRANCH}:refs/heads/${DEST_BRANCH}" --force
