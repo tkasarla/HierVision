@@ -23,7 +23,7 @@ jobs:
           lfs: true
           persist-credentials: false
 
-      - name: Sanity check: confirm we are in a git repo
+      - name: Sanity check to confirm we are in a git repo
         run: |
           set -euo pipefail
           pwd
