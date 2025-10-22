@@ -12,7 +12,7 @@ on:
 
 jobs:
   sync_to_public:
-    if: github.actor != 'github-actions[bot]'
+    if: github.actor != 'github-actions[bot]' && github.actor != 'sync-bot'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout private@main (full history + LFS)
@@ -55,7 +55,7 @@ jobs:
           git config user.name "sync-bot"
           git config user.email "sync-bot@users.noreply.github.com"
 
-      - name: Conditional push main (prefer non-force; allow manual FORCE)
+      - name: Push to public and handle workflow files
         env:
           FORCE: ${{ github.event.inputs.force }}
         run: |
@@ -70,28 +70,104 @@ jobs:
             git remote add "$REMOTE_NAME" "$REMOTE_URL"
           fi
           git remote -v
+          
+          # Fetch public to see its current state
+          git fetch "$REMOTE_NAME" main || echo "Public main doesn't exist yet"
 
           if [ "${FORCE:-false}" = "true" ]; then
             echo "::warning::FORCING private/main -> public/main (will overwrite public history)"
             git lfs push "$REMOTE_NAME" --all || true
             git push "$REMOTE_NAME" refs/heads/main:refs/heads/main --force
+            
+            # After force push, remove workflows from public
+            TEMP_DIR=$(mktemp -d)
+            git clone "$REMOTE_URL" "$TEMP_DIR"
+            cd "$TEMP_DIR"
+            git config user.name "sync-bot"
+            git config user.email "sync-bot@users.noreply.github.com"
+            if [ -d .github/workflows ]; then
+              git rm -rf .github/workflows
+              git commit -m "[auto] Remove workflow files (private only)" || echo "Nothing to remove"
+              git push origin main
+            fi
+            cd -
+            rm -rf "$TEMP_DIR"
           else
-            echo "Attempting non-force fast-forward"
-            git fetch "$REMOTE_NAME" main || true
-            SRC_SHA=$(git rev-parse main)
-            DST_SHA=$(git rev-parse FETCH_HEAD 2>/dev/null || echo "")
-            if [ -z "$DST_SHA" ]; then
-              echo "Public main does not exist -> creating (no force)"
+            # Check if public exists and has workflows removed
+            FETCH_HEAD_SHA=$(git rev-parse FETCH_HEAD 2>/dev/null || echo "")
+            
+            if [ -z "$FETCH_HEAD_SHA" ]; then
+              # Public doesn't exist - do initial push then remove workflows
+              echo "Public main does not exist -> creating"
               git push "$REMOTE_NAME" refs/heads/main:refs/heads/main
+              
+              TEMP_DIR=$(mktemp -d)
+              git clone "$REMOTE_URL" "$TEMP_DIR"
+              cd "$TEMP_DIR"
+              git config user.name "sync-bot"
+              git config user.email "sync-bot@users.noreply.github.com"
+              if [ -d .github/workflows ]; then
+                git rm -rf .github/workflows
+                git commit -m "[auto] Remove workflow files (private only)"
+                git push origin main
+              fi
+              cd -
+              rm -rf "$TEMP_DIR"
             else
-              BASE=$(git merge-base "$SRC_SHA" "$DST_SHA")
-              if [ "$BASE" = "$DST_SHA" ]; then
-                echo "Fast-forward push"
-                git push "$REMOTE_NAME" refs/heads/main:refs/heads/main
+              # Public exists - check relationship
+              PRIV_SHA=$(git rev-parse main)
+              
+              # Check if public is at private commit or one ahead (workflow removal)
+              if [ "$FETCH_HEAD_SHA" = "$PRIV_SHA" ]; then
+                echo "Public is at same commit as private - checking for workflows..."
+                # Public might have workflow files, need to check and remove
+                TEMP_DIR=$(mktemp -d)
+                git clone "$REMOTE_URL" "$TEMP_DIR"
+                cd "$TEMP_DIR"
+                git config user.name "sync-bot"
+                git config user.email "sync-bot@users.noreply.github.com"
+                if [ -d .github/workflows ]; then
+                  echo "Removing workflows from public"
+                  git rm -rf .github/workflows
+                  git commit -m "[auto] Remove workflow files (private only)"
+                  git push origin main
+                else
+                  echo "Public already has no workflows"
+                fi
+                cd -
+                rm -rf "$TEMP_DIR"
               else
-                echo "::warning::Public/main diverged; not forcing (by policy)."
-                echo "Run 'Pull public -> private' to realign, or re-run this workflow with force=true."
-                exit 1
+                # Check if public's parent is private
+                git fetch "$REMOTE_NAME" main
+                PARENT_SHA=$(git rev-parse FETCH_HEAD^  2>/dev/null || echo "")
+                if [ "$PARENT_SHA" = "$PRIV_SHA" ]; then
+                  echo "Public is one commit ahead (workflows already removed), up to date"
+                else
+                  # Public can fast-forward
+                  BASE=$(git merge-base "$PRIV_SHA" "$FETCH_HEAD_SHA")
+                  if [ "$BASE" = "$FETCH_HEAD_SHA" ]; then
+                    echo "Fast-forward push from private to public"
+                    git push "$REMOTE_NAME" refs/heads/main:refs/heads/main
+                    
+                    # Remove workflows after push
+                    TEMP_DIR=$(mktemp -d)
+                    git clone "$REMOTE_URL" "$TEMP_DIR"
+                    cd "$TEMP_DIR"
+                    git config user.name "sync-bot"
+                    git config user.email "sync-bot@users.noreply.github.com"
+                    if [ -d .github/workflows ]; then
+                      git rm -rf .github/workflows
+                      git commit -m "[auto] Remove workflow files (private only)"
+                      git push origin main
+                    fi
+                    cd -
+                    rm -rf "$TEMP_DIR"
+                  else
+                    echo "::warning::Public/main diverged; not forcing (by policy)."
+                    echo "Run 'Pull public -> private' to realign, or re-run this workflow with force=true."
+                    exit 1
+                  fi
+                fi
               fi
             fi
           fi

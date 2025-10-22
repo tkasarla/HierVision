@@ -31,7 +31,41 @@ jobs:
           git fetch public main --force
           git fetch public 'refs/tags/v*:refs/tags/v*' 'refs/tags/release/*:refs/tags/release/*' --force || true
 
+      - name: Check if update needed
+        id: check_update
+        run: |
+          set -euo pipefail
+          PRIV_SHA=$(git rev-parse main)
+          PUB_SHA=$(git rev-parse remotes/public/main)
+          
+          if [ "$PRIV_SHA" = "$PUB_SHA" ]; then
+            echo "Private and public are already at the same commit ($PRIV_SHA)"
+            echo "needs_update=false" >> $GITHUB_OUTPUT
+          else
+            # Check if public is one commit ahead with workflow removal
+            PUB_PARENT=$(git rev-parse remotes/public/main^ 2>/dev/null || echo "")
+            if [ "$PUB_PARENT" = "$PRIV_SHA" ]; then
+              # Check if that commit only removed workflows
+              CHANGED_FILES=$(git diff --name-only "$PRIV_SHA" "$PUB_SHA")
+              if echo "$CHANGED_FILES" | grep -q "^\.github/workflows/" && \
+                 ! echo "$CHANGED_FILES" | grep -qv "^\.github/workflows/"; then
+                echo "Public is one commit ahead with only workflow removal - treating as up-to-date"
+                echo "needs_update=false" >> $GITHUB_OUTPUT
+              else
+                echo "Public has substantive changes"
+                echo "Private: $PRIV_SHA"
+                echo "Public:  $PUB_SHA"
+                echo "needs_update=true" >> $GITHUB_OUTPUT
+              fi
+            else
+              echo "Private: $PRIV_SHA"
+              echo "Public:  $PUB_SHA"
+              echo "needs_update=true" >> $GITHUB_OUTPUT
+            fi
+          fi
+
       - name: Fast-forward private main to public main
+        if: steps.check_update.outputs.needs_update == 'true'
         run: |
           set -euo pipefail
           PRIV_SHA=$(git rev-parse main)
@@ -48,6 +82,7 @@ jobs:
           fi
 
       - name: Push release tags to PRIVATE (match public)
+        if: steps.check_update.outputs.needs_update == 'true'
         run: |
           set -euo pipefail
           # After fetch, these tags now exist locally; push them to origin
