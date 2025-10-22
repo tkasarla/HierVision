@@ -30,14 +30,22 @@ jobs:
       - name: Configure SSH
         run: |
           set -euo pipefail
+
+          if [ -z "${{ secrets.PUBLIC_DEPLOY_KEY_B64 }}" ]; then
+            echo "::error::PUBLIC_DEPLOY_KEY_B64 secret is empty"
+            exit 1
+          fi
+
           install -m 700 -d ~/.ssh
           printf '%s' "${{ secrets.PUBLIC_DEPLOY_KEY_B64 }}" | base64 --decode > ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
           ssh-keyscan github.com >> ~/.ssh/known_hosts
-          
-          # Verify SSH works
-          if ! ssh -T git@github.com 2>&1 | grep -q "successfully authenticated"; then
-            echo "ERROR: SSH authentication failed"
+
+          # Verify SSH works (ssh exits with 1 on success for GitHub, so capture output)
+          AUTH_OUTPUT=$(ssh -T git@github.com 2>&1 || true)
+          echo "$AUTH_OUTPUT"
+          if ! printf '%s' "$AUTH_OUTPUT" | grep -q "successfully authenticated"; then
+            echo "::error::SSH authentication failed — confirm deploy key has write access"
             exit 1
           fi
           echo "SSH authentication successful"
