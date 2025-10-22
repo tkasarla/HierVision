@@ -1,189 +1,126 @@
-name: Sync private main -> public main (non-force, release tags, FORCE override)
+name: Sync private to public
 
 on:
   push:
     branches: [ main ]
+    paths-ignore:
+      - '.github/workflows/**'
+      - 'README.md'
+      - 'CONTRIBUTING.md'
   workflow_dispatch:
     inputs:
       force:
-        description: "One-time: force private/main -> public/main (OVERWRITES public)"
+        description: "Force push to public"
         required: false
         default: "false"
 
 jobs:
   sync_to_public:
-    if: github.actor != 'github-actions[bot]' && github.actor != 'sync-bot'
+    # Don't run if this push came from pull-from-public workflow
+    if: github.actor != 'github-actions[bot]' && !contains(github.event.head_commit.message, '[sync-from-public]')
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout private@main (full history + LFS)
+      - name: Checkout
         uses: actions/checkout@v4
         with:
           ref: main
           fetch-depth: 0
-          lfs: true
-          persist-credentials: false
+          lfs: false
 
-      - name: Sanity check to confirm we are in a git repo
-        run: |
-          set -euo pipefail
-          pwd
-          ls -la
-          test -d .git || (echo "::error::.git missing; checkout failed or cwd wrong" && exit 1)
-          git rev-parse --is-inside-work-tree
-          git status
-
-      - name: Install & hydrate LFS
-        run: |
-          set -euo pipefail
-          git lfs install
-          git lfs fetch --all
-          git lfs checkout
-
-      - name: Configure SSH (deploy key for PUBLIC repo)
+      - name: Configure SSH
         run: |
           set -euo pipefail
           install -m 700 -d ~/.ssh
-          # Use your base64 secret; switch to --decode or -d works on Ubuntu
           printf '%s' "${{ secrets.PUBLIC_DEPLOY_KEY_B64 }}" | base64 --decode > ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
-          ssh-keyscan -t ed25519 github.com >> ~/.ssh/known_hosts
-          # quick auth probe (expected: "successfully authenticated")
-          ssh -T git@github.com || true
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+          
+          # Verify SSH works
+          if ! ssh -T git@github.com 2>&1 | grep -q "successfully authenticated"; then
+            echo "ERROR: SSH authentication failed"
+            exit 1
+          fi
+          echo "SSH authentication successful"
 
-      - name: Set Git identity
+      - name: Configure Git
         run: |
+          set -euo pipefail
           git config user.name "sync-bot"
           git config user.email "sync-bot@users.noreply.github.com"
 
-      - name: Push to public and handle workflow files
+      - name: Setup remote and create branch without workflows
+        run: |
+          set -euo pipefail
+          git remote add public git@github.com:tkasarla/HierVision.git || true
+          git remote set-url public git@github.com:tkasarla/HierVision.git
+          git fetch public main || echo "Public main doesn't exist yet"
+          
+          git checkout -b temp-public-sync
+          
+          if [ -d .github/workflows ]; then
+            echo "Removing .github/workflows directory"
+            git rm -rf .github/workflows
+            if ! git diff --cached --quiet; then
+              git commit -m "Remove workflows for public" || true
+            else
+              echo "No workflow files to remove"
+            fi
+          else
+            echo "No .github/workflows directory found"
+          fi
+
+      - name: Push to public
         env:
           FORCE: ${{ github.event.inputs.force }}
         run: |
           set -euo pipefail
-          REMOTE_NAME="publish"
-          REMOTE_URL="git@github.com:tkasarla/HierVision.git"
-
-          # Ensure remote exists and points to the public repo
-          if git remote get-url "$REMOTE_NAME" >/dev/null 2>&1; then
-            git remote set-url "$REMOTE_NAME" "$REMOTE_URL"
-          else
-            git remote add "$REMOTE_NAME" "$REMOTE_URL"
-          fi
-          git remote -v
           
-          # Fetch public to see its current state
-          git fetch "$REMOTE_NAME" main || echo "Public main doesn't exist yet"
-
-          if [ "${FORCE:-false}" = "true" ]; then
-            echo "::warning::FORCING private/main -> public/main (will overwrite public history)"
-            git lfs push "$REMOTE_NAME" --all || true
-            git push "$REMOTE_NAME" refs/heads/main:refs/heads/main --force
-            
-            # After force push, remove workflows from public
-            TEMP_DIR=$(mktemp -d)
-            git clone "$REMOTE_URL" "$TEMP_DIR"
-            cd "$TEMP_DIR"
-            git config user.name "sync-bot"
-            git config user.email "sync-bot@users.noreply.github.com"
-            if [ -d .github/workflows ]; then
-              git rm -rf .github/workflows
-              git commit -m "[auto] Remove workflow files (private only)" || echo "Nothing to remove"
-              git push origin main
-            fi
-            cd -
-            rm -rf "$TEMP_DIR"
+          if [ "${FORCE}" = "true" ]; then
+            echo "⚠️ Force pushing to public (will overwrite history)"
+            git push public temp-public-sync:main --force
+            echo "✅ Force push completed"
           else
-            # Check if public exists and has workflows removed
-            FETCH_HEAD_SHA=$(git rev-parse FETCH_HEAD 2>/dev/null || echo "")
+            REMOTE_SHA=$(git rev-parse public/main 2>/dev/null || echo "")
+            LOCAL_SHA=$(git rev-parse temp-public-sync)
             
-            if [ -z "$FETCH_HEAD_SHA" ]; then
-              # Public doesn't exist - do initial push then remove workflows
-              echo "Public main does not exist -> creating"
-              git push "$REMOTE_NAME" refs/heads/main:refs/heads/main
-              
-              TEMP_DIR=$(mktemp -d)
-              git clone "$REMOTE_URL" "$TEMP_DIR"
-              cd "$TEMP_DIR"
-              git config user.name "sync-bot"
-              git config user.email "sync-bot@users.noreply.github.com"
-              if [ -d .github/workflows ]; then
-                git rm -rf .github/workflows
-                git commit -m "[auto] Remove workflow files (private only)"
-                git push origin main
-              fi
-              cd -
-              rm -rf "$TEMP_DIR"
+            if [ -z "$REMOTE_SHA" ]; then
+              echo "Creating public main (first push)"
+              git push public temp-public-sync:main
+              echo "✅ Public repository initialized"
+            elif [ "$REMOTE_SHA" = "$LOCAL_SHA" ]; then
+              echo "✅ Public is already up to date"
+            elif git merge-base --is-ancestor public/main temp-public-sync 2>/dev/null; then
+              echo "Fast-forwarding public to match private"
+              git push public temp-public-sync:main
+              echo "✅ Successfully synced to public"
             else
-              # Public exists - check relationship
-              PRIV_SHA=$(git rev-parse main)
-              
-              # Check if public is at private commit or one ahead (workflow removal)
-              if [ "$FETCH_HEAD_SHA" = "$PRIV_SHA" ]; then
-                echo "Public is at same commit as private - checking for workflows..."
-                # Public might have workflow files, need to check and remove
-                TEMP_DIR=$(mktemp -d)
-                git clone "$REMOTE_URL" "$TEMP_DIR"
-                cd "$TEMP_DIR"
-                git config user.name "sync-bot"
-                git config user.email "sync-bot@users.noreply.github.com"
-                if [ -d .github/workflows ]; then
-                  echo "Removing workflows from public"
-                  git rm -rf .github/workflows
-                  git commit -m "[auto] Remove workflow files (private only)"
-                  git push origin main
-                else
-                  echo "Public already has no workflows"
-                fi
-                cd -
-                rm -rf "$TEMP_DIR"
-              else
-                # Check if public's parent is private
-                git fetch "$REMOTE_NAME" main
-                PARENT_SHA=$(git rev-parse FETCH_HEAD^  2>/dev/null || echo "")
-                if [ "$PARENT_SHA" = "$PRIV_SHA" ]; then
-                  echo "Public is one commit ahead (workflows already removed), up to date"
-                else
-                  # Public can fast-forward
-                  BASE=$(git merge-base "$PRIV_SHA" "$FETCH_HEAD_SHA")
-                  if [ "$BASE" = "$FETCH_HEAD_SHA" ]; then
-                    echo "Fast-forward push from private to public"
-                    git push "$REMOTE_NAME" refs/heads/main:refs/heads/main
-                    
-                    # Remove workflows after push
-                    TEMP_DIR=$(mktemp -d)
-                    git clone "$REMOTE_URL" "$TEMP_DIR"
-                    cd "$TEMP_DIR"
-                    git config user.name "sync-bot"
-                    git config user.email "sync-bot@users.noreply.github.com"
-                    if [ -d .github/workflows ]; then
-                      git rm -rf .github/workflows
-                      git commit -m "[auto] Remove workflow files (private only)"
-                      git push origin main
-                    fi
-                    cd -
-                    rm -rf "$TEMP_DIR"
-                  else
-                    echo "::warning::Public/main diverged; not forcing (by policy)."
-                    echo "Run 'Pull public -> private' to realign, or re-run this workflow with force=true."
-                    exit 1
-                  fi
-                fi
-              fi
+              echo "❌ ERROR: Histories diverged. Public has changes not in private."
+              echo "  Private SHA: $LOCAL_SHA"
+              echo "  Public SHA:  $REMOTE_SHA"
+              echo "  Run 'Pull from public' first, or manually trigger with force=true"
+              exit 1
             fi
           fi
 
-      - name: Push release tags (v* and release/*) to PUBLIC
+      - name: Cleanup
+        if: always()
+        run: |
+          set +e  # Don't fail on cleanup errors
+          git checkout main 2>/dev/null || true
+          git branch -D temp-public-sync 2>/dev/null || true
+          echo "Cleanup completed"
+
+      - name: Push tags
         run: |
           set -euo pipefail
-          REMOTE_NAME="publish"
-          # push only release tags; force so re-tagged releases update
           mapfile -t TAGS < <(git tag -l 'v*' 'release/*' | sort -u)
-          if [ "${#TAGS[@]}" -gt 0 ]; then
-            echo "Pushing ${#TAGS[@]} release tag(s) to PUBLIC:"
-            printf '  - %s\n' "${TAGS[@]}"
-            for t in "${TAGS[@]}"; do
-              git push "$REMOTE_NAME" "refs/tags/${t}:refs/tags/${t}" --force
-            done
+          if [ "${#TAGS[@]}" -eq 0 ]; then
+            echo "No release tags to push"
           else
-            echo "No release tags to push."
+            echo "Pushing ${#TAGS[@]} release tag(s)"
+            for t in "${TAGS[@]}"; do
+              echo "  Pushing tag: $t"
+              git push public "refs/tags/${t}:refs/tags/${t}" --force || echo "  Failed to push $t"
+            done
+            echo "✅ Tags synced"
           fi

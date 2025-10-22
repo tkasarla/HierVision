@@ -1,101 +1,109 @@
-name: Pull public main -> private main (FF-only, release tags)
+name: Pull from public to private
 
 on:
   schedule:
-    - cron: "*/10 * * * *"   # every 10 minutes; adjust as you like
-  workflow_dispatch: {}       # run manually after merging a public PR
+    - cron: "*/15 * * * *"  # Check every 15 minutes for new PRs
+  workflow_dispatch: {}
 
 jobs:
-  pull_public_into_private:
+  pull_from_public:
+    # Prevent running if triggered by sync-bot to avoid loops
+    if: github.actor != 'sync-bot' && github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout private@main (full history + LFS)
+      - name: Checkout private
         uses: actions/checkout@v4
         with:
           ref: main
           fetch-depth: 0
-          lfs: true
-          # default credentials (GITHUB_TOKEN) are fine to push back to this repo
+          lfs: false
 
-      - name: Install & hydrate LFS
-        run: |
-          git lfs install
-          git lfs fetch --all
-          git lfs checkout
-
-      - name: Fetch public main + release tags
+      - name: Fetch public repo
         run: |
           set -euo pipefail
-          git remote add public "https://github.com/tkasarla/HierVision.git" || true
-          # Fetch main and only the release tag patterns
-          git fetch public main --force
-          git fetch public 'refs/tags/v*:refs/tags/v*' 'refs/tags/release/*:refs/tags/release/*' --force || true
+          git remote add public https://github.com/tkasarla/HierVision.git || true
+          git remote set-url public https://github.com/tkasarla/HierVision.git
+          echo "Fetching from public repository..."
+          git fetch public main
 
       - name: Check if update needed
-        id: check_update
+        id: check
         run: |
           set -euo pipefail
           PRIV_SHA=$(git rev-parse main)
-          PUB_SHA=$(git rev-parse remotes/public/main)
+          PUB_SHA=$(git rev-parse public/main)
+          
+          echo "Private SHA: $PRIV_SHA"
+          echo "Public SHA:  $PUB_SHA"
           
           if [ "$PRIV_SHA" = "$PUB_SHA" ]; then
-            echo "Private and public are already at the same commit ($PRIV_SHA)"
+            echo "✅ Already up to date"
             echo "needs_update=false" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+          
+          # Check if public has new commits (from merged PRs)
+          if git merge-base --is-ancestor "$PRIV_SHA" "$PUB_SHA" 2>/dev/null; then
+            echo "📥 Public has new commits - will pull (likely from merged PR)"
+            echo "needs_update=true" >> $GITHUB_OUTPUT
           else
-            # Check if public is one commit ahead with workflow removal
-            PUB_PARENT=$(git rev-parse remotes/public/main^ 2>/dev/null || echo "")
+            # Check if this is just the workflow removal commit
+            PUB_PARENT=$(git rev-parse public/main^ 2>/dev/null || echo "")
             if [ "$PUB_PARENT" = "$PRIV_SHA" ]; then
-              # Check if that commit only removed workflows
-              CHANGED_FILES=$(git diff --name-only "$PRIV_SHA" "$PUB_SHA")
-              if echo "$CHANGED_FILES" | grep -q "^\.github/workflows/" && \
-                 ! echo "$CHANGED_FILES" | grep -qv "^\.github/workflows/"; then
-                echo "Public is one commit ahead with only workflow removal - treating as up-to-date"
+              CHANGED=$(git diff --name-only "$PRIV_SHA" "$PUB_SHA" || echo "")
+              if [ -n "$CHANGED" ] && echo "$CHANGED" | grep -q "^\.github/workflows/" && \
+                 ! echo "$CHANGED" | grep -qv "^\.github/workflows/"; then
+                echo "ℹ️ Public is one commit ahead with only workflow removal - ignoring"
                 echo "needs_update=false" >> $GITHUB_OUTPUT
-              else
-                echo "Public has substantive changes"
-                echo "Private: $PRIV_SHA"
-                echo "Public:  $PUB_SHA"
-                echo "needs_update=true" >> $GITHUB_OUTPUT
+                exit 0
               fi
-            else
-              echo "Private: $PRIV_SHA"
-              echo "Public:  $PUB_SHA"
-              echo "needs_update=true" >> $GITHUB_OUTPUT
             fi
+            echo "⚠️ Histories may have diverged"
+            echo "needs_update=true" >> $GITHUB_OUTPUT
           fi
 
-      - name: Fast-forward private main to public main
-        if: steps.check_update.outputs.needs_update == 'true'
+      - name: Merge from public
+        if: steps.check.outputs.needs_update == 'true'
         run: |
           set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
           PRIV_SHA=$(git rev-parse main)
-          PUB_SHA=$(git rev-parse remotes/public/main)
-          BASE=$(git merge-base "$PRIV_SHA" "$PUB_SHA")
-
-          if [ "$BASE" = "$PRIV_SHA" ] && [ "$PRIV_SHA" != "$PUB_SHA" ]; then
-            echo "Private is behind public -> fast-forward"
-            git checkout main
+          PUB_SHA=$(git rev-parse public/main)
+          
+          # Try to merge public into private
+          if git merge-base --is-ancestor "$PRIV_SHA" "$PUB_SHA" 2>/dev/null; then
+            # Private is behind public - fast forward
+            echo "Fast-forwarding private to public (PR was merged in public)"
             git merge --ff-only "$PUB_SHA"
+            # Add marker to commit message to prevent sync-to-public from running
+            git commit --amend -m "$(git log -1 --pretty=%B) [sync-from-public]" || true
             git push origin main
+            echo "✅ Successfully pulled changes from public (merged PR)"
           else
-            echo "No fast-forward needed (already up-to-date or histories diverged)."
+            # Try regular merge (this handles when public has new commits from PRs)
+            echo "Attempting to merge public changes into private..."
+            if git merge "$PUB_SHA" -m "Merge changes from public repository [sync-from-public]" --no-edit; then
+              git push origin main
+              echo "✅ Successfully merged changes from public"
+            else
+              echo "❌ ERROR: Merge conflict detected"
+              echo "  Private: $PRIV_SHA"
+              echo "  Public:  $PUB_SHA"
+              echo "Manual resolution required"
+              git merge --abort
+              exit 1
+            fi
           fi
 
-      - name: Push release tags to PRIVATE (match public)
-        if: steps.check_update.outputs.needs_update == 'true'
+      - name: Push tags from public
+        if: steps.check.outputs.needs_update == 'true'
         run: |
-          set -euo pipefail
-          # After fetch, these tags now exist locally; push them to origin
-          # Push globs in one go; fall back to per-tag if server disallows globs
-          git push origin 'refs/tags/v*:refs/tags/v*' 'refs/tags/release/*:refs/tags/release/*' --force || {
-            mapfile -t TAGS < <(git tag -l 'v*' 'release/*' | sort -u)
-            if [ "${#TAGS[@]}" -gt 0 ]; then
-              echo "Pushing ${#TAGS[@]} release tag(s) to PRIVATE individually:"
-              printf '  - %s\n' "${TAGS[@]}"
-              for t in "${TAGS[@]}"; do
-                git push origin "refs/tags/${t}:refs/tags/${t}" --force || true
-              done
-            else
-              echo "No release tags found to push."
-            fi
-          }
+          set +e  # Don't fail if no tags exist
+          echo "Syncing tags from public..."
+          git fetch public 'refs/tags/v*:refs/tags/v*' --force 2>/dev/null || echo "No v* tags found"
+          git fetch public 'refs/tags/release/*:refs/tags/release/*' --force 2>/dev/null || echo "No release/* tags found"
+          git push origin 'refs/tags/v*:refs/tags/v*' --force 2>/dev/null || echo "No v* tags to push"
+          git push origin 'refs/tags/release/*:refs/tags/release/*' --force 2>/dev/null || echo "No release/* tags to push"
+          echo "✅ Tags synced"
